@@ -213,7 +213,7 @@ function Mercedes() {
                             </div>
                         </div>
                     </Waypoint> 
-                </Container>im
+                </Container>
             </div>
         </div>
     )
