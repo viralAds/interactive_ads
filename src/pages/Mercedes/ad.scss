@@ -23,6 +23,29 @@
     
 }
 
+.first-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #18181844;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        border-radius: 50%;
+        background-image: radial-gradient(#313131, #181818);
+        color: white;
+        height: 100px;
+        width: 100px;
+        box-shadow: 0 5px 12px 5px #181818;
+        border: 2px solid black;
+    }
+}
+
 .app-in {
     background: 	#212121;
     position: relative;
@@ -137,6 +160,11 @@
     img {
         justify-self: center;
         width: 50px!important;
+        cursor: pointer;
+    }
+
+    img:hover {
+        width: 52px!important;
     }
 }
 

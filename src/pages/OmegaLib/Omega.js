@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import ReactPlayer from 'react-player';
-import { Container } from 'reactstrap';
+import { Container, Button } from 'reactstrap';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
@@ -18,8 +18,6 @@ import astro from '../../assets/astronaut.png';
 import clock from '../../assets/clock.png';
 import swipe from '../../assets/know_more.png';
 
-// import Navbar from '../Navbar/Navbar';
-
 function Omega() {
     if(typeof window !== `undefined`) {
         AOS.init({
@@ -28,7 +26,7 @@ function Omega() {
         });
       }
     
-      const [isPlaying, setIsPlaying] = useState(true);
+      const [isPlaying, setIsPlaying] = useState(false);
       const [toggleFirstAnimationBox, setToggleFirstAnimationBox] = useState(false);
       const [toggleSecondAnimationBox, setToggleSecondAnimationBox] = useState(false);
       const [toggleThirdAnimationBox, setToggleThirdAnimationBox] = useState(false);
@@ -61,7 +59,12 @@ function Omega() {
         setToggleThirdAnimationBox(true);
         setIsPlaying(false);
       }
-      
+
+      const startVideo = () => {
+        setIsPlaying(true);
+        document.getElementsByClassName('first-screen')[0].style.setProperty("display", "none")
+    }
+
     return (
         <div>
         <div className="m_ads_unit_large" style={{ position: "relative"}}>
@@ -114,6 +117,9 @@ function Omega() {
                                     <DoubleArrowIcon className="back-arrow" onClick={closeAnimation} />
                                     </div> 
                             }
+                            <div className="first-screen">
+                                <Button onClick={startVideo}>Tap to Start</Button>
+                            </div>
                             <ReactPlayer
                                 className="video-screen" 
                                 url={video}

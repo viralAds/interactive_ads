@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import ReactPlayer from 'react-player';
-import { Container } from 'reactstrap';
+import { Container, Button } from 'reactstrap';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ReplyIcon from '@material-ui/icons/Reply';
-
+ 
 import '../Mercedes/ad.scss';
 import '../Mercedes/Mercedes.scss';
 
@@ -25,7 +25,7 @@ function Mercedes() {
         });
       }
     
-      const [isPlaying, setIsPlaying] = useState(true);
+      const [isPlaying, setIsPlaying] = useState(false);
       const [toggleFirstAnimationBox, setToggleFirstAnimationBox] = useState(false);
       const [toggleSecondAnimationBox, setToggleSecondAnimationBox] = useState(false);
       const [toggleThirdAnimationBox, setToggleThirdAnimationBox] = useState(false);
@@ -35,7 +35,6 @@ function Mercedes() {
         setToggleSecondAnimationBox(false);
         setToggleThirdAnimationBox(false);
         setIsPlaying(true);
-        console.log("close");
       }
       
       const firstAnim = () => {
@@ -44,7 +43,6 @@ function Mercedes() {
         setToggleSecondAnimationBox(false);
         setToggleThirdAnimationBox(false);
         setIsPlaying(false);
-        console.log("open");
       }
     
       const secondAnim = () => {
@@ -52,8 +50,6 @@ function Mercedes() {
         setToggleFirstAnimationBox(false);
         setToggleThirdAnimationBox(false);
         setIsPlaying(false);
-        
-        console.log("open");
       }
     
       const thirdAnim = () => {
@@ -61,10 +57,13 @@ function Mercedes() {
         setToggleFirstAnimationBox(false);
         setToggleSecondAnimationBox(false);
         setIsPlaying(false);
-        
-        console.log("open", toggleFirstAnimationBox, toggleSecondAnimationBox, toggleThirdAnimationBox);
-      }
+    }
       
+    const startVideo = () => {
+        setIsPlaying(true);
+        document.getElementsByClassName('first-screen')[0].style.setProperty("display", "none")
+    }
+
     return (
         <div> 
         <div className="m_ads_unit_large" style={{ position: "relative"}}>
@@ -178,6 +177,9 @@ function Mercedes() {
                                     </div>
                                 </div> 
                             }
+                            <div className="first-screen">
+                                <Button onClick={startVideo}>Tap to Start</Button>
+                            </div>
                             <ReactPlayer
                                 className="video-screen" 
                                 url={video}
@@ -192,7 +194,7 @@ function Mercedes() {
                                 <img onClick={firstAnim} src={safety} alt="safety"/>
                                 <img onClick={secondAnim} src={seat} alt="seat"/>
                                 <img onClick={thirdAnim} src={transmission} alt="transmission"/>
-                               </div>
+                            </div>
                         </div>
                 </Container>
             </div>
