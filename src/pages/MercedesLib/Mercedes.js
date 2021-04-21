@@ -26,7 +26,7 @@ function Mercedes() {
         });
       }
     
-      const [isPlaying, setIsPlaying] = useState(false);
+      const [isPlaying, setIsPlaying] = useState(true);
       const [toggleFirstAnimationBox, setToggleFirstAnimationBox] = useState(false);
       const [toggleSecondAnimationBox, setToggleSecondAnimationBox] = useState(false);
       const [toggleThirdAnimationBox, setToggleThirdAnimationBox] = useState(false);
