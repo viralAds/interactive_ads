@@ -15,7 +15,7 @@ function App() {
           <Route path="/omega" component={Omega} />
 
           <Route path="/merc" component={Lmerc} />
-          <Route exact path="/" component={Lmerc} />
+          <Route exact path="/" component={Homepage} />
         </Switch>
       </BrowserRouter>
     </div>

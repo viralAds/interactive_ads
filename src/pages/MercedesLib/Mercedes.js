@@ -210,7 +210,7 @@ function Mercedes() {
                                 <img onClick={firstAnim} src={safety} alt="safety"/>
                                 <img onClick={secondAnim} src={seat} alt="seat"/>
                                 <img onClick={thirdAnim} src={transmission} alt="transmission"/>
-                            </div>
+                               </div>
                         </div>
                     </Waypoint> 
                 </Container>
