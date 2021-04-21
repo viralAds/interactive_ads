@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { Waypoint } from 'react-waypoint';
 import ReactPlayer from 'react-player';
 import { Container } from 'reactstrap';
 import AOS from 'aos';
@@ -65,29 +64,12 @@ function Mercedes() {
         
         console.log("open", toggleFirstAnimationBox, toggleSecondAnimationBox, toggleThirdAnimationBox);
       }
-
-      const handleEnterViewport = () => {
-        setIsPlaying(true);
-        console.log("enter");
-      }
-
-      const handleExitViewport = () => {
-        setToggleFirstAnimationBox(false);
-        setToggleSecondAnimationBox(false);
-        setToggleThirdAnimationBox(false);
-        setIsPlaying(false);
-        console.log("exit");
-      }
       
     return (
         <div> 
         <div className="m_ads_unit_large" style={{ position: "relative"}}>
                 <div className="sponsored-by">Sponsored by EKALEIDO</div>
                 <Container className="app-in">
-                    <Waypoint 
-                        onEnter={handleEnterViewport}
-                        onLeave={handleExitViewport}
-                        >
                         <div className="visible-area">
                             { toggleFirstAnimationBox && <div className="first poster" data-aos={"slide-up"} 
                                     data-aos-delay="100"
@@ -212,7 +194,6 @@ function Mercedes() {
                                 <img onClick={thirdAnim} src={transmission} alt="transmission"/>
                                </div>
                         </div>
-                    </Waypoint> 
                 </Container>
             </div>
         </div>
