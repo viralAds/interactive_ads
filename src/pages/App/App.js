@@ -1,4 +1,3 @@
-import React, { Suspense } from 'react';
 import './App.scss';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
@@ -10,15 +9,6 @@ import Lmerc from '../MercedesLib/Mercedes';
 import Play from '../Playground/Play';
 import Blackberrys from '../Blackberrys/Blackberrys';
 import Audi from '../Audi/Audi';
-
-// const Homepage = React.lazy(() =>  import('../Home/Homepage'));
-// const Omega = React.lazy(() =>  import('../Omega/Omega'));
-// const Audi = React.lazy(() =>  import('../Audi/Audi'));
-// const Play = React.lazy(() =>  import('../Playground/Play'));
-// const Mercedes = React.lazy(() =>  import('../Mercedes/Mercedes'));
-// const Lmerc = React.lazy(() =>  import('../MercedesLib/Mercedes'));
-// const Lomega = React.lazy(() =>  import('../OmegaLib/Omega'));
-// const Blackberrys = React.lazy(() =>  import('../Blackberrys/Blackberrys'));
 
 function App() {
   return (

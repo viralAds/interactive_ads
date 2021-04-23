@@ -21,6 +21,7 @@
     "react-waypoint": "^9.0.3",
     "reactstrap": "^8.9.0",
     "redux": "^4.0.5",
+    "serve": "^11.3.2",
     "video-react": "^0.14.1",
     "web-vitals": "^1.0.1"
   },

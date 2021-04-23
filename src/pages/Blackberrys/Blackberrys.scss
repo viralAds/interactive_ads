@@ -66,9 +66,9 @@
     button {
         position: absolute;
         left: 50%;
-        margin-left: -55px;
+        margin-left: -63.5px;
         bottom: 20px;
-        width: 110px;
+        width: 125px;
         z-index: 2;
 
         border-radius: 0;
@@ -82,8 +82,6 @@
         border-radius: 0;
         background-color: transparent;
         border: 2px solid white;
-        font-family: 'Mulish', sans-serif;
-        font-size: 12px;
     }
 }
 
@@ -114,4 +112,26 @@
     border: 2px solid white;
     font-family: 'Mulish', sans-serif;
     font-size: 12px;
+}
+
+.icons-bottom {
+    position: sticky;
+    bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    height: 53px;
+    max-width: inherit;
+    padding: 0 15px;
+    z-index: 0.5;
+
+    img {
+        justify-self: center;
+        width: 49px!important;
+        cursor: pointer;
+    }
+
+    img:hover {
+        width: 52px!important;
+    }
 }

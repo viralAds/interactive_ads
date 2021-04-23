@@ -1,14 +1,9 @@
 import React, { Component } from 'react'
 import { Player, BigPlayButton } from 'video-react';
 import './Play.scss';
-import { Button } from 'reactstrap';
 import poster from '../../assets/img/audi.jpg';
 
 class play extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div>

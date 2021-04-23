@@ -1,11 +1,10 @@
-import React, { Suspense, useState } from 'react'
+import React, { useState } from 'react'
 import { Waypoint } from 'react-waypoint';
 import ReactPlayer from 'react-player';
 import { Container } from 'reactstrap';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ReplyIcon from '@material-ui/icons/Reply';
-import ReactLoading from 'react-loading';
 
 import '../Common/ad.scss';
 import '../Common/paperLayout.scss';

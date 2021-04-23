@@ -133,7 +133,7 @@ function Blackberrys() {
                                     <div className="ctrl-option">
                                         <img onClick={closeAnimation} src={back} alt="back-btn" />
                                     </div>
-                                    <a id="cta-btn" href="https://blackberrys.com/" target="_blank">EXPLORE</a>
+                                    <a id="cta-btn" href="https://blackberrys.com/" target="_blank" rel="noreferrer">EXPLORE</a>
                                     <img className="bb-images" src={cta} alt="bb3" />
                                 </div> 
                             }
@@ -154,7 +154,7 @@ function Blackberrys() {
                                 controls={ false }
                                 onEnded={() => callToAction()}>
                             </ReactPlayer>
-                            <div className="icons">
+                            <div className="icons-bottom">
                                 <img onClick={firstAnim} src={swim} alt="safety"/>
                                 <img onClick={secondAnim} src={evening} alt="seat"/>
                                 <img onClick={thirdAnim} src={wedding} alt="transmission"/>
