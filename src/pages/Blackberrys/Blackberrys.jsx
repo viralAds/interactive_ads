@@ -147,7 +147,7 @@ function Blackberrys() {
                                 className="video-screen" 
                                 url={video}
                                 loop={false}
-                                muted={true}
+                                muted={false}
                                 width="100%"
                                 height="100%"
                                 playing={ isPlaying } 
