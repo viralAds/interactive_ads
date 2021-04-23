@@ -6,17 +6,15 @@ import 'aos/dist/aos.css';
 import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
 
 import '../Omega/Omega.scss';
-import '../Mercedes/ad.scss';
-import '../Mercedes/Mercedes.scss';
+import '../Common/ad.scss';
 
-
-import video from '../../assets/omega.mp4'; 
+import video from '../../assets/videos/omega.mp4'; 
 import astroImg from '../../assets/img/astroImg.jpeg';
 import chronograph from '../../assets/img/chronograph.jpeg';
 import watch from '../../assets/img/watch.jpeg';
-import astro from '../../assets/astronaut.png';
-import clock from '../../assets/clock.png';
-import swipe from '../../assets/know_more.png';
+import astro from '../../assets/icons/astronaut.png';
+import clock from '../../assets/icons/clock.png';
+import swipe from '../../assets/icons/know_more.png';
 
 function Omega() {
     if(typeof window !== `undefined`) {

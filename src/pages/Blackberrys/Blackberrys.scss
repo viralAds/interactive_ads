@@ -1,0 +1,117 @@
+.vis-area {
+    position: relative;
+    min-height: 480px;
+    height: 480px;
+    width: 270px;
+    overflow: hidden;
+}
+
+.poster {
+    .bb-images {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+#bblogo {
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    width: 78px;
+    z-index: 2;
+}
+
+.ctrl-option {
+    text-align: right;
+
+    img {
+        position: absolute;
+        z-index: 2;
+        left: 15px;
+        bottom: 15px;
+        width: 25px;
+    }
+}
+
+.first-sc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #18181844;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    
+    img {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .text {
+        position: absolute;
+        left: 0;
+        bottom: 50px;
+        width: 100%;
+        z-index: 3;
+        font-family: 'Roboto', sans-serif;
+        color: #fff;
+        font-weight: 200;
+        font-style: italic;
+    }
+
+    button {
+        position: absolute;
+        left: 50%;
+        margin-left: -55px;
+        bottom: 20px;
+        width: 110px;
+        z-index: 2;
+
+        border-radius: 0;
+        background-color: transparent;
+        border: 2px solid white;
+        font-family: 'Mulish', sans-serif;
+        font-size: 10px;
+    }
+
+    button:active, button:hover {
+        border-radius: 0;
+        background-color: transparent;
+        border: 2px solid white;
+        font-family: 'Mulish', sans-serif;
+        font-size: 12px;
+    }
+}
+
+#cta-btn {
+    
+    position: absolute;
+    left: 50%;
+    top: 62%;
+    height: 30px;
+    margin-left: -55px;
+    bottom: 20px;
+    width: 110px;
+    z-index: 2;
+
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0;
+    background-color: transparent;
+    border: 2px solid white;
+    font-family: 'Mulish', sans-serif;
+    font-size: 10px;
+}
+
+#cta-btn:active, #cta-btn:hover {
+    border-radius: 0;
+    background-color: transparent;
+    border: 2px solid white;
+    font-family: 'Mulish', sans-serif;
+    font-size: 12px;
+}

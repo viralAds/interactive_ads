@@ -4,21 +4,10 @@
     left: 0;
     width: 100%;
     z-index: 10;
+
     img {
-        margin: 0.5rem 1rem;
+        width: 200px;
     }
-
-    @media screen and (max-width: 600px) {
-        img {
-            margin: 0;
-        }
-    }
-}
-
-.navbar-brand {
-    color: orangered!important;
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: underline;
 }
 
 .navbar-light {
@@ -31,6 +20,7 @@
     margin: 1rem 1rem;
     a {
         font-family: 'Mulish', sans-serif;
+        font-weight: bolder;
         color: orange!important;
     }
 }

@@ -5,14 +5,13 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ReplyIcon from '@material-ui/icons/Reply';
  
-import '../Mercedes/ad.scss';
-import '../Mercedes/Mercedes.scss';
+import '../Common/ad.scss';
 
-import video from '../../assets/merc.mp4';
+import video from '../../assets/videos/merc.mp4';
 import safety from '../../assets/icons/safety.png';
 import seat from '../../assets/icons/seat.png';
 import transmission from '../../assets/icons/transmission.png';
-import mercLogo from '../../assets/mercedes_logos.png';
+import mercLogo from '../../assets/img/mercedes_logos.png';
 import transmission_img from '../../assets/img/transmission.jpeg';
 import interior from '../../assets/img/interior.jpg';
 import maybach from '../../assets/img/maybach.jpeg';

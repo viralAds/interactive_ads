@@ -11,13 +11,17 @@
     "aos": "^2.3.4",
     "bootstrap": "^4.6.0",
     "node-sass": "^5.0.0",
+    "pannellum-react": "^1.2.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-loading": "^2.0.3",
     "react-player": "^2.9.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-waypoint": "^9.0.3",
     "reactstrap": "^8.9.0",
+    "redux": "^4.0.5",
+    "video-react": "^0.14.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -43,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "video.js": "^7.11.8"
   }
 }

@@ -1,0 +1,57 @@
+.video-container {
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    text-align: -webkit-center;
+    height: 100%;
+    background-color: #cacaca;
+}
+
+.video-wrapper {
+    width: 60%;
+    position: relative;
+}
+
+.hotspot {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+        position: absolute;
+    }
+    .outer-circle {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        background-color: transparent;
+        transition-duration: 0.3s;
+    }
+
+    .inner-circle {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color:#fff;
+        transition-duration: 0.4s;
+    }
+
+    .inner-circle:hover {
+        width: 35px;
+        height: 35px;
+        box-shadow: 0 0 10px 4px #cacaca;
+    }
+
+    .inner-circle:active {
+        width: 30px;
+        height: 30px;
+        box-shadow: 0 0 10px 4px #cacaca;
+    }
+}

@@ -12,7 +12,7 @@ import {
 } from 'reactstrap';
 
 import { Link } from 'react-router-dom';
-import ekaleidoLogo from '../../assets/ekaleidoLogo.png';
+import ekaleidoLogo from '../../assets/ekaleido_logo_h.png';
 
 function HomePage() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,16 +21,18 @@ function HomePage() {
     <div>
       <Navbar color="dark" light expand="md">
         <Container>
-          <img src={ ekaleidoLogo } alt="logo" width='35' />
-          <NavbarBrand href="/">eKaleido.Tech</NavbarBrand>
+          <NavbarBrand href="/"><img src={ ekaleidoLogo } alt="logo" width='35' /></NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
               <NavItem>
-                <Link to="/mercedes">Mercedes</Link>
+                <Link to="/mercedes">MERCEDES</Link>
               </NavItem>
               <NavItem>
-                <Link to="/omega">Omega</Link>
+                <Link to="/omega">OMEGA</Link>
+              </NavItem>
+              <NavItem>
+                <Link to="/blackberrys">BLACKBERRYS</Link>
               </NavItem>
             </Nav>
           </Collapse>
