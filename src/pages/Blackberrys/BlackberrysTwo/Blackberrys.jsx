@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import '../Blackberrys.scss';
 import ReactPlayer from 'react-player';
 import AOS from 'aos';
@@ -7,7 +7,6 @@ import {
     Carousel,
     CarouselItem,
     CarouselControl,
-    CarouselIndicators,
     Row, Col, Button
   } from 'reactstrap';
 import first from '../../../assets/videos/first.mp4';
