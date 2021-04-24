@@ -55,6 +55,9 @@ function HomePage() {
                   </DropdownItem>
                 </DropdownMenu>
             </UncontrolledDropdown>
+            <NavItem>
+                <Link to="/jnto">JNTO</Link>
+              </NavItem>
             </Nav>
           </Collapse>
         </Container>

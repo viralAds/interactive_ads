@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Blackberrys.scss';
+import '../../Common/iframe_ads.scss';
 
 function Blackberrys() {
     return (
