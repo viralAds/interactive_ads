@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-import { Player, BigPlayButton } from 'video-react';
 import './Play.scss';
-import poster from '../../assets/img/audi.jpg';
+import ReactPlayer from 'react-player';
+import khan from '../../assets/videos/Khan.webm';
 
 class play extends Component {
     render() {
         return (
             <div>
-                <div className="video-container">
+                <div className="video-container" style={{ background: "#cacaca" }}>
                     <div className="video-wrapper">
                         <div className="hotspot">
                             <div className="outer-circle"></div>
@@ -16,15 +16,18 @@ class play extends Component {
                                 <path d="M150 0 L75 200" stroke="green" stroke-width="3"
                                 fill="none"/>
                             </svg>
+                            <ReactPlayer
+                                className="video-screen" 
+                                url={khan}
+                                light={true}
+                                loop={false}
+                                muted={false}
+                                width="100%"
+                                height="100%"
+                                playing={ true } 
+                                controls={ true }>
+                            </ReactPlayer>
                         </div>
-                        <Player
-                        playsInline
-                        controls={true}
-                        poster={poster}
-                        src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4">
-                            <BigPlayButton position="center" />
-                        </Player>
-                       
                     </div>
                 </div>
             </div>

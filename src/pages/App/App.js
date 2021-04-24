@@ -8,6 +8,9 @@ import Lomega from '../OmegaLib/Omega';
 import Lmerc from '../MercedesLib/Mercedes';
 import Play from '../Playground/Play';
 import Blackberrys from '../Blackberrys/Blackberrys';
+import BB1 from '../Blackberrys/BlackberrysOne/Blackberrys';
+import BB2 from '../Blackberrys/BlackberrysTwo/Blackberrys';
+
 import Audi from '../Audi/Audi';
 
 function App() {
@@ -23,6 +26,8 @@ function App() {
             <Route path="/play" component={Play} />
             <Route path="/blackberrys" component={Blackberrys} /> 
 
+            <Route path="/blackberrys_one" component={BB1} />
+            <Route path="/blackberrys_two" component={BB2} />
             <Route path="/merc" component={Lmerc} />
             <Route path="/omeg" component={Lomega} />
             <Route exact path="/" component={Homepage} /> 
@@ -33,3 +38,4 @@ function App() {
 }
 
 export default App;
+
