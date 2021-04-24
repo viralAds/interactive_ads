@@ -8,7 +8,11 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  Container
+  Container,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
 } from 'reactstrap';
 
 import { Link } from 'react-router-dom';
@@ -31,9 +35,23 @@ function HomePage() {
               <NavItem>
                 <Link to="/omega">OMEGA</Link>
               </NavItem>
-              <NavItem>
-                <Link to="/blackberrys">BLACKBERRYS</Link>
-              </NavItem>
+              <UncontrolledDropdown nav inNavbar>
+                <DropdownToggle nav caret>
+                  BLACKBERRYS
+                </DropdownToggle>
+                <DropdownMenu right>
+                  <DropdownItem>
+                    <Link to="/blackberrys">BLACKBERRYS</Link> 
+                  </DropdownItem>
+                  <DropdownItem divider />
+                  <DropdownItem>
+                    <Link to="/blackberrys_one">BLACKBERRYS 1</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/blackberrys_two">BLACKBERRYS 2</Link>
+                  </DropdownItem>
+                </DropdownMenu>
+            </UncontrolledDropdown>
             </Nav>
           </Collapse>
         </Container>
