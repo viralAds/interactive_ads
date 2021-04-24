@@ -1,4 +1,128 @@
+
+//================================================
+// Blackberrys Two
+
+.pop-up {
+    position: absolute;
+    bottom: 0;
+    background-color: transparent;
+    z-index: 2;
+    width: 100%;
+    height: max-content;
+    min-height: 0px;
+
+    button {
+        border-radius: 50px;
+        background-color: orangered;
+        color: white;
+        font-weight: bold;
+        border: none;
+    }
+
+    .product-desc {
+        background-color: #cacacac4;
+        padding: 0.5rem;
+        border-radius: 20px 20px 0 0;
+
+        .quantity, .size {
+            width: 100%;
+            text-align: left;
+            padding: 0.5rem 0;
+
+            input[type="radio"] {
+                margin-right: 3px;
+            }
+
+            input[type="number"] {
+                border: 1px solid #212121;
+                border-radius: 5px;
+                padding: 0 10px;
+                width: 100px
+            }
+
+            #decrement {
+                color: rgb(194, 26, 26)
+            }
+            #increment {
+                color: rgb(54, 168, 54)
+            }
+
+            label {
+                margin-right: 1rem;
+                font-size: 16px;
+                font-family: 'Mulish', sans-serif;
+            }
+
+            span {
+                font-size: 18px;
+                font-family: 'Mulish', sans-serif;
+                font-weight: bold;
+                margin-right: 1rem;
+            }
+    
+            svg {
+                margin: 0 0.5rem;
+            }
+        }
+    }
+
+    .btn-row {
+        width: 100%;
+
+        button {
+            position: absolute;
+            top: -3rem;
+            right: 2rem;        
+        }
+    }
+}
+
+.carousel-parent-wrapper {
+    position: relative;
+    width: 100%;
+    background-color: #212121;
+    height: 640px;
+    display: flex;
+    justify-content: center;
+
+    .desc {
+        position: absolute;
+        top: 1rem;
+        left: 1.5rem;
+         
+        span {
+            color: white;
+            font-family: 'Mulish', sans-serif;
+        }
+
+        span:first-child {
+            font-weight: bolder;
+            color: rgb(255, 241, 241);
+        }
+    }
+
+    .carousel-inner {
+        height: 100%;
+    }
+
+    .carousel-video-wrapper {
+        height: 100%;
+        .ad-video {
+            height: 100%;
+            video {
+                height: 100%;
+            }
+        }
+    }
+}
+
+
+
+//================================================
+// Blackberrys One, Three
+
 .iframe-wrapper {
+    position: relative;
     width: 100%;
     background-color: #212121;
     height: 640px;
@@ -11,6 +135,7 @@
     }
 }
 
+// ========================================================
 
 .vis-area {
     position: relative;

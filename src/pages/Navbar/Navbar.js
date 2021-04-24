@@ -50,6 +50,9 @@ function HomePage() {
                   <DropdownItem>
                     <Link to="/blackberrys_two">BLACKBERRYS 2</Link>
                   </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/blackberrys_three">BLACKBERRYS 3</Link>
+                  </DropdownItem>
                 </DropdownMenu>
             </UncontrolledDropdown>
             </Nav>
