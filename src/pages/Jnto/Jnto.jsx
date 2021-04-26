@@ -3,7 +3,7 @@ import '../Common/iframe_ads.scss';
 const Jnto = () => {
     return (
         <div>
-        <div className="iframe-wrapper">
+        <div className="jnto-iframe-wrapper">
             <iframe src="https://43215-ekaleidoanuj.github.io/jnto/" 
                     title="Jnto Advertisement">
             </iframe>
