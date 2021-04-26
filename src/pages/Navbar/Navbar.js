@@ -55,8 +55,14 @@ function HomePage() {
                   </DropdownItem>
                 </DropdownMenu>
             </UncontrolledDropdown>
-            <NavItem>
+              <NavItem>
                 <Link to="/jnto">JNTO</Link>
+              </NavItem>
+              <NavItem>
+                <Link to="/swap">SWAP</Link>
+              </NavItem>
+              <NavItem>
+                <Link to="/play">HOTSPOT</Link>
               </NavItem>
             </Nav>
           </Collapse>

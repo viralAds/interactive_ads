@@ -13,6 +13,7 @@ import BB2 from '../Blackberrys/BlackberrysTwo/Blackberrys';
 import BB3 from '../Blackberrys/BlackberrysThree/Blackberrys';
 import Jnto from '../Jnto/Jnto';
 import Audi from '../Audi/Audi';
+import Swap from '../Swap/Swap';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/omega" component={Omega} />
             <Route path="/audi" component={Audi} />
             <Route path="/play" component={Play} />
+            <Route path="/swap" component={Swap} />
             <Route path="/blackberrys" component={Blackberrys} /> 
 
             <Route path="/blackberrys_one" component={BB1} />

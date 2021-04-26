@@ -1,20 +1,24 @@
 import React, { Component } from 'react'
 import './Play.scss';
 import ReactPlayer from 'react-player';
-import khan from '../../assets/videos/panasonic.webm';
-// import poster from '../../assets/img/khan.jpg';
-import { Tooltip } from 'reactstrap';
-
+import asus from '../../assets/videos/asus.webm';
+import Hotspot from './Hotspot';
 
 export default class play extends Component {
     constructor(props) {
         super(props);
         this.state = {
             isFirstActive: false,
-            tooltipOpen: false
+            toppos: 179,
+            leftpos: 270,
+            id: "one",
+            details: {
+                title: "Example",
+                desc: "This is example"
+            }
         }
     }
-
+    
     ref = player => {
         this.player = player
       }
@@ -28,12 +32,94 @@ export default class play extends Component {
     }
 
     handleProgress = state => {
-        console.log(Math.floor(this.player.getCurrentTime()))
-        if (Math.floor(this.player.getCurrentTime()) === 0) {
-           this.setState({ isFirstActive: true })
+        
+        if (Math.floor(this.player.getCurrentTime()) === 5) {
+           this.setState({ 
+               isFirstActive: true,
+               toppos: 350,
+                leftpos: 150,
+                id: "Insect",
+                details: {
+                    title: "First",
+                    desc: "This is example"
+                }
+            })
         } 
+        
         if (Math.floor(this.player.getCurrentTime()) === 8) {
-            this.setState({ isFirstActive: false })
+            this.setState({ 
+                isFirstActive: true,
+                toppos: 179,
+                leftpos: 270,
+                id: "one",
+                details: {
+                    title: "Tode",
+                    desc: "This is example"
+                }
+            })
+        }
+
+        if (Math.floor(this.player.getCurrentTime()) === 14) {
+            this.setState({ 
+                isFirstActive: true,
+                toppos: 299,
+                leftpos: 270,
+                id: "one",
+                details: {
+                    title: "Bird",
+                    desc: "This is example"
+                }
+            })
+        }
+
+        if (Math.floor(this.player.getCurrentTime()) === 19) {
+            this.setState({ 
+                isFirstActive: true,
+                toppos: 229,
+                leftpos: 270,
+                id: "one",
+                details: {
+                    title: "Bee",
+                    desc: "This is example"
+                }
+            })
+        }
+
+        if (Math.floor(this.player.getCurrentTime()) === 31) {
+            this.setState({ 
+                isFirstActive: true,
+                toppos: 189,
+                leftpos: 270,
+                id: "one",
+                details: {
+                    title: "Rose",
+                    desc: "This is example"
+                }
+            })
+        }
+
+        if (Math.floor(this.player.getCurrentTime()) === 34 ) {
+            this.setState({ 
+                isFirstActive: true,
+                toppos: 179,
+                leftpos: 270,
+                id: "one",
+                details: {
+                    title: "Wine",
+                    desc: "This is example"
+                }
+            })
+        }
+
+        if (Math.floor(this.player.getCurrentTime()) === 7 ||
+            Math.floor(this.player.getCurrentTime()) === 13 ||
+            Math.floor(this.player.getCurrentTime()) === 17 ||
+            Math.floor(this.player.getCurrentTime()) === 22 ||
+            Math.floor(this.player.getCurrentTime()) === 33 ||
+            Math.floor(this.player.getCurrentTime()) === 38 ) {
+            this.setState({ 
+                isFirstActive: false
+            })
         }
         // console.log("trackes", this.player.props.config.file.tracks) 
         // console.log("attributes",this.player.getAttributes) 
@@ -41,14 +127,8 @@ export default class play extends Component {
         // console.log("config",this.player.getConfig) 
     }
 
-    toggle = () => {
-        this.setState({tooltipOpen: !this.state.tooltipOpen})
-    }
-
     onStartVideo = () => {
-        this.player.props.config.file.tracks = [ {
-            "1.0": "hi"
-        }]
+        console.log("started")
     }
 
     render() {
@@ -56,29 +136,19 @@ export default class play extends Component {
             <div>
                 <div className="video-container" style={{ background: "#cacaca" }}>
                     <div className="video-wrapper">
-                        {this.state.isFirstActive &&
-                            <div className="hotspot"
-                                style={{ "--topPos": "50%", "--leftPos": "40%"}}>
-                                <div className="outer-circle"></div>
-                                <div id="incircle" className="inner-circle" ></div>
-                                <Tooltip
-                                    placement={"top"}
-                                    isOpen={this.state.tooltipOpen}
-                                    target={"incircle"}
-                                    toggle={() => this.toggle()}
-                                >Tooltip Content!
-                                </Tooltip>
-                            </div>
+                        <div className="instruction">
+                            <span>Click the hotspot to engage</span>
+                        </div>
+                        {  this.state.isFirstActive &&  
+                            <Hotspot id={this.state.id} toppos={this.state.toppos + "px"}  
+                            leftpos={this.state.leftpos + "px"} 
+                            details={this.state.details}/> 
                         }
-                        <div className="hotspot"
-                                style={{ "--topPos": "40%", "--leftPos": "50%"}}>
-                                <div className="outer-circle"></div>
-                                <div id="incircle" className="inner-circle" ></div>
-                            </div>
                         <ReactPlayer
                             ref={this.ref}
                             className="video-screen" 
-                            url={khan}
+                            url={asus}
+                            progressInterval={100}
                             // light={poster}
                             loop={false}
                             muted={false}
