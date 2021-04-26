@@ -18,7 +18,7 @@ const Hotspot = (props) => {
             <Card>
                 <CardBody>
                     <CardTitle tag="h5">
-                        <a href="" target="_blank" rel="noreferrer">{ props.details.title }</a>
+                        <a href="https://www.planet.com/" target="_blank" rel="noreferrer">{ props.details.title }</a>
                     </CardTitle>
                     <CardText>{ props.details.desc }</CardText>
                 </CardBody>
