@@ -77,14 +77,22 @@
     }
 }
 
-.carousel-parent-wrapper {
-    position: relative;
+#component-div {
     width: 100%;
-    background-color: #212121;
-    height: 640px;
+    min-height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: #212121;
+}
 
+.carousel-parent-wrapper {
+    position: relative;
+    width: 280px;
+    height: 530px;
+    overflow: hidden;
+    
     .desc {
         position: absolute;
         top: 1rem;

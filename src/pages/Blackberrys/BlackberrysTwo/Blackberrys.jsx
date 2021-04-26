@@ -114,7 +114,7 @@ function Blackberrys() {
     }
 
     return (
-        <div>
+        <div id="component-div">
             <div className="carousel-parent-wrapper">
                 <div className="pop-up">
                     <Row className="btn-row">
@@ -152,6 +152,7 @@ function Blackberrys() {
                     }
                 </div>
                 <Carousel
+                    interval={false}
                     activeIndex={activeIndex}
                     next={next}
                     previous={previous}
