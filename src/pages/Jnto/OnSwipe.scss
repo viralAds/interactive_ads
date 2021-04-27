@@ -11,25 +11,38 @@
         position: relative;
         width: 320px;
         height: 480px;
+        overflow: hidden;
 
+        .jnto-cta-btn {
+            text-decoration: none;
+            position: absolute;
+            left: 50%;
+            background-color: #ff001e;
+            color: #fff;
+            width: 200px;
+            margin-left: -100px;
+            border-radius: 5px;
+            padding: 5px;
+            text-align: center;
+            bottom: 50%;
+            font-family: 'Montserrat-Bold';
+            animation: blinkIt 0.3s infinite;
+        }
+        
         .jnto-cta {
-            img {
-                width: 100%;
-            }
+        //     img {
+        //         width: 100%;
+        //     }
             
-            .jnto-cta-btn {
-                text-decoration: none;
-                position: absolute;
-                left: 50%;
-                background-color: #ff001e;
-                color: #fff;
-                width: 200px;
-                margin-left: -100px;
-                border-radius: 5px;
-                padding: 5px;
-                text-align: center;
-                bottom: 50%;
-                font-family: 'Montserrat-Bold';
+            
+
+            @keyframes blinkIt {
+                from {
+                    background-color: #ff001e;
+                }
+                to {
+                    background-color: #c5182c;
+                }
             }
         }
 
@@ -81,11 +94,19 @@
             }
         }
 
+        img.good {
+            width: 200px;
+            position: absolute;
+            left: 50%;
+            margin-left: -100px;
+            top: 3rem;
+        }
+
         img.plane {
             position: absolute;
             bottom: 130px;
             left: 30px;
-            width: 70px;
+            width: 50px;
             transform: rotate(45deg);
             
         }

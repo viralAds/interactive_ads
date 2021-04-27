@@ -9,11 +9,12 @@ import {
     CarouselControl,
     Row, Col, Button
   } from 'reactstrap';
-import first from '../../../assets/videos/first.mp4';
-import second from '../../../assets/videos/second.mp4';
-import third from '../../../assets/videos/third.mp4';
+import first from '../../../assets/videos/1.mp4';
+import second from '../../../assets/videos/2.mp4';
+import third from '../../../assets/videos/3.mp4';
 import AddCircleSharpIcon from '@material-ui/icons/AddCircleSharp';
 import RemoveCircleRoundedIcon from '@material-ui/icons/RemoveCircleRounded';
+import logo from '../../../assets/icons/bb-logo-dark.png';
 
 const items = [
     {
@@ -87,7 +88,8 @@ function Blackberrys() {
                 width="100%"
                 height="100%"             
                 loop={true}
-                playing={true} 
+                playing={true}
+                muted={true} 
                 url={item.video} />
           </CarouselItem>
         );
@@ -114,7 +116,7 @@ function Blackberrys() {
     }
 
     return (
-        <div id="component-div">
+        <div id="comp-div">
             <div className="carousel-parent-wrapper">
                 <div className="pop-up">
                     <Row className="btn-row">
@@ -127,13 +129,26 @@ function Blackberrys() {
                             data-aos-mirror='false'
                             data-aos-duration="1000"
                             data-aos-easing="ease-out">
-                        <div className="size" onChange={(e) => onChangeValue(e)}>
-                            <span style={{ float: "left"}}>Select Size  :</span>
-                            <input type="radio" value="S" name="size" /><label>S</label> 
+                        <div className="bb-logo-wrapper">
+                            <img src={logo} alt="logo" />
+                        </div>
+                        <div className="specs">
+                            <div className="cost">INR 2,595</div>
+                            <div className="colors">COLORS: Navy</div>
+                        </div>
+                        <div className="sizes" onChange={(e) => onChangeValue(e)}>
+                            <div className="size" value="36">36</div>
+                            <div className="size" value="36">39</div>
+                            <div className="size" value="36">40</div>
+                            <div className="size" value="36">42</div>
+                            <div className="size" value="36">44</div>
+                            <div className="size" value="36">46</div>
+                            {/*<input type="radio" value="S" name="size" /><label>S</label> 
                             <input type="radio" value="M" name="size" /><label>M</label>
                             <input type="radio" value="L" name="size" /><label>L</label>
                             <input type="radio" value="XL" name="size" /><label>XL</label>
-                            <input type="radio" value="XXL" name="size" /><label>XXL</label>
+                            <input type="radio" value="XXL" name="size" /><label>XXL</label>*/}
+
                         </div>
                         <div className="quantity">
                             <span style={{ float: "left"}}>Quantity  :</span>
@@ -145,7 +160,7 @@ function Blackberrys() {
                                 id="increment"
                                 onClick={() => increment()}/>
                         </div>
-                        <div>
+                        <div className="addToCart">
                             <Button style={{ marginTop: "1.5rem"}}>ADD TO CART</Button>  
                         </div>
                     </div>
