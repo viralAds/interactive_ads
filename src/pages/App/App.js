@@ -11,10 +11,11 @@ import Blackberrys from '../Blackberrys/Blackberrys';
 import BB1 from '../Blackberrys/BlackberrysOne/Blackberrys';
 import BB2 from '../Blackberrys/BlackberrysTwo/Blackberrys';
 import BB3 from '../Blackberrys/BlackberrysThree/Blackberrys';
-import Jnto from '../Jnto/Jnto';
+import Jnto from '../JntoGwd/Jnto';
 import Audi from '../Audi/Audi';
 import Swap from '../Swap/Swap';
-import Swipe from '../OnSwipe/OnSwipe';
+import Swipe from '../Jnto/Jnto';
+
 function App() {
   return (
     <div className="App">
