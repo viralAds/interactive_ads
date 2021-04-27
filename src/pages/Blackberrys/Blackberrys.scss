@@ -13,10 +13,19 @@
 
     button {
         border-radius: 50px;
-        background-color: orangered;
+        background-color: #DB4B29;
         color: white;
         font-weight: bold;
         border: none;
+    }
+
+    button:focus, button:hover, button:active {
+        border-radius: 50px;
+        background-color: #DB4B29;
+        color: white;
+        font-weight: bold;
+        border: none;
+        box-shadow: 0 0 0 0.2rem #db4a2980;
     }
 
     .product-desc {
@@ -37,11 +46,12 @@
                 border: 1px solid #212121;
                 border-radius: 5px;
                 padding: 0 10px;
-                width: 100px
+                width: 50px;
+                font-family: Montserrat-Medium, sans-serif;
             }
 
             #decrement {
-                color: rgb(194, 26, 26)
+                color: #DB4B29;
             }
             #increment {
                 color: rgb(54, 168, 54)
@@ -50,12 +60,12 @@
             label {
                 margin-right: 1rem;
                 font-size: 16px;
-                font-family: 'Mulish', sans-serif;
+                font-family: Montserrat-Light, sans-serif;
             }
 
             span {
                 font-size: 18px;
-                font-family: 'Mulish', sans-serif;
+                font-family: Montserrat-Medium, sans-serif;
                 font-weight: bold;
                 margin-right: 1rem;
             }
@@ -96,15 +106,15 @@
     .desc {
         position: absolute;
         top: 1rem;
-        left: 1.5rem;
+        left: .5rem;
          
         span {
             color: white;
-            font-family: 'Mulish', sans-serif;
+            font-family: Montserrat-Light, sans-serif;
         }
 
         span:first-child {
-            font-weight: bolder;
+            font-family: Montserrat-Bold, sans-serif;
             color: rgb(255, 241, 241);
         }
     }
@@ -200,7 +210,7 @@
         border-radius: 0;
         background-color: transparent;
         border: 2px solid white;
-        font-family: 'Mulish', sans-serif;
+        font-family: Montserrat-Medium, sans-serif;
         font-size: 10px;
     }
 
@@ -228,7 +238,7 @@
     border-radius: 0;
     background-color: transparent;
     border: 2px solid white;
-    font-family: 'Mulish', sans-serif;
+    font-family: 'Montserrat-Medium', sans-serif;
     font-size: 10px;
 }
 
@@ -236,7 +246,7 @@
     border-radius: 0;
     background-color: transparent;
     border: 2px solid white;
-    font-family: 'Mulish', sans-serif;
+    font-family: 'Montserrat-Medium', sans-serif;
     font-size: 12px;
 }
 

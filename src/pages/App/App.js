@@ -14,7 +14,7 @@ import BB3 from '../Blackberrys/BlackberrysThree/Blackberrys';
 import Jnto from '../Jnto/Jnto';
 import Audi from '../Audi/Audi';
 import Swap from '../Swap/Swap';
-
+import Swipe from '../OnSwipe/OnSwipe';
 function App() {
   return (
     <div className="App">
@@ -28,13 +28,15 @@ function App() {
             <Route path="/swap" component={Swap} />
             <Route path="/blackberrys" component={Blackberrys} /> 
 
+            <Route path="/jnto" component={Swipe} />
             <Route path="/blackberrys_one" component={BB1} />
             <Route path="/blackberrys_two" component={BB2} />
             <Route path="/blackberrys_three" component={BB3} />
-            <Route path="/jnto" component={Jnto} />
+            <Route path="/jnto_gwd" component={Jnto} />
             <Route path="/merc" component={Lmerc} />
             <Route path="/omeg" component={Lomega} />
             <Route exact path="/" component={Homepage} /> 
+             
         </Switch>
       </BrowserRouter>
     </div>

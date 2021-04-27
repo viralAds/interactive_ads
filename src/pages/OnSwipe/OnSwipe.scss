@@ -1,0 +1,111 @@
+.jnto-component {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212121;
+
+    .ad-wrapper {
+        position: relative;
+        width: 320px;
+        height: 480px;
+
+        .jnto-cta {
+            img {
+                width: 100%;
+            }
+            
+            .jnto-cta-btn {
+                text-decoration: none;
+                position: absolute;
+                left: 50%;
+                background-color: #ff001e;
+                color: #fff;
+                width: 200px;
+                margin-left: -100px;
+                border-radius: 5px;
+                padding: 5px;
+                text-align: center;
+                bottom: 50%;
+                font-family: 'Montserrat-Bold';
+            }
+        }
+
+        .slider-wrapper {
+            .back-icon {
+                position: absolute;
+                bottom: 0.3rem;
+                left: 0.3rem;
+                color: #fff;
+                width: 40px;
+                height: 40px;
+                z-index: 2;
+            }
+        }
+
+        .swipe {
+
+            width: 50px;
+            animation: swipeRight 1s infinite;
+            transform: rotate(-30deg);
+            transform-origin: bottom center
+        }
+
+        @keyframes swipeRight {
+            from {
+                transform: rotate(-30deg);
+            }
+            to {
+                transform: rotate(30deg);
+            }
+ 
+        }
+
+        .jnto-instruc {
+            position: absolute;
+            left: 50%;
+            width: 100px;
+            margin-left: -50px;
+            bottom: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            span {
+                font-family: 'Montserrat-Medium', sans-serif;
+                font-size: 12px;
+                text-align: center;
+            }
+        }
+
+        img.plane {
+            position: absolute;
+            bottom: 130px;
+            left: 30px;
+            width: 70px;
+            transform: rotate(45deg);
+            
+        }
+        img.fromIndia {
+            animation-name: toJapan;
+            animation-duration: 2s;
+            animation-delay: 0.3s;
+            animation-fill-mode: both;
+        }
+        @keyframes toJapan {
+            from { 
+                bottom: 130px;
+                left: 30px;
+            }
+            to {
+                bottom: 290px;
+                left: 210px;
+            }
+        }
+    }
+
+}
+
