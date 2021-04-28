@@ -20,20 +20,20 @@ const items = [
     {
       id: 1,
       video: first,
-      title: "Blackberrys Navy Slim Filt Blazzer",
+      title: "Blackberrys Navy Slim Filt Blazer",
       cost: "INR 5,598"
       
     },
     {
       id: 2,
       video: second,
-      title: "Blackberrys Brown Blazzer",
+      title: "Blackberrys Brown Blazer",
       cost: "INR 4,999"
     },
     {
       id: 3,
       video: third,
-      title: "Blackberrys Black Blazzer",
+      title: "Blackberrys Black Blazer",
       cost: "INR 5,499"
     }
   ];
