@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../Blackberrys.scss';
 import ReactPlayer from 'react-player';
 import AOS from 'aos';
@@ -50,26 +50,11 @@ function Blackberrys() {
     const [activeIndex, setActiveIndex] = useState(0);
     const [animating, setAnimating] = useState(false);
     const [isDescActive, setIsDescActive] = useState(false);
-    const next = () => {
-        if (animating) return;
-        const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
-        setActiveIndex(nextIndex);
-    }
-
-    const previous = () => {
-        if (animating) return;
-        const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
-        setActiveIndex(nextIndex);
-    }
-
-    // const goToIndex = (newIndex) => {
-    //     if (animating) return;
-    //     setActiveIndex(newIndex);
-    // }
-
+    // const [isMuted, setIsMuted] = useState(true)
     const slides = items.map((item) => {
         return (
           <CarouselItem
+            id={item.id}
             className="carousel-video-wrapper"
             tag="div"
             key={item.id}
@@ -89,14 +74,55 @@ function Blackberrys() {
                 height="100%"             
                 loop={true}
                 playing={true}
-                muted={true} 
+                // muted={true} 
                 url={item.video} />
           </CarouselItem>
         );
       });
 
-    const onChangeValue = (event) => {
-        console.log(event.target.value);
+    useEffect(() => {
+        setTimeout(function(){ 
+            const ele = document.getElementsByClassName("carousel-item")
+            if(ele.length === 3) {
+                Object.keys(ele).map((key) => {
+                    if ((ele[key].className === "carousel-video-wrapper carousel-item active") &&
+                        (ele[key].childNodes[1].childNodes[0] !== undefined)) {
+                        ele[key].childNodes[1].childNodes[0].muted = false
+                    }
+                    else if((ele[key].childNodes[1].childNodes[0] !== undefined) && 
+                            (ele[key].className === "carousel-video-wrapper carousel-item")) { 
+                        ele[key].childNodes[1].childNodes[0].muted = true 
+                    }
+                    return 0
+                })
+            } 
+        }, 1000);
+    }, [slides])
+
+    const selectSize = (size) => {
+        const ele = document.getElementsByClassName('size')
+        Object.keys(ele).map((key) => {
+                if(ele[key].innerHTML === size.toString()) {
+                    document.getElementsByClassName('size')[key].className = "size active" 
+                }
+                else {
+                    document.getElementsByClassName('size')[key].className = "size"
+                }
+                return 0;
+          }, [slides]);
+    }
+
+    const next = () => {
+        if (animating) return;
+        const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
+        setActiveIndex(nextIndex);
+    }
+
+
+    const previous = () => {
+        if (animating) return;
+        const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
+        setActiveIndex(nextIndex);
     }
 
     const increment = () => {
@@ -136,19 +162,13 @@ function Blackberrys() {
                             <div className="cost">INR 2,595</div>
                             <div className="colors">COLORS: Navy</div>
                         </div>
-                        <div className="sizes" onChange={(e) => onChangeValue(e)}>
-                            <div className="size" value="36">36</div>
-                            <div className="size" value="36">39</div>
-                            <div className="size" value="36">40</div>
-                            <div className="size" value="36">42</div>
-                            <div className="size" value="36">44</div>
-                            <div className="size" value="36">46</div>
-                            {/*<input type="radio" value="S" name="size" /><label>S</label> 
-                            <input type="radio" value="M" name="size" /><label>M</label>
-                            <input type="radio" value="L" name="size" /><label>L</label>
-                            <input type="radio" value="XL" name="size" /><label>XL</label>
-                            <input type="radio" value="XXL" name="size" /><label>XXL</label>*/}
-
+                        <div className="sizes">
+                            <div className="size" onClick={() => selectSize(36)}>36</div>
+                            <div className="size" onClick={() => selectSize(39)}>39</div>
+                            <div className="size" onClick={() => selectSize(40)}>40</div>
+                            <div className="size" onClick={() => selectSize(42)}>42</div>
+                            <div className="size" onClick={() => selectSize(44)}>44</div>
+                            <div className="size" onClick={() => selectSize(46)}>46</div>
                         </div>
                         <div className="quantity">
                             <span style={{ float: "left"}}>Quantity  :</span>

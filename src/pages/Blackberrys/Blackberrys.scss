@@ -131,7 +131,13 @@
                 justify-content: center;
                 align-items: center;
             }
+            .size.active {
+                border: 1px solid #DB4B29;
+                color: white;
+                background-color: #DB4B29;
+            }
         }
+
     }
 
     .btn-row {
@@ -140,7 +146,7 @@
         button {
             position: absolute;
             top: -3rem;
-            right: 2rem;        
+            right: 1rem;        
         }
     }
 }
