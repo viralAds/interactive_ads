@@ -9,9 +9,9 @@ import {
     CarouselControl,
     Row, Col, Button
   } from 'reactstrap';
-import first from '../../../assets/videos/1.mp4';
-import second from '../../../assets/videos/2.mp4';
-import third from '../../../assets/videos/3.mp4';
+import first from '../../../assets/videos/bb1.mp4';
+import second from '../../../assets/videos/bb2.mp4';
+import third from '../../../assets/videos/bb3.mp4';
 import AddCircleSharpIcon from '@material-ui/icons/AddCircleSharp';
 import RemoveCircleRoundedIcon from '@material-ui/icons/RemoveCircleRounded';
 import logo from '../../../assets/icons/bb-logo-dark.png';
@@ -72,14 +72,19 @@ function Blackberrys() {
                 width="100%"
                 height="100%"             
                 loop={true}
-                playing={true}
-                // muted={true} 
+                playing={true} 
                 url={item.video} />
           </CarouselItem>
         );
       });
 
     useEffect(() => {
+
+        if(quantity <= 0) {
+            alert("Invalid value")
+            setQuantity(1)
+            return 0;
+        }
         setTimeout(function(){ 
             const ele = document.getElementsByClassName("carousel-item")
             if(ele.length === 3) {
@@ -96,7 +101,7 @@ function Blackberrys() {
                 })
             } 
         }, 1000);
-    }, [slides])
+    }, [slides,quantity])
 
     const selectSize = (size) => {
         const ele = document.getElementsByClassName('size')
@@ -108,7 +113,7 @@ function Blackberrys() {
                     document.getElementsByClassName('size')[key].className = "size"
                 }
                 return 0;
-          }, [slides]);
+          });
     }
 
     const next = () => {
@@ -129,10 +134,6 @@ function Blackberrys() {
     }
 
     const decrement = () => {
-        if(quantity === 0) {
-            alert("Invalid value")
-            return 0;
-        }
         setQuantity(quantity - 1)
     }
 
@@ -195,7 +196,6 @@ function Blackberrys() {
                     next={next}
                     previous={previous}
                     >
-                    
                     {slides}
                     <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
                     <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
