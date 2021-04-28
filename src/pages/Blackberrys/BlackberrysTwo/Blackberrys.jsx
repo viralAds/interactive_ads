@@ -50,7 +50,6 @@ function Blackberrys() {
     const [activeIndex, setActiveIndex] = useState(0);
     const [animating, setAnimating] = useState(false);
     const [isDescActive, setIsDescActive] = useState(false);
-    // const [isMuted, setIsMuted] = useState(true)
     const slides = items.map((item) => {
         return (
           <CarouselItem
@@ -130,6 +129,10 @@ function Blackberrys() {
     }
 
     const decrement = () => {
+        if(quantity === 0) {
+            alert("Invalid value")
+            return 0;
+        }
         setQuantity(quantity - 1)
     }
 
