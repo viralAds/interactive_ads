@@ -162,6 +162,31 @@
     background-color: #212121;
 }
 
+.tte {
+    position: relative;
+    width: 280px;
+    height: 498px;
+    overflow: hidden;
+    background-image: linear-gradient(0deg, #2b2ba1, #000066 );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-image: linear-gradient(0deg, #000066, #2b2ba1 );
+        border: 3px solid #fff;
+    }
+
+    button:focus, button:active, button:hover {
+        box-shadow: 0 0 0 0 #fff;
+        border: 3px solid #fff;
+    }
+
+}
+
 .carousel-parent-wrapper {
     position: relative;
     width: 280px;

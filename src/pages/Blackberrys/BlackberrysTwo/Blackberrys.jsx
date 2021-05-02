@@ -22,7 +22,6 @@ const items = [
       video: first,
       title: "Blackberrys Navy Slim Filt Blazer",
       cost: "INR 5,598"
-      
     },
     {
       id: 2,
@@ -36,7 +35,7 @@ const items = [
       title: "Blackberrys Black Blazer",
       cost: "INR 5,499"
     }
-  ];
+];
 
 function Blackberrys() {
     if(typeof window !== `undefined`) {
@@ -45,7 +44,7 @@ function Blackberrys() {
           mirror: false,
         });
     }
-    
+    const [startAd, setStartAd] = useState(true);
     const [quantity, setQuantity] = useState(1);
     const [activeIndex, setActiveIndex] = useState(0);
     const [animating, setAnimating] = useState(false);
@@ -145,8 +144,17 @@ function Blackberrys() {
         setQuantity(parseInt(event.target.value))
     }
 
+    const start = () => {
+        setStartAd(false)
+    }
+
     return (
         <div id="comp-div">
+            { (startAd) ? 
+            <div className="tte">
+                <Button onClick={() => start()}>Tap To Engage</Button>
+            </div> 
+                :
             <div className="carousel-parent-wrapper">
                 <div className="pop-up">
                     <Row className="btn-row">
@@ -200,7 +208,7 @@ function Blackberrys() {
                     <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
                     <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
                 </Carousel>
-            </div>
+            </div>}
         </div>
     )
 }
