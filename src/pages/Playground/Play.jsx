@@ -15,7 +15,8 @@ export default class play extends Component {
             details: {
                 title: "Example",
                 desc: "This is example"
-            }
+            },
+            playing: true
         }
     }
     
@@ -35,6 +36,7 @@ export default class play extends Component {
         
         if (Math.floor(this.player.getCurrentTime()) === 5) {
            this.setState({ 
+               playing: false,
                isFirstActive: true,
                toppos: 350,
                 leftpos: 150,
@@ -131,6 +133,11 @@ export default class play extends Component {
         console.log("started")
     }
 
+    resumeVideo = () => {
+        this.setState({
+            playing: true
+        })
+    }
     render() {
         return (
             <div>
@@ -154,7 +161,7 @@ export default class play extends Component {
                             muted={false}
                             width="100%"
                             height="100%"
-                            playing={ true } 
+                            playing={ this.state.playing } 
                             controls={ true }
                             onReady={() => this.timeline("Ready")}
                             onStart={() => this.onStartVideo("Started")}

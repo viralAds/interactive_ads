@@ -29,41 +29,55 @@ function HomePage() {
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
-              <NavItem>
-                <Link to="/mercedes">MERCEDES</Link>
-              </NavItem>
-              <NavItem>
-                <Link to="/omega">OMEGA</Link>
-              </NavItem>
-              <UncontrolledDropdown nav inNavbar>
+
+            <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
-                  BLACKBERRYS
+                  INTERACTIVE VIDEOS
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
                     <Link to="/blackberrys">BLACKBERRYS</Link> 
                   </DropdownItem>
-                  <DropdownItem divider />
+                  <DropdownItem>
+                    <Link to="/mercedes">MERCEDES</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/omega">OMEGA</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/swap">SWAP</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/play">HOTSPOT</Link>
+                  </DropdownItem>
+                </DropdownMenu>
+            </UncontrolledDropdown>
+
+            <UncontrolledDropdown nav inNavbar>
+                <DropdownToggle nav caret>
+                  VIRAL ADS
+                </DropdownToggle>
+                <DropdownMenu right>
+                  <DropdownItem>
+                    <Link to="/panasonic">PANASONIC</Link> 
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/philips">PHILIPS</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/clark">CLARKS</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/jnto">JNTO</Link>
+                  </DropdownItem>
                   <DropdownItem>
                     <Link to="/blackberrys_one">BLACKBERRYS 1</Link>
                   </DropdownItem>
                   <DropdownItem>
-                    <Link to="/blackberrys_two">BLACKBERRYS 2</Link>
-                  </DropdownItem>
-                  <DropdownItem>
-                    <Link to="/blackberrys_three">BLACKBERRYS 3</Link>
-                  </DropdownItem>
+                  <Link to="/blackberrys_three">BLACKBERRYS 2</Link>
+                </DropdownItem>
                 </DropdownMenu>
             </UncontrolledDropdown>
-              <NavItem>
-                <Link to="/jnto">JNTO</Link>
-              </NavItem>
-              <NavItem>
-                <Link to="/swap">SWAP</Link>
-              </NavItem>
-              <NavItem>
-                <Link to="/play">HOTSPOT</Link>
-              </NavItem>
             </Nav>
           </Collapse>
         </Container>

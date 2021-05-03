@@ -11,10 +11,13 @@ import Blackberrys from '../Blackberrys/Blackberrys';
 import BB1 from '../Blackberrys/BlackberrysOne/Blackberrys';
 import BB2 from '../Blackberrys/BlackberrysTwo/Blackberrys';
 import BB3 from '../Blackberrys/BlackberrysThree/Blackberrys';
-import Jnto from '../JntoGwd/Jnto';
 import Audi from '../Audi/Audi';
 import Swap from '../Swap/Swap';
 import Swipe from '../Jnto/Jnto';
+import Clark from '../Clark/Clark';
+import Pana from '../Panasonic/Panasonic';
+import Philips from '../Philips/Philips';
+import Asics from '../Asics/Asics';
 
 function App() {
   return (
@@ -28,16 +31,18 @@ function App() {
             <Route path="/play" component={Play} />
             <Route path="/swap" component={Swap} />
             <Route path="/blackberrys" component={Blackberrys} /> 
-
+            <Route path="/clark" component={Clark} />
+            <Route path="/philips" component={Philips} />
+            <Route path="/panasonic" component={Pana} />
+            <Route path="/asics" component={Asics} />
             <Route path="/jnto" component={Swipe} />
             <Route path="/blackberrys_one" component={BB1} />
             <Route path="/blackberrys_two" component={BB2} />
             <Route path="/blackberrys_three" component={BB3} />
-            <Route path="/jnto_gwd" component={Jnto} />
             <Route path="/merc" component={Lmerc} />
             <Route path="/omeg" component={Lomega} />
             <Route exact path="/" component={Homepage} /> 
-             
+            
         </Switch>
       </BrowserRouter>
     </div>
