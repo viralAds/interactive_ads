@@ -65,7 +65,7 @@ function Mercedes() {
 
     return (
             <div>
-                <Container className="app-in">
+                <div className="app-in">
                         <div className="visible-area">
                             { toggleFirstAnimationBox && <div className="first poster" data-aos={"slide-up"} 
                                     data-aos-delay="100"
@@ -193,7 +193,7 @@ function Mercedes() {
                                 <img onClick={thirdAnim} src={transmission} alt="transmission"/>
                             </div>
                         </div>
-                </Container>
+                </div>
             </div>
     )
 }

@@ -65,7 +65,7 @@ function Omega() {
 
     return (
               <div>
-                <Container className="app-in">
+                <div className="app-in">
                         <div className="visible-area">
                             { toggleFirstAnimationBox && <div className="first poster" data-aos={"slide-left"} 
                                     data-aos-delay="100"
@@ -132,7 +132,7 @@ function Omega() {
                                 <img onClick={thirdAnim} src={clock} alt="clock"/>
                             </div>
                         </div>
-                </Container>
+                </div>
             </div>
     )
 }
