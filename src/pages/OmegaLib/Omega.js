@@ -64,9 +64,7 @@ function Omega() {
     }
 
     return (
-        <div>
-        <div className="m_ads_unit_large" style={{ position: "relative"}}>
-            <div className="sponsored-by">Sponsored by EKALEIDO</div>
+              <div>
                 <Container className="app-in">
                         <div className="visible-area">
                             { toggleFirstAnimationBox && <div className="first poster" data-aos={"slide-left"} 
@@ -136,7 +134,6 @@ function Omega() {
                         </div>
                 </Container>
             </div>
-        </div>
     )
 }
 

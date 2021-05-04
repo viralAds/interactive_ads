@@ -4,7 +4,7 @@ import { Container, Button } from 'reactstrap';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ReplyIcon from '@material-ui/icons/Reply';
- 
+  
 import '../Common/ad.scss';
 
 import video from '../../assets/videos/merc.mp4';
@@ -64,9 +64,7 @@ function Mercedes() {
     }
 
     return (
-        <div> 
-        <div className="m_ads_unit_large" style={{ position: "relative"}}>
-                <div className="sponsored-by">Sponsored by EKALEIDO</div>
+            <div>
                 <Container className="app-in">
                         <div className="visible-area">
                             { toggleFirstAnimationBox && <div className="first poster" data-aos={"slide-up"} 
@@ -197,7 +195,6 @@ function Mercedes() {
                         </div>
                 </Container>
             </div>
-        </div>
     )
 }
 
