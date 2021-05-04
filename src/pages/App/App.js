@@ -18,6 +18,7 @@ import Clark from '../Clark/Clark';
 import Pana from '../Panasonic/Panasonic';
 import Philips from '../Philips/Philips';
 import Asics from '../Asics/Asics';
+import LG from '../LG/Lg';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
             <Route path="/blackberrys_three" component={BB3} />
             <Route path="/merc" component={Lmerc} />
             <Route path="/omeg" component={Lomega} />
+            <Route path="/lg" component={LG} />
             <Route exact path="/" component={Homepage} /> 
             
         </Switch>
