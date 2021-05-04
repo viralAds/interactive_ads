@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import ReactPlayer from 'react-player';
-import { Container, Button } from 'reactstrap';
+import { Button } from 'reactstrap';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
  
@@ -80,10 +80,8 @@ function Blackberrys() {
     }
 
     return (
-        <div> 
-        <div className="m_ads_unit_large" style={{ position: "relative"}}>
-                <div className="sponsored-by">Sponsored by EKALEIDO</div>
-                <Container className="app-in">
+        <div>
+                <div className="app-in">
                         <div className="vis-area">
                             { toggleFirstAnimationBox && <div className="first poster" data-aos={"slide-up"} 
                                     data-aos-delay="100"
@@ -160,9 +158,8 @@ function Blackberrys() {
                                 <img onClick={thirdAnim} src={wedding} alt="transmission"/>
                             </div>
                         </div>
-                </Container>
+                </div>
             </div>
-        </div>
     )
 }
 

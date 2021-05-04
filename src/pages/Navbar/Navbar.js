@@ -38,6 +38,9 @@ function HomePage() {
                     <Link to="/blackberrys">BLACKBERRYS</Link> 
                   </DropdownItem>
                   <DropdownItem>
+                    <Link to="/blackberrys_two">BLACKBERRYS 2</Link> 
+                  </DropdownItem>
+                  <DropdownItem>
                     <Link to="/mercedes">MERCEDES</Link>
                   </DropdownItem>
                   <DropdownItem>
