@@ -19,6 +19,7 @@ import Pana from '../Panasonic/Panasonic';
 import Philips from '../Philips/Philips';
 import Asics from '../Asics/Asics';
 import LG from '../LG/Lg';
+import Poco from '../Poco/Poco';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
             <Route path="/merc" component={Lmerc} />
             <Route path="/omeg" component={Lomega} />
             <Route path="/lg" component={LG} />
+            <Route path="/poco" component={Poco} />
             <Route exact path="/" component={Homepage} /> 
             
         </Switch>
