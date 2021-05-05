@@ -8,7 +8,6 @@ import display from '../../assets/img/poco/display.jpg';
 import ram from '../../assets/img/poco/ram.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import play from '../Playground/Play';
 
 export default class Poco extends Component {
     constructor(props) {
