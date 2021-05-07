@@ -7,10 +7,6 @@ import Mercedes from '../Mercedes/Mercedes';
 import Lomega from '../OmegaLib/Omega';
 import Lmerc from '../MercedesLib/Mercedes';
 import Play from '../Playground/Play';
-import Blackberrys from '../Blackberrys/Blackberrys';
-import BB1 from '../Blackberrys/BlackberrysOne/Blackberrys';
-import BB2 from '../Blackberrys/BlackberrysTwo/Blackberrys';
-import BB3 from '../Blackberrys/BlackberrysThree/Blackberrys';
 import Audi from '../Audi/Audi';
 import Swap from '../Swap/Swap';
 import Swipe from '../Jnto/Jnto';
@@ -20,7 +16,13 @@ import Philips from '../Philips/Philips';
 import Asics from '../Asics/Asics';
 import LG from '../LG/Lg';
 import Poco from '../Poco/Poco';
-import SC1 from '../Blackberrys/SummerCollection/Tap';
+
+import Blackberrys from '../Blackberrys/Blackberrys';
+import BB1 from '../Blackberrys/BlackberrysOne/Blackberrys';
+import BB2 from '../Blackberrys/BlackberrysTwo/Blackberrys';
+import BB3 from '../Blackberrys/BlackberrysThree/Blackberrys';
+import WC1 from '../Blackberrys/WeddingCollection/Looks/Looks';
+import WC2 from '../Blackberrys/WeddingCollection/WeddingVideo/Blackberrys';
 
 function App() {
   return (
@@ -46,7 +48,8 @@ function App() {
             <Route path="/omeg" component={Lomega} />
             <Route path="/lg" component={LG} />
             <Route path="/poco" component={Poco} />
-            <Route path="/summer_collection1" component={SC1} />
+            <Route path="/wedding_collection1" component={WC1} />
+            <Route path="/wedding_collection2" component={WC2} />
             <Route exact path="/" component={Homepage} /> 
             
         </Switch>

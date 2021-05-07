@@ -9,7 +9,7 @@ import '../Common/ad.scss';
 import './Blackberrys.scss';
 import '../Common/paperLayout.scss';
 
-import video from '../../assets/videos/blackberrys.mp4';
+import video from '../../assets/videos/bb2.mp4';
 
 import swim from '../../assets/icons/swim.png';
 import evening from '../../assets/icons/evening.png';
@@ -238,9 +238,6 @@ function Blackberrys() {
                             data-aos-duration="900"
                             data-aos-easing="ease-out"
                             >
-                            <div className="ctrl-option">
-                                <img onClick={closeAnimation} src={back} alt="back-btn" />
-                            </div>
                             <a id="cta-btn" href="https://blackberrys.com/" target="_blank" rel="noreferrer">EXPLORE</a>
                                 <img className="bb-images" src={cta} alt="bb3" />
                             </div> 

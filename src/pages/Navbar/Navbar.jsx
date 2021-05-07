@@ -31,6 +31,23 @@ function HomePage() {
 
             <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
+                  WEDDING COLLECTION
+                </DropdownToggle>
+                <DropdownMenu right>
+                  <DropdownItem>
+                    <Link to="/blackberrys">INTERACTIVE VIDEO 1</Link> 
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/wedding_collection2">INTERACTIVE VIDEO 2</Link> 
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/wedding_collection1">WEDDING LOOKS</Link>
+                  </DropdownItem>
+                </DropdownMenu>
+            </UncontrolledDropdown>
+
+            <UncontrolledDropdown nav inNavbar>
+                <DropdownToggle nav caret>
                   INTERACTIVE VIDEOS
                 </DropdownToggle>
                 <DropdownMenu right>
