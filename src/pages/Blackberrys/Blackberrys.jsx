@@ -13,7 +13,7 @@ import video from '../../assets/videos/bb2.mp4';
 
 import swim from '../../assets/icons/swim.png';
 import evening from '../../assets/icons/evening.png';
-import wedding from '../../assets/icons/wedding.png';
+import noon from '../../assets/icons/noon.png';
 import back from '../../assets/icons/bb-back.png';
 import bblogo from '../../assets/icons/bb-logo.png';
 import bb1 from '../../assets/img/bb1.jpg';
@@ -260,10 +260,10 @@ function Blackberrys() {
                             controls={ false }
                             onEnded={() => callToAction()}>
                         </ReactPlayer>}
-                        <div className="icons-bottom">
-                            <img onClick={firstAnim} src={swim} alt="safety"/>
-                            <img onClick={secondAnim} src={evening} alt="seat"/>
-                            <img onClick={thirdAnim} src={wedding} alt="transmission"/>
+                        <div className="icons-bottom">  
+                            <img onClick={firstAnim} src={evening} alt="safety"/>
+                            <img onClick={secondAnim} src={noon} alt="seat"/>
+                            <img onClick={thirdAnim} src={swim} alt="transmission"/>
                         </div>
                     </div>
                     </Waypoint>

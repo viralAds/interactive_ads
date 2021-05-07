@@ -23,6 +23,7 @@ import BB2 from '../Blackberrys/BlackberrysTwo/Blackberrys';
 import BB3 from '../Blackberrys/BlackberrysThree/Blackberrys';
 import WC1 from '../Blackberrys/WeddingCollection/Looks/Looks';
 import WC2 from '../Blackberrys/WeddingCollection/WeddingVideo/Blackberrys';
+import WC3 from '../Blackberrys/WeddingCollection/Shake/ShakeAd';
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
             <Route path="/poco" component={Poco} />
             <Route path="/wedding_collection1" component={WC1} />
             <Route path="/wedding_collection2" component={WC2} />
+            <Route path="/wedding_collection3" component={WC3} />
             <Route exact path="/" component={Homepage} /> 
             
         </Switch>
