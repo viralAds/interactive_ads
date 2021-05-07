@@ -362,3 +362,144 @@
         width: 52px!important;
     }
 }
+
+// Summer Collection 
+
+.summer-vis-area {
+    position: relative;
+    min-height: 480px;
+    height: 480px;
+    width: 320px;
+    overflow: hidden;
+}
+
+.summer-first-sc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #18181844;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    
+    img {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .text {
+        position: absolute;
+        left: 0;
+        bottom: 50px;
+        width: 100%;
+        z-index: 3;
+        font-family: 'Roboto', sans-serif;
+        color: #fff;
+        font-weight: 200;
+        font-style: italic;
+        text-align: center;
+    }
+
+    button.btn-secondary {
+        position: absolute;
+        left: 50%;
+        margin-left: -63.5px;
+        bottom: 20px;
+        width: 125px;
+        z-index: 2;
+
+        border: none;
+        background: transparent;
+        font-family: Montserrat-Medium, sans-serif;
+        font-size: 10px;
+    }
+
+    button.btn-secondary:active, 
+    button.btn-secondary:hover, 
+    button.btn-secondary:focus {
+        border: none;
+        background: transparent;
+        box-shadow: 0;
+    }
+}
+
+.master-screen {
+    span {
+        font-size: 10px;
+        position: absolute;
+        color: #fff;
+        line-height: 1;
+        z-index: 2;
+        font-family: Montserrat-Medium, sans-serif;
+        font-size: 15px;
+        left: 51%;
+        margin-left: -63.5px;
+        width: 125px;
+    }
+
+    .noon {
+        top: 28px;
+        cursor: pointer;
+    }
+
+    .pool {
+        top: 188px;
+        cursor: pointer;
+    }
+
+    .eve {
+        top: 360px;
+        cursor: pointer;
+    }
+
+    .msg {
+        color: #cacaca;
+        top: 435px;
+        font-size: 10px;
+    }
+}
+
+.looks-screen {
+    .back-icon {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        z-index: 1;
+        color: #fff;
+        width: 40px;
+        height: 40px;
+
+        // path {
+        //     width: 40px;
+        // }
+    }
+
+    .atc {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        z-index: 1;
+        border: none;
+        font-size: 12px;
+        font-family: Montserrat-SemiBold;
+    }
+
+    .btn-secondary {
+        background-color: #DB4B29;
+        color: #fff;
+        width: 120px;
+        height: min-content;
+        border-radius: 0;
+    }
+
+    .btn-secondary:hover,
+    .btn-secondary:focus, 
+    .btn-secondary:active {
+        background-color: #DB4B29;
+        color: #fff;
+        box-shadow: 0;
+    } 
+}

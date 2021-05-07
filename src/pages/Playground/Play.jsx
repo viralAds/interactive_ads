@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './Play.scss';
 import ReactPlayer from 'react-player';
 import asus from '../../assets/videos/asus.webm';
-import Hotspot from './Hotspot';
+import Hotspot from '../Common/Hotspot';
 
 export default class play extends Component {
     constructor(props) {

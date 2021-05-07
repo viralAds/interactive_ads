@@ -3,6 +3,11 @@ import '../Blackberrys.scss';
 import ReactPlayer from 'react-player';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+// import Popup from '../../Common/BbPopup';
+
+import AddCircleSharpIcon from '@material-ui/icons/AddCircleSharp';
+import RemoveCircleRoundedIcon from '@material-ui/icons/RemoveCircleRounded';
+import logo from '../../../assets/icons/bb-logo-dark.png';
 import {
     Carousel,
     CarouselItem,
@@ -12,9 +17,6 @@ import {
 import first from '../../../assets/videos/bb1.mp4';
 import second from '../../../assets/videos/bb2.mp4';
 import third from '../../../assets/videos/bb3.mp4';
-import AddCircleSharpIcon from '@material-ui/icons/AddCircleSharp';
-import RemoveCircleRoundedIcon from '@material-ui/icons/RemoveCircleRounded';
-import logo from '../../../assets/icons/bb-logo-dark.png';
 
 const items = [
     {
@@ -78,7 +80,6 @@ function Blackberrys() {
       });
 
     useEffect(() => {
-
         if(quantity <= 0) {
             alert("Invalid value")
             setQuantity(1)
@@ -102,6 +103,26 @@ function Blackberrys() {
         }, 1000);
     }, [slides,quantity])
 
+    const next = () => {
+        if (animating) return;
+        const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
+        setActiveIndex(nextIndex);
+    }
+
+    const previous = () => {
+        if (animating) return;
+        const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
+        setActiveIndex(nextIndex);
+    }
+
+    const showOptions = () => {
+        setIsDescActive(!isDescActive);
+    }
+
+    const start = () => {
+        setStartAd(false)
+    }
+
     const selectSize = (size) => {
         const ele = document.getElementsByClassName('size')
         Object.keys(ele).map((key) => {
@@ -115,19 +136,6 @@ function Blackberrys() {
           });
     }
 
-    const next = () => {
-        if (animating) return;
-        const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
-        setActiveIndex(nextIndex);
-    }
-
-
-    const previous = () => {
-        if (animating) return;
-        const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
-        setActiveIndex(nextIndex);
-    }
-
     const increment = () => {
         setQuantity(quantity + 1)
     }
@@ -136,16 +144,8 @@ function Blackberrys() {
         setQuantity(quantity - 1)
     }
 
-    const showOptions = () => {
-        setIsDescActive(!isDescActive);
-    }
-
     const handleChange = (event) => {
         setQuantity(parseInt(event.target.value))
-    }
-
-    const start = () => {
-        setStartAd(false)
     }
 
     return (
@@ -161,7 +161,7 @@ function Blackberrys() {
                         <Button onClick={() => showOptions()}>BUY NOW</Button>  
                     </Row>
                     { isDescActive &&
-                    <div className="product-desc"
+                        <div className="product-desc"
                             data-aos={"slide-up"} 
                             data-aos-delay="100"
                             data-aos-mirror='false'

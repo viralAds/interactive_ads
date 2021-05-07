@@ -20,6 +20,7 @@ import Philips from '../Philips/Philips';
 import Asics from '../Asics/Asics';
 import LG from '../LG/Lg';
 import Poco from '../Poco/Poco';
+import SC1 from '../Blackberrys/SummerCollection/Tap';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
             <Route path="/omeg" component={Lomega} />
             <Route path="/lg" component={LG} />
             <Route path="/poco" component={Poco} />
+            <Route path="/summer_collection1" component={SC1} />
             <Route exact path="/" component={Homepage} /> 
             
         </Switch>

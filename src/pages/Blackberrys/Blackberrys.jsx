@@ -29,8 +29,9 @@ function Blackberrys() {
           mirror: false,
         });
       }
-    
+     
       const [isPlaying, setIsPlaying] = useState(false);
+      const [videoActive, setVideoActive ] = useState(false);
       const [toggleFirstAnimationBox, setToggleFirstAnimationBox] = useState(false);
       const [toggleSecondAnimationBox, setToggleSecondAnimationBox] = useState(false);
       const [toggleThirdAnimationBox, setToggleThirdAnimationBox] = useState(false);
@@ -69,6 +70,7 @@ function Blackberrys() {
     }
       
     const startVideo = () => {
+        setVideoActive(true)
         setIsPlaying(true);
         document.getElementsByClassName('first-sc')[0].style.setProperty("display", "none")
     }
@@ -242,13 +244,14 @@ function Blackberrys() {
                             <a id="cta-btn" href="https://blackberrys.com/" target="_blank" rel="noreferrer">EXPLORE</a>
                                 <img className="bb-images" src={cta} alt="bb3" />
                             </div> 
-                        }
+                        }   
                         <img id="bblogo" src={bblogo} alt="bbLogo" />
                         <div className="first-sc">
                             <p className="text">WEDDING COLLECTION</p>
                             <Button onClick={startVideo}>TAP TO EXPLORE</Button>
                             <img src={firstsc} alt="first-screen" />                                
                         </div>
+                        {videoActive && 
                         <ReactPlayer
                             className="video-screen" 
                             url={video}
@@ -259,7 +262,7 @@ function Blackberrys() {
                             playing={ isPlaying } 
                             controls={ false }
                             onEnded={() => callToAction()}>
-                        </ReactPlayer>
+                        </ReactPlayer>}
                         <div className="icons-bottom">
                             <img onClick={firstAnim} src={swim} alt="safety"/>
                             <img onClick={secondAnim} src={evening} alt="seat"/>

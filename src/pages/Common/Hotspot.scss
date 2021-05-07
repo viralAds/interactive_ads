@@ -1,0 +1,101 @@
+:root {
+    --insize: 15px;
+    --outsize: 20px;
+}
+
+.hotspot {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // top: var(--topPos);
+    // left: var(--leftPos);
+
+    svg {
+        position: absolute;
+    }
+    .outer-circle {
+        position: absolute;
+        width: var(--outsize);
+        height: var(--outsize);
+        border-radius: 50%;
+        border: 1px solid #fff;
+        background-color: transparent;
+        transition-duration: 0.3s;
+        animation: outmove 2s infinite;
+    }
+
+    @keyframes outmove {
+        0% {
+            width: var(--outsize);
+            height: var(--outsize);
+        }
+        25%  {
+            width: calc(var(--outsize)  + 5px);
+            height: calc(var(--outsize)  + 5px);
+        }
+        50% {
+            width: calc(var(--outsize)  + 2px);
+            height: calc(var(--outsize)  + 2px);
+        }
+        75%  {
+            width: calc(var(--outsize)  + 6px);
+            height: calc(var(--outsize)  + 6px);
+        }
+        100% {
+            width: var(--outsize);
+            height: var(--outsize);
+        }
+    }
+
+    .inner-circle {
+        position: absolute;
+        width: var(--insize);
+        height: var(--insize);
+        border-radius: 50%;
+        background-color:#fff;
+        transition-duration: 0.4s;
+        animation: inmove 2s infinite;
+    }
+
+    
+    .inner-circle:active {
+        width: 30px;
+        height: 30px;
+        box-shadow: 0 0 10px 4px #cacaca;
+    
+    
+    }
+}
+
+.hot-collapse, .collapsing {
+    position: absolute!important;
+    z-index: 1;
+    width: 100px;
+    top: calc(var(--topPos) + 15px);
+    left: calc(var(--leftPos) - 110px);
+}
+
+
+.card {
+    .card-body {
+        flex: 1 auto!important;
+        min-height: 1px!important;
+        padding: 0.5rem!important;
+
+        span {
+            font-size: 10px;
+            font-family: Montserrat-SemiBold;
+        }
+
+        .pop-desc {
+            color: #DB4B29;
+        }
+    }
+    .card-text {
+        color: #212121;
+    }
+}
+
