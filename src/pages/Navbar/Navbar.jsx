@@ -43,6 +43,9 @@ function HomePage() {
                   <DropdownItem>
                     <Link to="/wedding_collection1">WEDDING LOOKS</Link>
                   </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/wedding_collection3">WEDDING LOOKS 2</Link>
+                  </DropdownItem>
                 </DropdownMenu>
             </UncontrolledDropdown>
 
