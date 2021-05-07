@@ -1,6 +1,6 @@
 :root {
-    --insize: 15px;
-    --outsize: 20px;
+    --insize: 25px;
+    --outsize: 30px;
 }
 
 .hotspot {
@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    opacity: 0.7;
     // top: var(--topPos);
     // left: var(--leftPos);
 
@@ -25,6 +25,7 @@
         background-color: transparent;
         transition-duration: 0.3s;
         animation: outmove 2s infinite;
+        z-index: 1;
     }
 
     @keyframes outmove {
@@ -57,17 +58,15 @@
         border-radius: 50%;
         background-color:#fff;
         transition-duration: 0.4s;
-        animation: inmove 2s infinite;
+        z-index: 2;
     }
-
-    
     .inner-circle:active {
-        width: 30px;
-        height: 30px;
         box-shadow: 0 0 10px 4px #cacaca;
-    
-    
     }
+}
+
+.hotspot:hover, .hotspot:active {
+    opacity: 1;
 }
 
 .hot-collapse, .collapsing {

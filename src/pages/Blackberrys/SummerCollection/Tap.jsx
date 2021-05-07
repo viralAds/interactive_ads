@@ -98,7 +98,7 @@ const Tap = () => {
                             </div>
                             <div className="addToCart">
                                 <Button style={{ marginTop: "1.5rem"}}
-                                onClick={showPopup}>ADD TO CART</Button>  
+                                onClick={showPopup}>BUY NOW</Button>  
                             </div>
                         </div>
                         }  
