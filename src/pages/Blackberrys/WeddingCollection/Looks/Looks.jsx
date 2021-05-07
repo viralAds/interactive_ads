@@ -4,6 +4,7 @@ import { Button } from 'reactstrap';
 import 'aos/dist/aos.css';
 import '../../../Common/ad.scss';
 import '../../Blackberrys.scss';
+import './Looks.scss';
 import firstsc from '../../../../assets/img/summer/first.jpg';
 import sndscn from '../../../../assets/img/summer/second.jpg';
 import sc1 from '../../../../assets/img/summer/1.jpg';
@@ -11,7 +12,7 @@ import sc2 from '../../../../assets/img/summer/2.jpg';
 import sc3 from '../../../../assets/img/summer/3.jpg';
 import ReplyIcon from '@material-ui/icons/Reply';
 import Hotspot from '../../../Common/Hotspot';
-import './Looks.scss';
+
 
 const Tap = () => {
     if(typeof window !== `undefined`) {
