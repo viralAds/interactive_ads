@@ -1,28 +1,26 @@
 import { useState } from 'react'
 import { Waypoint } from 'react-waypoint';
 import ReactPlayer from 'react-player';
-import { Button } from 'reactstrap';
+import { Container } from 'reactstrap';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
- 
+import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
+
+import './Omega.scss';
 import '../Common/ad.scss';
-import './Blackberrys.scss';
 import '../Common/paperLayout.scss';
 
-import video from '../../assets/videos/blackberrys.mp4';
+import video from '../../assets/videos/omega.mp4'; 
+import astroImg from '../../assets/img/astroImg.jpeg';
+import chronograph from '../../assets/img/chronograph.jpeg';
+import watch from '../../assets/img/watch.jpeg';
+import astro from '../../assets/icons/astronaut.png';
+import clock from '../../assets/icons/clock.png';
+import swipe from '../../assets/icons/know_more.png';
 
-import swim from '../../assets/icons/swim.png';
-import evening from '../../assets/icons/evening.png';
-import wedding from '../../assets/icons/wedding.png';
-import back from '../../assets/icons/bb-back.png';
-import bblogo from '../../assets/icons/bb-logo.png';
-import bb1 from '../../assets/img/bb1.jpg';
-import bb2 from '../../assets/img/bb2.jpg';
-import bb3 from '../../assets/img/bb3.jpg';
-import cta from '../../assets/img/coa.jpg';
-import firstsc from '../../assets/img/firstscreen.jpg';
+// import Navbar from '../Navbar/Navbar';
 
-function Blackberrys() {
+function Omega() {
     if(typeof window !== `undefined`) {
         AOS.init({
           once: false,
@@ -34,21 +32,19 @@ function Blackberrys() {
       const [toggleFirstAnimationBox, setToggleFirstAnimationBox] = useState(false);
       const [toggleSecondAnimationBox, setToggleSecondAnimationBox] = useState(false);
       const [toggleThirdAnimationBox, setToggleThirdAnimationBox] = useState(false);
-      const [toggleCtaAnimationBox, setToggleCtaAnimationBox] = useState(false);
-    
+
       const closeAnimation = () => {
         setToggleFirstAnimationBox(false);
         setToggleSecondAnimationBox(false);
         setToggleThirdAnimationBox(false);
-        setToggleCtaAnimationBox(false);
         setIsPlaying(true);
+        
       }
       
-      const firstAnim = () => {
+      const firstAnim = () => {   
         setToggleFirstAnimationBox(true);
         setToggleSecondAnimationBox(false);
         setToggleThirdAnimationBox(false);
-        setToggleCtaAnimationBox(false);
         setIsPlaying(false);
       }
     
@@ -56,43 +52,30 @@ function Blackberrys() {
         setToggleSecondAnimationBox(true);
         setToggleFirstAnimationBox(false);
         setToggleThirdAnimationBox(false);
-        setToggleCtaAnimationBox(false);
         setIsPlaying(false);
       }
-    
-      const thirdAnim = () => {
+
+      const thirdAnim = () => {        
+        setToggleFirstAnimationBox(false);
+        setToggleSecondAnimationBox(false);
         setToggleThirdAnimationBox(true);
-        setToggleFirstAnimationBox(false);
-        setToggleSecondAnimationBox(false);
-        setToggleCtaAnimationBox(false);
         setIsPlaying(false);
-    }
-      
-    const startVideo = () => {
+      }
+
+      const handleEnterViewport = () => {
         setIsPlaying(true);
-        document.getElementsByClassName('first-sc')[0].style.setProperty("display", "none")
-    }
+      }
 
-    const callToAction = () => {
-        setToggleThirdAnimationBox(false);
-        setToggleFirstAnimationBox(false);
-        setToggleSecondAnimationBox(false);
-        setToggleCtaAnimationBox(true);
-    }
-
-    const handleEnterViewport = () => {
-        setIsPlaying(true);
-    }
-
-    const handleExitViewport = () => {
+      const handleExitViewport = () => {
         setToggleFirstAnimationBox(false);
         setToggleSecondAnimationBox(false);
         setToggleThirdAnimationBox(false);
         setIsPlaying(false);
-    }
+      }
 
     return (
         <div>
+
         <section className="container main-container">
         <section className="mainContainer" id="dataHolder" data-url="/" data-title="News Headlines, English News, Today Headlines, Top Stories" data-story-section="home">
         <div className="m_ads_unit">
@@ -100,11 +83,11 @@ function Blackberrys() {
         </div>
         <section className="worldSection sections ht-ad-holder">
         <div className="secHdg">
-        <span className="hdgTexure"></span>
-        <div className="hdgStyle">
-        <span>[</span><h2>Top News</h2><span>]</span>
-        </div>
-        </div>
+                    <span className="hdgTexure"></span>
+                    <div className="hdgStyle">
+                        <span>[</span><h2>Top News</h2><span>]</span>
+                    </div>
+                </div>
         <div className="cartHolder page-view-candidate" data-vars-cardtype="top-news" data-vars-storyid="101617601975509" data-vars-storytype="story" data-weburl="https://www.hindustantimes.com/cities/mumbai-news/bombay-hc-directs-cbi-to-conduct-preliminary-probe-against-anil-deshmukh-101617601975509.html" data-vars-section="mumbai news" data-vars-orderid="1">
                 <figure>
                     <a href="/cities/mumbai-news/bombay-hc-directs-cbi-to-conduct-preliminary-probe-against-anil-deshmukh-101617601975509.html101617601975509">
@@ -187,87 +170,79 @@ function Blackberrys() {
         <div className="ajaxLoaderList hide"></div>
         </div>
         <div className="recommended"></div>
+
         <div className="m_ads_unit_large" style={{ position: "relative"}}>
             <div className="sponsored-by">Sponsored by EKALEIDO</div>
-                <div className="app-inside">
-                <Waypoint 
-                    onEnter={handleEnterViewport}
-                    onLeave={handleExitViewport}
-                    >
-                    <div className="vis-area">
-                        { toggleFirstAnimationBox && <div className="first poster" data-aos={"slide-up"} 
-                            data-aos-delay="100"
-                            data-aos-mirror='false'
-                            data-aos-duration="900"                                data-aos-easing="ease-out"
-                            >
-                            <div className="ctrl-option">
-                                <img onClick={closeAnimation} src={back} alt="back-btn" />
+                <Container className="app-inside">
+                    <Waypoint 
+                        onEnter={handleEnterViewport}
+                        onLeave={handleExitViewport}
+                        >
+                        <div className="visible-area">
+                            { toggleFirstAnimationBox && <div className="first poster" data-aos={"slide-left"} 
+                                    data-aos-delay="100"
+                                    data-aos-mirror='false'
+                                    data-aos-duration="900"
+                                    data-aos-easing="ease-out"
+                                    >
+                                    <img src={astroImg} alt="astroImg" />
+                                    <DoubleArrowIcon className="back-arrow" onClick={closeAnimation} /> 
+                                    </div> 
+                            }
+
+                            { toggleSecondAnimationBox && <div className="first poster" data-aos={"slide-up"} 
+                                    data-aos-delay="100"
+                                    data-aos-mirror='false'
+                                    data-aos-duration="900"
+                                    data-aos-easing="ease-out"
+                                    style={{    display: 'flex',
+                                                justifyContent: 'center',
+                                                alignItems: 'center'
+                                            }}>
+                                    <a href="https://www.omegawatches.com/watches/speedmaster/moonwatch-professional/product"
+                                        target="_blank" rel="noreferrer"
+                                        style={{ position: "absolute"}}
+                                        className="btn-knowmore"
+                                        data-aos={"slide-up"} 
+                                        data-aos-delay="600"
+                                        data-aos-mirror='false'
+                                        data-aos-duration="900"
+                                        data-aos-easing="ease-out"
+                                        >KNOW MORE
+                                    </a>
+                                    <img src={watch} alt="watch" />
+                                    <DoubleArrowIcon className="back-arrow" onClick={closeAnimation} />
+                                    </div> 
+                            }
+
+                            { toggleThirdAnimationBox && <div className="first poster" data-aos={"slide-right"} 
+                                    data-aos-delay="100"
+                                    data-aos-mirror='false'
+                                    data-aos-duration="900"
+                                    data-aos-easing="ease-out"
+                                    >
+                                    <img src={chronograph} alt="chronograph"/>
+                                    <DoubleArrowIcon className="back-arrow" onClick={closeAnimation} />
+                                    </div> 
+                            }
+                            <ReactPlayer
+                                className="video-screen" 
+                                url={video}
+                                loop={true}
+                                muted={false}
+                                width="100%"
+                                height="100%"
+                                playing={ isPlaying } 
+                                controls={ false }>
+                            </ReactPlayer>
+                            <div className="icons">
+                                <img onClick={firstAnim} src={astro} alt="astro"/>
+                                <img onClick={secondAnim} src={swipe} alt="swipe"/>
+                                <img onClick={thirdAnim} src={clock} alt="clock"/>
                             </div>
-                                <img className="bb-images" src={bb1} alt="bb1" />
-                            </div> 
-                        }
-                        { toggleSecondAnimationBox && <div className="first poster" data-aos={"slide-up"} 
-                            data-aos-delay="100"
-                            data-aos-mirror='false'
-                            data-aos-duration="900"
-                            data-aos-easing="ease-out"
-                            >
-                            <div className="ctrl-option">
-                                <img onClick={closeAnimation} src={back} alt="back-btn" />
-                            </div>
-                                <img className="bb-images" src={bb2} alt="bb2" />
-                            </div> 
-                        }
-                        { toggleThirdAnimationBox && <div className="first poster" data-aos={"slide-up"} 
-                            data-aos-delay="100"
-                            data-aos-mirror='false'
-                            data-aos-duration="900"
-                            data-aos-easing="ease-out"
-                            >
-                            <div className="ctrl-option">
-                                <img onClick={closeAnimation} src={back} alt="back-btn" />
-                            </div>
-                                <img className="bb-images" src={bb3} alt="bb3" />
-                            </div> 
-                        }
-                        { toggleCtaAnimationBox && <div className="first poster" data-aos={"zoom-in"} 
-                            data-aos-delay="100"
-                            data-aos-mirror='false'
-                            data-aos-duration="900"
-                            data-aos-easing="ease-out"
-                            >
-                            <div className="ctrl-option">
-                                <img onClick={closeAnimation} src={back} alt="back-btn" />
-                            </div>
-                            <a id="cta-btn" href="https://blackberrys.com/" target="_blank" rel="noreferrer">EXPLORE</a>
-                                <img className="bb-images" src={cta} alt="bb3" />
-                            </div> 
-                        }
-                        <img id="bblogo" src={bblogo} alt="bbLogo" />
-                        <div className="first-sc">
-                            <p className="text">WEDDING COLLECTION</p>
-                            <Button onClick={startVideo}>TAP TO EXPLORE</Button>
-                            <img src={firstsc} alt="first-screen" />                                
                         </div>
-                        <ReactPlayer
-                            className="video-screen" 
-                            url={video}
-                            loop={false}
-                            muted={false}
-                            width="100%"
-                            height="100%"
-                            playing={ isPlaying } 
-                            controls={ false }
-                            onEnded={() => callToAction()}>
-                        </ReactPlayer>
-                        <div className="icons-bottom">
-                            <img onClick={firstAnim} src={swim} alt="safety"/>
-                            <img onClick={secondAnim} src={evening} alt="seat"/>
-                            <img onClick={thirdAnim} src={wedding} alt="transmission"/>
-                        </div>
-                    </div>
-                    </Waypoint>
-                </div>
+                    </Waypoint> 
+                </Container>
             </div>
         <div className="cartHolder page-view-candidate listView" data-vars-cardtype="top-news" data-vars-storyid="101617607574419" data-vars-storytype="story" data-weburl="https://www.hindustantimes.com/india-news/amid-rising-covid-cases-raisina-dialogue-to-go-fully-digital-101617607574419.html" data-vars-section="india news" data-vars-orderid="3">
         <figure>
@@ -402,4 +377,4 @@ function Blackberrys() {
     )
 }
 
-export default Blackberrys
+export default Omega
