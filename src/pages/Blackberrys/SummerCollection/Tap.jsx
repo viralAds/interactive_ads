@@ -83,7 +83,7 @@ const Tap = () => {
                                 data-aos-duration="1000"
                                 data-aos-easing="ease-out">
                             <div className="specs">
-                                <div className="prod-name">PLAIN ORANGE SHORTS</div>
+                                <div className="prod-name">SLIM FIT BLAZERS</div>
                                 <div className="cost">INR 2,595</div>
                                 <div className="colors">COLORS: Navy</div>
                             </div>
