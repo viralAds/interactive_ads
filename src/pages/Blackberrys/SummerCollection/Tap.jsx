@@ -11,7 +11,8 @@ import sc2 from '../../../assets/img/summer/2.jpg';
 import sc3 from '../../../assets/img/summer/3.jpg';
 import ReplyIcon from '@material-ui/icons/Reply';
 import Hotspot from '../../Common/Hotspot';
-import logo from '../../../assets/icons/bb-logo-dark.png';
+// import logo from '../../../assets/icons/bb-logo-dark.png';
+import './Tap.scss';
 
 const Tap = () => {
     if(typeof window !== `undefined`) {
@@ -75,16 +76,14 @@ const Tap = () => {
                     <div className="summer-vis-area">
                     <div className="pop-up">
                     { isDescActive &&        
-                        <div className="product-desc"
+                        <div className="product-des"
                                 data-aos={"slide-up"} 
                                 data-aos-delay="100"
                                 data-aos-mirror='false'
                                 data-aos-duration="1000"
                                 data-aos-easing="ease-out">
-                            <div className="bb-logo-wrapper">
-                                <img src={logo} alt="logo" />
-                            </div>
                             <div className="specs">
+                                <div className="prod-name">PLAIN ORANGE SHORTS</div>
                                 <div className="cost">INR 2,595</div>
                                 <div className="colors">COLORS: Navy</div>
                             </div>
@@ -137,10 +136,13 @@ const Tap = () => {
                                         title: "2 PIECE SUIT",
                                         desc: "RS-10999/-"
                                     }} /> 
+                                {!isDescActive && <>
                                 <Button className="atc"
                                 onClick={showPopup}>ADD TO CART</Button>
                                 <ReplyIcon className="back-icon"
                                 onClick={startInteraction} />
+                                </>
+                                }
                             </div>
                         }
                         {   isPoolActive &&
@@ -170,10 +172,12 @@ const Tap = () => {
                                         title: "TROUSER",
                                         desc: "RS-1099/-"
                                     }} /> 
+                                {!isDescActive && <>
                                 <Button className="atc"
                                 onClick={showPopup}>ADD TO CART</Button>
                                 <ReplyIcon className="back-icon" 
                                 onClick={startInteraction}/>
+                                </>}
                             </div>
                         }
                         {   isEveActive &&
@@ -196,10 +200,13 @@ const Tap = () => {
                                         title: "SHIRT",
                                         desc: "RS-5099/-"
                                     }} /> 
-                                <ReplyIcon className="back-icon"
-                                onClick={startInteraction} />
-                                <Button className="atc"
-                                onClick={showPopup}>ADD TO CART</Button>
+                                
+                                {!isDescActive && <>
+                                    <ReplyIcon className="back-icon"
+                                    onClick={startInteraction} /> 
+                                    <Button className="atc"
+                                    onClick={showPopup}>ADD TO CART</Button>
+                                </>}
                             </div>
                         }
                         { firstPage && 

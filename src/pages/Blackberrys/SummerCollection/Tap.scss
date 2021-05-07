@@ -1,0 +1,99 @@
+.product-des {
+    background-color: #ffffffa8;
+    border-radius: 20px 20px 0 0;
+    padding: 0.5rem;
+    border: none;
+    
+    .specs {
+        margin-top: 1rem;
+    }
+    
+    .addToCart, .specs {
+        width: 100%;
+        text-align: center;
+
+        .cost, .colors, .prod-name {
+            width: 100%;
+            text-align: center;
+            font-family: 'Montserrat-SemiBold';
+        }
+
+        .prod-name {
+            font-size: 18px;
+            color: #DB4B29;
+            margin-bottom: 1rem;
+        }
+        .cost {
+            font-size: 12px;
+        }
+        .colors {
+            font-size: 13px;
+        }
+    }
+
+    .quantity, .sizes {
+        width: 100%;
+        text-align: left;
+        padding: 0.5rem 0;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        input[type="radio"] {
+            margin-right: 3px;
+        }
+
+        input[type="number"] {
+            border: 1px solid #301c08;
+            padding: 0 10px;
+            width: 50px;
+            font-family: 'Montserrat-SemiBold', sans-serif;
+            font-size: 13px;
+        }
+
+        #decrement {
+            width: 20px;
+            color: #DB4B29;
+        }
+        #increment {
+            width: 20px;
+            color: rgb(54, 168, 54)
+        }
+
+        label {
+            margin-right: 1rem;
+            font-size: 13px;
+            font-family: Montserrat-SemiBold, sans-serif;
+        }
+
+        span {
+            font-size: 13px;
+            font-family: Montserrat-Medium, sans-serif;
+            font-weight: bold;
+            margin-right: 1rem;
+        }
+
+        svg {
+            margin: 0 0.5rem;
+        }
+
+        .size {
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            border: 1px solid #301c08;
+            padding: 5px;
+            margin: 0 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .size.active {
+            border: 1px solid #DB4B29;
+            color: white;
+            background-color: #DB4B29;
+        }
+    }
+
+}
