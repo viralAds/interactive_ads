@@ -10,15 +10,7 @@ import '../../Blackberrys.scss';
 import '../../../Common/paperLayout.scss';
 
 import video from '../../../../assets/videos/bb2.mp4';
-
-import swim from '../../../../assets/icons/swim.png';
-import evening from '../../../../assets/icons/evening.png';
-import wedding from '../../../../assets/icons/wedding.png';
-import back from '../../../../assets/icons/bb-back.png';
 import bblogo from '../../../../assets/icons/bb-logo-dark.png';
-import bb1 from '../../../../assets/img/bb1.jpg';
-import bb2 from '../../../../assets/img/bb2.jpg';
-import bb3 from '../../../../assets/img/bb3.jpg';
 import cta from '../../../../assets/img/coa.jpg';
 import firstsc from '../../../../assets/img/firstscreen.jpg';
 

@@ -242,7 +242,7 @@ function Blackberrys() {
                                 <img className="bb-images" src={cta} alt="bb3" />
                             </div> 
                         }   
-                        <img id="bblogo" src={bblogo} alt="bbLogo" />
+                        {!toggleCtaAnimationBox && <img id="bblogo" src={bblogo} alt="bbLogo" />}
                         <div className="first-sc">
                             <p className="text">WEDDING COLLECTION</p>
                             <Button onClick={startVideo}>TAP TO EXPLORE</Button>
