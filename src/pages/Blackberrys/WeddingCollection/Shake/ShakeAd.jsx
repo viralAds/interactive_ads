@@ -32,7 +32,7 @@ const ShakeAd = () => {
 
     useEffect(() => {
         let myShakeEvent = new Shake({
-            threshold: 2, // optional shake strength threshold
+            threshold: 7, // optional shake strength threshold
             timeout: 1000 // optional, determines the frequency of event generation
         });
         myShakeEvent.start();
