@@ -11,7 +11,7 @@ import sc1 from '../../../../assets/img/summer/1.jpg';
 import sc2 from '../../../../assets/img/summer/2.jpg';
 import sc3 from '../../../../assets/img/summer/3.jpg';
 import ReplyIcon from '@material-ui/icons/Reply';
-import Hotspot from '../../../Common/Hotspot';
+import Hotspot from '../../../Common/Hotspot/Hotspot';
 
 
 const Tap = () => {

@@ -2,18 +2,21 @@ import React, { useEffect, useState } from 'react'
 import AOS from 'aos';
 import { Button } from 'reactstrap';
 import 'aos/dist/aos.css';
+
+import Shake from 'shake.js';
 import './Shake.scss';
 import '../../../Common/ad.scss';
 import '../../Blackberrys.scss';
 import '../Looks/Looks.scss';
-import Shake from 'shake.js';
+
 import closed from '../../../../assets/img/summer/close_frame.jpg';
 import opened from '../../../../assets/img/summer/open_frame.jpg';
 import ScreenRotationIcon from '@material-ui/icons/ScreenRotation';
 import sc1 from '../../../../assets/img/summer/1.jpg';
 import sc2 from '../../../../assets/img/summer/2.jpg';
 import sc3 from '../../../../assets/img/summer/3.jpg';
-import Hotspot from '../../../Common/Hotspot';
+
+import Hotspot from '../../../Common/Hotspot/Hotspot';
 import ReplyIcon from '@material-ui/icons/Reply';
 
 const ShakeAd = () => {

@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
 import App from './pages/App/App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'video.js/dist/video-js.css';

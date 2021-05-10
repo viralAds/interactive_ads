@@ -1,10 +1,10 @@
 import React from 'react'
 import { Card, CardText, CardBody } from 'reactstrap';
-import './Hotspot.scss';
+import '../Hotspot/Hotspot.scss';
 
 const HotspotTooltip = (props) => {
     return (
-        <div>
+        <div> 
             <Card>
                 <CardBody>
                     <CardText>

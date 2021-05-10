@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './Play.scss';
 import ReactPlayer from 'react-player';
 import asus from '../../assets/videos/asus.webm';
-import Hotspot from '../Common/Hotspot';
+import Hotspot from '../Common/Hotspot/Hotspot';
 
 export default class play extends Component {
     constructor(props) {
@@ -123,10 +123,6 @@ export default class play extends Component {
                 isFirstActive: false
             })
         }
-        // console.log("trackes", this.player.props.config.file.tracks) 
-        // console.log("attributes",this.player.getAttributes) 
-        // console.log("active players",this.player.getActivePlayers) 
-        // console.log("config",this.player.getConfig) 
     }
 
     onStartVideo = () => {

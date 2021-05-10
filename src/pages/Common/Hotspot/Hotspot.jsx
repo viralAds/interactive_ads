@@ -1,7 +1,7 @@
 import React from 'react'
 import { UncontrolledCollapse } from 'reactstrap';
 import './Hotspot.scss';
-import HotspotTootip from './HotspotTooltip';
+import HotspotTootip from '../HotspotTooltip/HotspotTooltip';
 
 const Hotspot = (props) => {
     console.log("props",props)

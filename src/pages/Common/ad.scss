@@ -23,47 +23,7 @@
     
 }
 
-.first-screen {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: linear-gradient(0deg, rgb(0, 0, 100), #1414d3);
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    img {
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1;
-    }
-    button {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-left: -50px;
-        margin-top: -50px;
-
-        border-radius: 50%;
-        background-image: radial-gradient( #1414d3, #000064);
-        color: white;
-        height: 100px;
-        width: 100px;
-        box-shadow: 0 5px 12px 5px #1414d3;
-        border: 2px solid #1414d3;
-        z-index: 2;
-        transition-duration: 0.5s;
-    }
-
-    button:hover {  
-        border: 3px solid #000064;
-        box-shadow: 0 5px 20px 5px #1414d3;
-    }
-}
+// Used In Blackberrys, Omega,and Mercedes ads
 
 .app-inside {
     background: #212121;
@@ -83,14 +43,11 @@
     min-height: 480px;
     height: 480px;
     width: 270px;
-    // max-height: min-content;
-    // height: min-content;
     overflow: hidden;
 }
 
 .poster {
     position: absolute;
-    // box-shadow: -3px -3px 20px 5px #252462;
     bottom: 0;
     background: #181818;
     width: 100%;
@@ -171,7 +128,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    // width: 100%;
     max-width: inherit;
     padding: 0 15px;
     z-index: 0.5;
@@ -184,5 +140,49 @@
 
     img:hover {
         width: 52px!important;
+    }
+}
+
+// ---------------------------
+// Only Omega Advertisement
+// ---------------------------
+
+.first-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(0deg, rgb(0, 0, 100), #1414d3);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+
+    img {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -50px;
+        margin-top: -50px;
+ 
+        border-radius: 50%;
+        background-image: radial-gradient( #1414d3, #000064);
+        color: white;
+        height: 100px;
+        width: 100px;
+        box-shadow: 0 5px 12px 5px #1414d3;
+        border: 2px solid #1414d3;
+        z-index: 2;
+        transition-duration: 0.5s;
+    }
+
+    button:hover {  
+        border: 3px solid #000064;
+        box-shadow: 0 5px 20px 5px #1414d3;
     }
 }

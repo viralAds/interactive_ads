@@ -3,14 +3,12 @@
 body {
 	color: #424242;
 	font-size: 14px;
-	font-family: "pt_serifregular";
+	font-family: "Montserrat-Medium";
 	background-color: #fff;
 	padding: 0
 }
 
-input,
-button,
-textarea {
+input,button,textarea {
 	background-color: transparent;
 	border: none
 }
@@ -23,24 +21,20 @@ iframe {
 	border: none
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
 	color: #333;
-	font-family: "open_sansregular";
-	font-weight: normal
 }
 
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-	color: #333
+h1,h2 {
+	font-family: Montserrat-Bold;
+}
+
+h3,h4 {
+	font-family: Montserrat-SemiBold;
+}
+
+h5, h6 {
+	font-family: Montserrat-Medium;
 }
 
 @font-face {

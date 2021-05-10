@@ -74,17 +74,17 @@ function Mercedes() {
         <div> 
             <section className="container main-container">
             <section className="mainContainer" id="dataHolder" data-url="/" data-story-section="home">
-                <div className="m_ads_unit">
+            <div className="m_ads_unit">
                     <div id='div-gpt-ad-1524814893923-0'></div>
                 </div>
-                <section className="worldSection sections ht-ad-holder">
-                    <div className="secHdg">
+            <section className="worldSection sections ht-ad-holder">
+            <div className="secHdg">
                         <span className="hdgTexure"></span>
                         <div className="hdgStyle">
                             <span>[</span><h2>Top News</h2><span>]</span>
                         </div>
                     </div>
-                    <div className="cartHolder page-view-candidate" data-vars-cardtype="top-news" data-vars-storyid="101617601975509" data-vars-storytype="story" data-weburl="https://www.hindustantimes.com/cities/mumbai-news/bombay-hc-directs-cbi-to-conduct-preliminary-probe-against-anil-deshmukh-101617601975509.html" data-vars-section="mumbai news" data-vars-orderid="1">
+            <div className="cartHolder page-view-candidate" data-vars-cardtype="top-news" data-vars-storyid="101617601975509" data-vars-storytype="story" data-weburl="https://www.hindustantimes.com/cities/mumbai-news/bombay-hc-directs-cbi-to-conduct-preliminary-probe-against-anil-deshmukh-101617601975509.html" data-vars-section="mumbai news" data-vars-orderid="1">
                     <figure>
                         <a href="/cities/mumbai-news/bombay-hc-directs-cbi-to-conduct-preliminary-probe-against-anil-deshmukh-101617601975509.html101617601975509">
                             <img src="https://images.hindustantimes.com/img/2021/04/05/550x309/7fe2d31e-8a43-11eb-8c8d-7793c0212a86_1617151104054_1617602662684.jpg" alt="Anil Deshmukh" title="Anil Deshmukh" />

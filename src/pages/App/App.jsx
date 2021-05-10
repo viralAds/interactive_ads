@@ -19,7 +19,7 @@ import Poco from '../Poco/Poco';
 
 import Blackberrys from '../Blackberrys/Blackberrys';
 import BB1 from '../Blackberrys/BlackberrysOne/Blackberrys';
-import BB2 from '../Blackberrys/BlackberrysTwo/Blackberrys';
+import BB2 from '../Blackberrys/BbCarrousel/Blackberrys';
 import BB3 from '../Blackberrys/BlackberrysThree/Blackberrys';
 import WC1 from '../Blackberrys/WeddingCollection/Looks/Looks';
 import WC2 from '../Blackberrys/WeddingCollection/WeddingVideo/Blackberrys';

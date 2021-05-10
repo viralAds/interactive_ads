@@ -23,7 +23,7 @@ function Omega() {
           mirror: false,
         });
       }
-    
+     
       const [isPlaying, setIsPlaying] = useState(false);
       const [toggleFirstAnimationBox, setToggleFirstAnimationBox] = useState(false);
       const [toggleSecondAnimationBox, setToggleSecondAnimationBox] = useState(false);
@@ -61,7 +61,7 @@ function Omega() {
       const startVideo = () => {
         setIsPlaying(true);
         document.getElementsByClassName('first-screen')[0].style.setProperty("display", "none")
-    }
+      }
 
     return (
               <div>
