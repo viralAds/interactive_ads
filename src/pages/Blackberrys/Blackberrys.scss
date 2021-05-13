@@ -167,7 +167,7 @@
     width: 280px;
     height: 498px;
     overflow: hidden;
-    background-image: linear-gradient(0deg, #2b2ba1, #000066 );
+    background-image: linear-gradient(0deg, #301c08, #683d12 );
     display: flex;
     justify-content: center;
     align-items: center;
@@ -176,7 +176,7 @@
         height: 100px;
         width: 100px;
         border-radius: 50%;
-        background-image: linear-gradient(0deg, #000066, #2b2ba1 );
+        background-image: linear-gradient(180deg, #301c08, #683d12 );
         border: 3px solid #fff;
     }
 
@@ -507,10 +507,6 @@
         color: #fff;
         width: 40px;
         height: 40px;
-
-        // path {
-        //     width: 40px;
-        // }
     }
 
     .atc {

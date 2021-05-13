@@ -152,7 +152,6 @@ export default class play extends Component {
                             className="video-screen" 
                             url={asus}
                             progressInterval={100}
-                            // light={poster}
                             loop={false}
                             muted={false}
                             width="100%"

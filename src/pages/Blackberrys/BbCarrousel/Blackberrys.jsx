@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import '../Blackberrys.scss';
 import ReactPlayer from 'react-player';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-// import Popup from '../../Common/BbPopup';
-
-import AddCircleSharpIcon from '@material-ui/icons/AddCircleSharp';
-import RemoveCircleRoundedIcon from '@material-ui/icons/RemoveCircleRounded';
-import logo from '../../../assets/icons/bb-logo-dark.png';
+import Popup from '../../Common/Popup/Popup';
+// import AddCircleSharpIcon from '@material-ui/icons/AddCircleSharp';
+// import RemoveCircleRoundedIcon from '@material-ui/icons/RemoveCircleRounded';
+// import logo from '../../../assets/icons/bb-logo-dark.png';
 import {
     Carousel,
     CarouselItem,
@@ -40,17 +37,13 @@ const items = [
 ];
 
 function Blackberrys() {
-    if(typeof window !== `undefined`) {
-        AOS.init({
-          once: false,
-          mirror: false,
-        });
-    }
+    
     const [startAd, setStartAd] = useState(true);
     const [quantity, setQuantity] = useState(1);
     const [activeIndex, setActiveIndex] = useState(0);
     const [animating, setAnimating] = useState(false);
     const [isDescActive, setIsDescActive] = useState(false);
+
     const slides = items.map((item) => {
         return (
           <CarouselItem
@@ -80,11 +73,7 @@ function Blackberrys() {
       });
 
     useEffect(() => {
-        if(quantity <= 0) {
-            alert("Invalid value")
-            setQuantity(1)
-            return 0;
-        }
+        
         setTimeout(function(){ 
             const ele = document.getElementsByClassName("carousel-item")
             if(ele.length === 3) {
@@ -123,31 +112,6 @@ function Blackberrys() {
         setStartAd(false)
     }
 
-    const selectSize = (size) => {
-        const ele = document.getElementsByClassName('size')
-        Object.keys(ele).map((key) => {
-                if(ele[key].innerHTML === size.toString()) {
-                    document.getElementsByClassName('size')[key].className = "size active" 
-                }
-                else {
-                    document.getElementsByClassName('size')[key].className = "size"
-                }
-                return 0;
-          });
-    }
-
-    const increment = () => {
-        setQuantity(quantity + 1)
-    }
-
-    const decrement = () => {
-        setQuantity(quantity - 1)
-    }
-
-    const handleChange = (event) => {
-        setQuantity(parseInt(event.target.value))
-    }
-
     return (
         <div id="comp-div">
             { (startAd) ? 
@@ -160,42 +124,12 @@ function Blackberrys() {
                     <Row className="btn-row">
                         <Button onClick={() => showOptions()}>BUY NOW</Button>  
                     </Row>
-                    { isDescActive &&
-                        <div className="product-desc"
-                            data-aos={"slide-up"} 
-                            data-aos-delay="100"
-                            data-aos-mirror='false'
-                            data-aos-duration="1000"
-                            data-aos-easing="ease-out">
-                        <div className="bb-logo-wrapper">
-                            <img src={logo} alt="logo" />
-                        </div>
-                        <div className="specs">
-                            <div className="cost">INR 2,595</div>
-                            <div className="colors">COLORS: Navy</div>
-                        </div>
-                        <div className="sizes">
-                            <div className="size" onClick={() => selectSize(36)}>36</div>
-                            <div className="size" onClick={() => selectSize(39)}>39</div>
-                            <div className="size" onClick={() => selectSize(40)}>40</div>
-                            <div className="size" onClick={() => selectSize(42)}>42</div>
-                            <div className="size" onClick={() => selectSize(44)}>44</div>
-                            <div className="size" onClick={() => selectSize(46)}>46</div>
-                        </div>
-                        <div className="quantity">
-                            <span style={{ float: "left"}}>Quantity  :</span>
-                            <RemoveCircleRoundedIcon 
-                                onClick={() => decrement()}
-                                id="decrement" />
-                            <input type="number" value={quantity} onChange={(e) => handleChange(e)} />
-                            <AddCircleSharpIcon 
-                                id="increment"
-                                onClick={() => increment()}/>
-                        </div>
-                        <div className="addToCart">
-                            <Button style={{ marginTop: "1.5rem"}}>ADD TO CART</Button>  
-                        </div>
-                    </div>
+                    { isDescActive && 
+                        <Popup 
+                            quantity={quantity}
+                            setQuantity={setQuantity} 
+                            showQuantity={true} 
+                        />
                     }
                 </div>
                 <Carousel
