@@ -1,0 +1,64 @@
+.amd-wrapper {
+    position: relative;
+    .indicators {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 300px;
+        height: 10px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr;
+        column-gap: 10px;
+        padding: 0 5px;
+
+        .indicator.active {
+                opacity: 1!important;
+        }
+
+        .indicator {
+            width: 50px;
+            height: 1px;
+            background-color: #fff;
+            opacity: 0.5;
+        }
+
+        
+    }
+
+    .prev {
+        position: absolute;
+        width: 150px;
+        top: 0;
+        left: 0;
+        // background-color: red;
+        height: 100%;
+        opacity: 0.2;
+    }
+
+    .next {
+        position: absolute;
+        width: 150px;
+        top: 0;
+        left: 150px;
+        // background-color: yellow;
+        height: 100%;
+        opacity: 0.2;
+    }
+
+    .message {
+        position: absolute;
+        width: 300px;
+        text-align: center;
+        bottom: 50%;
+        color: #fff;
+        animation: blink 1s infinite ;
+    }
+
+    @keyframes blink {
+        0% { opacity: 1;}
+        50% { opacity: 0;}
+        100% { opacity: 1;}
+    }
+}
+

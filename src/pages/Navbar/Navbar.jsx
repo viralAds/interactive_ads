@@ -101,6 +101,9 @@ function HomePage() {
                   <DropdownItem>
                   <Link to="/blackberrys_three">BLACKBERRYS 2</Link>
                 </DropdownItem>
+                <DropdownItem>
+                  <Link to="/amd">AMD</Link>
+                </DropdownItem>
                 </DropdownMenu>
             </UncontrolledDropdown>
             </Nav>

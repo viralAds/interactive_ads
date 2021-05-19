@@ -16,6 +16,7 @@ import Philips from '../Philips/Philips';
 import Asics from '../Asics/Asics';
 import LG from '../LG/Lg';
 import Poco from '../Poco/Poco';
+import Amd from '../Amd/Amd';
 
 import Blackberrys from '../Blackberrys/Blackberrys';
 import BB1 from '../Blackberrys/BlackberrysOne/Blackberrys';
@@ -49,6 +50,7 @@ function App() {
             <Route path="/omeg" component={Lomega} />
             <Route path="/lg" component={LG} />
             <Route path="/poco" component={Poco} />
+            <Route path="/amd" component={Amd} />
             <Route path="/wedding_collection1" component={WC1} />
             <Route path="/wedding_collection2" component={WC2} />
             <Route path="/wedding_collection3" component={WC3} />
