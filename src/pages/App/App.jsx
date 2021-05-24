@@ -17,6 +17,8 @@ import Asics from '../Asics/Asics';
 import LG from '../LG/Lg';
 import Poco from '../Poco/Poco';
 import Amd from '../Amd/Amd';
+import Amd_Amazon from '../Amd_gwd/AmdAmazon';
+import Amd_Flipkart from '../Amd_gwd/AmdFlipkart';
 
 import Blackberrys from '../Blackberrys/Blackberrys';
 import BB1 from '../Blackberrys/BlackberrysOne/Blackberrys';
@@ -51,6 +53,9 @@ function App() {
             <Route path="/lg" component={LG} />
             <Route path="/poco" component={Poco} />
             <Route path="/amd" component={Amd} />
+            <Route path="/amd_amazon" component={Amd_Amazon} />
+            <Route path="/amd_flipkart" component={Amd_Flipkart} />
+
             <Route path="/wedding_collection1" component={WC1} />
             <Route path="/wedding_collection2" component={WC2} />
             <Route path="/wedding_collection3" component={WC3} />
