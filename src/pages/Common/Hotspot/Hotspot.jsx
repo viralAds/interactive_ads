@@ -8,20 +8,25 @@ const Hotspot = (props) => {
         <div>
             <div className="hotspot"
                 style={{ 
-                    top: props.toppos, 
-                    left: props.leftpos 
+                    top: props.toppos + "%" , 
+                    left: props.leftpos + "%" 
                 }}>
                 <div className="outer-circle"></div>
                 <div id={props.id} className="inner-circle" ></div>
             </div>
             <UncontrolledCollapse toggler={'#'+ props.id} className="hot-collapse"
                 style={{
-                    top: props.toppos,
-                    left: props.leftpos
+                    top: (props.toppos + 1) + "%" ,
+                    left: (props.leftpos + 1) + "%"
                 }}>
                 <HotspotTootip 
                     title={ props.details.title } 
-                    desc={ props.details.desc } />
+                    desc1={ props.details.desc1 }
+                    desc2={ props.details.desc2 }
+                    desc3={ props.details.desc3 }
+                    desc4={ props.details.desc4 }
+                    desc5={ props.details.desc5 } />
+
             </UncontrolledCollapse>
         </div>
     )

@@ -80,13 +80,13 @@
 
 .card { 
     border-radius: 0!important;
-    width: 400px;
+    width: 250px;
     
     .card-body {
         flex: 1 auto!important;
         min-height: 1px!important;
         padding: 0.5rem!important;
-        background-color: black!important;
+        background-color: black;
 
         .pop-title {
             color: #fff;
@@ -98,10 +98,43 @@
             font-size: 14px;
             color: #fff;
             font-family: Montserrat-Medium;
+            margin: 0!important;
+            padding: 0!important;
         }
     }
     .card-text {
         color: #fff;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .card { 
+        border-radius: 0!important;
+        width: 200px;
+        
+        .card-body {
+            flex: 1 auto!important;
+            min-height: 1px!important;
+            padding: 0.5rem!important;
+            background-color: black!important;
+    
+            .pop-title {
+                color: #fff;
+                font-size: 12px!important;
+                font-family: Montserrat-SemiBold;
+            }
+    
+            .pop-desc {
+                font-size: 12px;
+                color: #fff;
+                font-family: Montserrat-Light;
+                margin: 0!important;
+                padding: 0!important;
+            }
+        }
+        .card-text {
+            color: #fff;
+        }
     }
 }
 
