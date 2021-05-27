@@ -8,7 +8,7 @@ const Oppo = () => {
 
     const player = useRef(null)
     const [ playing, setPlaying ] = useState(true)
-    const [ isFirstActive, setIsFirstActive ] = useState(false)
+    // const [ isFirstActive, setIsFirstActive ] = useState(false)
     const [ isCameraButtons, setIsCameraButtons ] = useState(false)
     const [ isMobileSpec , setIsMobileSpec ] = useState(false)
     const [ isContinue ,setIsContinue] = useState(false)
