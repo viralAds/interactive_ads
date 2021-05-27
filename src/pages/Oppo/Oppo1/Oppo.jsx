@@ -18,13 +18,15 @@ const Oppo = () => {
         if(Math.floor(player.current.getCurrentTime()) === 6 ) {
             setPlaying(false)
         }
-
+        if(Math.floor(player.current.getCurrentTime()) === 11 ) {
+            setPlaying(false)
+        }
         if(player.current.getCurrentTime() > 1  && player.current.getCurrentTime() < 4 ) {
             setIsFirstActive(true)
         }
         else if(player.current.getCurrentTime() >  3) { setIsFirstActive(false) }
 
-        if(player.current.getCurrentTime() > 5 && player.current.getCurrentTime() < 7 ) {
+        if(player.current.getCurrentTime() > 5 && player.current.getCurrentTime() < 8 )  {
             setIsCameraButtons(true)
         }
         else if(player.current.getCurrentTime() >  7) { setIsCameraButtons(false) }
@@ -45,16 +47,21 @@ const Oppo = () => {
         setIsContinue(true)
     }
 
+    const handleEnd = () => {
+        player.current.seekTo(1, "second")
+        setPlaying(false)
+        setIsContinue(false)
+    }
     return (
         <div>
             <div className="video-wrapper">
                 <p className="hotspot-message">Click hotspots to engage</p>
-                {/*isContinue && <div className="conti-btn" onClick={()=> {
+                {isContinue && <div className="conti-btn" onClick={()=> {
+                    player.current.seekTo(player.current.getCurrentTime()+ 1 , "seconds")
                     setPlaying(true)
                     setIsContinue(false)
-                    
                 }
-                }>Continue</div>*/}
+                }>Continue</div>}
                 <ReactPlayer
                     ref={player}
                     className="video-screen" 
@@ -70,6 +77,7 @@ const Oppo = () => {
                     onDuration={(e) => getData(e)}
                     onProgress={state => handleProgress(state)}
                     onPause = {handlePause}
+                    onEnded= {handleEnd}
                 >
                 </ReactPlayer>
                 {  

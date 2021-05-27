@@ -56,7 +56,7 @@ function App() {
             <Route path="/amd" component={Amd} />
             <Route path="/amd_amazon" component={Amd_Amazon} />
             <Route path="/amd_flipkart" component={Amd_Flipkart} />
-            <Route path="/oppo1" component={Oppo_1} />
+            <Route path="/oppo" component={Oppo_1} />
             
             <Route path="/wedding_collection1" component={WC1} />
             <Route path="/wedding_collection2" component={WC2} />
