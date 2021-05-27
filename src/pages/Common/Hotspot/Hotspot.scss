@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0.7;
+    opacity: 0.9;
     // top: var(--topPos);
     // left: var(--leftPos);
 
@@ -73,28 +73,35 @@
     position: absolute!important;
     z-index: 1;
     width: 100px;
-    top: calc(var(--topPos) + 15px);
-    left: calc(var(--leftPos) - 110px);
+    // top: calc(var(--topPos) + 15px);
+    // left: calc(var(--leftPos) - 110px);
 }
 
 
 .card { 
+    border-radius: 0!important;
+    width: 400px;
+    
     .card-body {
         flex: 1 auto!important;
         min-height: 1px!important;
         padding: 0.5rem!important;
+        background-color: black!important;
 
-        span {
-            font-size: 10px;
-            font-family: Montserrat-SemiBold;
+        .pop-title {
+            color: #fff;
+            font-size: 18px!important;
+            font-family: Montserrat-Bold;
         }
 
         .pop-desc {
-            color: #DB4B29;
+            font-size: 14px;
+            color: #fff;
+            font-family: Montserrat-Medium;
         }
     }
     .card-text {
-        color: #212121;
+        color: #fff;
     }
 }
 

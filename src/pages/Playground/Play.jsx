@@ -142,10 +142,12 @@ export default class play extends Component {
                         <div className="instruction">
                             <span>Click the hotspot to engage</span>
                         </div>
-                        {  this.state.isFirstActive &&  
-                            <Hotspot id={this.state.id} toppos={this.state.toppos + "px"}  
-                            leftpos={this.state.leftpos + "px"} 
-                            details={this.state.details}/> 
+                        {  
+                            this.state.isFirstActive &&  
+                            <Hotspot id={this.state.id} 
+                                toppos={this.state.toppos + "px"}  
+                                leftpos={this.state.leftpos + "px"} 
+                                details={this.state.details}/> 
                         }
                         <ReactPlayer
                             ref={this.ref}

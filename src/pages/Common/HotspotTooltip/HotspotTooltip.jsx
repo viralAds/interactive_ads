@@ -9,8 +9,9 @@ const HotspotTooltip = (props) => {
                 <CardBody>
                     <CardText>
                         <span className="pop-title">{ props.title }</span><br/>
-                        <span className="pop-desc">{ props.desc }</span>
+                        
                     </CardText>
+                    <pre className="pop-desc">{ props.desc }</pre>
                 </CardBody>
             </Card>  
         </div>

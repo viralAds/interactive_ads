@@ -104,7 +104,7 @@ const Tap = () => {
                             </div>
                         </div>
                         }  
-                        </div> 
+                        </div>  
                         { isMasterActive && 
                             <div className="master-screen" data-aos={"zoom-in-right"} 
                                 data-aos-delay="100"
