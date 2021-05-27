@@ -61,14 +61,14 @@ const Oppo = () => {
                     setPlaying(true)
                     setIsContinue(false)
                 }
-                }>Continue</div>}
+                }>CONTINUE</div>}
                 <ReactPlayer
                     ref={player}
                     className="video-screen" 
                     url={oppoVideo}
                     progressInterval={100}
                     loop={false}
-                    muted={true}
+                    muted={false}
                     width="100%"
                     height="100%"
                     playing={ playing } 
