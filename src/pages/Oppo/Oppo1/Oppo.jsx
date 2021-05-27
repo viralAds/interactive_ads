@@ -68,7 +68,7 @@ const Oppo = () => {
                     url={oppoVideo}
                     progressInterval={100}
                     loop={false}
-                    muted={true}
+                    muted={false}
                     width="100%"
                     height="100%"
                     playing={ playing } 
