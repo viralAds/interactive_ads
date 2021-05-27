@@ -18,7 +18,7 @@ const Oppo = () => {
         if(Math.floor(player.current.getCurrentTime()) === 6 ) {
             setPlaying(false)
         }
-        if(Math.floor(player.current.getCurrentTime()) === 11 ) {
+        if(Math.ceil(player.current.getCurrentTime()) === 11 ) {
             setPlaying(false)
         }
         if(player.current.getCurrentTime() > 1  && player.current.getCurrentTime() < 4 ) {
@@ -68,7 +68,7 @@ const Oppo = () => {
                     url={oppoVideo}
                     progressInterval={100}
                     loop={false}
-                    muted={false}
+                    muted={true}
                     width="100%"
                     height="100%"
                     playing={ playing } 
