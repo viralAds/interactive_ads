@@ -26,7 +26,6 @@ const Hotspot = (props) => {
                     desc3={ props.details.desc3 }
                     desc4={ props.details.desc4 }
                     desc5={ props.details.desc5 } />
-
             </UncontrolledCollapse>
         </div>
     )

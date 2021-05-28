@@ -26,7 +26,7 @@ const ShakeAd = () => {
           mirror: false,
         });
       }
-    const [isDescActive, setIsDescActive] = useState(false);
+    const [isdesc1Active, setIsdesc1Active] = useState(false);
     const [isShaked, setIsShaked ] = useState(true)
     const [isOptionsActive, setIsOptionsActive] = useState(false);
     const [isAfternoonActive, setIsAfternoonActive] = useState(false)
@@ -83,7 +83,7 @@ const ShakeAd = () => {
         setIsPoolActive(false);
     }
     const showPopup = () => {
-        setIsDescActive(!isDescActive)
+        setIsdesc1Active(!isdesc1Active)
     }
 
     return (
@@ -95,7 +95,7 @@ const ShakeAd = () => {
                         <ScreenRotationIcon className="shake-icon"/>
                     </div>}
                     <div className="pop-up">
-                    { isDescActive &&        
+                    { isdesc1Active &&        
                         <div className="product-des"
                                 data-aos={"slide-up"} 
                                 data-aos-delay="100"
@@ -131,19 +131,21 @@ const ShakeAd = () => {
                             data-aos-mirror='false'
                             data-aos-duration="900"                                data-aos-easing="ease-out">
                             <img src={sc1} alt="noon" />
-                            <Hotspot id={"one"} toppos={"240px"}  
-                                leftpos={"160px"} 
+                            <Hotspot id={"one"}
+                                toppos={24}  
+                                leftpos={16} 
                                 details={{
                                     title: "3 PIECE SUIT",
-                                    desc: "RS-12999/-"
+                                    desc1: "RS-12999/-"
                                 }} /> 
-                            <Hotspot id={"two"} toppos={"155px"}  
-                                leftpos={"200px"} 
+                            <Hotspot id={"two"} 
+                                toppos={15}  
+                                leftpos={20} 
                                 details={{
                                     title: "2 PIECE SUIT",
-                                    desc: "RS-10999/-"
+                                    desc1: "RS-10999/-"
                                 }} /> 
-                            {!isDescActive && <>
+                            {!isdesc1Active && <>
                             <Button className="atc"
                             onClick={showPopup}>ADD TO CART</Button>
                             <ReplyIcon className="back-icon"
@@ -159,27 +161,27 @@ const ShakeAd = () => {
                             data-aos-duration="900"                                data-aos-easing="ease-out">
                             <img src={sc2} alt="noon" />
                             <Hotspot id={"one"} 
-                                toppos={"200px"}  
-                                leftpos={"160px"} 
+                                toppos={20}  
+                                leftpos={16} 
                                 details={{
                                     title: "BLAZER",
-                                    desc: "RS-12999/-"
+                                    desc1: "RS-12999/-"
                                 }} /> 
                             <Hotspot id={"two"} 
-                                toppos={"130px"}  
-                                leftpos={"240px"} 
+                                toppos={12}  
+                                leftpos={24} 
                                 details={{
                                     title: "SHIRT",
-                                    desc: "RS-5099/-"
+                                    desc1: "RS-5099/-"
                                 }} /> 
                             <Hotspot id={"three"} 
-                                toppos={"280px"}  
-                                leftpos={"210px"} 
+                                toppos={28}  
+                                leftpos={21} 
                                 details={{
                                     title: "TROUSER",
-                                    desc: "RS-1099/-"
+                                    desc1: "RS-1099/-"
                                 }} /> 
-                            {!isDescActive && <>
+                            {!isdesc1Active && <>
                             <Button className="atc"
                             onClick={showPopup}>ADD TO CART</Button>
                             <ReplyIcon className="back-icon" 
@@ -194,21 +196,21 @@ const ShakeAd = () => {
                             data-aos-duration="900"                                data-aos-easing="ease-out">
                             <img src={sc3} alt="noon" />
                             <Hotspot id={"one"} 
-                                toppos={"200px"}  
-                                leftpos={"160px"} 
+                                toppos={20}  
+                                leftpos={15} 
                                 details={{
                                     title: "BLAZER",
-                                    desc: "RS-12999/-"
+                                    desc1: "RS-12999/-"
                                 }} /> 
                             <Hotspot id={"two"} 
-                                toppos={"130px"}  
-                                leftpos={"240px"} 
+                                toppos={12}  
+                                leftpos={24} 
                                 details={{
                                     title: "SHIRT",
-                                    desc: "RS-5099/-"
+                                    desc1: "RS-5099/-"
                                 }} /> 
                             
-                            {!isDescActive && <>
+                            {!isdesc1Active && <>
                                 <ReplyIcon className="back-icon"
                                 onClick={showOptions} /> 
                                 <Button className="atc"

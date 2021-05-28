@@ -72,7 +72,7 @@ const Oppo = () => {
                     width="100%"
                     height="100%"
                     playing={ playing } 
-                    controls={ false }
+                    controls={ true }
                     onStart={() => onStartVideo("Started")}
                     onDuration={(e) => getData(e)}
                     onProgress={state => handleProgress(state)}
@@ -96,7 +96,7 @@ const Oppo = () => {
                     <Hotspot 
                         id={"microlense"} 
                         toppos={30}   
-                        leftpos={57 } 
+                        leftpos={57} 
                         details={{
                             title: "Microlens",
                             desc1: `3MP microlens camera`,

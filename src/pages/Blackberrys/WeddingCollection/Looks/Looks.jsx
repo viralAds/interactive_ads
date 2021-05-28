@@ -127,17 +127,20 @@ const Tap = () => {
                                 data-aos-mirror='false'
                                 data-aos-duration="900"                                data-aos-easing="ease-out">
                                 <img src={sc1} alt="noon" />
-                                <Hotspot id={"one"} toppos={"240px"}  
-                                    leftpos={"160px"} 
+                                <Hotspot 
+                                    id={"one"} 
+                                    toppos={30}  
+                                    leftpos={60} 
                                     details={{
                                         title: "3 PIECE SUIT",
-                                        desc: "RS-12999/-"
+                                        desc1: "RS-12999/-"
                                     }} /> 
-                                <Hotspot id={"two"} toppos={"155px"}  
-                                    leftpos={"200px"} 
+                                <Hotspot id={"two"} 
+                                    toppos={60}  
+                                    leftpos={80} 
                                     details={{
                                         title: "2 PIECE SUIT",
-                                        desc: "RS-10999/-"
+                                        desc1: "RS-10999/-"
                                     }} /> 
                                 {!isDescActive && <>
                                 <Button className="atc"
@@ -155,25 +158,25 @@ const Tap = () => {
                                 data-aos-duration="900"                                data-aos-easing="ease-out">
                                 <img src={sc2} alt="noon" />
                                 <Hotspot id={"one"} 
-                                    toppos={"200px"}  
-                                    leftpos={"160px"} 
+                                    toppos={20}  
+                                    leftpos={60} 
                                     details={{
                                         title: "BLAZER",
-                                        desc: "RS-12999/-"
+                                        desc1: "RS-12999/-"
                                     }} /> 
                                 <Hotspot id={"two"} 
-                                    toppos={"130px"}  
-                                    leftpos={"240px"} 
+                                    toppos={40}  
+                                    leftpos={85} 
                                     details={{
                                         title: "SHIRT",
-                                        desc: "RS-5099/-"
+                                        desc1: "RS-5099/-"
                                     }} /> 
                                 <Hotspot id={"three"} 
-                                    toppos={"280px"}  
-                                    leftpos={"210px"} 
+                                    toppos={60}  
+                                    leftpos={80} 
                                     details={{
                                         title: "TROUSER",
-                                        desc: "RS-1099/-"
+                                        desc1: "RS-1099/-"
                                     }} /> 
                                 {!isDescActive && <>
                                 <Button className="atc"
@@ -183,33 +186,32 @@ const Tap = () => {
                                 </>}
                             </div>
                         }
-                        {   isEveActive &&
+                        {isEveActive &&
                             <div className="looks-screen" data-aos={"flip-up"} 
                                 data-aos-delay="100"
                                 data-aos-mirror='false'
                                 data-aos-duration="900"                                data-aos-easing="ease-out">
                                 <img src={sc3} alt="noon" />
                                 <Hotspot id={"one"} 
-                                    toppos={"200px"}  
-                                    leftpos={"160px"} 
+                                    toppos={26}  
+                                    leftpos={60} 
                                     details={{
                                         title: "BLAZER",
-                                        desc: "RS-12999/-"
+                                        desc1: "RS-12999/-"
                                     }} /> 
                                 <Hotspot id={"two"} 
-                                    toppos={"130px"}  
-                                    leftpos={"240px"} 
+                                    toppos={50}  
+                                    leftpos={70} 
                                     details={{
                                         title: "SHIRT",
-                                        desc: "RS-5099/-"
+                                        desc1: "RS-5099/-"
                                     }} /> 
-                                
-                                {!isDescActive && <>
+                                {!isDescActive && <div>
                                     <ReplyIcon className="back-icon"
                                     onClick={startInteraction} /> 
                                     <Button className="atc"
                                     onClick={showPopup}>ADD TO CART</Button>
-                                </>}
+                                </div>}
                             </div>
                         }
                         { firstPage && 

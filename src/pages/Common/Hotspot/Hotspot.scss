@@ -80,17 +80,12 @@
 
 .card { 
     border-radius: 0!important;
-    width: 250px;
-    
     .card-body {
         flex: 1 auto!important;
         min-height: 1px!important;
         padding: 0.5rem!important;
-        background-color: black;
 
         .pop-title {
-            color: #fff;
-            font-size: 18px!important;
             font-family: Montserrat-Bold;
         }
 
