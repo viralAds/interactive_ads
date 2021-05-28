@@ -73,6 +73,9 @@ function HomePage() {
                     <Link to="/swap">SWAP</Link>
                   </DropdownItem>
                   <DropdownItem>
+                    <Link to="/oppo">OPPO Find X3 Pro</Link>
+                  </DropdownItem>
+                  <DropdownItem>
                     <Link to="/play">HOTSPOT</Link>
                   </DropdownItem>
                 </DropdownMenu>

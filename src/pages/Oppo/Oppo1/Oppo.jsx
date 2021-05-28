@@ -8,7 +8,6 @@ const Oppo = () => {
 
     const player = useRef(null)
     const [ playing, setPlaying ] = useState(true)
-    // const [ isFirstActive, setIsFirstActive ] = useState(false)
     const [ isCameraButtons, setIsCameraButtons ] = useState(false)
     const [ isMobileSpec , setIsMobileSpec ] = useState(false)
     const [ isContinue ,setIsContinue] = useState(false)
@@ -20,11 +19,6 @@ const Oppo = () => {
         if(Math.ceil(player.current.getCurrentTime()) === 11 ) {
             setPlaying(false)
         }
-        // if(player.current.getCurrentTime() > 0  && player.current.getCurrentTime() < 4 ) {
-        //     setIsFirstActive(true)
-        // }
-        // else if(player.current.getCurrentTime() >  3) { setIsFirstActive(false) }
-
         if(player.current.getCurrentTime() > 5 && player.current.getCurrentTime() < 8 )  {
             setIsCameraButtons(true)
         }
@@ -34,12 +28,6 @@ const Oppo = () => {
             setIsMobileSpec(true)
         }
         else if(player.current.getCurrentTime() >  11) { setIsMobileSpec(false) }
-    }
-
-    const getData = (e) => {
-    }
-
-    const onStartVideo = () => {
     }
 
     const handlePause = () => {   
@@ -72,25 +60,11 @@ const Oppo = () => {
                     height="100%"
                     playing={ playing } 
                     controls={ false }
-                    onStart={() => onStartVideo("Started")}
-                    onDuration={(e) => getData(e)}
                     onProgress={state => handleProgress(state)}
                     onPause = {handlePause}
                     onEnded= {handleEnd}
                 >
                 </ReactPlayer>
-                { /* 
-                    isFirstActive &&  
-                    <Hotspot 
-                        id={"one"} 
-                        toppos={15}   
-                        leftpos={35} 
-                        details={{
-                            title: "OPPO Find X3 Pro (CPH2173)",
-                            desc1: `1 Billion Colour Dual Primary Cameras`,
-                        }}
-                    /> 
-                    */}
                 {isCameraButtons &&
                     <Hotspot 
                         id={"microlense"} 
