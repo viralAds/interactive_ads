@@ -14,7 +14,6 @@ const Oppo = () => {
     const [ isContinue ,setIsContinue] = useState(false)
 
     const handleProgress = state => {
-
         if(Math.floor(player.current.getCurrentTime()) === 6 ) {
             setPlaying(false)
         }
@@ -56,12 +55,12 @@ const Oppo = () => {
         <div>
             <div className="video-wrapper">
                 <p className="hotspot-message">Click hotspots to engage</p>
-                {isContinue && <div className="conti-btn" onClick={()=> {
+                {isContinue && <div className="conti-btn" 
+                onClick={()=> {
                     player.current.seekTo(player.current.getCurrentTime()+ 1 , "seconds")
                     setPlaying(true)
-                    setIsContinue(false)
-                }
-                }>CONTINUE</div>}
+                    setIsContinue(false)}}
+                    style={{fontFamily: 'Montserrat-Light'}}>CONTINUE</div>}
                 <ReactPlayer
                     ref={player}
                     className="video-screen" 
@@ -72,7 +71,7 @@ const Oppo = () => {
                     width="100%"
                     height="100%"
                     playing={ playing } 
-                    controls={ true }
+                    controls={ false }
                     onStart={() => onStartVideo("Started")}
                     onDuration={(e) => getData(e)}
                     onProgress={state => handleProgress(state)}
