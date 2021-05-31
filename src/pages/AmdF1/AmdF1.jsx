@@ -96,7 +96,7 @@ const AmdF1 = () => {
               alt="amdF1"
             />
             <a
-              href="https://www.ekaleido.tech/"
+              href="https://www.amd.com/"
               target="_blank"
               rel="noreferrer"
               style={{
