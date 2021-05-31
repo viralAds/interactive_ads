@@ -26,7 +26,7 @@ const AmdF1 = () => {
           onClick={handleFrame}
         >
           <Waypoint onEnter={handleEnterViewport} onLeave={handleExitViewport}>
-            <video width="300" height="250" autoPlay muted={isMutedActive}>
+            <video width="300" height="250" autoPlay={true} muted={isMutedActive}>
               <source src={amdVideo} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
