@@ -1,7 +1,7 @@
 //================================================
 // Blackberrys One, Three  || Jnto
 
-.iframe-wrapper {
+._600x300frame {
     position: relative;
     width: 100%;
     height: 100%;
@@ -11,20 +11,7 @@
     }
 }
 
-.jnto-iframe-wrapper {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-color: #212121;
-    display: flex;
-    justify-content: center;
-    iframe {
-        width: 320px;
-        height: 480px;
-    } 
-}
-
-.clark-iframe-wrapper, ._320x480frame {
+._320x480frame {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -37,7 +24,7 @@
     } 
 }
 
-.philips-iframe-wrapper {
+._640x960frame {
     position: relative;
     width: 100%;
     height: 100%;
@@ -52,7 +39,22 @@
     } 
 }
 
-.lg-iframe-wrapper {
+._1080x1920frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    iframe {
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+    } 
+}
+
+._360x640frame {
     position: relative;
     width: 100%;
     height: 100%;
@@ -68,7 +70,7 @@
 }
 
 
-.aws-iframe-wrapper {
+._300x250frame {
     iframe {
         width: 300px;
         height: 250px;

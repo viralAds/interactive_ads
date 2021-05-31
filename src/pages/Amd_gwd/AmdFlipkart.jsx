@@ -2,7 +2,7 @@ import React from 'react'
 
 const Amd = () => {
     return (
-        <div className="aws-iframe-wrapper">
+        <div className="_300x250frame">
             <iframe src="https://43215-ekaleidoanuj.github.io/amd_flipkart/" 
             title="AWS Advertisement"></iframe>
         </div>

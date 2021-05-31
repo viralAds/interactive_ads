@@ -2,11 +2,9 @@ import React from 'react'
 
 const Asics = () => {
     return (
-        <div>
-            <div className="philips-iframe-wrapper">
-                <iframe src="https://43215-ekaleidoanuj.github.io/asics/" 
-                    title="Blackberrys Advertisement"></iframe>
-            </div>
+        <div className="_1080x1920frame">
+            <iframe src="https://43215-ekaleidoanuj.github.io/asics/" 
+                title="Asics"></iframe>
         </div>
     )
 }

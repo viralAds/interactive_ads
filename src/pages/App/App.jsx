@@ -29,6 +29,7 @@ import WC1 from '../Blackberrys/WeddingCollection/Looks/Looks';
 import WC2 from '../Blackberrys/WeddingCollection/WeddingVideo/Blackberrys';
 import WC3 from '../Blackberrys/WeddingCollection/Shake/ShakeAd';
 import AmdMerc from '../AmdMerc/AmdMerc';
+import AmdMerc2 from '../AmdMerc2/AmdMerc';
 
 function App() {
   return (
@@ -59,6 +60,7 @@ function App() {
             <Route path="/amd_flipkart" component={Amd_Flipkart} />
             <Route path="/oppo" component={Oppo_1} />
             <Route path="/amd_merc_q2_2021" component={AmdMerc} />
+            <Route path="/amd_merc_300x250_q2_2021" component={AmdMerc2} />
             <Route path="/wedding_collection1" component={WC1} />
             <Route path="/wedding_collection2" component={WC2} />
             <Route path="/wedding_collection3" component={WC3} />
