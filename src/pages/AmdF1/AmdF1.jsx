@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Waypoint } from "react-waypoint";
 import amdVideo from "../../assets/videos/amd1.mp4";
 import image from "../../assets/img/amd/amdf1.jpg";
@@ -7,6 +7,11 @@ import "./style.scss";
 const AmdF1 = () => {
   const [isfirstFrameActive, setIsfirstFrameActive] = useState(true);
   const [isMutedActive, setIsMutedActive] = useState(false);
+
+  useEffect(() => {
+    setIsMutedActive(false)
+  }, [])
+
   const handleFrame = () => {
     setIsfirstFrameActive(false);
   };
@@ -26,7 +31,7 @@ const AmdF1 = () => {
           onClick={handleFrame}
         >
           <Waypoint onEnter={handleEnterViewport} onLeave={handleExitViewport}>
-            <video width="300" height="250" autoPlay={true} muted={isMutedActive}>
+            <video width="300" height="250" autoPlay={!isMutedActive} muted={isMutedActive}>
               <source src={amdVideo} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
@@ -37,7 +42,7 @@ const AmdF1 = () => {
               position: "absolute",
               height: "min-content",
               width: 300,
-              bottom: 30,
+              bottom: 2,
               textAlign: "center",
               color: "#fff",
               fontFamily: "Montserrat-Medium",
