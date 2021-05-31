@@ -1,0 +1,18 @@
+.message {
+  font-size: 15px;
+  animation-name: bounce;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+
+@keyframes bounce {
+  0% {
+    font-size: 15px;
+  }
+  50% {
+    font-size: 17px;
+  }
+  100% {
+    font-size: 15px;
+  }
+}
