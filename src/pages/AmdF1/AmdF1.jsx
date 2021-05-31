@@ -37,7 +37,7 @@ const AmdF1 = () => {
               position: "absolute",
               height: "min-content",
               width: 300,
-              bottom: 50,
+              bottom: 30,
               textAlign: "center",
               color: "#fff",
               fontFamily: "Montserrat-Medium",
