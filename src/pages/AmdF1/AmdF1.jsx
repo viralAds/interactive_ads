@@ -98,7 +98,7 @@ const AmdF1 = () => {
             <a
               href="https://www.ekaleido.tech/"
               target="_blank"
-              rel="noopener"
+              rel="noreferrer"
               style={{
                 position: "absolute",
                 width: 87,
@@ -106,7 +106,7 @@ const AmdF1 = () => {
                 bottom: 14,
                 right: 38,
               }}
-            ></a>
+            >.</a>
           </div>
         )}
       </div>
