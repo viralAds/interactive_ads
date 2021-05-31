@@ -122,6 +122,9 @@ function HomePage() {
                 <DropdownItem>
                   <Link to="/amd_merc_300x250_q2_2021">AMD Merc 300x250 Q2 2021</Link>
                 </DropdownItem>
+                <DropdownItem>
+                  <Link to="/amd_f1">AMD F1</Link>
+                </DropdownItem>
                 </DropdownMenu>
             </UncontrolledDropdown>
             </Nav>
