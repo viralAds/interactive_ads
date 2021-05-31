@@ -117,10 +117,10 @@ function HomePage() {
                   <Link to="/amd_amazon">AMD Amazon</Link>
                 </DropdownItem>
                 <DropdownItem>
-                  <Link to="/amd_merc_q1_2021">AMD Merc Q1 2021</Link>
+                  <Link to="/amd_merc_q2_2021">AMD Merc Q1 2021</Link>
                 </DropdownItem>
                 <DropdownItem>
-                  <Link to="/amd_merc_300x250_q1_2021">AMD Merc 300x250 Q1 2021</Link>
+                  <Link to="/amd_merc_300x250_q2_2021">AMD Merc 300x250 Q1 2021</Link>
                 </DropdownItem>
                 </DropdownMenu>
             </UncontrolledDropdown>
