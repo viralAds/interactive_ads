@@ -1,4 +1,5 @@
 import './App.scss';
+import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Homepage from '../Home/Homepage';
@@ -32,8 +33,17 @@ import AmdMerc from '../AmdMerc/AmdMerc';
 import AmdMerc2 from '../AmdMerc2/AmdMerc';
 import AmdF1 from '../AmdF1/AmdF1'
 import _24Seven from '../_24Seven/_24seven'
+import useToken from '../Hooks/useToken';
+import Login from '../Login/Login';
 
 function App() {
+
+  const { token, setToken } = useToken();
+
+  if(!token) {
+    return <Login setToken={setToken} />
+  }
+  console.log(token)
   return (
     <div className="App">
       <BrowserRouter>
@@ -69,7 +79,6 @@ function App() {
             <Route path="/wedding_collection3" component={WC3} />
             <Route path="/_24seven" component={_24Seven} />
             <Route exact path="/" component={Homepage} /> 
-            
         </Switch>
       </BrowserRouter>
     </div>

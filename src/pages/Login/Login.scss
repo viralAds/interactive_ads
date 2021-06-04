@@ -1,0 +1,128 @@
+.login-body {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: #1a1821;
+  height: 100vh;
+}
+
+.message {
+  height: 30vh;
+  padding: 2rem;
+
+  h1, h3 {
+    color: #fff;
+    span {
+      color:rgb(255, 51, 51);
+    }
+  }
+}
+
+.inputs-section {
+  height: 70vh;
+  padding: 0 2rem;
+
+  form {
+    display: flex;
+    flex-direction: column;
+  
+    input {
+      background-color: #1a1821;
+      border: 2px solid #35333d;
+      border-radius: 10px;
+      padding: 1rem 0.5rem;
+      margin: 0.5rem 0;
+      color: white;
+    }  
+  }
+}
+
+h1 {
+  font-size: 30px;
+  font-family: 500;
+} 
+
+.inputs-section form 
+.inputs-section form input:active,
+.inputs-section form input:focus {
+  outline: none;
+}
+
+.signin-btn {
+  color: #1a1821!important;
+  background-color: #fff!important;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-top: 2rem;
+  font-family: Montserrat-Bold;
+  transition-duration: 0.5s;
+}
+
+.signin-btn:hover {
+  color: #fff!important;
+  background-color: transparent!important;
+  border: 1px solid #fff!important;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-top: 2rem;
+  font-family: Montserrat-Bold;
+}
+
+.error {
+  color: rgb(255, 110, 110);
+}
+
+.forgot a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 786px) {
+  .message {
+    height: 30vh;
+    padding: 2rem;
+  }
+
+  .inputs-section {
+    height: 70vh;
+    padding: 0 2rem;
+
+    form {
+      display: flex;
+      flex-direction: column;
+  
+      input {
+        background-color: #1a1821;
+        border: 2px solid #35333d;
+        border-radius: 10px;
+        padding: 1rem 0.5rem;
+        margin: 0.5rem 0;
+        color: white;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 786px) {
+  h1 {
+    font-size: 50px;
+    font-family: 200;
+  }
+
+  .message,
+  .inputs-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .inputs-section {
+    height: 100vh;
+
+    form {
+      width: 100%;
+    }
+  }
+}
