@@ -66,8 +66,7 @@ const OnSwipe = () => {
             key={item.img}
           >
             <img src={item.img} alt={"frames"} />
-            { item.status && <a className="jnto-cta-btn" href="https://www.japan.travel/en/in/goodnessofjapan/?utm_source=google&utm_medium=cpc&utm_campaign=goodness_of_japan_sumo&gclid=Cj0KCQjwgtWDBhDZARIsADEKwgOWQN0rUcRLtAhZqqgFSnNVdIxR3WPlWChG6GdJ6gjfLwl5_Jf8_ikaAp3yEALw_wcB"
-                        target="_blank" rel="noreferrer">Click to PLAY</a>}
+            { item.status && <a className="jnto-cta-btn" href="https://www.japan.travel/en/in/goodnessofjapan/?utm_source=google&utm_medium=cpc&utm_campaign=goodness_of_japan_sumo&gclid=Cj0KCQjwgtWDBhDZARIsADEKwgOWQN0rUcRLtAhZqqgFSnNVdIxR3WPlWChG6GdJ6gjfLwl5_Jf8_ikaAp3yEALw_wcB" target="_blank" rel="noreferrer">Click to PLAY</a>}
           </CarouselItem>
         );
       });

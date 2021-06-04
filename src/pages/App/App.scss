@@ -37,6 +37,10 @@ h5, h6 {
 	font-family: Montserrat-Medium;
 }
 
+p {
+	font-family: Montserrat-Regular;
+}
+
 @font-face {
     font-family: Montserrat-BoldItalic;
     src: url(../../assets/fonts/Montserrat-BoldItalic.ttf);
@@ -66,4 +70,9 @@ h5, h6 {
 @font-face {
 	font-family: Montserrat-SemiBold;
 	src: url(../../assets/fonts/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+	font-family: Montserrat-Regular;
+	src: url(../../assets/fonts/Montserrat-Regular.ttf);
 }

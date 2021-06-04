@@ -31,6 +31,7 @@ import WC3 from '../Blackberrys/WeddingCollection/Shake/ShakeAd';
 import AmdMerc from '../AmdMerc/AmdMerc';
 import AmdMerc2 from '../AmdMerc2/AmdMerc';
 import AmdF1 from '../AmdF1/AmdF1'
+import _24Seven from '../_24Seven/_24seven'
 
 function App() {
   return (
@@ -66,6 +67,7 @@ function App() {
             <Route path="/wedding_collection1" component={WC1} />
             <Route path="/wedding_collection2" component={WC2} />
             <Route path="/wedding_collection3" component={WC3} />
+            <Route path="/_24Seven" component={_24Seven} />
             <Route exact path="/" component={Homepage} /> 
             
         </Switch>

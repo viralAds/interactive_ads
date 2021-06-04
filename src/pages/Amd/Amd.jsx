@@ -49,7 +49,6 @@ const Amd = () => {
             return
         }
         setImgState(imgState - 1)
-        console.log("prev", imgState )
     }
 
     const onNext = () => {
@@ -57,7 +56,6 @@ const Amd = () => {
             return
         }
         setImgState(imgState + 1)
-        console.log("next", imgState)
     }
 
     return (
