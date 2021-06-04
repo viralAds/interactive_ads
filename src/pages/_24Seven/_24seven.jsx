@@ -15,13 +15,11 @@ const _24seven = () => {
 
   const handleClick = () => setFrames(frames + 1);
   const onSwipeUp = (e) => setFrames(frames + 1);
-
   const handleFirst = () => setFrames(frames + 1);
   const handleSecond = () => setFrames(frames + 2);
   const handleThird = () => setFrames(frames + 3);
   const handleFourth = () => setFrames(frames + 4);
 
-  console.log(frames);
   switch (frames) {
     case 1: {
       return (
@@ -38,7 +36,14 @@ const _24seven = () => {
             <div className="transparent"></div>
           </Swipe>
           <img style={{ width: 360 }} src={frame_2} alt="frame_2" />
-          <div className="message-1">
+          <div
+            className="message-1"
+            data-aos={"fade-down"}
+            data-aos-delay="100"
+            data-aos-mirror="false"
+            data-aos-duration="900"
+            data-aos-easing="ease-out"
+          >
             YOUR <span>SAFETY</span>
             <br /> IS OUR <span>PRIORITY</span>
           </div>
@@ -69,7 +74,9 @@ const _24seven = () => {
             target="_blank"
             rel="noreferrer"
             className="know-more"
-          >.</a>  
+          >
+            .
+          </a>
         </div>
       );
     }
@@ -82,7 +89,9 @@ const _24seven = () => {
             target="_blank"
             rel="noreferrer"
             className="know-more"
-          >.</a>
+          >
+            .
+          </a>
         </div>
       );
     }
@@ -95,7 +104,9 @@ const _24seven = () => {
             target="_blank"
             rel="noreferrer"
             className="know-more"
-          >.</a>
+          >
+            .
+          </a>
         </div>
       );
     }
@@ -108,11 +119,14 @@ const _24seven = () => {
             target="_blank"
             rel="noreferrer"
             className="know-more"
-          >.</a>
+          >
+            .
+          </a>
         </div>
       );
     }
-    default: <p>Error Loading the page</p>
+    default:
+      <p>Error Loading the page</p>;
   }
 };
 
