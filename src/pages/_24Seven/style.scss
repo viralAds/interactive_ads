@@ -1,0 +1,138 @@
+._360x640 {
+  position: relative;
+  width: 360px;
+  height: 640px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #313131;
+  object-fit: contain;
+}
+
+.frame_1 {
+  img {
+    height: 100%;
+    object-fit: contain;
+  }
+  p {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    width: 120px;
+    margin: 0;
+    margin-left: -60px;
+    font-family: Montserrat-Medium;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.frame_2 {
+
+  img {
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .transparent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 360px;
+    height: 640px;
+    background-color: transparent;
+    z-index: 999
+  }
+
+  .message-1 {
+    position: absolute;
+    left: 50%;
+    width: 200px;
+    font-family: Montserrat-Bold;
+    font-size: 22px;
+    top: 75%;
+    text-align: center;
+    margin-left: -100px;
+
+    span {
+      color: #f28020;
+    };
+  }
+
+  .message {
+    position: absolute;
+    left: 50%;
+    width: 100px;
+    margin-left: -50px;
+    top: 90%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 10px;
+    justify-items: center;
+  }
+
+  .swipe {
+    width: 50px;
+    animation: swipeRight 1s infinite;
+    transform: rotate(-30deg);
+    transform-origin: bottom center;
+  }
+
+  @keyframes swipeRight {
+    from {
+      transform: translateY(15px)
+    }
+    to {
+      transform: translateY(0px)
+    }
+  }
+}
+
+.frame_3 {
+  .box {
+    width: 139px;
+    height: 156px;
+    border-radius: 28px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 10;
+  }
+
+  .first {
+    top: 24%;
+    left: 8%;
+  }
+
+  .sec {
+    top: 24%;
+    left: 54%;
+  }
+  
+  .third {
+    top: 51.5%;
+    left: 8%;
+  }
+  .four {
+    top: 51.5%;
+    left: 54%;
+  }
+}
+
+
+.last-frame {
+  .know-more {
+    position: absolute;
+    width: 138px;
+    height: 30px;
+    top: 87%;
+    left: 31%;
+    background-color: transparent;
+  }
+}
