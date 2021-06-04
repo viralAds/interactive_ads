@@ -27,3 +27,17 @@
     }
 }
 
+.logout {
+    background-color: rgb(224, 46, 46)!important;
+    color: #313131!important;
+    border-radius: 10px;
+    font-family: Montserrat-Bold;
+    transition-duration: 0.5s;
+}
+
+.logout:hover {
+    background-color: rgb(224, 46, 46)!important;
+    box-shadow: 0 0 0 3px rgb(255, 79, 79) ;
+    color: #fff!important;
+    border-radius: 10px;
+}

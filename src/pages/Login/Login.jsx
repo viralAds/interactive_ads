@@ -1,33 +1,24 @@
 import React, { useState } from "react";
 import "./Login.scss";
 import { Container, Col, Row, Button } from "reactstrap";
-import PropTypes from "prop-types";
+import { PASSWORD } from '../../env';
 
-async function loginUser(credentials) {
-  return fetch("http://localhost:8080/login", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(credentials),
-  }).then((data) => data.json());
-}
-
-export default function Login({ setToken }) {
-  const [password, setPassword] = useState("");
+export default function Login(props) {
+  
+  const { setPassword } = props
+  const [ pass, setPass ] = useState("")
   const [isInvalid, setIsInvalid ] =  useState(false)
-  const handleSubmit = async (e) => {
+  
+  const handleSubmit = (e) => {
     e.preventDefault();
-    const token = await loginUser({
-      password,
-    });
    
-    if(token.token === password){
+    if(PASSWORD === pass){
       setIsInvalid(false)
-      setToken(token);
+      setPassword(pass)
     }
     else {
       setIsInvalid(true)
+      setPassword(undefined)
     }
   };
 
@@ -50,8 +41,8 @@ export default function Login({ setToken }) {
                 name="password"
                 type="password"
                 placeholder="Enter password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
+                value={pass}
+                onChange={(e) => setPass(e.target.value)}
               />
               <Button className="btn signin-btn" type="submit">
                 SIGN IN
@@ -63,7 +54,3 @@ export default function Login({ setToken }) {
     </div>
   );
 }
-
-Login.propTypes = {
-  setToken: PropTypes.func.isRequired,
-};

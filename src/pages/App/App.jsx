@@ -1,5 +1,5 @@
 import "./App.scss";
-import React from "react";
+import React, { useState , useEffect } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Homepage from "../Home/Homepage";
@@ -33,11 +33,16 @@ import AmdMerc from "../AmdMerc/AmdMerc";
 import AmdMerc2 from "../AmdMerc2/AmdMerc";
 import AmdF1 from "../AmdF1/AmdF1";
 import _24Seven from "../_24Seven/_24seven";
-import useToken from "../Hooks/useToken";
 import Login from "../Login/Login";
+// import { logout } from '../Navbar/Navbar';
 
 function App() {
-  const { token, setToken } = useToken("");
+
+  const [ password, setPassword ] = useState("") 
+  // useEffect (() => {
+  //   console.log(logout)
+  //   setPassword(logout)
+  // }, [logout])
 
   return (
     <div className="App">
@@ -73,7 +78,7 @@ function App() {
           <Route path="/wedding_collection3" component={WC3} />
           <Route path="/_24seven" component={_24Seven} />
           <Route exact path="/">
-            {!token ? <Login setToken={setToken} /> : <Homepage />}
+            {!password ? <Login setPassword={setPassword} /> : <Homepage />}
           </Route>
         </Switch>
       </BrowserRouter>

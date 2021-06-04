@@ -1,0 +1,1 @@
+export const PASSWORD = "43215";
