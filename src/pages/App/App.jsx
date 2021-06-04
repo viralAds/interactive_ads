@@ -67,7 +67,7 @@ function App() {
             <Route path="/wedding_collection1" component={WC1} />
             <Route path="/wedding_collection2" component={WC2} />
             <Route path="/wedding_collection3" component={WC3} />
-            <Route path="/_24Seven" component={_24Seven} />
+            <Route path="/_24seven" component={_24Seven} />
             <Route exact path="/" component={Homepage} /> 
             
         </Switch>

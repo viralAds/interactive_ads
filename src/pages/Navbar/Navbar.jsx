@@ -125,6 +125,9 @@ function HomePage() {
                 <DropdownItem>
                   <Link to="/amd_f1">AMD F1</Link>
                 </DropdownItem>
+                <DropdownItem>
+                  <Link to="/_24seven">24 Seven</Link>
+                </DropdownItem>
                 </DropdownMenu>
             </UncontrolledDropdown>
             </Nav>
