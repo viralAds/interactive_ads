@@ -36,14 +36,7 @@ const _24seven = () => {
             <div className="transparent"></div>
           </Swipe>
           <img style={{ width: 360 }} src={frame_2} alt="frame_2" />
-          <div
-            className="message-1"
-            data-aos={"fade-down"}
-            data-aos-delay="100"
-            data-aos-mirror="false"
-            data-aos-duration="900"
-            data-aos-easing="ease-out"
-          >
+          <div className="message-1">
             YOUR <span>SAFETY</span>
             <br /> IS OUR <span>PRIORITY</span>
           </div>
