@@ -15,13 +15,20 @@ async function loginUser(credentials) {
 
 export default function Login({ setToken }) {
   const [password, setPassword] = useState("");
-
+  const [isInvalid, setIsInvalid ] =  useState(false)
   const handleSubmit = async (e) => {
     e.preventDefault();
     const token = await loginUser({
       password,
     });
-    setToken(token);
+   
+    if(token.token === password){
+      setIsInvalid(false)
+      setToken(token);
+    }
+    else {
+      setIsInvalid(true)
+    }
   };
 
   return (
@@ -37,7 +44,7 @@ export default function Login({ setToken }) {
           </Col>
           <Col lg="6" sm="12" className="inputs-section">
             <form onSubmit={handleSubmit}>
-              <span className="error"></span>
+              {isInvalid && <span className="error">!! Incorrect Password</span>}
               <input
                 id="password"
                 name="password"
