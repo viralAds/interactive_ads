@@ -24,6 +24,7 @@ const _24seven = () => {
 
   const handleClick = () => setFrames(frames + 1);
   const onSwipeUp = (e) => setFrames(frames + 1);
+  
   const handleFirst = () => {
     setFrames(frames + 1);
     setFinalFrame(5);
@@ -51,6 +52,7 @@ const _24seven = () => {
 
   const shakeEventDidOccur = () => {
     setFrames(finalFrame);
+    alert(finalFrame)
   };
 
   switch (frames) {
