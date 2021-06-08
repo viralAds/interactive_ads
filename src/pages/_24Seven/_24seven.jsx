@@ -16,7 +16,6 @@ import TouchAppRoundedIcon from "@material-ui/icons/TouchAppRounded";
 const _24seven = () => {
   const [frames, setFrames] = useState(1);
   const [finalFrame, setFinalFrame] = useState(0);
-  const [isShaked, setIsShaked] = useState(false);
 
   useEffect(() => {
     let myShakeEvent = new Shake({
