@@ -45,7 +45,6 @@ const _24seven = () => {
 
   const shakeEventDidOccur = () => {
     setFrames(finalFrame);
-    alert(finalFrame);
   };
 
   switch (frames) {
