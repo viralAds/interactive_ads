@@ -26,8 +26,9 @@ const _24seven = () => {
   const onSwipeUp = (e) => setFrames(frames + 1);
   
   const handleChooseCard = (cardNumber) => {
-    setFrames(frames + 1);
     setFinalFrame(cardNumber);
+    setFrames(frames + 1);
+    console.log(cardNumber)
     myShakeEvent.start();
     window.addEventListener("shake", shakeEventDidOccur, false);
   };
