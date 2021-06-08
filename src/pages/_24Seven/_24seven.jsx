@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Swipe from "react-easy-swipe";
 import Shake from "shake.js";
 import frame_1 from "../../assets/img/_24seven/frame_1.jpg";
@@ -17,36 +17,40 @@ const _24seven = () => {
   const [frames, setFrames] = useState(1);
   const [finalFrame, setFinalFrame] = useState(0);
 
-  useEffect(() => {
-    let myShakeEvent = new Shake({
-      threshold: 7, // optional shake strength threshold
-      timeout: 1000, // optional, determines the frequency of event generation
-    });
-    myShakeEvent.start();
-    window.addEventListener("shake", shakeEventDidOccur, false);
-  }, []);
-
-  const shakeEventDidOccur = () => {
-    setFrames(finalFrame);
-  };
+  const myShakeEvent = new Shake({
+    threshold: 7, // optional shake strength threshold
+    timeout: 1000, // optional, determines the frequency of event generation
+  });
 
   const handleClick = () => setFrames(frames + 1);
   const onSwipeUp = (e) => setFrames(frames + 1);
   const handleFirst = () => {
     setFrames(frames + 1);
     setFinalFrame(5);
+    myShakeEvent.start();
+    window.addEventListener("shake", shakeEventDidOccur, false);
   };
   const handleSecond = () => {
     setFrames(frames + 1);
     setFinalFrame(6);
+    myShakeEvent.start();
+    window.addEventListener("shake", shakeEventDidOccur, false);
   };
   const handleThird = () => {
     setFrames(frames + 1);
     setFinalFrame(7);
+    myShakeEvent.start();
+    window.addEventListener("shake", shakeEventDidOccur, false);
   };
   const handleFourth = () => {
     setFrames(frames + 1);
     setFinalFrame(8);
+    myShakeEvent.start();
+    window.addEventListener("shake", shakeEventDidOccur, false);
+  };
+
+  const shakeEventDidOccur = () => {
+    setFrames(finalFrame);
   };
 
   switch (frames) {
