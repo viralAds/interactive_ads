@@ -1,24 +1,54 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Swipe from "react-easy-swipe";
+import Shake from "shake.js";
 import frame_1 from "../../assets/img/_24seven/frame_1.jpg";
 import frame_2 from "../../assets/img/_24seven/frame_2.jpg";
 import frame_3 from "../../assets/img/_24seven/frame_3.jpg";
+import frame_4 from "../../assets/img/_24seven/frame_4.jpg";
 import frame_5 from "../../assets/img/_24seven/frame_5.jpg";
 import frame_6 from "../../assets/img/_24seven/frame_6.jpg";
 import frame_7 from "../../assets/img/_24seven/frame_7.jpg";
 import frame_8 from "../../assets/img/_24seven/frame_8.jpg";
 import "./style.scss";
+import ScreenRotationIcon from "@material-ui/icons/ScreenRotation";
 import TouchAppRoundedIcon from "@material-ui/icons/TouchAppRounded";
 
 const _24seven = () => {
   const [frames, setFrames] = useState(1);
+  const [finalFrame, setFinalFrame] = useState(0);
+  const [isShaked, setIsShaked] = useState(false);
+
+  useEffect(() => {
+    let myShakeEvent = new Shake({
+      threshold: 7, // optional shake strength threshold
+      timeout: 1000, // optional, determines the frequency of event generation
+    });
+    myShakeEvent.start();
+    window.addEventListener("shake", shakeEventDidOccur, false);
+  }, []);
+
+  const shakeEventDidOccur = () => {
+    setFrames(finalFrame);
+  };
 
   const handleClick = () => setFrames(frames + 1);
   const onSwipeUp = (e) => setFrames(frames + 1);
-  const handleFirst = () => setFrames(frames + 1);
-  const handleSecond = () => setFrames(frames + 2);
-  const handleThird = () => setFrames(frames + 3);
-  const handleFourth = () => setFrames(frames + 4);
+  const handleFirst = () => {
+    setFrames(frames + 1);
+    setFinalFrame(5);
+  };
+  const handleSecond = () => {
+    setFrames(frames + 1);
+    setFinalFrame(6);
+  };
+  const handleThird = () => {
+    setFrames(frames + 1);
+    setFinalFrame(7);
+  };
+  const handleFourth = () => {
+    setFrames(frames + 1);
+    setFinalFrame(8);
+  };
 
   switch (frames) {
     case 1: {
@@ -40,9 +70,9 @@ const _24seven = () => {
             YOUR <span>SAFETY</span>
             <br /> IS OUR <span>PRIORITY</span>
           </div>
-          <div className="message">
+          <div className="message24">
             <TouchAppRoundedIcon className="swipe" />
-            <p>SWIPE UP</p>
+            <span>SWIPE UP</span>
           </div>
         </div>
       );
@@ -58,25 +88,20 @@ const _24seven = () => {
         </div>
       );
     }
+
     case 4: {
       return (
-        <div className="_360x640 last-frame">
-          <img src={frame_5} alt="frame_4" />
-          <a
-            href="https://www.24-seven.in/"
-            target="_blank"
-            rel="noreferrer"
-            className="know-more"
-          >
-            .
-          </a>
+        <div className="_360x640 frame_4">
+          <img src={frame_4} alt="frame_4" />
+          <ScreenRotationIcon className="shake-icon24" />
         </div>
       );
     }
+
     case 5: {
       return (
         <div className="_360x640 last-frame">
-          <img src={frame_6} alt="frame_5" />
+          <img src={frame_5} alt="frame_5" />
           <a
             href="https://www.24-seven.in/"
             target="_blank"
@@ -91,7 +116,7 @@ const _24seven = () => {
     case 6: {
       return (
         <div className="_360x640 last-frame">
-          <img src={frame_7} alt="frame_6" />
+          <img src={frame_6} alt="frame_6" />
           <a
             href="https://www.24-seven.in/"
             target="_blank"
@@ -106,7 +131,22 @@ const _24seven = () => {
     case 7: {
       return (
         <div className="_360x640 last-frame">
-          <img src={frame_8} alt="frame_7" />
+          <img src={frame_7} alt="frame_7" />
+          <a
+            href="https://www.24-seven.in/"
+            target="_blank"
+            rel="noreferrer"
+            className="know-more"
+          >
+            .
+          </a>
+        </div>
+      );
+    }
+    case 8: {
+      return (
+        <div className="_360x640 last-frame">
+          <img src={frame_8} alt="frame_8" />
           <a
             href="https://www.24-seven.in/"
             target="_blank"

@@ -54,7 +54,7 @@ img {
     width: 200px;
     font-family: Montserrat-Bold;
     font-size: 22px;
-    top: 75%;
+    top: 70%;
     text-align: center;
     margin-left: -100px;
 
@@ -63,12 +63,12 @@ img {
     };
   }
 
-  .message {
+  .message24 {
     position: absolute;
     left: 50%;
-    width: 100px;
-    margin-left: -50px;
-    top: 90%;
+    width: 150px;
+    margin-left: -75px;
+    top: 85%;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr;
@@ -124,6 +124,53 @@ img {
   }
 }
 
+.frame_4 {
+  .shake-icon24 {
+    position: absolute;
+    width: 50px;
+    margin-left: -25px;
+    left: 50%;
+    top: 78%;
+    animation: shakeMe 2s infinite;
+    transition-duration: 0.3s;
+  }
+  
+  @keyframes shakeMe {
+    0% {
+      transform: rotate(90deg);	
+    }
+    10%  {	
+      transform: rotate(0deg);
+    }
+    20%  {	
+      transform: rotate(90deg);
+    }
+    30%  {	
+      transform: rotate(0deg);
+    }
+    40%  {	
+      transform: rotate(90deg);
+    }
+    50%  {	
+      transform: rotate(0deg);
+    }
+    60%  {	
+      transform: rotate(90deg);
+    }
+    70% {
+      transform: rotate(0deg);
+    }
+    80%  {
+      transform: rotate(90deg);
+    }
+    90% {
+      transform: rotate(0deg);	
+    }
+    100% {
+      transform: rotate(90deg);
+    }
+  }
+}
 
 .last-frame {
   .know-more {
