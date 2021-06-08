@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Swipe from "react-easy-swipe";
 import Shake from "shake.js";
 import frame_1 from "../../assets/img/_24seven/frame_1.jpg";
@@ -17,6 +17,10 @@ const _24seven = () => {
   const [frames, setFrames] = useState(1);
   const [finalFrame, setFinalFrame] = useState(0);
 
+  useEffect(() => {
+    window.addEventListener("shake", shakeEventDidOccur, false);
+  })
+
   const myShakeEvent = new Shake({
     threshold: 7, // optional shake strength threshold
     timeout: 1000, // optional, determines the frequency of event generation
@@ -28,9 +32,7 @@ const _24seven = () => {
   const handleChooseCard = (cardNumber) => {
     setFinalFrame(cardNumber);
     setFrames(frames + 1);
-    console.log(cardNumber)
     myShakeEvent.start();
-    window.addEventListener("shake", shakeEventDidOccur, false);
   };
   
   const shakeEventDidOccur = () => {
