@@ -25,31 +25,13 @@ const _24seven = () => {
   const handleClick = () => setFrames(frames + 1);
   const onSwipeUp = (e) => setFrames(frames + 1);
   
-  const handleFirst = () => {
+  const handleChooseCard = (cardNumber) => {
     setFrames(frames + 1);
-    setFinalFrame(5);
+    setFinalFrame(cardNumber);
     myShakeEvent.start();
     window.addEventListener("shake", shakeEventDidOccur, false);
   };
-  const handleSecond = () => {
-    setFrames(frames + 1);
-    setFinalFrame(6);
-    myShakeEvent.start();
-    window.addEventListener("shake", shakeEventDidOccur, false);
-  };
-  const handleThird = () => {
-    setFrames(frames + 1);
-    setFinalFrame(7);
-    myShakeEvent.start();
-    window.addEventListener("shake", shakeEventDidOccur, false);
-  };
-  const handleFourth = () => {
-    setFrames(frames + 1);
-    setFinalFrame(8);
-    myShakeEvent.start();
-    window.addEventListener("shake", shakeEventDidOccur, false);
-  };
-
+  
   const shakeEventDidOccur = () => {
     setFrames(finalFrame);
     alert(finalFrame)
@@ -86,10 +68,10 @@ const _24seven = () => {
       return (
         <div className="_360x640 frame_3">
           <img src={frame_3} alt="frame_3" />
-          <div className="first box" onClick={handleFirst}></div>
-          <div className="sec box" onClick={handleSecond}></div>
-          <div className="third box" onClick={handleThird}></div>
-          <div className="four box" onClick={handleFourth}></div>
+          <div className="first box" onClick={() => handleChooseCard(5)}></div>
+          <div className="sec box" onClick={() => handleChooseCard(6)}></div>
+          <div className="third box" onClick={() => handleChooseCard(7)}></div>
+          <div className="four box" onClick={() => handleChooseCard(8)}></div>
         </div>
       );
     }
