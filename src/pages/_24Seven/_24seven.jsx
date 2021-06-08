@@ -15,11 +15,11 @@ import TouchAppRoundedIcon from "@material-ui/icons/TouchAppRounded";
 
 const _24seven = () => {
   const [frames, setFrames] = useState(1);
-  const [finalFrame, setFinalFrame] = useState(0);
+  const [finalFrame, setFinalFrame] = useState(4);
 
   useEffect(() => {
     window.addEventListener("shake", shakeEventDidOccur, false);
-  })
+  });
 
   const myShakeEvent = new Shake({
     threshold: 7, // optional shake strength threshold
@@ -28,16 +28,24 @@ const _24seven = () => {
 
   const handleClick = () => setFrames(frames + 1);
   const onSwipeUp = (e) => setFrames(frames + 1);
-  
+
   const handleChooseCard = (cardNumber) => {
-    setFinalFrame(cardNumber);
     setFrames(frames + 1);
+    if (cardNumber === 1) {
+      setFinalFrame(8);
+    } else if (cardNumber === 2) {
+      setFinalFrame(9);
+    } else if (cardNumber === 3) {
+      setFinalFrame(10);
+    } else if (cardNumber === 4) {
+      setFinalFrame(11);
+    }
     myShakeEvent.start();
   };
-  
+
   const shakeEventDidOccur = () => {
     setFrames(finalFrame);
-    alert(finalFrame)
+    alert(finalFrame);
   };
 
   switch (frames) {
@@ -71,10 +79,10 @@ const _24seven = () => {
       return (
         <div className="_360x640 frame_3">
           <img src={frame_3} alt="frame_3" />
-          <div className="first box" onClick={() => handleChooseCard(5)}></div>
-          <div className="sec box" onClick={() => handleChooseCard(6)}></div>
-          <div className="third box" onClick={() => handleChooseCard(7)}></div>
-          <div className="four box" onClick={() => handleChooseCard(8)}></div>
+          <div className="first box" onClick={() => handleChooseCard(1)}></div>
+          <div className="sec box" onClick={() => handleChooseCard(2)}></div>
+          <div className="third box" onClick={() => handleChooseCard(3)}></div>
+          <div className="four box" onClick={() => handleChooseCard(4)}></div>
         </div>
       );
     }
@@ -87,8 +95,7 @@ const _24seven = () => {
         </div>
       );
     }
-
-    case 5: {
+    case 8: {
       return (
         <div className="_360x640 last-frame">
           <img src={frame_5} alt="frame_5" />
@@ -103,7 +110,7 @@ const _24seven = () => {
         </div>
       );
     }
-    case 6: {
+    case 9: {
       return (
         <div className="_360x640 last-frame">
           <img src={frame_6} alt="frame_6" />
@@ -118,7 +125,7 @@ const _24seven = () => {
         </div>
       );
     }
-    case 7: {
+    case 10: {
       return (
         <div className="_360x640 last-frame">
           <img src={frame_7} alt="frame_7" />
@@ -133,7 +140,7 @@ const _24seven = () => {
         </div>
       );
     }
-    case 8: {
+    case 11: {
       return (
         <div className="_360x640 last-frame">
           <img src={frame_8} alt="frame_8" />
