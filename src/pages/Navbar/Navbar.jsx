@@ -133,6 +133,16 @@ function HomePage() {
                     </Link>
                   </DropdownItem>
                   <DropdownItem>
+                    <Link to="/amd_q2_commercials_320x480">
+                      AMD Q2 Commercials 320x480
+                    </Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/amd_q2_commercials_320x480_2">
+                      AMD Q2 Commercials 320x480_2
+                    </Link>
+                  </DropdownItem>
+                  <DropdownItem>
                     <Link to="/amd_f1">AMD F1</Link>
                   </DropdownItem>
                   <DropdownItem>
