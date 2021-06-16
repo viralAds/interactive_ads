@@ -143,13 +143,13 @@ function HomePage() {
                     </Link>
                   </DropdownItem>
                   <DropdownItem>
-                    <Link to="/amd_q2_commercials_320x480_2_published">AMD Published</Link>
-                  </DropdownItem>
-                  <DropdownItem>
                     <Link to="/amd_f1">AMD F1</Link>
                   </DropdownItem>
                   <DropdownItem>
                     <Link to="/_24seven">24 Seven</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/ghadi">Ghadi</Link>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
