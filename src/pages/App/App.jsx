@@ -36,7 +36,8 @@ import _24Seven from "../_24Seven/_24seven";
 import Login from "../Login/Login";
 import AmdQ2_1 from '../amd_q2_commercials_320x480/component1';
 import AmdQ2_2 from '../amd_q2_commercials_320x480/component2';
-import Ghadi from '../Ghadi/Ghadi'
+import Ghadi from '../Ghadi/Ghadi';
+import GhadiTwo from '../Ghadi/GhadiTwo';
 // import { logout } from '../Navbar/Navbar';
 
 function App() {
@@ -83,6 +84,7 @@ function App() {
           <Route path="/amd_q2_commercials_320x480" component={AmdQ2_1} />
           <Route path="/amd_q2_commercials_320x480_2" component={AmdQ2_2} />
           <Route path="/ghadi" component={Ghadi} />
+          <Route path="/ghadi_2" component={GhadiTwo} />
           <Route exact path="/">
             {!password ? <Login setPassword={setPassword} /> : <Homepage />}
           </Route>
