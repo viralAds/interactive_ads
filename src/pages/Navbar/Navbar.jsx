@@ -154,6 +154,9 @@ function HomePage() {
                   <DropdownItem>
                     <Link to="/ghadi_2">Ghadi Option 2</Link>
                   </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/ghadi_3">Ghadi Option 3</Link>
+                  </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
               {/* <Button className="logout" onClick={logout}>
