@@ -39,6 +39,8 @@ import AmdQ2_2 from '../amd_q2_commercials_320x480/component2';
 import Ghadi from '../Ghadi/Ghadi';
 import GhadiTwo from '../Ghadi/GhadiTwo';
 import GhadiThree from '../Ghadi/GhadiThree';
+import Vega from '../Vega/Vega'
+import VegaOne from '../Vega/VegaOne'
 
 // import { logout } from '../Navbar/Navbar';
 
@@ -88,7 +90,9 @@ function App() {
           <Route path="/ghadi" component={Ghadi} />
           <Route path="/ghadi_2" component={GhadiTwo} />
           <Route path="/ghadi_3" component={GhadiThree} />
-
+          <Route path="/vega" component={Vega} />
+          <Route path="/vega_women" component={VegaOne} />
+          
           <Route exact path="/">
             {!password ? <Login setPassword={setPassword} /> : <Homepage />}
           </Route>

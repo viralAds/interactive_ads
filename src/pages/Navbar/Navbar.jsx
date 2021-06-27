@@ -157,6 +157,12 @@ function HomePage() {
                   <DropdownItem>
                     <Link to="/ghadi_3">Ghadi Option 3</Link>
                   </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/vega_women">Vega Women</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/vega">Vega</Link>
+                  </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
               {/* <Button className="logout" onClick={logout}>
