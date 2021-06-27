@@ -19,6 +19,7 @@
     "react-helmet": "^6.1.0",
     "react-loading": "^2.0.3",
     "react-player": "^2.9.0",
+    "react-responsive-carousel": "^3.2.18",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-waypoint": "^9.0.3",
