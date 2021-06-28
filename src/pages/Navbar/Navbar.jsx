@@ -163,6 +163,9 @@ function HomePage() {
                   <DropdownItem>
                     <Link to="/vega">Vega</Link>
                   </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/envorincs">Envorincs</Link>
+                  </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
               {/* <Button className="logout" onClick={logout}>

@@ -41,6 +41,8 @@ import GhadiTwo from '../Ghadi/GhadiTwo';
 import GhadiThree from '../Ghadi/GhadiThree';
 import Vega from '../Vega/Vega'
 import VegaOne from '../Vega/VegaOne'
+import Envorincs from '../Envorincs/Envorincs'
+
 // import { logout } from '../Navbar/Navbar';
 
 function App() {
@@ -91,7 +93,7 @@ function App() {
           <Route path="/ghadi_3" component={GhadiThree} />
           <Route path="/vega" component={Vega} />
           <Route path="/vega_women" component={VegaOne} />
-          
+          <Route path="/envorincs" component={Envorincs} />
           <Route exact path="/">
             {!password ? <Login setPassword={setPassword} /> : <Homepage />}
           </Route>
