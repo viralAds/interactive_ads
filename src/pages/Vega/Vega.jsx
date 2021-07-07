@@ -49,11 +49,11 @@ const Men = () => {
           swipeable={true}
           showArrows={true}
           infiniteLoop={true}
-          centerMode={true}
           axis={"horizontal"}
           showThumbs={false}
           showIndicators={false}
           emulateTouch={true}
+          centerMode={true}
           centerSlidePercentage={100}
           onClickItem={handleChange}
           autoPlay={true}

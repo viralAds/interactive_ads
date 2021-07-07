@@ -42,17 +42,11 @@ import GhadiThree from '../Ghadi/GhadiThree';
 import Vega from '../Vega/Vega'
 import VegaOne from '../Vega/VegaOne'
 import Envorincs from '../Envorincs/Envorincs'
-
-// import { logout } from '../Navbar/Navbar';
+import Vivo from '../Vivo/Vivo'
 
 function App() {
 
   const [ password, setPassword ] = useState("") 
-  // useEffect (() => {
-  //   console.log(logout)
-  //   setPassword(logout)
-  // }, [logout])
-
   return (
     <div className="App">
       <BrowserRouter>
@@ -94,6 +88,8 @@ function App() {
           <Route path="/vega" component={Vega} />
           <Route path="/vega_women" component={VegaOne} />
           <Route path="/envorincs" component={Envorincs} />
+          <Route path="/vivo" component={Vivo} />
+          
           <Route exact path="/">
             {!password ? <Login setPassword={setPassword} /> : <Homepage />}
           </Route>

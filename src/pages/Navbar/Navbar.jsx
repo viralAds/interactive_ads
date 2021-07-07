@@ -12,21 +12,15 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  // Button
 } from "reactstrap";
 
 import { Link } from "react-router-dom";
 import ekaleidoLogo from "../../assets/ekaleido_logo_h.png";
 
-// export function logout() {
-//   return false
-// }
-
 function HomePage() {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
- 
   return (
     <div>
       <Navbar color="dark" dark expand="md">
@@ -115,6 +109,7 @@ function HomePage() {
                   <DropdownItem>
                     <Link to="/blackberrys_three">BLACKBERRYS 2</Link>
                   </DropdownItem>
+                  
                   <DropdownItem>
                     <Link to="/amd">AMD</Link>
                   </DropdownItem>
@@ -166,11 +161,11 @@ function HomePage() {
                   <DropdownItem>
                     <Link to="/envorincs">Envorincs</Link>
                   </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/vivo">Vivo</Link>
+                  </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
-              {/* <Button className="logout" onClick={logout}>
-                LOGOUT
-              </Button> */}
             </Nav>
           </Collapse>
         </Container>

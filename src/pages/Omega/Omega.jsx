@@ -38,7 +38,6 @@ function Omega() {
         setToggleSecondAnimationBox(false);
         setToggleThirdAnimationBox(false);
         setIsPlaying(true);
-        
       }
       
       const firstAnim = () => {   
