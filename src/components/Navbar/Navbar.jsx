@@ -190,7 +190,7 @@ function HomePage() {
                     <Link to="/_24seven">24 Seven</Link>
                   </DropdownItem>
                   <DropdownItem>
-                    <Link to="/oppo_days">24 Seven</Link>
+                    <Link to="/oppo_days">Oppo Days</Link>
                   </DropdownItem>
 
                   <DropdownItem>
