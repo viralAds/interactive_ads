@@ -43,7 +43,7 @@ import Vega from '../Vega/Vega'
 import VegaOne from '../Vega/VegaOne'
 import Envorincs from '../Envorincs/Envorincs'
 import Vivo from '../Vivo/Vivo'
-
+import Oppo from '../oppo_days/Oppo';
 function App() {
 
   const [ password, setPassword ] = useState("") 
@@ -89,6 +89,7 @@ function App() {
           <Route path="/vega_women" component={VegaOne} />
           <Route path="/envorincs" component={Envorincs} />
           <Route path="/vivo" component={Vivo} />
+          <Route path="/oppo_days" component={Oppo} />
           
           <Route exact path="/">
             {!password ? <Login setPassword={setPassword} /> : <Homepage />}
