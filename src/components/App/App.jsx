@@ -15,6 +15,7 @@ import Clark from "../Clark/Clark";
 import Pana from "../Panasonic/Panasonic";
 import Philips from "../Philips/Philips";
 import Asics from "../Asics/Asics";
+import AsicsO from "../Asics/AsicsOlympics";
 import LG from "../LG/Lg";
 import Poco from "../Poco/Poco";
 import Amd from "../Amd/Amd";
@@ -61,6 +62,7 @@ function App() {
           <Route path="/philips" component={Philips} />
           <Route path="/panasonic" component={Pana} />
           <Route path="/asics" component={Asics} />
+          <Route path="/asics_olympics" component={AsicsO} />
           <Route path="/jnto" component={Swipe} />
           <Route path="/blackberrys_one" component={BB1} />
           <Route path="/blackberrys_two" component={BB2} />
