@@ -188,6 +188,12 @@ function HomePage() {
                   <DropdownItem>
                     <Link to="/asics_olympics">ASICS Olympics</Link>
                   </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/mama_earth">Mama Earth</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/boat">Boat</Link>
+                  </DropdownItem>
 
                   <DropdownItem>
                     <Link to="/_24seven">24 Seven</Link>

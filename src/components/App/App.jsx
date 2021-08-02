@@ -35,23 +35,27 @@ import AmdMerc2 from "../AmdMerc2/AmdMerc";
 import AmdF1 from "../AmdF1/AmdF1";
 import _24Seven from "../_24Seven/_24seven";
 import Login from "../Login/Login";
-import AmdQ2_1 from '../amd_q2_commercials_320x480/component1';
-import AmdQ2_2 from '../amd_q2_commercials_320x480/component2';
-import Ghadi from '../Ghadi/Ghadi';
-import GhadiTwo from '../Ghadi/GhadiTwo';
-import GhadiThree from '../Ghadi/GhadiThree';
-import Vega from '../Vega/Vega'
-import VegaOne from '../Vega/VegaOne'
-import Envorincs from '../Envorincs/Envorincs'
-import Vivo from '../Vivo/Vivo'
-import Oppo from '../oppo_days/Oppo';
-function App() {
+import AmdQ2_1 from "../amd_q2_commercials_320x480/component1";
+import AmdQ2_2 from "../amd_q2_commercials_320x480/component2";
+import Ghadi from "../Ghadi/Ghadi";
+import GhadiTwo from "../Ghadi/GhadiTwo";
+import GhadiThree from "../Ghadi/GhadiThree";
+import Vega from "../Vega/Vega";
+import VegaOne from "../Vega/VegaOne";
+import Envorincs from "../Envorincs/Envorincs";
+import Vivo from "../Vivo/Vivo";
+import Oppo from "../oppo_days/Oppo";
 
-  const [ password, setPassword ] = useState("") 
+import Boat from "../Boat/Boat";
+import Mamaearth from "../Mamaearth/Mamaearth";
+function App() {
+  const [password, setPassword] = useState("");
   return (
     <div className="App">
       <BrowserRouter>
         <Switch>
+          <Route path="/mama_earth" component={Mamaearth} />
+          <Route path="/boat" component={Boat} />
           <Route path="/mercedes" component={Mercedes} />
           <Route path="/omega" component={Omega} />
           <Route path="/audi" component={Audi} />
@@ -92,7 +96,7 @@ function App() {
           <Route path="/envorincs" component={Envorincs} />
           <Route path="/vivo" component={Vivo} />
           <Route path="/oppo_days" component={Oppo} />
-          
+
           <Route exact path="/">
             {!password ? <Login setPassword={setPassword} /> : <Homepage />}
           </Route>
