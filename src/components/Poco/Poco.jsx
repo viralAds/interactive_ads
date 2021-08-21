@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import ReactPlayer from 'react-player';
 import './Poco.scss';
-
 import PocoVideo from '../../assets/videos/poco.mp4';
 import looks from '../../assets/img/poco/looks.jpg';
 import battery from '../../assets/img/poco/battery.jpg';

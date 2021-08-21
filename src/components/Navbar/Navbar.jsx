@@ -201,7 +201,9 @@ function HomePage() {
                   <DropdownItem>
                     <Link to="/oppo_days">Oppo Days</Link>
                   </DropdownItem>
-
+                  <DropdownItem>
+                    <Link to="/govo">Govo Earbuds</Link>
+                  </DropdownItem>
                   <DropdownItem>
                     <Link to="/envorincs">Envorincs</Link>
                   </DropdownItem>

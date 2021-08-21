@@ -45,7 +45,7 @@ import VegaOne from "../Vega/VegaOne";
 import Envorincs from "../Envorincs/Envorincs";
 import Vivo from "../Vivo/Vivo";
 import Oppo from "../oppo_days/Oppo";
-
+import Govo from "../govo/Govo";
 import Boat from "../Boat/Boat";
 import Mamaearth from "../Mamaearth/Mamaearth";
 function App() {
@@ -96,7 +96,7 @@ function App() {
           <Route path="/envorincs" component={Envorincs} />
           <Route path="/vivo" component={Vivo} />
           <Route path="/oppo_days" component={Oppo} />
-
+          <Route path="/govo" component={Govo} />
           <Route exact path="/">
             {!password ? <Login setPassword={setPassword} /> : <Homepage />}
           </Route>
