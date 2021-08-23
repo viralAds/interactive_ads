@@ -194,7 +194,6 @@ function HomePage() {
                   <DropdownItem>
                     <Link to="/boat">Boat</Link>
                   </DropdownItem>
-
                   <DropdownItem>
                     <Link to="/_24seven">24 Seven</Link>
                   </DropdownItem>
