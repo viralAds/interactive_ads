@@ -48,6 +48,8 @@ import Oppo from "../oppo_days/Oppo";
 import Govo from "../govo/Govo";
 import Boat from "../Boat/Boat";
 import Mamaearth from "../Mamaearth/Mamaearth";
+import Gocrush from "../gocrush/Gocrush";
+
 function App() {
   const [password, setPassword] = useState("");
   return (
@@ -97,6 +99,7 @@ function App() {
           <Route path="/vivo" component={Vivo} />
           <Route path="/oppo_days" component={Oppo} />
           <Route path="/govo" component={Govo} />
+          <Route path="/gocrush/" component={Gocrush} />
           <Route exact path="/">
             {!password ? <Login setPassword={setPassword} /> : <Homepage />}
           </Route>

@@ -204,6 +204,9 @@ function HomePage() {
                     <Link to="/govo">Govo Earbuds</Link>
                   </DropdownItem>
                   <DropdownItem>
+                    <Link to="/gocrush/">GoCrush</Link>
+                  </DropdownItem>
+                  <DropdownItem>
                     <Link to="/envorincs">Envorincs</Link>
                   </DropdownItem>
                   <DropdownItem>
