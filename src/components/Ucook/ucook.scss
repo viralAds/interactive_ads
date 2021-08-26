@@ -83,9 +83,12 @@
           justify-content: center;
           align-items: center;
 
-          .offer {
-            color: #ffffff;
-            font-size: 1vw;
+          a {
+            text-decoration: none;
+            .offer {
+              color: #ffffff;
+              font-size: 1vw;
+            }
           }
         }
       }
@@ -119,8 +122,11 @@
       ul {
         li {
           .offer-info {
-            .offer {
-              font-size: 2vw;
+            a {
+              text-decoration: none;
+              .offer {
+                font-size: 2vw;
+              }
             }
           }
         }

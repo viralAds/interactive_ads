@@ -25,7 +25,9 @@ const OffersItem = [
 const Offers = () => {
   return (
     <div className="c-wrapper">
-      <span className="offer-text" style={{zIndex: 10}}>OFFERS</span>
+      <span className="offer-text" style={{ zIndex: 10 }}>
+        OFFERS
+      </span>
       <Carousel
         infiniteLoop={true}
         showIndicators={false}
@@ -42,7 +44,13 @@ const Offers = () => {
         {OffersItem.map((offer, index) => {
           return (
             <div key={index} className="offer-info">
-              <span className="offer">{offer.offer}</span>
+              <a
+                href="https://shopucook.com/offers.html"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span className="offer">{offer.offer}</span>
+              </a>
             </div>
           );
         })}
