@@ -7,18 +7,29 @@ const { innerWidth, innerHeight } = window;
 
 const UcookVideoPlayer = () => {
   const videoPlayer = useRef(null);
-
+  const [currentTime, setCurrentTime] = useState(0);
   const [padding, setPadding] = useState({});
   const [playing, setPlaying] = useState(false);
+  const [muted, setMuted] = useState(false);
+  const [progress, setProgress] = useState(0);
   const [dimension, setDimension] = useState({
     width: innerWidth,
     height: innerHeight,
   });
   const [actualDim, setActualDim] = useState(dimension);
+  const [duration, setDuration] = useState(0);
 
   useEffect(() => {
     window.addEventListener("resize", onUpdateWindowDimension);
-  }, []);
+    videoPlayer.current.addEventListener("timeupdate", onVideoTimeUpdate);
+    if (currentTime && duration) {
+     setProgress((currentTime / duration) * 100);
+    }
+  }, [currentTime, duration]);
+
+  const onVideoTimeUpdate = () => {
+    setCurrentTime(videoPlayer.current.currentTime);
+  };
 
   const onUpdateWindowDimension = () => {
     const { innerWidth, innerHeight } = window;
@@ -49,6 +60,7 @@ const UcookVideoPlayer = () => {
     if (videoPlayer.current) {
       if (videoPlayer.current.paused) {
         videoPlayer.current.play();
+        setDuration(videoPlayer.current.duration);
         setPlaying(true);
       } else {
         videoPlayer.current.pause();
@@ -56,7 +68,6 @@ const UcookVideoPlayer = () => {
       }
     }
   };
-
   return (
     <div>
       <div
@@ -73,7 +84,7 @@ const UcookVideoPlayer = () => {
             height="100%"
             controls={false}
             onLoadedMetadata={onResize}
-            muted={false}
+            muted={muted}
             loop={false}
             autoPlay={false}
           >
@@ -85,7 +96,10 @@ const UcookVideoPlayer = () => {
             actualDim={actualDim}
             padding={padding}
             playing={playing}
+            muted={muted}
+            setMuted={setMuted}
             toggleVideoPlay={toggleVideoPlay}
+            progress={progress ? progress : 0}
           />
         ) : null}
       </div>

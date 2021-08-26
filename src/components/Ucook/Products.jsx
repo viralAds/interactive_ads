@@ -63,6 +63,7 @@ const Products = (props) => {
         showArrows={false}
         showThumbs={false}
         swipeable={true}
+        emulateTouch={true}
         verticalSwipe={"standard"}
         axis={"vertical"}
         centerMode={true}
@@ -72,19 +73,19 @@ const Products = (props) => {
       >
         {ProductDetails.map((item, index) => {
           return (
-            <a key={index} href={item.link} target="_blank" rel="noreferrer">
-              <Card>
+            <Card key={index}>
+              <a href={item.link} target="_blank" rel="noreferrer">
                 <CardBody className="card-head">
                   <CardTitle tag="p">{item.name}</CardTitle>
                 </CardBody>
-                <CardImg top width="100%" src={item.img} alt="Card image cap" />
-                <CardBody>
-                  <CardSubtitle tag="span" className="mb-2 text-muted">
-                    MRP Rs.{item.price}
-                  </CardSubtitle>
-                </CardBody>
-              </Card>
-            </a>
+              </a>
+              <CardImg top width="100%" src={item.img} alt="Card image cap" />
+              <CardBody>
+                <CardSubtitle tag="span" className="mb-2 text-muted">
+                  MRP Rs.{item.price}
+                </CardSubtitle>
+              </CardBody>
+            </Card>
           );
         })}
       </Carousel>

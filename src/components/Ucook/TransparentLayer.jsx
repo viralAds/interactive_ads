@@ -5,9 +5,75 @@ import Products from "./Products";
 import DoubleArrowIcon from "@material-ui/icons/DoubleArrow";
 import PlayArrowIcon from "@material-ui/icons/PlayArrow";
 import PauseCircleFilledIcon from "@material-ui/icons/PauseCircleFilled";
+import VolumeUpIcon from "@material-ui/icons/VolumeUp";
+import VolumeOffIcon from "@material-ui/icons/VolumeOff";
+import { makeStyles } from "@material-ui/core/styles";
+import LinearProgress from "@material-ui/core/LinearProgress";
+
+const useStyles = makeStyles({
+  root: {
+    width: "100%",
+  },
+});
+const Controls = (props) => {
+  const { playing, muted, setMuted, toggleVideoPlay, progress } = props;
+  const classes = useStyles();
+
+  return (
+    <div className="controls">
+      <div className={classes.root}>
+        <LinearProgress
+          variant="determinate"
+          value={progress ? Math.floor(progress) : 0}
+        />
+      </div>
+      <div className="buttons">
+        <div
+          className="playing"
+          onClick={(e) => {
+            e.stopPropagation();
+            toggleVideoPlay();
+          }}
+        >
+          {playing ? (
+            <PauseCircleFilledIcon
+              className="ctrl-icon"
+              style={{ color: "#fff" }}
+            />
+          ) : (
+            <PlayArrowIcon className="ctrl-icon" style={{ color: "#fff" }} />
+          )}
+        </div>
+        <div className="muted">
+          {muted ? (
+            <VolumeOffIcon
+              className="ctrl-icon"
+              style={{ color: "#fff" }}
+              onClick={() => setMuted(!muted)}
+            />
+          ) : (
+            <VolumeUpIcon
+              className="ctrl-icon"
+              style={{ color: "#fff" }}
+              onClick={() => setMuted(!muted)}
+            />
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const TransparentLayer = (props) => {
-  const { playing, actualDim, padding, toggleVideoPlay } = props;
+  const {
+    setMuted,
+    muted,
+    playing,
+    actualDim,
+    padding,
+    toggleVideoPlay,
+    progress,
+  } = props;
   const [productActive, setProductActive] = useState(true);
 
   return (
@@ -23,21 +89,19 @@ const TransparentLayer = (props) => {
         marginLeft: padding.paddingWidth ? padding.paddingWidth : 0,
       }}
     >
-      <div
-        style={{ position: "absolute", top: 0, left: 0 }}
-        onClick={(e) => {
-          e.stopPropagation();
-          toggleVideoPlay();
-        }}
-      >
-        {playing ? <PauseCircleFilledIcon color='primary' /> : <PlayArrowIcon color='primary' />}
-      </div>
+      <Controls
+        playing={playing}
+        muted={muted}
+        setMuted={setMuted}
+        toggleVideoPlay={toggleVideoPlay}
+        progress={progress}
+      />
       <Offers />
       {productActive ? (
         <Products setProductActive={setProductActive} />
       ) : (
         <div className="open-prod" onClick={() => setProductActive(true)}>
-          <DoubleArrowIcon style={{ color: "#ffffff" }} />
+          <DoubleArrowIcon className="show-prod" style={{ color: "#ffffff" }} />
         </div>
       )}
     </div>

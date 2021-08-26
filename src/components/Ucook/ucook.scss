@@ -13,29 +13,59 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .page {
-    padding: 0rem;
-    height: 100vh;
+.controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 9%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 
-    .frame {
-      width: 100%;
+  .buttons {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+
+    .ctrl-icon {
+      width: 2vw;
+    }
+
+    .playing {
+      margin: 0 5px;
+    }
+
+    .muted {
+      margin: 0 5px;
     }
   }
 }
 
-.offer {
-  color: #ffffff;
-}
-
 .c-wrapper {
   bottom: 10%;
-  background: rgba(255, 13, 13, 0.582);
+  background: #ff0d0d;
   width: 100%;
   position: absolute;
 
+  .offer-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 10px;
+    font-family: Montserrat-SemiBold;
+    color: #ffffff;
+    background-color: #fb0313;
+    font-size: 1vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .carousel.carousel-slider .control-arrow {
-    // transform: rotate(271deg);
     font-size: 0 !important;
   }
 
@@ -47,6 +77,53 @@
       height: 100% !important;
       li {
         margin: 0;
+
+        .offer-info {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .offer {
+            color: #ffffff;
+            font-size: 1vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .page {
+    padding: 0rem;
+    height: 100vh;
+
+    .frame {
+      width: 100%;
+    }
+  }
+
+  .controls {
+    .buttons {
+      .ctrl-icon {
+        width: 4vw;
+      }
+    }
+  }
+
+  .c-wrapper {
+    .offer-text {
+      font-size: 2vw;
+    }
+    .slider-wrapper {
+      ul {
+        li {
+          .offer-info {
+            .offer {
+              font-size: 2vw;
+            }
+          }
+        }
       }
     }
   }
@@ -58,7 +135,11 @@
   top: 10px;
   background-color: #fb0313;
   border-radius: 50px 0 0 50px;
-  padding: 10px;
+  padding: 3px 10px;
+
+  .show-prod {
+    width: 2vw;
+  }
 }
 
 .products {
@@ -109,21 +190,21 @@
 
     .card-head {
       text-align: center !important;
-      font-size: 10px;
+      font-size: 1vw;
       font-weight: bold;
       border-bottom: dotted red 1px;
     }
 
     .card-body {
-      text-align: left;
+      text-align: center;
     }
     .card-title {
       margin: 0 !important;
-      font-size: 14px !important;
+      font-size: 1vw !important;
     }
 
     .card-subtitle {
-      font-size: 14px !important;
+      font-size: 1vw !important;
       color: #fb0313 !important;
       font-weight: bold;
     }
