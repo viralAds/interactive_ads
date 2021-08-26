@@ -7,7 +7,7 @@ const { innerWidth, innerHeight } = window;
 
 const UcookVideoPlayer = () => {
   const videoPlayer = useRef(null);
-  const [currentTime, setCurrentTime] = useState(0);
+
   const [padding, setPadding] = useState({});
   const [playing, setPlaying] = useState(false);
   const [dimension, setDimension] = useState({
@@ -18,7 +18,6 @@ const UcookVideoPlayer = () => {
 
   useEffect(() => {
     window.addEventListener("resize", onUpdateWindowDimension);
-    videoPlayer.current.addEventListener("timeupdate", onVideoTimeUpdate);
   }, []);
 
   const onUpdateWindowDimension = () => {
@@ -27,10 +26,6 @@ const UcookVideoPlayer = () => {
       width: innerWidth,
       height: innerHeight,
     });
-  };
-
-  const onVideoTimeUpdate = () => {
-    setCurrentTime(videoPlayer.current.currentTime);
   };
 
   const onResize = () => {
