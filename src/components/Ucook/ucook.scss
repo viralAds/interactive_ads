@@ -1,0 +1,135 @@
+.page {
+  width: 100%;
+  padding: 2rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: #313131;
+
+  .frame {
+    width: 70%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .page {
+    padding: 0rem;
+    height: 100vh;
+
+    .frame {
+      width: 100%;
+    }
+  }
+}
+
+.offer {
+  color: #ffffff;
+}
+
+.c-wrapper {
+  bottom: 10%;
+  background: rgba(255, 13, 13, 0.582);
+  width: 100%;
+  position: absolute;
+
+  .carousel.carousel-slider .control-arrow {
+    // transform: rotate(271deg);
+    font-size: 0 !important;
+  }
+
+  .slider-wrapper {
+    ul {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100% !important;
+      li {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.open-prod {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  background-color: #fb0313;
+  border-radius: 50px 0 0 50px;
+  padding: 10px;
+}
+
+.products {
+  width: 20%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 100%;
+  padding: 10px;
+  background-color: #ffffff7c;
+  box-shadow: #000000a1 -4px 0px 20px 2px;
+
+  #icon {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+    img {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  #text {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .carousel-root {
+    height: 100%;
+
+    .carousel.carousel-slider {
+      height: 100%;
+
+      .slider-wrapper {
+        height: 100% !important;
+      }
+    }
+  }
+
+  .card {
+    margin-bottom: 5px;
+    border-radius: 10px !important;
+    box-shadow: #000000a1 0px 0px 3px 0px;
+
+    .card-head {
+      text-align: center !important;
+      font-size: 10px;
+      font-weight: bold;
+      border-bottom: dotted red 1px;
+    }
+
+    .card-body {
+      text-align: left;
+    }
+    .card-title {
+      margin: 0 !important;
+      font-size: 14px !important;
+    }
+
+    .card-subtitle {
+      font-size: 14px !important;
+      color: #fb0313 !important;
+      font-weight: bold;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}
