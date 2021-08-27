@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Navbar.scss";
-
 import {
   Collapse,
   Navbar,
@@ -13,7 +12,6 @@ import {
   DropdownMenu,
   DropdownItem,
 } from "reactstrap";
-
 import { Link } from "react-router-dom";
 import ekaleidoLogo from "../../assets/ekaleido_logo_h.png";
 
@@ -50,7 +48,6 @@ function HomePage() {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
-
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   INTERACTIVE Ads
@@ -82,7 +79,6 @@ function HomePage() {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
-
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   VIRAL ADS
@@ -125,7 +121,6 @@ function HomePage() {
                       </DropdownItem>
                     </DropdownMenu>
                   </UncontrolledDropdown>
-
                   <UncontrolledDropdown nav inNavbar>
                     <DropdownToggle nav caret>
                       Ghadi Ads
@@ -167,6 +162,25 @@ function HomePage() {
                       </DropdownItem>
                       <DropdownItem>
                         <Link to="/vega">Vega</Link>
+                      </DropdownItem>
+                    </DropdownMenu>
+                  </UncontrolledDropdown>
+                  <UncontrolledDropdown nav inNavbar>
+                    <DropdownToggle nav caret>
+                      UCOOK
+                    </DropdownToggle>
+                    <DropdownMenu>
+                      <DropdownItem>
+                        <Link to="/ucook">Interactive</Link>
+                      </DropdownItem>
+                      <DropdownItem>
+                        <Link to="/ucook_1">Viral 1</Link>
+                      </DropdownItem>
+                      <DropdownItem>
+                        <Link to="/ucook_2">Viral 2</Link>
+                      </DropdownItem>
+                      <DropdownItem>
+                        <Link to="/ucook_3">Viral 3</Link>
                       </DropdownItem>
                     </DropdownMenu>
                   </UncontrolledDropdown>

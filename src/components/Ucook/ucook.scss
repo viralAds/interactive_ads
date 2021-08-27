@@ -25,21 +25,29 @@
   justify-content: flex-start;
 
   .buttons {
+    padding: 0.5vh 0;
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: flex-start;
 
     .ctrl-icon {
-      width: 2vw;
-    }
+      margin: 0 0.7vw;
+      svg.playing {
+        width: 2.2vw;
+        height: 2.2vw;
+      }
 
-    .playing {
-      margin: 0 5px;
-    }
+      svg.muted {
+        width: 2vw;
+        height: 2vw;
+      }
 
-    .muted {
-      margin: 0 5px;
+      span.time {
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 1.5vw;
+      }
     }
   }
 }
@@ -110,6 +118,7 @@
     .buttons {
       .ctrl-icon {
         width: 4vw;
+        height: 4vw;
       }
     }
   }

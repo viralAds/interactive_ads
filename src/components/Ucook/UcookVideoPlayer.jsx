@@ -11,7 +11,7 @@ const UcookVideoPlayer = () => {
   const [padding, setPadding] = useState({});
   const [playing, setPlaying] = useState(false);
   const [muted, setMuted] = useState(false);
-  const [progress, setProgress] = useState(0);
+  
   const [dimension, setDimension] = useState({
     width: innerWidth,
     height: innerHeight,
@@ -22,10 +22,8 @@ const UcookVideoPlayer = () => {
   useEffect(() => {
     window.addEventListener("resize", onUpdateWindowDimension);
     videoPlayer.current.addEventListener("timeupdate", onVideoTimeUpdate);
-    if (currentTime && duration) {
-     setProgress((currentTime / duration) * 100);
-    }
-  }, [currentTime, duration]);
+    
+  }, []);
 
   const onVideoTimeUpdate = () => {
     setCurrentTime(videoPlayer.current.currentTime);
@@ -99,7 +97,8 @@ const UcookVideoPlayer = () => {
             muted={muted}
             setMuted={setMuted}
             toggleVideoPlay={toggleVideoPlay}
-            progress={progress ? progress : 0}
+            duration={duration}
+            currentTime={currentTime}
           />
         ) : null}
       </div>

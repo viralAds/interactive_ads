@@ -22,7 +22,6 @@ import Amd from "../Amd/Amd";
 import Amd_Amazon from "../Amd_gwd/AmdAmazon";
 import Amd_Flipkart from "../Amd_gwd/AmdFlipkart";
 import Oppo_1 from "../Oppo/Oppo1/Oppo";
-
 import Blackberrys from "../Blackberrys/Blackberrys";
 import BB1 from "../Blackberrys/BlackberrysOne/Blackberrys";
 import BB2 from "../Blackberrys/BbCarrousel/Blackberrys";
@@ -50,6 +49,9 @@ import Boat from "../Boat/Boat";
 import Mamaearth from "../Mamaearth/Mamaearth";
 import Gocrush from "../gocrush/Gocrush";
 import UcookVideoPlayer from "../Ucook/Ucook";
+import Ucook1 from "../ucook_va/Ucook1";
+import Ucook3 from "../ucook_va/Ucook3";
+import Ucook2 from "../ucook_va/Ucook2";
 
 function App() {
   const [password, setPassword] = useState("");
@@ -57,51 +59,54 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Switch>
-          <Route path="/mama_earth" component={Mamaearth} />
+          <Route path="/lg" component={LG} />
+          <Route path="/amd" component={Amd} />
+          <Route path="/poco" component={Poco} />
           <Route path="/boat" component={Boat} />
-          <Route path="/mercedes" component={Mercedes} />
-          <Route path="/omega" component={Omega} />
           <Route path="/audi" component={Audi} />
           <Route path="/play" component={Play} />
           <Route path="/swap" component={Swap} />
-          <Route path="/blackberrys" component={Blackberrys} />
-          <Route path="/clark" component={Clark} />
-          <Route path="/philips" component={Philips} />
-          <Route path="/panasonic" component={Pana} />
-          <Route path="/asics" component={Asics} />
-          <Route path="/asics_olympics" component={AsicsO} />
+          <Route path="/vega" component={Vega} />
+          <Route path="/vivo" component={Vivo} />
+          <Route path="/govo" component={Govo} />
           <Route path="/jnto" component={Swipe} />
+          <Route path="/merc" component={Lmerc} />
+          <Route path="/omega" component={Omega} />
+          <Route path="/clark" component={Clark} />
+          <Route path="/ghadi" component={Ghadi} />
+          <Route path="/asics" component={Asics} />
+          <Route path="/omeg" component={Lomega} />
+          <Route path="/oppo" component={Oppo_1} />
+          <Route path="/amd_f1" component={AmdF1} />
+          <Route path="/oppo_days" component={Oppo} />
+          <Route path="/panasonic" component={Pana} />
+          <Route path="/philips" component={Philips} />
+          <Route path="/ucook_1/" component={Ucook1} />
+          <Route path="/ucook_2/" component={Ucook2} />
+          <Route path="/ucook_3/" component={Ucook3} />
+          <Route path="/ghadi_2" component={GhadiTwo} />
+          <Route path="/gocrush/" component={Gocrush} />
+          <Route path="/_24seven" component={_24Seven} />
+          <Route path="/mercedes" component={Mercedes} />
+          <Route path="/vega_women" component={VegaOne} />
+          <Route path="/ghadi_3" component={GhadiThree} />
+          <Route path="/envorincs" component={Envorincs} />
           <Route path="/blackberrys_one" component={BB1} />
           <Route path="/blackberrys_two" component={BB2} />
+          <Route path="/mama_earth" component={Mamaearth} />
+          <Route path="/asics_olympics" component={AsicsO} />
           <Route path="/blackberrys_three" component={BB3} />
-          <Route path="/merc" component={Lmerc} />
-          <Route path="/omeg" component={Lomega} />
-          <Route path="/lg" component={LG} />
-          <Route path="/poco" component={Poco} />
-          <Route path="/amd" component={Amd} />
           <Route path="/amd_amazon" component={Amd_Amazon} />
-          <Route path="/amd_flipkart" component={Amd_Flipkart} />
-          <Route path="/oppo" component={Oppo_1} />
-          <Route path="/amd_merc_q2_2021" component={AmdMerc} />
-          <Route path="/amd_merc_300x250_q2_2021" component={AmdMerc2} />
-          <Route path="/amd_f1" component={AmdF1} />
           <Route path="/wedding_collection1" component={WC1} />
           <Route path="/wedding_collection2" component={WC2} />
           <Route path="/wedding_collection3" component={WC3} />
-          <Route path="/_24seven" component={_24Seven} />
+          <Route path="/blackberrys" component={Blackberrys} />
+          <Route path="/ucook/" component={UcookVideoPlayer} />
+          <Route path="/amd_merc_q2_2021" component={AmdMerc} />
+          <Route path="/amd_flipkart" component={Amd_Flipkart} />
+          <Route path="/amd_merc_300x250_q2_2021" component={AmdMerc2} />
           <Route path="/amd_q2_commercials_320x480" component={AmdQ2_1} />
           <Route path="/amd_q2_commercials_320x480_2" component={AmdQ2_2} />
-          <Route path="/ghadi" component={Ghadi} />
-          <Route path="/ghadi_2" component={GhadiTwo} />
-          <Route path="/ghadi_3" component={GhadiThree} />
-          <Route path="/vega" component={Vega} />
-          <Route path="/vega_women" component={VegaOne} />
-          <Route path="/envorincs" component={Envorincs} />
-          <Route path="/vivo" component={Vivo} />
-          <Route path="/oppo_days" component={Oppo} />
-          <Route path="/govo" component={Govo} />
-          <Route path="/gocrush/" component={Gocrush} />
-          <Route path="/ucook/" component={UcookVideoPlayer} />
           <Route exact path="/">
             {!password ? <Login setPassword={setPassword} /> : <Homepage />}
           </Route>

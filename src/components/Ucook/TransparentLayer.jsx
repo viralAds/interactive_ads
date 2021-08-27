@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./ucook.scss";
 import Offers from "./Offers";
 import Products from "./Products";
@@ -15,9 +15,18 @@ const useStyles = makeStyles({
     width: "100%",
   },
 });
+
 const Controls = (props) => {
-  const { playing, muted, setMuted, toggleVideoPlay, progress } = props;
+  const { playing, muted, setMuted, toggleVideoPlay, duration, currentTime } =
+    props;
   const classes = useStyles();
+  const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    if (currentTime && duration) {
+      setProgress((currentTime / duration) * 100);
+    }
+  }, [currentTime, duration]);
 
   return (
     <div className="controls">
@@ -29,7 +38,7 @@ const Controls = (props) => {
       </div>
       <div className="buttons">
         <div
-          className="playing"
+          className="ctrl-icon"
           onClick={(e) => {
             e.stopPropagation();
             toggleVideoPlay();
@@ -37,27 +46,32 @@ const Controls = (props) => {
         >
           {playing ? (
             <PauseCircleFilledIcon
-              className="ctrl-icon"
+              className="playing"
               style={{ color: "#fff" }}
             />
           ) : (
-            <PlayArrowIcon className="ctrl-icon" style={{ color: "#fff" }} />
+            <PlayArrowIcon className="playing" style={{ color: "#fff" }} />
           )}
         </div>
-        <div className="muted">
+        <div className="ctrl-icon">
           {muted ? (
             <VolumeOffIcon
-              className="ctrl-icon"
+              className="muted"
               style={{ color: "#fff" }}
-              onClick={() => setMuted(!muted)}
+              onClick={() => setMuted(false)}
             />
           ) : (
             <VolumeUpIcon
-              className="ctrl-icon"
+              className="muted"
               style={{ color: "#fff" }}
-              onClick={() => setMuted(!muted)}
+              onClick={() => setMuted(true)}
             />
           )}
+        </div>
+        <div className="ctrl-icon">
+          <span className="time">
+            {(currentTime / 60).toFixed(2)}/{(duration / 60).toFixed(2)}
+          </span>
         </div>
       </div>
     </div>
@@ -72,7 +86,8 @@ const TransparentLayer = (props) => {
     actualDim,
     padding,
     toggleVideoPlay,
-    progress,
+    duration,
+    currentTime,
   } = props;
   const [productActive, setProductActive] = useState(true);
 
@@ -94,7 +109,8 @@ const TransparentLayer = (props) => {
         muted={muted}
         setMuted={setMuted}
         toggleVideoPlay={toggleVideoPlay}
-        progress={progress}
+        duration={duration}
+        currentTime={currentTime}
       />
       <Offers />
       {productActive ? (
