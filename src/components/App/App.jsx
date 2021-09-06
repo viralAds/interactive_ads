@@ -72,7 +72,7 @@ function App() {
           <Route path="/govo" component={Govo} />
           <Route path="/jnto" component={Swipe} />
           <Route path="/merc" component={Lmerc} />
-          <Route path="/dabar" component={Dabar} />
+          <Route path="/dabur" component={Dabar} />
           <Route path="/omega" component={Omega} />
           <Route path="/clark" component={Clark} />
           <Route path="/ghadi" component={Ghadi} />

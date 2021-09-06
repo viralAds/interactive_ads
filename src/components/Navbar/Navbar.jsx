@@ -86,7 +86,7 @@ function HomePage() {
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                    <Link to="/dabar">Dabar</Link>
+                    <Link to="/dabur">Dabur</Link>
                   </DropdownItem>
                   <DropdownItem>
                     <Link to="/panasonic">PANASONIC</Link>
