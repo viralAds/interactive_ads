@@ -79,9 +79,63 @@ function HomePage() {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
+
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
-                  VIRAL ADS
+                  VIRAL Ads 1
+                </DropdownToggle>
+                <DropdownMenu right>
+                  <DropdownItem>
+                    <Link to="/dabar">Dabar</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/panasonic">PANASONIC</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/philips">PHILIPS</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/clark">CLARKS</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/jnto">JNTO</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/asics">ASICS</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/asics_olympics">ASICS Olympics</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/mama_earth">Mama Earth</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/boat">Boat</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/_24seven">24 Seven</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/oppo_days">Oppo Days</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/govo">Govo Earbuds</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/gocrush/">GoCrush</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/envorincs">Envorincs</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/vivo">Vivo</Link>
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
+
+              <UncontrolledDropdown nav inNavbar>
+                <DropdownToggle nav caret>
+                  VIRAL Ads 2
                 </DropdownToggle>
                 <DropdownMenu right>
                   <UncontrolledDropdown nav inNavbar>
@@ -184,48 +238,6 @@ function HomePage() {
                       </DropdownItem>
                     </DropdownMenu>
                   </UncontrolledDropdown>
-                  <DropdownItem>
-                    <Link to="/panasonic">PANASONIC</Link>
-                  </DropdownItem>
-                  <DropdownItem>
-                    <Link to="/philips">PHILIPS</Link>
-                  </DropdownItem>
-                  <DropdownItem>
-                    <Link to="/clark">CLARKS</Link>
-                  </DropdownItem>
-                  <DropdownItem>
-                    <Link to="/jnto">JNTO</Link>
-                  </DropdownItem>
-                  <DropdownItem>
-                    <Link to="/asics">ASICS</Link>
-                  </DropdownItem>
-                  <DropdownItem>
-                    <Link to="/asics_olympics">ASICS Olympics</Link>
-                  </DropdownItem>
-                  <DropdownItem>
-                    <Link to="/mama_earth">Mama Earth</Link>
-                  </DropdownItem>
-                  <DropdownItem>
-                    <Link to="/boat">Boat</Link>
-                  </DropdownItem>
-                  <DropdownItem>
-                    <Link to="/_24seven">24 Seven</Link>
-                  </DropdownItem>
-                  <DropdownItem>
-                    <Link to="/oppo_days">Oppo Days</Link>
-                  </DropdownItem>
-                  <DropdownItem>
-                    <Link to="/govo">Govo Earbuds</Link>
-                  </DropdownItem>
-                  <DropdownItem>
-                    <Link to="/gocrush/">GoCrush</Link>
-                  </DropdownItem>
-                  <DropdownItem>
-                    <Link to="/envorincs">Envorincs</Link>
-                  </DropdownItem>
-                  <DropdownItem>
-                    <Link to="/vivo">Vivo</Link>
-                  </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
             </Nav>

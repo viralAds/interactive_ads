@@ -52,6 +52,7 @@ import UcookVideoPlayer from "../Ucook/Ucook";
 import Ucook1 from "../ucook_va/Ucook1";
 import Ucook3 from "../ucook_va/Ucook3";
 import Ucook2 from "../ucook_va/Ucook2";
+import Dabar from "../dabar/Dabar";
 
 function App() {
   const [password, setPassword] = useState("");
@@ -71,6 +72,7 @@ function App() {
           <Route path="/govo" component={Govo} />
           <Route path="/jnto" component={Swipe} />
           <Route path="/merc" component={Lmerc} />
+          <Route path="/dabar" component={Dabar} />
           <Route path="/omega" component={Omega} />
           <Route path="/clark" component={Clark} />
           <Route path="/ghadi" component={Ghadi} />
