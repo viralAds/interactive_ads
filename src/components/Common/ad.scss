@@ -23,6 +23,17 @@
     
 }
 
+.m_ads_unit_dabar::before {
+	content: "Advertisement";
+	display: block;
+	width: 100%;
+	color: #777;
+	font-size: 10px;
+	line-height: 16px;
+	font-family: "open_sansregular";
+    
+}
+
 // Used In Blackberrys, Omega,and Mercedes ads
 
 .app-inside {

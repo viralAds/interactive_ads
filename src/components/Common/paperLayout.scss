@@ -1194,6 +1194,15 @@ pre {
 	margin-bottom: 2rem;
 }
 
+.m_ads_unit_dabar {
+	height: 640px;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 2rem;
+}
+
 .m_ads_unit::before {
 	content: "Advertisement";
 	display: block;

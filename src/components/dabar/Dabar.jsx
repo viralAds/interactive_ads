@@ -174,7 +174,7 @@ function Dabar() {
             </div>
             <div className="recommended"></div>
 
-            <div className="m_ads_unit_large" style={{ position: "relative" }}>
+            <div className="m_ads_unit_dabar" style={{ position: "relative" }}>
               <div className="sponsored-by">Sponsored by EKALEIDO</div>
               <div className="_360x640frame">
                 <iframe
