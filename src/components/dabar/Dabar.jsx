@@ -178,7 +178,7 @@ function Dabar() {
               <div className="sponsored-by">Sponsored by EKALEIDO</div>
               <div className="_360x640frame">
                 <iframe
-                  src="https://github.com/viralAds/Dabar"
+                  src="https://viralads.github.io/dabar/"
                   title="dabar Advertisement"
                 ></iframe>
               </div>
