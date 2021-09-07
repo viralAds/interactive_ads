@@ -29,28 +29,27 @@ function Dabar() {
               data-vars-cardtype="top-news"
               data-vars-storyid="101617601975509"
               data-vars-storytype="story"
-              data-weburl="https://www.hindustantimes.com/cities/mumbai-news/bombay-hc-directs-cbi-to-conduct-preliminary-probe-against-anil-deshmukh-101617601975509.html"
+              data-weburl="https://www.hindustantimes.com/delhi-news/at-365-delhi-s-air-quality-still-in-very-poor-zone/story-HDJ3Wq6JFAXCqJXnmNyZyM.html"
               data-vars-section="mumbai news"
               data-vars-orderid="1"
             >
               <figure>
                 <a href="/cities/mumbai-news/bombay-hc-directs-cbi-to-conduct-preliminary-probe-against-anil-deshmukh-101617601975509.html101617601975509">
                   <img
-                    src="https://images.hindustantimes.com/img/2021/04/05/550x309/7fe2d31e-8a43-11eb-8c8d-7793c0212a86_1617151104054_1617602662684.jpg"
-                    alt="Anil Deshmukh"
-                    title="Anil Deshmukh"
+                    src="https://images.hindustantimes.com/rf/image_size_300x169/HT/p2/2020/10/31/Pictures/india-environment-pollution_5df8c1f2-1b33-11eb-aaf6-cc648d414a4d.jpg"
+                    alt="air quality"
+                    title="air quality"
                   />
                 </a>
-                <figcaption>Anil Deshmukh</figcaption>
+                <figcaption>Air Quality</figcaption>
               </figure>
               <div className="storyShortDetail">
                 <div className="catName pt10 pb10">
-                  <a href="/cities/mumbai-news">mumbai news</a>
+                  <a href="/cities/mumbai-news">Delhi News</a>
                 </div>
                 <h3 className="hdg3">
                   <a href="/cities/mumbai-news/bombay-hc-directs-cbi-to-conduct-preliminary-probe-against-anil-deshmukh-101617601975509.html101617601975509">
-                    Bombay HC directs CBI to conduct preliminary probe against
-                    Anil Deshmukh
+                    At 365, Delhi’s air quality still in ‘very poor’ zone
                   </a>
                 </h3>
                 <div className="stroyPub">
@@ -58,14 +57,12 @@ function Dabar() {
                     By | Edited by Karan Manral<span>, New Delhi</span>
                   </div>
                   <div className="dateTime">
-                    UPDATED ON APR 05, 2021 12:36 PM IST
+                    UPDATED ON SEP 05, 2021 12:36 PM IST
                   </div>
                 </div>
                 <div className="sortDec">
-                  The high court observed that the probe against Anil Deshmukh
-                  on corruption allegations by former Mumbai Police commissioner
-                  Param Bir Singh, can't be independent if it is given to the
-                  police as he is the Maharashtra home minister.
+                  The overall AQI of Delhi on Friday was 374, also in the same
+                  category. This was better than Thursday’s 395.
                 </div>
                 <div className="actionDiv">
                   <div className="socialEl">
@@ -108,9 +105,9 @@ function Dabar() {
                   <img
                     data-src="https://images.hindustantimes.com/img/2021/04/05/550x309/tmc-flag_1617500785244_1617500799840_1617606479052_1617606490041.jpg"
                     className="lazy"
-                    src="https://images.hindustantimes.com/default/550x309.jpg"
-                    alt="2021 West Bengal Assembly Elections: Of these 31 seats going to polls on Tuesday, TMC won 29 of them in the 2016 assembly elections, increasing its tally from 26 in 2011. It remains to be seen if the party manages to retain its traditional bastions this time around"
-                    title="2021 West Bengal Assembly Elections: Of these 31 seats going to polls on Tuesday, TMC won 29 of them in the 2016 assembly elections, increasing its tally from 26 in 2011. It remains to be seen if the party manages to retain its traditional bastions this time around"
+                    src="https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2019/11/06/Pictures/_1284de4c-0070-11ea-a362-a76bed49e6ea.jpg"
+                    alt="around"
+                    title="around"
                   />
                 </a>
                 <figcaption>
@@ -124,18 +121,18 @@ function Dabar() {
               <div className="storyShortDetail">
                 <div className="catName pt10">
                   <a href="/elections/west-bengal-assembly-election">
-                    west bengal assembly election
+                    GURUGRAM NEWS
                   </a>
                 </div>
                 <h2 className="hdg3">
                   <a href="/elections/west-bengal-assembly-election/tmc-bastions-big-names-in-phase-3-of-west-bengal-elections-101617590540609.html101617590540609">
-                    TMC bastions, big names in Phase 3 of West Bengal elections
+                    Constructions choking Gurugram, say experts
                   </a>
                 </h2>
                 <div className="stroyPub">
                   <div className="storyBy">By | Written by Joydeep Bose</div>
                   <div className="dateTime">
-                    PUBLISHED ON APR 05, 2021 12:45 PM IST
+                    PUBLISHED ON SEP 05, 2021 12:45 PM IST
                   </div>
                 </div>
                 <div className="sortDec">
@@ -195,29 +192,30 @@ function Dabar() {
               <figure>
                 <a href="/india-news/amid-rising-covid-cases-raisina-dialogue-to-go-fully-digital-101617607574419.html101617607574419">
                   <img
-                    data-src="https://images.hindustantimes.com/img/2021/04/05/550x309/b4d13a50-95df-11eb-be01-f1e853d0087a_1617607572912.jpg"
+                    data-src="https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2019/10/04/Pictures/delhi-chief-minister-arvind-kejriwal_addcebd2-e6d0-11e9-939f-ba4a7f73df5c.jpg"
                     className="lazy"
-                    src="https://images.hindustantimes.com/default/550x309.jpg"
-                    alt="External affairs minister S Jaishankar"
-                    title="External affairs minister S Jaishankar"
+                    src="https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2019/10/04/Pictures/delhi-chief-minister-arvind-kejriwal_addcebd2-e6d0-11e9-939f-ba4a7f73df5c.jpg"
+                    alt="Arvind Kejriwal launches online pollution campaign"
+                    title="Arvind Kejriwal launches online pollution campaign"
                   />
                 </a>
-                <figcaption>External affairs minister S Jaishankar</figcaption>
+                <figcaption>
+                  Arvind Kejriwal launches online pollution campaign
+                </figcaption>
               </figure>
               <div className="storyShortDetail">
                 <div className="catName pt10">
-                  <a href="/india-news">india news</a>
+                  <a href="/india-news">DELHI NEWS</a>
                 </div>
                 <h2 className="hdg3">
                   <a href="/india-news/amid-rising-covid-cases-raisina-dialogue-to-go-fully-digital-101617607574419.html101617607574419">
-                    Amid rising Covid cases, Raisina Dialogue to go fully
-                    digital
+                    Arvind Kejriwal launches online pollution campaign
                   </a>
                 </h2>
                 <div className="stroyPub">
                   <div className="storyBy">By</div>
                   <div className="dateTime">
-                    PUBLISHED ON APR 05, 2021 12:56 PM IST
+                    PUBLISHED ON SEP 05, 2021 12:56 PM IST
                   </div>
                 </div>
                 <div className="sortDec">
@@ -267,28 +265,32 @@ function Dabar() {
               <figure>
                 <a href="/india-news/sc-paves-way-for-two-special-courts-to-try-coal-scam-cases-101617606134428.html101617606134428">
                   <img
-                    data-src="https://images.hindustantimes.com/img/2021/04/05/550x309/9beae8fe-95dc-11eb-be01-f1e853d0087a_1617606132803.jpg"
+                    data-src="https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2017/12/02/Pictures/corporation-national-territory-faridabad-badarpur-national-badarpur_00ac890e-d728-11e7-8802-68a15924f886.jpg"
                     className="lazy"
-                    src="https://images.hindustantimes.com/default/550x309.jpg"
-                    alt="Supreme Court"
-                    title="Supreme Court"
+                    src="https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2017/12/02/Pictures/corporation-national-territory-faridabad-badarpur-national-badarpur_00ac890e-d728-11e7-8802-68a15924f886.jpg"
+                    alt="Delhi pollution: Green tribunal asks CPCB to clarify stand on thermal power plants"
+                    title="Delhi pollution: Green tribunal asks CPCB to clarify stand on thermal power plants"
                   />
                 </a>
-                <figcaption>Supreme Court</figcaption>
+                <figcaption>
+                  Delhi pollution: Green tribunal asks CPCB to clarify stand on
+                  thermal power plants
+                </figcaption>
               </figure>
               <div className="storyShortDetail">
                 <div className="catName pt10">
-                  <a href="/india-news">india news</a>
+                  <a href="/india-news">Delhi news</a>
                 </div>
                 <h2 className="hdg3">
                   <a href="/india-news/sc-paves-way-for-two-special-courts-to-try-coal-scam-cases-101617606134428.html101617606134428">
-                    SC paves way for two special courts to try coal scam cases
+                    Delhi pollution: Green tribunal asks CPCB to clarify stand
+                    on thermal power plants
                   </a>
                 </h2>
                 <div className="stroyPub">
                   <div className="storyBy">By Abraham Thomas</div>
                   <div className="dateTime">
-                    PUBLISHED ON APR 05, 2021 12:32 PM IST
+                    PUBLISHED ON SEP 05, 2021 12:32 PM IST
                   </div>
                 </div>
                 <div className="sortDec">
