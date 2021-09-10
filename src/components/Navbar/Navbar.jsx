@@ -236,6 +236,9 @@ function HomePage() {
                       <DropdownItem>
                         <Link to="/ucook_3">Viral 3</Link>
                       </DropdownItem>
+                      <DropdownItem>
+                        <Link to="/ucook_i">Viral I</Link>
+                      </DropdownItem>
                     </DropdownMenu>
                   </UncontrolledDropdown>
                 </DropdownMenu>

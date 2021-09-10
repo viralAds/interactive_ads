@@ -52,6 +52,7 @@ import UcookVideoPlayer from "../Ucook/Ucook";
 import Ucook1 from "../ucook_va/Ucook1";
 import Ucook3 from "../ucook_va/Ucook3";
 import Ucook2 from "../ucook_va/Ucook2";
+import UcookI from '../ucook_va/UcookI';
 import Dabar from "../dabar/Dabar";
 
 function App() {
@@ -86,6 +87,7 @@ function App() {
           <Route path="/ucook_1/" component={Ucook1} />
           <Route path="/ucook_2/" component={Ucook2} />
           <Route path="/ucook_3/" component={Ucook3} />
+          <Route path="/ucook_i/" component={UcookI} />
           <Route path="/ghadi_2" component={GhadiTwo} />
           <Route path="/gocrush/" component={Gocrush} />
           <Route path="/_24seven" component={_24Seven} />

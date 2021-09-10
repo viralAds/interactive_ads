@@ -65,6 +65,21 @@
   }
 }
 
+._640x360frame {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  align-items: center;
+  iframe {
+    width: 640px;
+    height: 360px;
+    overflow: hidden;
+  }
+}
+
 ._300x250frame {
   position: relative;
   width: 100%;
