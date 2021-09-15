@@ -89,6 +89,9 @@ function HomePage() {
                     <Link to="/dabur">Dabur</Link>
                   </DropdownItem>
                   <DropdownItem>
+                    <Link to="/upes">UPES</Link>
+                  </DropdownItem>
+                  <DropdownItem>
                     <Link to="/panasonic">PANASONIC</Link>
                   </DropdownItem>
                   <DropdownItem>
