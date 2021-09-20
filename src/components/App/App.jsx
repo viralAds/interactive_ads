@@ -20,6 +20,7 @@ import Login from "../Login/Login";
 import AmdF1 from "../AmdF1/AmdF1";
 import Ghadi from "../Ghadi/Ghadi";
 import Dabar from "../dabar/Dabar";
+import Dabur2 from "../dabar/Dabur2";
 import Oppo from "../oppo_days/Oppo";
 import VegaOne from "../Vega/VegaOne";
 import Play from "../Playground/Play";
@@ -83,6 +84,7 @@ function App() {
           <Route path="/omeg" component={Lomega} />
           <Route path="/oppo" component={Oppo_1} />
           <Route path="/amd_f1" component={AmdF1} />
+          <Route path="/dabur2" component={Dabur2} />
           <Route path="/oppo_days" component={Oppo} />
           <Route path="/panasonic" component={Pana} />
           <Route path="/philips" component={Philips} />
