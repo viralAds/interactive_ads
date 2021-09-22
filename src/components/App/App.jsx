@@ -45,6 +45,7 @@ import GhadiThree from "../Ghadi/GhadiThree";
 import UcookVideoPlayer from "../Ucook/Ucook";
 import Amd_Amazon from "../Amd_gwd/AmdAmazon";
 import Mamaearth from "../Mamaearth/Mamaearth";
+import Audientes from '../Audientes/Audientes';
 import Envorincs from "../Envorincs/Envorincs";
 import Amd_Flipkart from "../Amd_gwd/AmdFlipkart";
 import Blackberrys from "../Blackberrys/Blackberrys";
@@ -98,6 +99,7 @@ function App() {
           <Route path="/mercedes" component={Mercedes} />
           <Route path="/vega_women" component={VegaOne} />
           <Route path="/ghadi_3" component={GhadiThree} />
+          <Route path="/audientes" component={Audientes} />
           <Route path="/envorincs" component={Envorincs} />
           <Route path="/blackberrys_one" component={BB1} />
           <Route path="/blackberrys_two" component={BB2} />
