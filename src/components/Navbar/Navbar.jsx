@@ -156,6 +156,9 @@ function HomePage() {
                         <Link to="/amd">AMD</Link>
                       </DropdownItem>
                       <DropdownItem>
+                        <Link to="/amd_desire">AMD Desire</Link>
+                      </DropdownItem>
+                      <DropdownItem>
                         <Link to="/amd_flipkart">AMD Flipkart</Link>
                       </DropdownItem>
                       <DropdownItem>

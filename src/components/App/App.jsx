@@ -7,7 +7,6 @@ import Amd from "../Amd/Amd";
 import Audi from "../Audi/Audi";
 import Swap from "../Swap/Swap";
 import Poco from "../Poco/Poco";
-import Vega from "../Vega/Vega";
 import Vivo from "../Vivo/Vivo";
 import Govo from "../govo/Govo";
 import Boat from "../Boat/Boat";
@@ -35,12 +34,14 @@ import Philips from "../Philips/Philips";
 import Gocrush from "../gocrush/Gocrush";
 import AmdMerc from "../AmdMerc/AmdMerc";
 import GhadiTwo from "../Ghadi/GhadiTwo";
+import VegaWomen from "../Vega/VegaWomen";
 import Pana from "../Panasonic/Panasonic";
 import AmdMerc2 from "../AmdMerc2/AmdMerc";
 import Mercedes from "../Mercedes/Mercedes";
 import Lmerc from "../MercedesLib/Mercedes";
 import _24Seven from "../_24Seven/_24seven";
 import AsicsO from "../Asics/AsicsOlympics";
+import AmdDesire from "../Amd_gwd/AmdDesire";
 import GhadiThree from "../Ghadi/GhadiThree";
 import UcookVideoPlayer from "../Ucook/Ucook";
 import Amd_Amazon from "../Amd_gwd/AmdAmazon";
@@ -71,7 +72,6 @@ function App() {
           <Route path="/audi" component={Audi} />
           <Route path="/play" component={Play} />
           <Route path="/swap" component={Swap} />
-          <Route path="/vega" component={Vega} />
           <Route path="/vivo" component={Vivo} />
           <Route path="/upes" component={Upes} />
           <Route path="/govo" component={Govo} />
@@ -86,6 +86,7 @@ function App() {
           <Route path="/oppo" component={Oppo_1} />
           <Route path="/amd_f1" component={AmdF1} />
           <Route path="/dabur2" component={Dabur2} />
+          <Route path="/vega" component={VegaWomen} />
           <Route path="/oppo_days" component={Oppo} />
           <Route path="/panasonic" component={Pana} />
           <Route path="/philips" component={Philips} />
@@ -103,6 +104,7 @@ function App() {
           <Route path="/envorincs" component={Envorincs} />
           <Route path="/blackberrys_one" component={BB1} />
           <Route path="/blackberrys_two" component={BB2} />
+          <Route path="/amd_desire" component={AmdDesire} />
           <Route path="/mama_earth" component={Mamaearth} />
           <Route path="/asics_olympics" component={AsicsO} />
           <Route path="/blackberrys_three" component={BB3} />

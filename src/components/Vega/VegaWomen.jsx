@@ -1,7 +1,8 @@
 import "../Common/ad.scss";
 import "../Common/paperLayout.scss";
+import Vega from "./Vega";
 
-function VegaOne() {
+function VegaWomen() {
   return (
     <div>
       <section className="container main-container">
@@ -176,12 +177,7 @@ function VegaOne() {
               style={{ position: "relative", height: 480 }}
             >
               <div className="sponsored-by">Sponsored by EKALEIDO</div>
-              <div className="_320x480frame">
-                <iframe
-                  src="https://43215-ekaleidoanuj.github.io/vega_one/"
-                  title="vega"
-                ></iframe>
-              </div>
+              <Vega />
             </div>
             <div
               className="cartHolder page-view-candidate listView"
@@ -417,4 +413,4 @@ function VegaOne() {
   );
 }
 
-export default VegaOne;
+export default VegaWomen;
