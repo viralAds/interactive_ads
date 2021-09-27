@@ -49,6 +49,7 @@ import Mamaearth from "../Mamaearth/Mamaearth";
 import Audientes from '../Audientes/Audientes';
 import Envorincs from "../Envorincs/Envorincs";
 import Amd_Flipkart from "../Amd_gwd/AmdFlipkart";
+import AudientesTwo from '../Audientes/AudientesTwo';
 import Blackberrys from "../Blackberrys/Blackberrys";
 import BB2 from "../Blackberrys/BbCarrousel/Blackberrys";
 import BB1 from "../Blackberrys/BlackberrysOne/Blackberrys";
@@ -114,6 +115,7 @@ function App() {
           <Route path="/wedding_collection3" component={WC3} />
           <Route path="/blackberrys" component={Blackberrys} />
           <Route path="/ucook/" component={UcookVideoPlayer} />
+          <Route path="/audientes_2" component={AudientesTwo} />
           <Route path="/amd_merc_q2_2021" component={AmdMerc} />
           <Route path="/amd_flipkart" component={Amd_Flipkart} />
           <Route path="/amd_merc_300x250_q2_2021" component={AmdMerc2} />
