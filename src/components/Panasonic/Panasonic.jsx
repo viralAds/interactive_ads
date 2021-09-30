@@ -4,8 +4,8 @@ const Panasonic = () => {
   return (
     <div className="_320x480frame">
       <iframe
-        src="https://43215-ekaleidoanuj.github.io/panasonic/"
-        title="Blackberrys Advertisement"
+        src="https://viralads.github.io/panasonic/"
+        title="Panasonic Advertisement"
       ></iframe>
     </div>
   );

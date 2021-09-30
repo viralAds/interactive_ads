@@ -3,7 +3,7 @@ import React from 'react'
 const Ghadi = () => {
   return (
     <div className="_320x480frame">
-      <iframe src="https://43215-ekaleidoanuj.github.io/ghadi/" 
+      <iframe src="https://viralads.github.io/ghadi/" 
                 title="Asics"></iframe>
     </div>
   )

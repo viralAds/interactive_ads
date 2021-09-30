@@ -5,7 +5,7 @@ const Govo = () => {
     <div>
       <div className="_360x640frame">
         <iframe
-          src="https://43215-ekaleidoanuj.github.io/govo/"
+          src="https://viralads.github.io/govo/"
           title="Govo"
         ></iframe>
       </div>
