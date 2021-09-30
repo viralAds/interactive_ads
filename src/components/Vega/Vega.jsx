@@ -31,7 +31,8 @@ const Men = () => {
       case 2:
         setProductTwo(true);
         break;
-      default: return
+      default:
+        return;
     }
   };
 
@@ -72,7 +73,8 @@ const Men = () => {
             href="https://www.vega.co.in/x2-beard-trimmer.html"
             target="_blank"
             rel="noreferrer"
-            className="men-cta-btn">
+            className="men-cta-btn"
+          >
             BUY NOW
           </a>
         </div>
@@ -85,7 +87,10 @@ const Men = () => {
             href="https://www.vega.co.in/t3-beard-trimmer.html"
             target="_blank"
             rel="noreferrer"
-            className="men-cta-btn">BUY NOW</a>
+            className="men-cta-btn"
+          >
+            BUY NOW
+          </a>
         </div>
       )}
       {productTwo && (
@@ -96,7 +101,10 @@ const Men = () => {
             href="https://www.vega.co.in/t1-beard-trimmer.html"
             target="_blank"
             rel="noreferrer"
-            className="men-cta-btn">BUY NOW</a>
+            className="men-cta-btn"
+          >
+            BUY NOW
+          </a>
         </div>
       )}
     </div>
@@ -121,7 +129,8 @@ const Women = () => {
       case 2:
         setProductTwo(true);
         break;
-      default: return
+      default:
+        return;
     }
   };
 
@@ -150,7 +159,10 @@ const Women = () => {
             href="https://www.vega.co.in/pro-touch-1800-2000-hair-dryer.html"
             target="_blank"
             rel="noreferrer"
-            className="women-cta-btn">BUY NOW</a>
+            className="women-cta-btn"
+          >
+            BUY NOW
+          </a>
         </div>
       )}
       {productOne && (
@@ -161,7 +173,10 @@ const Women = () => {
             href="https://www.vega.co.in/ultra-shine-hair-straightener-vhsh-25.html"
             target="_blank"
             rel="noreferrer"
-            className="women-cta-btn">BUY NOW</a>
+            className="women-cta-btn"
+          >
+            BUY NOW
+          </a>
         </div>
       )}
       {productTwo && (
@@ -172,7 +187,10 @@ const Women = () => {
             href="https://www.vega.co.in/facial-cleanser.html"
             target="_blank"
             rel="noreferrer"
-            className="women-cta-btn">BUY NOW</a>
+            className="women-cta-btn"
+          >
+            BUY NOW
+          </a>
         </div>
       )}
     </div>
@@ -198,16 +216,8 @@ const Vega = () => {
       {frameOne && (
         <div className="frame-1">
           <img src={frame_1} alt="frame_1" />
-          <div className="men">
-            <button className="gender" onClick={() => chooseGender("men")}>
-              Men
-            </button>
-          </div>
-          <div className="women">
-            <button className="gender" onClick={() => chooseGender("women")}>
-              Women
-            </button>
-          </div>
+          <div className="men" onClick={() => chooseGender("men")}></div>
+          <div className="women" onClick={() => chooseGender("women")}></div>
         </div>
       )}
 
