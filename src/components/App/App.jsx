@@ -10,7 +10,7 @@ import Poco from "../Poco/Poco";
 import Vivo from "../Vivo/Vivo";
 import Govo from "../govo/Govo";
 import Boat from "../Boat/Boat";
-import Upes from '../upes/Upes';
+import Upes from "../upes/Upes";
 import Swipe from "../Jnto/Jnto";
 import Asics from "../Asics/Asics";
 import Omega from "../Omega/Omega";
@@ -22,6 +22,8 @@ import Dabar from "../dabar/Dabar";
 import Dabur2 from "../dabar/Dabur2";
 import Oppo from "../oppo_days/Oppo";
 import VegaOne from "../Vega/VegaOne";
+import VegaTwo from "../Vega/VegaTwo";
+import VegaThree from "../Vega/VegaThree";
 import Play from "../Playground/Play";
 import Lomega from "../OmegaLib/Omega";
 import Homepage from "../Home/Homepage";
@@ -29,7 +31,7 @@ import Ucook1 from "../ucook_va/Ucook1";
 import Oppo_1 from "../Oppo/Oppo1/Oppo";
 import Ucook3 from "../ucook_va/Ucook3";
 import Ucook2 from "../ucook_va/Ucook2";
-import UcookI from '../ucook_va/UcookI';
+import UcookI from "../ucook_va/UcookI";
 import Philips from "../Philips/Philips";
 import Gocrush from "../gocrush/Gocrush";
 import AmdMerc from "../AmdMerc/AmdMerc";
@@ -46,10 +48,10 @@ import GhadiThree from "../Ghadi/GhadiThree";
 import UcookVideoPlayer from "../Ucook/Ucook";
 import Amd_Amazon from "../Amd_gwd/AmdAmazon";
 import Mamaearth from "../Mamaearth/Mamaearth";
-import Audientes from '../Audientes/Audientes';
+import Audientes from "../Audientes/Audientes";
 import Envorincs from "../Envorincs/Envorincs";
 import Amd_Flipkart from "../Amd_gwd/AmdFlipkart";
-import AudientesTwo from '../Audientes/AudientesTwo';
+import AudientesTwo from "../Audientes/AudientesTwo";
 import Blackberrys from "../Blackberrys/Blackberrys";
 import BB2 from "../Blackberrys/BbCarrousel/Blackberrys";
 import BB1 from "../Blackberrys/BlackberrysOne/Blackberrys";
@@ -88,6 +90,8 @@ function App() {
           <Route path="/amd_f1" component={AmdF1} />
           <Route path="/dabur2" component={Dabur2} />
           <Route path="/vega" component={VegaWomen} />
+          <Route path="/vega_2" component={VegaTwo} />
+          <Route path="/vega_3" component={VegaThree} />
           <Route path="/oppo_days" component={Oppo} />
           <Route path="/panasonic" component={Pana} />
           <Route path="/philips" component={Philips} />
