@@ -178,7 +178,7 @@ function VegaTwo() {
               <div className="sponsored-by">Sponsored by EKALEIDO</div>
               <div className="_320x480frame">
                 <iframe
-                  src="https://viralads.github.io/vega_three/"
+                  src="https://viralads.github.io/vega_two/"
                   title="vega"
                 ></iframe>
               </div>
