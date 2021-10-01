@@ -90,8 +90,8 @@ function App() {
           <Route path="/amd_f1" component={AmdF1} />
           <Route path="/dabur2" component={Dabur2} />
           <Route path="/vega" component={VegaWomen} />
-          <Route path="/vega_2" component={VegaTwo} />
-          <Route path="/vega_3" component={VegaThree} />
+          <Route path="/vega_flipkart" component={VegaTwo} />
+          <Route path="/vega_amazon" component={VegaThree} />
           <Route path="/oppo_days" component={Oppo} />
           <Route path="/panasonic" component={Pana} />
           <Route path="/philips" component={Philips} />
