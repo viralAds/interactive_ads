@@ -42,6 +42,7 @@ import AmdMerc2 from "../AmdMerc2/AmdMerc";
 import Mercedes from "../Mercedes/Mercedes";
 import Lmerc from "../MercedesLib/Mercedes";
 import _24Seven from "../_24Seven/_24seven";
+import Bodyshop from '../Bodyshop/Bodyshop';
 import AsicsO from "../Asics/AsicsOlympics";
 import AmdDesire from "../Amd_gwd/AmdDesire";
 import GhadiThree from "../Ghadi/GhadiThree";
@@ -90,8 +91,6 @@ function App() {
           <Route path="/amd_f1" component={AmdF1} />
           <Route path="/dabur2" component={Dabur2} />
           <Route path="/vega" component={VegaWomen} />
-          <Route path="/vega_flipkart" component={VegaTwo} />
-          <Route path="/vega_amazon" component={VegaThree} />
           <Route path="/oppo_days" component={Oppo} />
           <Route path="/panasonic" component={Pana} />
           <Route path="/philips" component={Philips} />
@@ -102,6 +101,7 @@ function App() {
           <Route path="/ghadi_2" component={GhadiTwo} />
           <Route path="/gocrush/" component={Gocrush} />
           <Route path="/_24seven" component={_24Seven} />
+          <Route path="/bodyshop" component={Bodyshop} />
           <Route path="/mercedes" component={Mercedes} />
           <Route path="/vega_women" component={VegaOne} />
           <Route path="/ghadi_3" component={GhadiThree} />
@@ -113,6 +113,8 @@ function App() {
           <Route path="/mama_earth" component={Mamaearth} />
           <Route path="/asics_olympics" component={AsicsO} />
           <Route path="/blackberrys_three" component={BB3} />
+          <Route path="/vega_flipkart" component={VegaTwo} />
+          <Route path="/vega_amazon" component={VegaThree} />
           <Route path="/amd_amazon" component={Amd_Amazon} />
           <Route path="/wedding_collection1" component={WC1} />
           <Route path="/wedding_collection2" component={WC2} />
