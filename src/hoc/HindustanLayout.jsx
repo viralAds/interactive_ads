@@ -1,8 +1,7 @@
-import "../Common/ad.scss";
-import "../Common/paperLayout.scss";
-import Vega from "./Vega";
+import "../components/Common/ad.scss";
+import "../components/Common/paperLayout.scss";
 
-function VegaWomen() {
+function HindustanLayout({ children }) {
   return (
     <div>
       <section className="container main-container">
@@ -172,12 +171,9 @@ function VegaWomen() {
             </div>
             <div className="recommended"></div>
 
-            <div
-              className="m_ads_unit_dabar"
-              style={{ position: "relative", height: 480 }}
-            >
+            <div className="m_ads_unit_dabar" style={{ position: "relative" }}>
               <div className="sponsored-by">Sponsored by EKALEIDO</div>
-              <Vega />
+              {children}
             </div>
             <div
               className="cartHolder page-view-candidate listView"
@@ -413,4 +409,4 @@ function VegaWomen() {
   );
 }
 
-export default VegaWomen;
+export default HindustanLayout;

@@ -22,7 +22,6 @@ const UcookVideoPlayer = () => {
   useEffect(() => {
     window.addEventListener("resize", onUpdateWindowDimension);
     videoPlayer.current.addEventListener("timeupdate", onVideoTimeUpdate);
-    
   }, []);
 
   const onVideoTimeUpdate = () => {

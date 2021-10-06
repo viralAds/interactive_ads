@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 import "./vega.scss";
 import { Carousel } from "react-responsive-carousel";
 import frame_1 from "../../assets/img/vega/frame_1.jpg";
@@ -144,12 +144,12 @@ const Women = () => {
   return (
     <div className="women-component" style={{ width: 320, height: 480 }}>
       {firstStatus && (
-        <>
+        <Fragment>
           <img src={frame_2} alt="frame_2" />
           <div className="w-prod1" onClick={() => handleWomenCta(0)}></div>
           <div className="w-prod2" onClick={() => handleWomenCta(1)}></div>
           <div className="w-prod3" onClick={() => handleWomenCta(2)}></div>
-        </>
+        </Fragment>
       )}
       {productZero && (
         <div className="vega-cta">
