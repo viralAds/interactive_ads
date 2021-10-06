@@ -22,6 +22,8 @@ import Dabar from "../dabar/Dabar";
 import Dabur2 from "../dabar/Dabur2";
 import Oppo from "../oppo_days/Oppo";
 import VegaOne from "../Vega/VegaOne";
+import VegaTwo from "../Vega/VegaTwo";
+import VegaThree from "../Vega/VegaThree";
 import Play from "../Playground/Play";
 import Lomega from "../OmegaLib/Omega";
 import Homepage from "../Home/Homepage";
@@ -40,6 +42,7 @@ import AmdMerc2 from "../AmdMerc2/AmdMerc";
 import Mercedes from "../Mercedes/Mercedes";
 import Lmerc from "../MercedesLib/Mercedes";
 import _24Seven from "../_24Seven/_24seven";
+import Bodyshop from '../Bodyshop/Bodyshop';
 import AsicsO from "../Asics/AsicsOlympics";
 import AmdDesire from "../Amd_gwd/AmdDesire";
 import GhadiThree from "../Ghadi/GhadiThree";
@@ -88,7 +91,6 @@ function App() {
           <Route path="/govo" component={Govo} />
           <Route path="/jnto" component={Swipe} />
           <Route path="/merc" component={Lmerc} />
-
           <Route path="/omega" component={Omega} />
           <Route path="/clark" component={Clark} />
           <Route path="/ghadi" component={Ghadi} />
@@ -97,7 +99,6 @@ function App() {
           <Route path="/oppo" component={Oppo_1} />
           <Route path="/amd_f1" component={AmdF1} />
           <Route path="/oppo_days" component={Oppo} />
-
           <Route path="/philips" component={Philips} />
           <Route path="/ucook_1/" component={Ucook1} />
           <Route path="/ucook_2/" component={Ucook2} />
@@ -106,8 +107,10 @@ function App() {
           <Route path="/ghadi_2" component={GhadiTwo} />
           <Route path="/gocrush/" component={Gocrush} />
           <Route path="/_24seven" component={_24Seven} />
+          <Route path="/bodyshop" component={Bodyshop} />
+          <Route path="/mercedes" component={Mercedes} />
+          
           <Route path="/ghadi_3" component={GhadiThree} />
-
           <Route path="/envorincs" component={Envorincs} />
           <Route path="/blackberrys_one" component={BB1} />
           <Route path="/blackberrys_two" component={BB2} />
@@ -115,6 +118,8 @@ function App() {
           <Route path="/mama_earth" component={Mamaearth} />
           <Route path="/asics_olympics" component={AsicsO} />
           <Route path="/blackberrys_three" component={BB3} />
+          <Route path="/vega_flipkart" component={VegaTwo} />
+          <Route path="/vega_amazon" component={VegaThree} />
           <Route path="/amd_amazon" component={Amd_Amazon} />
           <Route path="/wedding_collection1" component={WC1} />
           <Route path="/wedding_collection2" component={WC2} />

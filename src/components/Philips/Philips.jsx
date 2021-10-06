@@ -5,8 +5,8 @@ const Philips = () => {
     <div>
       <div className="_640x960frame">
         <iframe
-          src="https://43215-ekaleidoanuj.github.io/philips/"
-          title="Blackberrys Advertisement"
+          src="https://viralads.github.io/philips/"
+          title="Philips Advertisement"
         ></iframe>
       </div>
     </div>

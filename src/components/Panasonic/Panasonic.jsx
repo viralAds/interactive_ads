@@ -5,7 +5,7 @@ const Panasonic = () => {
     <div className="_320x480frame">
       <iframe
         src="https://viralads.github.io/panasonic/"
-        title="Blackberrys Advertisement"
+        title="Panasonic Advertisement"
       ></iframe>
     </div>
   );

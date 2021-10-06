@@ -86,6 +86,9 @@ function HomePage() {
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
+                    <Link to="/bodyshop">BodyShop</Link>
+                  </DropdownItem>
+                  <DropdownItem>
                     <Link to="/audientes">Audientes</Link>
                   </DropdownItem>
                   <DropdownItem>

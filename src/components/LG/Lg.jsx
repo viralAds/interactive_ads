@@ -3,7 +3,7 @@ const Lg = () => {
     <div className="_360x640frame">
       <iframe
         src="https://viralads.github.io/lg_viral/"
-        title="Blackberrys Advertisement"
+        title="LG Advertisement"
       ></iframe>
     </div>
   );
