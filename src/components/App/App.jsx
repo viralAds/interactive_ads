@@ -129,8 +129,8 @@ function App() {
           <Route path="/amd_merc_300x250_q2_2021" component={AmdMerc2} />
           <Route path="/amd_q2_commercials_320x480" component={AmdQ2_1} />
           <Route path="/amd_q2_commercials_320x480_2" component={AmdQ2_2} />
-          <Route path="/philips" component={Philips} />
           <Route path="/mercedes" component={Mercedes} />
+          <HindustanRoute path="/philips" component={Philips} />
           <HindustanRoute path="/lg" component={LG} />
           <HindustanRoute path="/vega" component={Vega} />
           <HindustanRoute path="/upes" component={Upes} />
