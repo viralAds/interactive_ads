@@ -36,7 +36,7 @@ import Philips from "../Philips/Philips";
 import Gocrush from "../gocrush/Gocrush";
 import AmdMerc from "../AmdMerc/AmdMerc";
 import GhadiTwo from "../Ghadi/GhadiTwo";
-
+import Bodyshop2 from "../Bodyshop/Bodyshop2";
 import Pana from "../Panasonic/Panasonic";
 import AmdMerc2 from "../AmdMerc2/AmdMerc";
 import Mercedes from "../Mercedes/Mercedes";
@@ -99,7 +99,6 @@ function App() {
           <Route path="/oppo" component={Oppo_1} />
           <Route path="/amd_f1" component={AmdF1} />
           <Route path="/oppo_days" component={Oppo} />
-          <Route path="/philips" component={Philips} />
           <Route path="/ucook_1/" component={Ucook1} />
           <Route path="/ucook_2/" component={Ucook2} />
           <Route path="/ucook_3/" component={Ucook3} />
@@ -109,7 +108,6 @@ function App() {
           <Route path="/_24seven" component={_24Seven} />
           <Route path="/bodyshop" component={Bodyshop} />
           <Route path="/mercedes" component={Mercedes} />
-          
           <Route path="/ghadi_3" component={GhadiThree} />
           <Route path="/envorincs" component={Envorincs} />
           <Route path="/blackberrys_one" component={BB1} />
@@ -131,16 +129,18 @@ function App() {
           <Route path="/amd_merc_300x250_q2_2021" component={AmdMerc2} />
           <Route path="/amd_q2_commercials_320x480" component={AmdQ2_1} />
           <Route path="/amd_q2_commercials_320x480_2" component={AmdQ2_2} />
+          <Route path="/philips" component={Philips} />
           <Route path="/mercedes" component={Mercedes} />
-          <HindustanRoute path="/vega" component={Vega} />
-          <HindustanRoute path="/vega_women" component={VegaOne} />
-          <HindustanRoute path="/upes" component={Upes} />
-          <HindustanRoute path="/dabur2" component={Dabur2} />
-          <HindustanRoute path="/dabur" component={Dabar} />
-          <HindustanRoute path="/audientes_2" component={AudientesTwo} />
-          <HindustanRoute path="/audientes" component={Audientes} />
           <HindustanRoute path="/lg" component={LG} />
+          <HindustanRoute path="/vega" component={Vega} />
+          <HindustanRoute path="/upes" component={Upes} />
+          <HindustanRoute path="/dabur" component={Dabar} />
+          <HindustanRoute path="/dabur2" component={Dabur2} />
           <HindustanRoute path="/panasonic" component={Pana} />
+          <HindustanRoute path="/vega_women" component={VegaOne} />
+          <HindustanRoute path="/bodyshop2" component={Bodyshop2} />
+          <HindustanRoute path="/audientes" component={Audientes} />
+          <HindustanRoute path="/audientes_2" component={AudientesTwo} />
           <Route exact path="/">
             {!password ? <Login setPassword={setPassword} /> : <Homepage />}
           </Route>

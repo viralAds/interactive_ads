@@ -89,6 +89,9 @@ function HomePage() {
                     <Link to="/bodyshop">BodyShop</Link>
                   </DropdownItem>
                   <DropdownItem>
+                    <Link to="/bodyshop2">BodyShop2</Link>
+                  </DropdownItem>
+                  <DropdownItem>
                     <Link to="/audientes">Audientes</Link>
                   </DropdownItem>
                   <DropdownItem>
