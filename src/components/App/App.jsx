@@ -63,6 +63,8 @@ import WC1 from "../Blackberrys/WeddingCollection/Looks/Looks";
 import WC3 from "../Blackberrys/WeddingCollection/Shake/ShakeAd";
 import WC2 from "../Blackberrys/WeddingCollection/WeddingVideo/Blackberrys";
 import HindustanLayout from "../../hoc/HindustanLayout";
+import Boddess from "../boddess/Boddess";
+
 
 const HindustanRoute = ({ component: Component, ...rest }) => (
   <Route
@@ -130,13 +132,14 @@ function App() {
           <Route path="/amd_q2_commercials_320x480" component={AmdQ2_1} />
           <Route path="/amd_q2_commercials_320x480_2" component={AmdQ2_2} />
           <Route path="/mercedes" component={Mercedes} />
-          <HindustanRoute path="/philips" component={Philips} />
           <HindustanRoute path="/lg" component={LG} />
           <HindustanRoute path="/vega" component={Vega} />
           <HindustanRoute path="/upes" component={Upes} />
           <HindustanRoute path="/dabur" component={Dabar} />
           <HindustanRoute path="/dabur2" component={Dabur2} />
           <HindustanRoute path="/panasonic" component={Pana} />
+          <HindustanRoute path="/boddess" component={Boddess} />
+          <HindustanRoute path="/philips" component={Philips} />
           <HindustanRoute path="/vega_women" component={VegaOne} />
           <HindustanRoute path="/bodyshop2" component={Bodyshop2} />
           <HindustanRoute path="/audientes" component={Audientes} />
