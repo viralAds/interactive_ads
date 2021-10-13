@@ -14,7 +14,6 @@ import {
 } from "reactstrap";
 import { Link } from "react-router-dom";
 import ekaleidoLogo from "../../assets/ekaleido_logo_h.png";
-import Bodyshop from "../Bodyshop/Bodyshop";
 
 function HomePage() {
   const [isOpen, setIsOpen] = useState(false);
