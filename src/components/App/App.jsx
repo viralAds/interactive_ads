@@ -42,7 +42,7 @@ import AmdMerc2 from "../AmdMerc2/AmdMerc";
 import Mercedes from "../Mercedes/Mercedes";
 import Lmerc from "../MercedesLib/Mercedes";
 import _24Seven from "../_24Seven/_24seven";
-import Bodyshop from '../Bodyshop/Bodyshop';
+import Bodyshop from "../Bodyshop/Bodyshop";
 import AsicsO from "../Asics/AsicsOlympics";
 import AmdDesire from "../Amd_gwd/AmdDesire";
 import GhadiThree from "../Ghadi/GhadiThree";
@@ -64,7 +64,7 @@ import WC3 from "../Blackberrys/WeddingCollection/Shake/ShakeAd";
 import WC2 from "../Blackberrys/WeddingCollection/WeddingVideo/Blackberrys";
 import HindustanLayout from "../../hoc/HindustanLayout";
 import Boddess from "../boddess/Boddess";
-
+import Bodyshop3 from "../Bodyshop/Bodyshop3";
 
 const HindustanRoute = ({ component: Component, ...rest }) => (
   <Route
@@ -142,6 +142,7 @@ function App() {
           <HindustanRoute path="/philips" component={Philips} />
           <HindustanRoute path="/vega_women" component={VegaOne} />
           <HindustanRoute path="/bodyshop2" component={Bodyshop2} />
+          <HindustanRoute path="/bodyshop3" component={Bodyshop3} />
           <HindustanRoute path="/audientes" component={Audientes} />
           <HindustanRoute path="/audientes_2" component={AudientesTwo} />
           <Route exact path="/">

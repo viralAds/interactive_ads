@@ -14,6 +14,7 @@ import {
 } from "reactstrap";
 import { Link } from "react-router-dom";
 import ekaleidoLogo from "../../assets/ekaleido_logo_h.png";
+import Bodyshop from "../Bodyshop/Bodyshop";
 
 function HomePage() {
   const [isOpen, setIsOpen] = useState(false);
@@ -86,13 +87,7 @@ function HomePage() {
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                    <Link to="/bodyshop">BodyShop</Link>
-                  </DropdownItem>
-                  <DropdownItem>
                     <Link to="/boddess">Boddess</Link>
-                  </DropdownItem>
-                  <DropdownItem>
-                    <Link to="/bodyshop2">BodyShop2</Link>
                   </DropdownItem>
                   <DropdownItem>
                     <Link to="/audientes">Audientes</Link>
@@ -199,6 +194,24 @@ function HomePage() {
                       </DropdownItem>
                     </DropdownMenu>
                   </UncontrolledDropdown>
+
+                  <UncontrolledDropdown nav inNavbar>
+                    <DropdownToggle nav caret>
+                      Bodyshop
+                    </DropdownToggle>
+                    <DropdownMenu>
+                      <DropdownItem>
+                        <Link to="/bodyshop">BodyShop</Link>
+                      </DropdownItem>
+                      <DropdownItem>
+                        <Link to="/bodyshop2">BodyShop2</Link>
+                      </DropdownItem>
+                      <DropdownItem>
+                        <Link to="/bodyshop3">BodyShop3</Link>
+                      </DropdownItem>
+                    </DropdownMenu>
+                  </UncontrolledDropdown>
+
                   <UncontrolledDropdown nav inNavbar>
                     <DropdownToggle nav caret>
                       Ghadi Ads
