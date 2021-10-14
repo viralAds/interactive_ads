@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from "react";
+import React, { useState } from "react";
 import { Waypoint } from "react-waypoint";
 
 const Bodyshop4 = () => {
