@@ -1,75 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 import { Waypoint } from "react-waypoint";
-import ReactPlayer from "react-player";
-import { Container } from "reactstrap";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import ReplyIcon from "@material-ui/icons/Reply";
 
-import "../Common/ad.scss";
-import "../Common/paperLayout.scss";
-
-import video from "../../assets/videos/merc.mp4";
-import safety from "../../assets/icons/safety.png";
-import seat from "../../assets/icons/seat.png";
-import transmission from "../../assets/icons/transmission.png";
-import mercLogo from "../../assets/img/mercedes_logos.png";
-import transmission_img from "../../assets/img/transmission.jpeg";
-import interior from "../../assets/img/interior.jpg";
-import maybach from "../../assets/img/maybach.jpeg";
-
-function Mercedes() {
-  if (typeof window !== `undefined`) {
-    AOS.init({
-      once: false,
-      mirror: false,
-    });
-  }
-
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [toggleFirstAnimationBox, setToggleFirstAnimationBox] = useState(false);
-  const [toggleSecondAnimationBox, setToggleSecondAnimationBox] =
-    useState(false);
-  const [toggleThirdAnimationBox, setToggleThirdAnimationBox] = useState(false);
-
-  const closeAnimation = () => {
-    setToggleFirstAnimationBox(false);
-    setToggleSecondAnimationBox(false);
-    setToggleThirdAnimationBox(false);
-    setIsPlaying(true);
-  };
-
-  const firstAnim = () => {
-    setToggleFirstAnimationBox(true);
-    setToggleSecondAnimationBox(false);
-    setToggleThirdAnimationBox(false);
-    setIsPlaying(false);
-  };
-
-  const secondAnim = () => {
-    setToggleSecondAnimationBox(true);
-    setToggleFirstAnimationBox(false);
-    setToggleThirdAnimationBox(false);
-    setIsPlaying(false);
-  };
-
-  const thirdAnim = () => {
-    setToggleThirdAnimationBox(true);
-    setToggleFirstAnimationBox(false);
-    setToggleSecondAnimationBox(false);
-    setIsPlaying(false);
-  };
+const Bodyshop4 = () => {
+  const [isActive, setIsActive] = useState(false);
 
   const handleEnterViewport = () => {
-    setIsPlaying(true);
+    setIsActive(true);
   };
 
-  const handleExitViewport = () => {
-    setToggleFirstAnimationBox(false);
-    setToggleSecondAnimationBox(false);
-    setToggleThirdAnimationBox(false);
-    setIsPlaying(false);
-  };
+  console.log(isActive);
 
   return (
     <div>
@@ -78,6 +17,7 @@ function Mercedes() {
           className="mainContainer"
           id="dataHolder"
           data-url="/"
+          data-title="News Headlines, English News, Today Headlines, Top Stories"
           data-story-section="home"
         >
           <div className="m_ads_unit">
@@ -97,28 +37,27 @@ function Mercedes() {
               data-vars-cardtype="top-news"
               data-vars-storyid="101617601975509"
               data-vars-storytype="story"
-              data-weburl="https://www.hindustantimes.com/cities/mumbai-news/bombay-hc-directs-cbi-to-conduct-preliminary-probe-against-anil-deshmukh-101617601975509.html"
+              data-weburl="https://www.hindustantimes.com/delhi-news/at-365-delhi-s-air-quality-still-in-very-poor-zone/story-HDJ3Wq6JFAXCqJXnmNyZyM.html"
               data-vars-section="mumbai news"
               data-vars-orderid="1"
             >
               <figure>
                 <a href="/cities/mumbai-news/bombay-hc-directs-cbi-to-conduct-preliminary-probe-against-anil-deshmukh-101617601975509.html101617601975509">
                   <img
-                    src="https://images.hindustantimes.com/img/2021/04/05/550x309/7fe2d31e-8a43-11eb-8c8d-7793c0212a86_1617151104054_1617602662684.jpg"
-                    alt="Anil Deshmukh"
-                    title="Anil Deshmukh"
+                    src="https://images.hindustantimes.com/rf/image_size_300x169/HT/p2/2020/10/31/Pictures/india-environment-pollution_5df8c1f2-1b33-11eb-aaf6-cc648d414a4d.jpg"
+                    alt="air quality"
+                    title="air quality"
                   />
                 </a>
-                <figcaption>Anil Deshmukh</figcaption>
+                <figcaption>Air Quality</figcaption>
               </figure>
               <div className="storyShortDetail">
                 <div className="catName pt10 pb10">
-                  <a href="/cities/mumbai-news">mumbai news</a>
+                  <a href="/cities/mumbai-news">Delhi News</a>
                 </div>
                 <h3 className="hdg3">
                   <a href="/cities/mumbai-news/bombay-hc-directs-cbi-to-conduct-preliminary-probe-against-anil-deshmukh-101617601975509.html101617601975509">
-                    Bombay HC directs CBI to conduct preliminary probe against
-                    Anil Deshmukh
+                    At 365, Delhi’s air quality still in ‘very poor’ zone
                   </a>
                 </h3>
                 <div className="stroyPub">
@@ -126,14 +65,12 @@ function Mercedes() {
                     By | Edited by Karan Manral<span>, New Delhi</span>
                   </div>
                   <div className="dateTime">
-                    UPDATED ON APR 05, 2021 12:36 PM IST
+                    UPDATED ON SEP 05, 2021 12:36 PM IST
                   </div>
                 </div>
                 <div className="sortDec">
-                  The high court observed that the probe against Anil Deshmukh
-                  on corruption allegations by former Mumbai Police commissioner
-                  Param Bir Singh, can't be independent if it is given to the
-                  police as he is the Maharashtra home minister.
+                  The overall AQI of Delhi on Friday was 374, also in the same
+                  category. This was better than Thursday’s 395.
                 </div>
                 <div className="actionDiv">
                   <div className="socialEl">
@@ -162,7 +99,6 @@ function Mercedes() {
               </div>
               <div className="ajaxLoaderList hide"></div>
             </div>
-
             <div
               className="cartHolder page-view-candidate listView"
               data-vars-cardtype="top-news"
@@ -177,9 +113,9 @@ function Mercedes() {
                   <img
                     data-src="https://images.hindustantimes.com/img/2021/04/05/550x309/tmc-flag_1617500785244_1617500799840_1617606479052_1617606490041.jpg"
                     className="lazy"
-                    src="https://images.hindustantimes.com/default/550x309.jpg"
-                    alt="2021 West Bengal Assembly Elections: Of these 31 seats going to polls on Tuesday, TMC won 29 of them in the 2016 assembly elections, increasing its tally from 26 in 2011. It remains to be seen if the party manages to retain its traditional bastions this time around"
-                    title="2021 West Bengal Assembly Elections: Of these 31 seats going to polls on Tuesday, TMC won 29 of them in the 2016 assembly elections, increasing its tally from 26 in 2011. It remains to be seen if the party manages to retain its traditional bastions this time around"
+                    src="https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2019/11/06/Pictures/_1284de4c-0070-11ea-a362-a76bed49e6ea.jpg"
+                    alt="around"
+                    title="around"
                   />
                 </a>
                 <figcaption>
@@ -193,18 +129,18 @@ function Mercedes() {
               <div className="storyShortDetail">
                 <div className="catName pt10">
                   <a href="/elections/west-bengal-assembly-election">
-                    west bengal assembly election
+                    GURUGRAM NEWS
                   </a>
                 </div>
                 <h2 className="hdg3">
                   <a href="/elections/west-bengal-assembly-election/tmc-bastions-big-names-in-phase-3-of-west-bengal-elections-101617590540609.html101617590540609">
-                    TMC bastions, big names in Phase 3 of West Bengal elections
+                    Constructions choking Gurugram, say experts
                   </a>
                 </h2>
                 <div className="stroyPub">
                   <div className="storyBy">By | Written by Joydeep Bose</div>
                   <div className="dateTime">
-                    PUBLISHED ON APR 05, 2021 12:45 PM IST
+                    PUBLISHED ON SEP 05, 2021 12:45 PM IST
                   </div>
                 </div>
                 <div className="sortDec">
@@ -242,218 +178,6 @@ function Mercedes() {
               <div className="ajaxLoaderList hide"></div>
             </div>
             <div className="recommended"></div>
-            <div className="m_ads_unit_large" style={{ position: "relative" }}>
-              <div className="sponsored-by">Sponsored by EKALEIDO</div>
-              <Container className="app-inside">
-                <Waypoint
-                  onEnter={handleEnterViewport}
-                  onLeave={handleExitViewport}
-                >
-                  <div className="visible-area">
-                    {toggleFirstAnimationBox && (
-                      <div
-                        className="first poster"
-                        data-aos={"slide-up"}
-                        data-aos-delay="100"
-                        data-aos-mirror="false"
-                        data-aos-duration="900"
-                        data-aos-easing="ease-out"
-                      >
-                        <div
-                          className="poster-heading"
-                          data-aos={"slide-up"}
-                          data-aos-delay="300"
-                          data-aos-mirror="false"
-                          data-aos-duration="900"
-                          data-aos-easing="ease-out"
-                        >
-                          <img src={mercLogo} alt="logo" />
-                          <div className="ctrl-option">
-                            <ReplyIcon onClick={closeAnimation} />
-                          </div>
-                        </div>
-                        <img src={interior} alt="transmission" />
-                        <div
-                          className="left-aligned-content"
-                          data-aos={"slide-up"}
-                          data-aos-delay="800"
-                          data-aos-mirror="false"
-                          data-aos-duration="900"
-                          data-aos-easing="ease-out"
-                        >
-                          <p className="short-text">
-                            A special chapter is automotive history.
-                          </p>
-                          <p className="long-text">
-                            The perfection of stylish mobility: that is the
-                            standard of the Mercedes-Maybach S-Class. Elegence,
-                            luxury and state-of-the-art comfort merge into a
-                            unique travel experience.
-                          </p>
-                        </div>
-                        <div
-                          className="right-aligned-content"
-                          data-aos={"slide-up"}
-                          data-aos-delay="800"
-                          data-aos-mirror="false"
-                          data-aos-duration="900"
-                          data-aos-easing="ease-out"
-                        >
-                          <p className="short-text">Comfort highlights: </p>
-                          <p className="long-text">
-                            AIRMATIC <br />
-                            MAGIC BODY CONTROL <br /> ENERGISING COMFORT CONTROL{" "}
-                            <br /> REAR SEAT ENTERTAINTMENT SYSTEM <br />{" "}
-                            SMARTPHONE INTEGRATION
-                          </p>
-                        </div>
-                      </div>
-                    )}
-
-                    {toggleSecondAnimationBox && (
-                      <div
-                        className="first poster"
-                        data-aos={"slide-up"}
-                        data-aos-delay="100"
-                        data-aos-mirror="false"
-                        data-aos-duration="900"
-                        data-aos-easing="ease-out"
-                      >
-                        <div
-                          className="poster-heading"
-                          data-aos={"slide-up"}
-                          data-aos-delay="300"
-                          data-aos-mirror="false"
-                          data-aos-duration="900"
-                          data-aos-easing="ease-out"
-                        >
-                          <img src={mercLogo} alt="logo" />
-                          <div className="ctrl-option">
-                            <ReplyIcon onClick={closeAnimation} />
-                          </div>
-                        </div>
-                        <img src={maybach} alt="maybach" />
-                        <div
-                          className="left-aligned-content"
-                          data-aos={"slide-up"}
-                          data-aos-delay="800"
-                          data-aos-mirror="false"
-                          data-aos-duration="900"
-                          data-aos-easing="ease-out"
-                        >
-                          <p className="short-text">
-                            Cutting-Edge Assistance System.
-                          </p>
-                          <p className="long-text">
-                            Comfort and safety on every route: Mercedes Benz
-                            Intelligence Drive combines sophisticated assistance
-                            system and always anticipates what's ahead.{" "}
-                          </p>
-                        </div>
-                        <div
-                          className="right-aligned-content"
-                          data-aos={"slide-up"}
-                          data-aos-delay="800"
-                          data-aos-mirror="false"
-                          data-aos-duration="900"
-                          data-aos-easing="ease-out"
-                        >
-                          <p className="short-text">Safety highlights: </p>
-                          <p className="long-text">
-                            MULTIBEAM LED <br /> PRE-SAFE <br /> NIGHT-VIEW
-                            ASSISTANCE PLUS <br />
-                            MAGIC VISION CONTROL <br /> DRIVING ASSISTANCE
-                            PACKAGE <br /> ACTIVE BRAKING AND BLIND SPOT{" "}
-                          </p>
-                        </div>
-                      </div>
-                    )}
-
-                    {toggleThirdAnimationBox && (
-                      <div
-                        className="first poster"
-                        data-aos={"slide-up"}
-                        data-aos-delay="100"
-                        data-aos-mirror="false"
-                        data-aos-duration="900"
-                        data-aos-easing="ease-out"
-                      >
-                        <div
-                          className="poster-heading"
-                          data-aos={"slide-up"}
-                          data-aos-delay="300"
-                          data-aos-mirror="false"
-                          data-aos-duration="900"
-                          data-aos-easing="ease-out"
-                        >
-                          <img src={mercLogo} alt="logo" />
-                          <div className="ctrl-option">
-                            <ReplyIcon onClick={closeAnimation} />
-                          </div>
-                        </div>
-                        <img src={transmission_img} alt="transmission" />
-                        <div
-                          className="left-aligned-content"
-                          data-aos={"slide-up"}
-                          data-aos-delay="800"
-                          data-aos-mirror="false"
-                          data-aos-duration="900"
-                          data-aos-easing="ease-out"
-                        >
-                          <p className="short-text">
-                            Transmission - prefers a smooth leadership style.
-                          </p>
-                          <p className="long-text">
-                            Even when your chauffeur is driving, the
-                            transmission of the Mercedes-Maybach S-Class
-                            directly serves you: by showing restraint. Smooth,
-                            virtually imperceptible gear changes allow you to be
-                            productive or relax in peace and quite.
-                          </p>
-                        </div>
-                        <div
-                          className="right-aligned-content"
-                          data-aos={"slide-up"}
-                          data-aos-delay="800"
-                          data-aos-mirror="false"
-                          data-aos-duration="900"
-                          data-aos-easing="ease-out"
-                        >
-                          <p className="short-text">
-                            7G-TRONIC PLUS <br />
-                            (Mercedes-Matbach S 650)
-                          </p>
-                          <p className="long-text">
-                            The 7-speed automatic transmission combines a high
-                            level of comfort with driving pleasure and
-                            efficiency.
-                          </p>
-                        </div>
-                      </div>
-                    )}
-                    <ReactPlayer
-                      className="video-screen"
-                      url={video}
-                      loop={true}
-                      muted={false}
-                      width="100%"
-                      height="100%"
-                      playing={isPlaying}
-                      controls={false}
-                    ></ReactPlayer>
-                    <div className="icons">
-                      <img onClick={firstAnim} src={safety} alt="safety" />
-                      <img onClick={secondAnim} src={seat} alt="seat" />
-                      <img
-                        onClick={thirdAnim}
-                        src={transmission}
-                        alt="transmission"
-                      />
-                    </div>
-                  </div>
-                </Waypoint>
-              </Container>
-            </div>
             <div
               className="cartHolder page-view-candidate listView"
               data-vars-cardtype="top-news"
@@ -466,29 +190,30 @@ function Mercedes() {
               <figure>
                 <a href="/india-news/amid-rising-covid-cases-raisina-dialogue-to-go-fully-digital-101617607574419.html101617607574419">
                   <img
-                    data-src="https://images.hindustantimes.com/img/2021/04/05/550x309/b4d13a50-95df-11eb-be01-f1e853d0087a_1617607572912.jpg"
+                    data-src="https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2019/10/04/Pictures/delhi-chief-minister-arvind-kejriwal_addcebd2-e6d0-11e9-939f-ba4a7f73df5c.jpg"
                     className="lazy"
-                    src="https://images.hindustantimes.com/default/550x309.jpg"
-                    alt="External affairs minister S Jaishankar"
-                    title="External affairs minister S Jaishankar"
+                    src="https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2019/10/04/Pictures/delhi-chief-minister-arvind-kejriwal_addcebd2-e6d0-11e9-939f-ba4a7f73df5c.jpg"
+                    alt="Arvind Kejriwal launches online pollution campaign"
+                    title="Arvind Kejriwal launches online pollution campaign"
                   />
                 </a>
-                <figcaption>External affairs minister S Jaishankar</figcaption>
+                <figcaption>
+                  Arvind Kejriwal launches online pollution campaign
+                </figcaption>
               </figure>
               <div className="storyShortDetail">
                 <div className="catName pt10">
-                  <a href="/india-news">india news</a>
+                  <a href="/india-news">DELHI NEWS</a>
                 </div>
                 <h2 className="hdg3">
                   <a href="/india-news/amid-rising-covid-cases-raisina-dialogue-to-go-fully-digital-101617607574419.html101617607574419">
-                    Amid rising Covid cases, Raisina Dialogue to go fully
-                    digital
+                    Arvind Kejriwal launches online pollution campaign
                   </a>
                 </h2>
                 <div className="stroyPub">
                   <div className="storyBy">By</div>
                   <div className="dateTime">
-                    PUBLISHED ON APR 05, 2021 12:56 PM IST
+                    PUBLISHED ON SEP 05, 2021 12:56 PM IST
                   </div>
                 </div>
                 <div className="sortDec">
@@ -525,6 +250,25 @@ function Mercedes() {
               </div>
               <div className="ajaxLoaderList hide"></div>
             </div>
+
+            <div className="m_ads_unit_dabar" style={{ position: "relative" }}>
+              <div className="sponsored-by">Sponsored by EKALEIDO</div>
+              <Waypoint onEnter={handleEnterViewport}>
+                <div style={{ background: "#e1e0e0" }}>
+                  {isActive ? (
+                    <div className="_360x640frame">
+                      <iframe
+                        src="https://viralads.github.io/bodyshop4/"
+                        title="bodyshop Advertisement"
+                      ></iframe>
+                    </div>
+                  ) : (
+                    <p>Loading...</p>
+                  )}
+                </div>
+              </Waypoint>
+            </div>
+
             <div className="recommended"></div>
             <div
               className="cartHolder page-view-candidate listView"
@@ -538,28 +282,32 @@ function Mercedes() {
               <figure>
                 <a href="/india-news/sc-paves-way-for-two-special-courts-to-try-coal-scam-cases-101617606134428.html101617606134428">
                   <img
-                    data-src="https://images.hindustantimes.com/img/2021/04/05/550x309/9beae8fe-95dc-11eb-be01-f1e853d0087a_1617606132803.jpg"
+                    data-src="https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2017/12/02/Pictures/corporation-national-territory-faridabad-badarpur-national-badarpur_00ac890e-d728-11e7-8802-68a15924f886.jpg"
                     className="lazy"
-                    src="https://images.hindustantimes.com/default/550x309.jpg"
-                    alt="Supreme Court"
-                    title="Supreme Court"
+                    src="https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2017/12/02/Pictures/corporation-national-territory-faridabad-badarpur-national-badarpur_00ac890e-d728-11e7-8802-68a15924f886.jpg"
+                    alt="Delhi pollution: Green tribunal asks CPCB to clarify stand on thermal power plants"
+                    title="Delhi pollution: Green tribunal asks CPCB to clarify stand on thermal power plants"
                   />
                 </a>
-                <figcaption>Supreme Court</figcaption>
+                <figcaption>
+                  Delhi pollution: Green tribunal asks CPCB to clarify stand on
+                  thermal power plants
+                </figcaption>
               </figure>
               <div className="storyShortDetail">
                 <div className="catName pt10">
-                  <a href="/india-news">india news</a>
+                  <a href="/india-news">Delhi news</a>
                 </div>
                 <h2 className="hdg3">
                   <a href="/india-news/sc-paves-way-for-two-special-courts-to-try-coal-scam-cases-101617606134428.html101617606134428">
-                    SC paves way for two special courts to try coal scam cases
+                    Delhi pollution: Green tribunal asks CPCB to clarify stand
+                    on thermal power plants
                   </a>
                 </h2>
                 <div className="stroyPub">
                   <div className="storyBy">By Abraham Thomas</div>
                   <div className="dateTime">
-                    PUBLISHED ON APR 05, 2021 12:32 PM IST
+                    PUBLISHED ON SEP 05, 2021 12:32 PM IST
                   </div>
                 </div>
                 <div className="sortDec">
@@ -681,6 +429,6 @@ function Mercedes() {
       </section>
     </div>
   );
-}
+};
 
-export default Mercedes;
+export default Bodyshop4;

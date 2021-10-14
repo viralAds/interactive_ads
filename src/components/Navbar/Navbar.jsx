@@ -208,6 +208,9 @@ function HomePage() {
                       <DropdownItem>
                         <Link to="/bodyshop3">BodyShop3</Link>
                       </DropdownItem>
+                      <DropdownItem>
+                        <Link to="/bodyshop4">BodyShop4</Link>
+                      </DropdownItem>
                     </DropdownMenu>
                   </UncontrolledDropdown>
 

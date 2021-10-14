@@ -65,6 +65,7 @@ import WC2 from "../Blackberrys/WeddingCollection/WeddingVideo/Blackberrys";
 import HindustanLayout from "../../hoc/HindustanLayout";
 import Boddess from "../boddess/Boddess";
 import Bodyshop3 from "../Bodyshop/Bodyshop3";
+import Bodyshop4 from "../Bodyshop/Bodyshop4";
 
 const HindustanRoute = ({ component: Component, ...rest }) => (
   <Route
@@ -113,6 +114,7 @@ function App() {
           <Route path="/ghadi_3" component={GhadiThree} />
           <Route path="/envorincs" component={Envorincs} />
           <Route path="/blackberrys_one" component={BB1} />
+          <Route path="/bodyshop4" component={Bodyshop4} />
           <Route path="/blackberrys_two" component={BB2} />
           <Route path="/amd_desire" component={AmdDesire} />
           <Route path="/mama_earth" component={Mamaearth} />
