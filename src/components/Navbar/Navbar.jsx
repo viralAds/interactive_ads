@@ -86,6 +86,9 @@ function HomePage() {
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
+                    <Link to="/whywait">Why wait</Link>
+                  </DropdownItem>
+                  <DropdownItem>
                     <Link to="/boddess">Boddess</Link>
                   </DropdownItem>
                   <DropdownItem>
