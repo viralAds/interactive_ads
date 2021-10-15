@@ -3,11 +3,7 @@ import Stories from "react-insta-stories";
 import one from "../../assets/img/whywait/1.jpg";
 import two from "../../assets/img/whywait/2.jpg";
 import three from "../../assets/img/whywait/3.jpg";
-// import four from "../../assets/img/whywait/4.jpg";
-// import five from "../../assets/img/whywait/5.jpg";
 import video from "../../assets/videos/bb2.mp4";
-import { FaArrowCircleLeft } from "react-icons/fa";
-import Blackberrys from "../Blackberrys/Blackberrys";
 const stories = [
   {
     url: video,
