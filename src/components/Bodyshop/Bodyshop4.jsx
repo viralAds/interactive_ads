@@ -3,13 +3,10 @@ import { Waypoint } from "react-waypoint";
 
 const Bodyshop4 = () => {
   const [isActive, setIsActive] = useState(false);
-
   const handleEnterViewport = () => {
     setIsActive(true);
   };
-
-  console.log(isActive);
-
+  
   return (
     <div>
       <section className="container main-container">
