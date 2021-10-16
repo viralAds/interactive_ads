@@ -328,17 +328,20 @@ const whywait = () => {
         height: "100vh",
       }}
     >
-      <Stories
-        stories={stories}
-        defaultInterval={5000}
-        width={360}
-        height={640}
-        storyStyles={{ borderRadius: 10 }}
-        storyContainerStyles={{
-          borderRadius: 10,
-          boxShadow: "rgb(14 14 14) 3px 3px 20px 4px",
-        }}
-      />
+      <div style={{ aspectRatio: "16 / 9", position: "relative" }}>
+        <Stories
+          stories={stories}
+          defaultInterval={5000}
+          width={"100%"}
+          height={"100vh"}
+          storyStyles={{ borderRadius: 10, height: "100vh" }}
+          storyContainerStyles={{
+            borderRadius: 10,
+            boxShadow: "rgb(14 14 14) 3px 3px 20px 4px",
+            height: "100vh",
+          }}
+        />
+      </div>
     </div>
   );
 };
