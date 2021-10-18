@@ -6,6 +6,7 @@ import four from "../../assets/img/whywait/4.jpeg";
 import five from "../../assets/img/whywait/5.jpeg";
 import { Carousel } from "react-responsive-carousel";
 import "./carous.scss";
+import { BsFillCaretDownFill } from "react-icons/bs";
 
 const items = [
   {
@@ -104,6 +105,10 @@ const Whywait2 = () => {
                   <div className="legend">
                     <div className="close-desc" onClick={closeDesc}></div>
                     <div className="desc-text">
+                      <BsFillCaretDownFill
+                        style={{ marginBottom: 10, width: "100%" }}
+                        onClick={closeDesc}
+                      />
                       <span>{item.desc}</span>
                       <a href={item.cta} target="_blank" rel="noreferrer">
                         <span>BUY NOW</span>
@@ -125,7 +130,7 @@ const Whywait2 = () => {
               height: "30%",
               width: "100%",
               background: "transparent",
-              zIndex: 10,
+              zIndex: 999,
             }}
             onSwipeRight={(e) => onSwipeUp(e)}
           ></Swipe>

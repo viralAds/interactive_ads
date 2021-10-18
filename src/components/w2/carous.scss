@@ -25,6 +25,7 @@
       .close-desc {
         width: 100%;
         height: 70%;
+        z-index: 999;
       }
 
       .desc-text {
@@ -39,6 +40,7 @@
         padding: 10px !important;
         height: 30%;
         border-radius: 10px;
+        z-index: 999;
 
         span {
           font-family: "Comfortaa", cursive;
@@ -79,7 +81,7 @@
 }
 
 .carousel.carousel-slider .control-arrow {
-  width: 50% !important;
+  width: 30% !important;
 }
 .carousel.carousel-slider .control-arrow:hover {
   opacity: 0 !important;
