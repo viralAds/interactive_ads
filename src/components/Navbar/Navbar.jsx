@@ -86,12 +86,6 @@ function HomePage() {
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                    <Link to="/whywait">Why wait</Link>
-                  </DropdownItem>
-                  <DropdownItem>
-                    <Link to="/whywait2">Why wait 2</Link>
-                  </DropdownItem>
-                  <DropdownItem>
                     <Link to="/boddess">Boddess</Link>
                   </DropdownItem>
                   <DropdownItem>
@@ -196,6 +190,23 @@ function HomePage() {
                       </DropdownItem>
                       <DropdownItem>
                         <Link to="/amd_f1">AMD F1</Link>
+                      </DropdownItem>
+                    </DropdownMenu>
+                  </UncontrolledDropdown>
+
+                  <UncontrolledDropdown nav inNavbar>
+                    <DropdownToggle nav caret>
+                      Whywait
+                    </DropdownToggle>
+                    <DropdownMenu>
+                      <DropdownItem>
+                        <Link to="/whywait">Whywait 1</Link>
+                      </DropdownItem>
+                      <DropdownItem>
+                        <Link to="/whywait2">Whywait 2</Link>
+                      </DropdownItem>
+                      <DropdownItem>
+                        <Link to="/w2viral">Why Wait viral</Link>
                       </DropdownItem>
                     </DropdownMenu>
                   </UncontrolledDropdown>

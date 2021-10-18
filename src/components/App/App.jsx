@@ -68,6 +68,7 @@ import Bodyshop3 from "../Bodyshop/Bodyshop3";
 import Bodyshop4 from "../Bodyshop/Bodyshop4";
 import Whywait from "../w2/Whywait";
 import Whywait2 from "../w2/Whywait2";
+import W2viral from "../w2/W2viral";
 
 const HindustanRoute = ({ component: Component, ...rest }) => (
   <Route
@@ -104,9 +105,9 @@ function App() {
           <Route path="/oppo" component={Oppo_1} />
           <Route path="/amd_f1" component={AmdF1} />
           <Route path="/oppo_days" component={Oppo} />
+          <Route path="/w2viral" component={W2viral} />
           <Route path="/ucook_1/" component={Ucook1} />
           <Route path="/whywait" component={Whywait} />
-          <Route path="/whywait2" component={Whywait2} />
           <Route path="/ucook_2/" component={Ucook2} />
           <Route path="/ucook_3/" component={Ucook3} />
           <Route path="/ucook_i/" component={UcookI} />
@@ -115,6 +116,7 @@ function App() {
           <Route path="/_24seven" component={_24Seven} />
           <Route path="/bodyshop" component={Bodyshop} />
           <Route path="/mercedes" component={Mercedes} />
+          <Route path="/whywait2" component={Whywait2} />
           <Route path="/ghadi_3" component={GhadiThree} />
           <Route path="/envorincs" component={Envorincs} />
           <Route path="/blackberrys_one" component={BB1} />
