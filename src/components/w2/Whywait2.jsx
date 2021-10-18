@@ -70,7 +70,10 @@ const Whywait2 = () => {
           borderRadius: 10,
           aspectRatio: "16 / 9",
           position: "relative",
-          width: 360,
+          minWidth: 360,
+          height: "100vh",
+          display: "flex",
+          alignItems: "center",
         }}
       >
         <div className="myprogress">
@@ -95,6 +98,7 @@ const Whywait2 = () => {
           showThumbs={false}
           showStatus={false}
           showIndicators={false}
+          dynamicHeight={true}
           onChange={handleSlideChange}
         >
           {items.map((item, i) => {
