@@ -66,7 +66,8 @@ import HindustanLayout from "../../hoc/HindustanLayout";
 import Boddess from "../boddess/Boddess";
 import Bodyshop3 from "../Bodyshop/Bodyshop3";
 import Bodyshop4 from "../Bodyshop/Bodyshop4";
-import whywait from "../w2/whywait";
+import Whywait from "../w2/Whywait";
+import Whywait2 from "../w2/Whywait2";
 
 const HindustanRoute = ({ component: Component, ...rest }) => (
   <Route
@@ -104,7 +105,8 @@ function App() {
           <Route path="/amd_f1" component={AmdF1} />
           <Route path="/oppo_days" component={Oppo} />
           <Route path="/ucook_1/" component={Ucook1} />
-          <Route path="/whywait" component={whywait} />
+          <Route path="/whywait" component={Whywait} />
+          <Route path="/whywait2" component={Whywait2} />
           <Route path="/ucook_2/" component={Ucook2} />
           <Route path="/ucook_3/" component={Ucook3} />
           <Route path="/ucook_i/" component={UcookI} />

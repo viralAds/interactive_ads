@@ -89,6 +89,9 @@ function HomePage() {
                     <Link to="/whywait">Why wait</Link>
                   </DropdownItem>
                   <DropdownItem>
+                    <Link to="/whywait2">Why wait 2</Link>
+                  </DropdownItem>
+                  <DropdownItem>
                     <Link to="/boddess">Boddess</Link>
                   </DropdownItem>
                   <DropdownItem>
