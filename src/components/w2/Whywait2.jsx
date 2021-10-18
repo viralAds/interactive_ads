@@ -12,25 +12,25 @@ const items = [
   {
     img: two,
     name: "Item 3",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    desc: "W2 Orange Face Spa With Tricholoma Matsutake, a rare and valuable species of mushroom.",
     cta: "https://www.w2whywait.com/product/w2-orange-face-spa/",
   },
   {
     img: three,
     name: "Item 3",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    desc: "The body needs care and nourishment in the same way as your face and this body spa combined.",
     cta: "https://www.w2whywait.com/product/w2-strawberry-body-wash/",
   },
   {
     img: four,
     name: "Item 3",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    desc: "A natural conditioner, apple gives hair a natural shine. It smoothens and controls split ends, restores PH of hair and removes build up on your hair shaft. ",
     cta: "https://www.w2whywait.com/product/w2-apple-conditioner/",
   },
   {
     img: five,
     name: "Item 3",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    desc: "W2 Ivory Peach Moisturizer a natural source of Vitamins A, C, K, Mg,Beta Carotene, Peach removes dark spots and dark circles naturally.",
     cta: "https://www.w2whywait.com/product/w2-ivory-peach-moisturizer/",
   },
 ];
