@@ -140,6 +140,7 @@ function App() {
           <Route path="/amd_q2_commercials_320x480" component={AmdQ2_1} />
           <Route path="/amd_q2_commercials_320x480_2" component={AmdQ2_2} />
           <Route path="/mercedes" component={Mercedes} />
+          <Route path="/audientes" component={Audientes} />
           <HindustanRoute path="/lg" component={LG} />
           <HindustanRoute path="/vega" component={Vega} />
           <HindustanRoute path="/upes" component={Upes} />
@@ -151,7 +152,6 @@ function App() {
           <HindustanRoute path="/vega_women" component={VegaOne} />
           <HindustanRoute path="/bodyshop2" component={Bodyshop2} />
           <HindustanRoute path="/bodyshop3" component={Bodyshop3} />
-          <HindustanRoute path="/audientes" component={Audientes} />
           <HindustanRoute path="/audientes_2" component={AudientesTwo} />
           <Route exact path="/">
             {!password ? <Login setPassword={setPassword} /> : <Homepage />}
