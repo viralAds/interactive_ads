@@ -116,8 +116,10 @@ function App() {
           <Route path="/_24seven" component={_24Seven} />
           <Route path="/bodyshop" component={Bodyshop} />
           <Route path="/mercedes" component={Mercedes} />
+          <Route path="/mercedes" component={Mercedes} />
           <Route path="/whywait2" component={Whywait2} />
           <Route path="/ghadi_3" component={GhadiThree} />
+          <Route path="/audientes" component={Audientes} />
           <Route path="/envorincs" component={Envorincs} />
           <Route path="/blackberrys_one" component={BB1} />
           <Route path="/bodyshop4" component={Bodyshop4} />
@@ -139,8 +141,6 @@ function App() {
           <Route path="/amd_merc_300x250_q2_2021" component={AmdMerc2} />
           <Route path="/amd_q2_commercials_320x480" component={AmdQ2_1} />
           <Route path="/amd_q2_commercials_320x480_2" component={AmdQ2_2} />
-          <Route path="/mercedes" component={Mercedes} />
-          <Route path="/audientes" component={Audientes} />
           <HindustanRoute path="/lg" component={LG} />
           <HindustanRoute path="/vega" component={Vega} />
           <HindustanRoute path="/upes" component={Upes} />
