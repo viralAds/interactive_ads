@@ -67,6 +67,7 @@ import Boddess from "../boddess/Boddess";
 import Bodyshop3 from "../Bodyshop/Bodyshop3";
 import Bodyshop4 from "../Bodyshop/Bodyshop4";
 import Bodyshop5 from "../Bodyshop/Bodyshop5";
+import Bodyshop6 from "../Bodyshop/Bodyshop6";
 import Whywait from "../w2/Whywait";
 import Whywait2 from "../w2/Whywait2";
 import W2viral from "../w2/W2viral";
@@ -125,6 +126,7 @@ function App() {
           <Route path="/blackberrys_one" component={BB1} />
           <Route path="/bodyshop4" component={Bodyshop4} />
           <Route path="/bodyshop5" component={Bodyshop5} />
+          <Route path="/bodyshop6" component={Bodyshop6} />
           <Route path="/blackberrys_two" component={BB2} />
           <Route path="/amd_desire" component={AmdDesire} />
           <Route path="/mama_earth" component={Mamaearth} />
