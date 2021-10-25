@@ -1,8 +1,16 @@
 import "./App.scss";
-import React, { useState } from "react";
+import { useState } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import LG from "../LG/Lg";
-import Amd from "../Amd/Amd";
+import Amd, {
+  AmdAmazon,
+  AmdDesire,
+  AmdQ2_2,
+  AmdQ2,
+  AmdFlipkart,
+  AmdMerc,
+  AmdMerc2,
+} from "../Amd/Amd";
 import Vega from "../Vega/Vega";
 import Audi from "../Audi/Audi";
 import Swap from "../Swap/Swap";
@@ -12,65 +20,48 @@ import Govo from "../govo/Govo";
 import Boat from "../Boat/Boat";
 import Upes from "../upes/Upes";
 import Swipe from "../Jnto/Jnto";
-import Asics from "../Asics/Asics";
 import Omega from "../Omega/Omega";
 import Clark from "../Clark/Clark";
 import Login from "../Login/Login";
 import AmdF1 from "../AmdF1/AmdF1";
-import Ghadi from "../Ghadi/Ghadi";
-import Dabar from "../dabar/Dabar";
-import Dabur2 from "../dabar/Dabur2";
+import Whywait from "../w2/Whywait";
+import W2viral from "../w2/W2viral";
 import Oppo from "../oppo_days/Oppo";
+import Whywait2 from "../w2/Whywait2";
 import VegaOne from "../Vega/VegaOne";
 import VegaTwo from "../Vega/VegaTwo";
-import VegaThree from "../Vega/VegaThree";
 import Play from "../Playground/Play";
 import Lomega from "../OmegaLib/Omega";
 import Homepage from "../Home/Homepage";
-import Ucook1 from "../ucook_va/Ucook1";
+import Ucook1, { Ucook2, Ucook3, UcookI } from "../ucook_va/Ucook";
 import Oppo_1 from "../Oppo/Oppo1/Oppo";
-import Ucook3 from "../ucook_va/Ucook3";
-import Ucook2 from "../ucook_va/Ucook2";
-import UcookI from "../ucook_va/UcookI";
 import Philips from "../Philips/Philips";
 import Gocrush from "../gocrush/Gocrush";
-import AmdMerc from "../AmdMerc/AmdMerc";
-import GhadiTwo from "../Ghadi/GhadiTwo";
-import Bodyshop2 from "../Bodyshop/Bodyshop2";
+import VegaThree from "../Vega/VegaThree";
 import Pana from "../Panasonic/Panasonic";
-import AmdMerc2 from "../AmdMerc2/AmdMerc";
 import Mercedes from "../Mercedes/Mercedes";
 import Lmerc from "../MercedesLib/Mercedes";
 import _24Seven from "../_24Seven/_24seven";
-import Bodyshop from "../Bodyshop/Bodyshop";
-import AsicsO from "../Asics/AsicsOlympics";
-import AmdDesire from "../Amd_gwd/AmdDesire";
-import GhadiThree from "../Ghadi/GhadiThree";
 import UcookVideoPlayer from "../Ucook/Ucook";
-import Amd_Amazon from "../Amd_gwd/AmdAmazon";
 import Mamaearth from "../Mamaearth/Mamaearth";
-import Audientes from "../Audientes/Audientes";
+import Asics, { AsicsO } from "../Asics/Asics";
+import Dabar, { Dabur2 } from "../dabar/Dabar";
 import Envorincs from "../Envorincs/Envorincs";
-import Amd_Flipkart from "../Amd_gwd/AmdFlipkart";
-import AudientesTwo from "../Audientes/AudientesTwo";
 import Blackberrys from "../Blackberrys/Blackberrys";
 import BB2 from "../Blackberrys/BbCarrousel/Blackberrys";
 import BB1 from "../Blackberrys/BlackberrysOne/Blackberrys";
+import Ghadi, { GhadiTwo, GhadiThree } from "../Ghadi/Ghadi";
 import BB3 from "../Blackberrys/BlackberrysThree/Blackberrys";
-import AmdQ2_1 from "../amd_q2_commercials_320x480/component1";
-import AmdQ2_2 from "../amd_q2_commercials_320x480/component2";
 import WC1 from "../Blackberrys/WeddingCollection/Looks/Looks";
+import Audientes, { AudientesTwo } from "../Audientes/Audientes";
 import WC3 from "../Blackberrys/WeddingCollection/Shake/ShakeAd";
 import WC2 from "../Blackberrys/WeddingCollection/WeddingVideo/Blackberrys";
 import HindustanLayout from "../../hoc/HindustanLayout";
 import Boddess from "../boddess/Boddess";
-import Bodyshop3 from "../Bodyshop/Bodyshop3";
 import Bodyshop4 from "../Bodyshop/Bodyshop4";
 import Bodyshop5 from "../Bodyshop/Bodyshop5";
 import Bodyshop6 from "../Bodyshop/Bodyshop6";
-import Whywait from "../w2/Whywait";
-import Whywait2 from "../w2/Whywait2";
-import W2viral from "../w2/W2viral";
+import Bodyshop, { Bodyshop2, Bodyshop3 } from "../Bodyshop/Bodyshop";
 
 const HindustanRoute = ({ component: Component, ...rest }) => (
   <Route
@@ -134,16 +125,16 @@ function App() {
           <Route path="/blackberrys_three" component={BB3} />
           <Route path="/vega_flipkart" component={VegaTwo} />
           <Route path="/vega_amazon" component={VegaThree} />
-          <Route path="/amd_amazon" component={Amd_Amazon} />
+          <Route path="/amd_amazon" component={AmdAmazon} />
           <Route path="/wedding_collection1" component={WC1} />
           <Route path="/wedding_collection2" component={WC2} />
           <Route path="/wedding_collection3" component={WC3} />
           <Route path="/blackberrys" component={Blackberrys} />
           <Route path="/ucook/" component={UcookVideoPlayer} />
           <Route path="/amd_merc_q2_2021" component={AmdMerc} />
-          <Route path="/amd_flipkart" component={Amd_Flipkart} />
+          <Route path="/amd_flipkart" component={AmdFlipkart} />
           <Route path="/amd_merc_300x250_q2_2021" component={AmdMerc2} />
-          <Route path="/amd_q2_commercials_320x480" component={AmdQ2_1} />
+          <Route path="/amd_q2_commercials_320x480" component={AmdQ2} />
           <Route path="/amd_q2_commercials_320x480_2" component={AmdQ2_2} />
           <Route path="/philipss" component={Philips} />
           <HindustanRoute path="/lg" component={LG} />

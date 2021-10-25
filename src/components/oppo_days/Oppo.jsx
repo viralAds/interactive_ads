@@ -1,5 +1,3 @@
-import React from "react";
-
 const Oppo = () => {
   return (
     <div className="_360x640frame">

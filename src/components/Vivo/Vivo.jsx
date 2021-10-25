@@ -1,5 +1,3 @@
-import React from "react";
-
 const Vivo = () => {
   return (
     <div className="_320x480frame">

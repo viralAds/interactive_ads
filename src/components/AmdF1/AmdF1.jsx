@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import { Waypoint } from "react-waypoint";
 import amdVideo from "../../assets/videos/amd1.mp4";
 import image from "../../assets/img/amd/amdf1.jpg";
