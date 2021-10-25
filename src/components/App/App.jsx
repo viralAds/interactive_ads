@@ -57,11 +57,12 @@ import Audientes, { AudientesTwo } from "../Audientes/Audientes";
 import WC3 from "../Blackberrys/WeddingCollection/Shake/ShakeAd";
 import WC2 from "../Blackberrys/WeddingCollection/WeddingVideo/Blackberrys";
 import HindustanLayout from "../../hoc/HindustanLayout";
-import Boddess from "../boddess/Boddess";
+import Boddess, { Boddess2 } from "../boddess/Boddess";
 import Bodyshop4 from "../Bodyshop/Bodyshop4";
 import Bodyshop5 from "../Bodyshop/Bodyshop5";
 import Bodyshop6 from "../Bodyshop/Bodyshop6";
 import Bodyshop, { Bodyshop2, Bodyshop3 } from "../Bodyshop/Bodyshop";
+import BoddessTest from "../boddess/Boddess2";
 
 const HindustanRoute = ({ component: Component, ...rest }) => (
   <Route
@@ -80,6 +81,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Switch>
+          <Route path="/amd_test" component={BoddessTest} />
           <Route path="/amd" component={Amd} />
           <Route path="/poco" component={Poco} />
           <Route path="/boat" component={Boat} />
@@ -144,6 +146,7 @@ function App() {
           <HindustanRoute path="/dabur2" component={Dabur2} />
           <HindustanRoute path="/panasonic" component={Pana} />
           <HindustanRoute path="/boddess" component={Boddess} />
+          <HindustanRoute path="/boddess2" component={Boddess2} />
           <HindustanRoute path="/philips" component={Philips} />
           <HindustanRoute path="/vega_women" component={VegaOne} />
           <HindustanRoute path="/bodyshop2" component={Bodyshop2} />
