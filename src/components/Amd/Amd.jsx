@@ -168,10 +168,11 @@ export const AmdMerc2 = () => {
 
 export const AmdInteractive = () => {
   return (
-    <div className="_300x250frame">
+    <div style={{ width: "100%", height: "100vh" }}>
       <iframe
+        style={{ width: "100%", height: "100%" }}
         src="https://viralads.github.io/amd_interactive/"
-        title="Amd_merc_q2_2021"
+        title="amd_interactive"
       ></iframe>
     </div>
   );
