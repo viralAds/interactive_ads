@@ -1,5 +1,3 @@
-import React from "react";
-
 const Boddess = () => {
   return (
     <div className="_360x640frame">

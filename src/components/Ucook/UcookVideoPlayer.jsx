@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import ResizeObserver from "rc-resize-observer";
 import ucook from "../../assets/videos/ucook.mp4";
 import TransparentLayer from "./TransparentLayer";
@@ -11,7 +11,6 @@ const UcookVideoPlayer = () => {
   const [padding, setPadding] = useState({});
   const [playing, setPlaying] = useState(false);
   const [muted, setMuted] = useState(false);
-  
   const [dimension, setDimension] = useState({
     width: innerWidth,
     height: innerHeight,

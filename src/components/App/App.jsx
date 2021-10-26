@@ -10,6 +10,7 @@ import Amd, {
   AmdFlipkart,
   AmdMerc,
   AmdMerc2,
+  AmdInteractive,
 } from "../Amd/Amd";
 import Vega from "../Vega/Vega";
 import Audi from "../Audi/Audi";
@@ -62,7 +63,6 @@ import Bodyshop4 from "../Bodyshop/Bodyshop4";
 import Bodyshop5 from "../Bodyshop/Bodyshop5";
 import Bodyshop6 from "../Bodyshop/Bodyshop6";
 import Bodyshop, { Bodyshop2, Bodyshop3 } from "../Bodyshop/Bodyshop";
-import BoddessTest from "../boddess/Boddess2";
 
 const HindustanRoute = ({ component: Component, ...rest }) => (
   <Route
@@ -81,7 +81,6 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Switch>
-          <Route path="/amd_test" component={BoddessTest} />
           <Route path="/amd" component={Amd} />
           <Route path="/poco" component={Poco} />
           <Route path="/boat" component={Boat} />
@@ -135,6 +134,7 @@ function App() {
           <Route path="/ucook/" component={UcookVideoPlayer} />
           <Route path="/amd_merc_q2_2021" component={AmdMerc} />
           <Route path="/amd_flipkart" component={AmdFlipkart} />
+          <Route path="/amd_interactive" component={AmdInteractive} />
           <Route path="/amd_merc_300x250_q2_2021" component={AmdMerc2} />
           <Route path="/amd_q2_commercials_320x480" component={AmdQ2} />
           <Route path="/amd_q2_commercials_320x480_2" component={AmdQ2_2} />

@@ -165,3 +165,14 @@ export const AmdMerc2 = () => {
     </div>
   );
 };
+
+export const AmdInteractive = () => {
+  return (
+    <div className="_300x250frame">
+      <iframe
+        src="https://viralads.github.io/amd_interactive/"
+        title="Amd_merc_q2_2021"
+      ></iframe>
+    </div>
+  );
+};
