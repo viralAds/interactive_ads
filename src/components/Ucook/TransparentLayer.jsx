@@ -28,6 +28,7 @@ const Controls = (props) => {
     }
   }, [currentTime, duration]);
 
+  console.log(duration);
   return (
     <div className="controls">
       <div className={classes.root}>
@@ -70,7 +71,7 @@ const Controls = (props) => {
         </div>
         <div className="ctrl-icon">
           <span className="time">
-            {(currentTime / 60).toFixed(2)}/{(duration / 60).toFixed(2)}
+            {(currentTime * 0.01).toFixed(2)}/{(duration * 0.01).toFixed(2)}
           </span>
         </div>
       </div>
