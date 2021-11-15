@@ -34,7 +34,7 @@ import VegaTwo from "../Vega/VegaTwo";
 import Play from "../Playground/Play";
 import Lomega from "../OmegaLib/Omega";
 import Homepage from "../Home/Homepage";
-import Ucook1, { Ucook2, Ucook3, UcookI } from "../ucook_va/Ucook";
+
 import Oppo_1 from "../Oppo/Oppo1/Oppo";
 import Philips from "../Philips/Philips";
 import Gocrush from "../gocrush/Gocrush";
@@ -57,6 +57,7 @@ import WC1 from "../Blackberrys/WeddingCollection/Looks/Looks";
 import Audientes, { AudientesTwo } from "../Audientes/Audientes";
 import WC3 from "../Blackberrys/WeddingCollection/Shake/ShakeAd";
 import WC2 from "../Blackberrys/WeddingCollection/WeddingVideo/Blackberrys";
+import Ucook1, { Ucook2, Ucook3, UcookI } from "../ucook_va/Ucook";
 import HindustanLayout from "../../hoc/HindustanLayout";
 import Boddess, { Boddess2 } from "../boddess/Boddess";
 import Bodyshop4 from "../Bodyshop/Bodyshop4";
