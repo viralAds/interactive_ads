@@ -4,7 +4,6 @@ import { useLocation } from "react-router-dom";
 const HinduTimes = () => {
   const location = useLocation();
   const [dimension, setDimension] = useState();
-
   const [creativeLink, setCreativeLink] = useState(
     "https://viralads.github.io/"
   );
@@ -14,9 +13,8 @@ const HinduTimes = () => {
     let link = creativeLink + arr.at(-2);
     setCreativeLink(link);
     setDimension(arr.at(-4));
-  }, [location, creativeLink]);
+  }, []);
 
-  console.log(dimension && dimension.split("x")[1]);
   return (
     <div>
       <section className="container main-container">

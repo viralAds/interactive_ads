@@ -13,12 +13,12 @@ const BlankPage = () => {
     let link = creativeLink + arr.at(-2);
     setCreativeLink(link);
     setDimension(arr.at(-4));
-  }, [location, creativeLink]);
+  }, []);
 
-  
+  console.log(creativeLink)
   return (
     <div className={`_${dimension}frame`}>
-      <iframe src={link} title="Amd_merc_q2_2021"></iframe>
+      <iframe src={creativeLink} title="Amd_merc_q2_2021"></iframe>
     </div>
   );
 };
