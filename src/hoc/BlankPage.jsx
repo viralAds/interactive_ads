@@ -13,7 +13,7 @@ const BlankPage = () => {
     let link = creativeLink + arr.at(-2);
     setCreativeLink(link);
     setDimension(arr.at(-4));
-  }, []);
+  }, [location, creativeLink]);
 
   console.log(creativeLink);
 

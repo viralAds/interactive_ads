@@ -14,7 +14,7 @@ const HinduTimes = () => {
     let link = creativeLink + arr.at(-2);
     setCreativeLink(link);
     setDimension(arr.at(-4));
-  }, []);
+  }, [location, creativeLink]);
 
   console.log(dimension && dimension.split("x")[1]);
   return (
