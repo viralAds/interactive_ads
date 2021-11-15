@@ -10,8 +10,7 @@ const HinduTimes = () => {
 
   useEffect(() => {
     const arr = location.pathname.split("/");
-    let link = creativeLink + arr.at(-2);
-    setCreativeLink(link);
+    setCreativeLink(creativeLink + arr.at(-2));
     setDimension(arr.at(-4));
   }, []);
 

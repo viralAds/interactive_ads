@@ -10,12 +10,11 @@ const BlankPage = () => {
 
   useEffect(() => {
     const arr = location.pathname.split("/");
-    let link = creativeLink + arr.at(-2);
-    setCreativeLink(link);
+    setCreativeLink(lincreativeLink + arr.at(-2));
     setDimension(arr.at(-4));
   }, []);
 
-  console.log(creativeLink)
+  console.log(creativeLink);
   return (
     <div className={`_${dimension}frame`}>
       <iframe src={creativeLink} title="Amd_merc_q2_2021"></iframe>
