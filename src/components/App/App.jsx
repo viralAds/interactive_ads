@@ -34,7 +34,6 @@ import VegaTwo from "../Vega/VegaTwo";
 import Play from "../Playground/Play";
 import Lomega from "../OmegaLib/Omega";
 import Homepage from "../Home/Homepage";
-
 import Oppo_1 from "../Oppo/Oppo1/Oppo";
 import Philips from "../Philips/Philips";
 import Gocrush from "../gocrush/Gocrush";
@@ -44,11 +43,16 @@ import Mercedes from "../Mercedes/Mercedes";
 import Lmerc from "../MercedesLib/Mercedes";
 import _24Seven from "../_24Seven/_24seven";
 import UcookVideoPlayer from "../Ucook/Ucook";
+import Bodyshop4 from "../Bodyshop/Bodyshop4";
+import Bodyshop5 from "../Bodyshop/Bodyshop5";
+import Bodyshop6 from "../Bodyshop/Bodyshop6";
 import Mamaearth from "../Mamaearth/Mamaearth";
 import Asics, { AsicsO } from "../Asics/Asics";
 import Dabar, { Dabur2 } from "../dabar/Dabar";
 import Envorincs from "../Envorincs/Envorincs";
 import Blackberrys from "../Blackberrys/Blackberrys";
+import Boddess, { Boddess2 } from "../boddess/Boddess";
+import HindustanLayout from "../../hoc/HindustanLayout";
 import BB2 from "../Blackberrys/BbCarrousel/Blackberrys";
 import BB1 from "../Blackberrys/BlackberrysOne/Blackberrys";
 import Ghadi, { GhadiTwo, GhadiThree } from "../Ghadi/Ghadi";
@@ -56,14 +60,9 @@ import BB3 from "../Blackberrys/BlackberrysThree/Blackberrys";
 import WC1 from "../Blackberrys/WeddingCollection/Looks/Looks";
 import Audientes, { AudientesTwo } from "../Audientes/Audientes";
 import WC3 from "../Blackberrys/WeddingCollection/Shake/ShakeAd";
-import WC2 from "../Blackberrys/WeddingCollection/WeddingVideo/Blackberrys";
 import Ucook1, { Ucook2, Ucook3, UcookI } from "../ucook_va/Ucook";
-import HindustanLayout from "../../hoc/HindustanLayout";
-import Boddess, { Boddess2 } from "../boddess/Boddess";
-import Bodyshop4 from "../Bodyshop/Bodyshop4";
-import Bodyshop5 from "../Bodyshop/Bodyshop5";
-import Bodyshop6 from "../Bodyshop/Bodyshop6";
 import Bodyshop, { Bodyshop2, Bodyshop3 } from "../Bodyshop/Bodyshop";
+import WC2 from "../Blackberrys/WeddingCollection/WeddingVideo/Blackberrys";
 
 const HindustanRoute = ({ component: Component, ...rest }) => (
   <Route
