@@ -32,7 +32,7 @@ function HomePage() {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
               <NavItem>
-                <NavLink href="/createlink/">Create Link</NavLink>
+                <NavLink href="/createlink/">CREATE LINK</NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
