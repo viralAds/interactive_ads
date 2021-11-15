@@ -11,6 +11,8 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
+  NavItem,
+  NavLink,
 } from "reactstrap";
 import { Link } from "react-router-dom";
 import ekaleidoLogo from "../assets/ekaleido_logo_h.png";
@@ -29,6 +31,9 @@ function HomePage() {
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
+              <NavItem>
+                <NavLink href="/createlink/">Create Link</NavLink>
+              </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   BLACKBERRYS

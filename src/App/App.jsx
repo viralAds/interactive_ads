@@ -12,6 +12,7 @@ import Amd, {
   AmdMerc2,
   AmdInteractive,
 } from "../components/Amd/Amd";
+import Homepage from "../Home/Homepage";
 import Vega from "../components/Vega/Vega";
 import Audi from "../components/Audi/Audi";
 import Swap from "../components/Swap/Swap";
@@ -33,10 +34,10 @@ import VegaOne from "../components/Vega/VegaOne";
 import VegaTwo from "../components/Vega/VegaTwo";
 import Play from "../components/Playground/Play";
 import Lomega from "../components/OmegaLib/Omega";
-import Homepage from "../Home/Homepage";
 import Oppo_1 from "../components/Oppo/Oppo1/Oppo";
 import Philips from "../components/Philips/Philips";
 import Gocrush from "../components/gocrush/Gocrush";
+import HindustanLayout from "../hoc/HindustanLayout";
 import VegaThree from "../components/Vega/VegaThree";
 import Pana from "../components/Panasonic/Panasonic";
 import Mercedes from "../components/Mercedes/Mercedes";
@@ -52,7 +53,6 @@ import Dabar, { Dabur2 } from "../components/dabar/Dabar";
 import Envorincs from "../components/Envorincs/Envorincs";
 import Blackberrys from "../components/Blackberrys/Blackberrys";
 import Boddess, { Boddess2 } from "../components/boddess/Boddess";
-import HindustanLayout from "../hoc/HindustanLayout";
 import BB2 from "../components/Blackberrys/BbCarrousel/Blackberrys";
 import BB1 from "../components/Blackberrys/BlackberrysOne/Blackberrys";
 import Ghadi, { GhadiTwo, GhadiThree } from "../components/Ghadi/Ghadi";
@@ -61,8 +61,14 @@ import WC1 from "../components/Blackberrys/WeddingCollection/Looks/Looks";
 import Audientes, { AudientesTwo } from "../components/Audientes/Audientes";
 import WC3 from "../components/Blackberrys/WeddingCollection/Shake/ShakeAd";
 import Ucook1, { Ucook2, Ucook3, UcookI } from "../components/ucook_va/Ucook";
-import Bodyshop, { Bodyshop2, Bodyshop3 } from "../components/Bodyshop/Bodyshop";
+import Bodyshop, {
+  Bodyshop2,
+  Bodyshop3,
+} from "../components/Bodyshop/Bodyshop";
 import WC2 from "../components/Blackberrys/WeddingCollection/WeddingVideo/Blackberrys";
+import CreateLink from "../hoc/CreateLink";
+import BlankPage from "../hoc/BlankPage";
+import HinduTimes from "../hoc/HinduTimes";
 
 const HindustanRoute = ({ component: Component, ...rest }) => (
   <Route
@@ -139,6 +145,7 @@ function App() {
           <Route path="/amd_q2_commercials_320x480" component={AmdQ2} />
           <Route path="/amd_q2_commercials_320x480_2" component={AmdQ2_2} />
           <Route path="/philipss" component={Philips} />
+          <Route path="/createlink" component={CreateLink} />
           <HindustanRoute path="/lg" component={LG} />
           <HindustanRoute path="/vega" component={Vega} />
           <HindustanRoute path="/upes" component={Upes} />
@@ -152,6 +159,10 @@ function App() {
           <HindustanRoute path="/bodyshop2" component={Bodyshop2} />
           <HindustanRoute path="/bodyshop3" component={Bodyshop3} />
           <HindustanRoute path="/audientes_2" component={AudientesTwo} />
+
+          <Route path="/:dimension/bp/:creative" component={BlankPage} />
+          <Route path="/:dimension/ht/:creative" component={HinduTimes} />
+
           <Route exact path="/">
             {!password ? <Login setPassword={setPassword} /> : <Homepage />}
           </Route>

@@ -1,0 +1,74 @@
+.cl_page {
+  background-image: linear-gradient(0deg, #a02b00, orangered);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .link-cnt {
+    position: relative;
+    display: flex;
+    margin: 1rem 0;
+    flex-direction: row;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid rgb(4, 95, 4);
+
+    .creative-link {
+      padding: 5px;
+      width: 100%;
+      border-radius: 5px;
+      background-color: rgb(182, 255, 182);
+      color: rgb(29, 90, 0);
+    }
+
+    .icon-cnt {
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 2px;
+      background-color: #fff;
+    }
+  }
+
+  .form {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 20px 1px #761f00;
+
+    .inputField-cnt {
+      width: 100%;
+      margin: 10px 0;
+
+      .inputfield {
+        margin: 5px 0;
+        width: 100%;
+        border: 2px solid #bdbdbd;
+        border-radius: 5px;
+        padding: 5px;
+      }
+
+      .layouttypes,
+      .frametypes {
+        width: 100%;
+        margin: 5px 0;
+      }
+    }
+    button {
+      background-color: #a02b00;
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+}

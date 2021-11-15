@@ -115,7 +115,7 @@ export const AmdFlipkart = () => {
   return (
     <div className="_300x250frame">
       <iframe
-        src="https://43215-ekaleidoanuj.github.io/amd_flipkart/"
+        src="https://viralads.github.io/amd_flipkart/"
         title="AWS Advertisement"
       ></iframe>
     </div>
