@@ -13,7 +13,7 @@ import {
   DropdownItem,
 } from "reactstrap";
 import { Link } from "react-router-dom";
-import ekaleidoLogo from "../../assets/ekaleido_logo_h.png";
+import ekaleidoLogo from "../assets/ekaleido_logo_h.png";
 
 function HomePage() {
   const [isOpen, setIsOpen] = useState(false);

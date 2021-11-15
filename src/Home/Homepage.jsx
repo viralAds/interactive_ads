@@ -1,9 +1,8 @@
-import React from 'react';
 import './Homepage.scss';
 import Navbar from '../Navbar/Navbar';
-import ekaleidoLogo from '../../assets/ekaleidoLogo.png';
-
+import ekaleidoLogo from '../assets/ekaleidoLogo.png';
 import { Container } from 'reactstrap';
+
 function Hompage() {
     return (
         <div>

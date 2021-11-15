@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App/App';
+import App from './App/App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'video.js/dist/video-js.css';
 import "video-react/dist/video-react.css";

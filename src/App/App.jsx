@@ -1,7 +1,7 @@
 import "./App.scss";
 import { useState } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import LG from "../LG/Lg";
+import LG from "../components/LG/Lg";
 import Amd, {
   AmdAmazon,
   AmdDesire,
@@ -11,58 +11,58 @@ import Amd, {
   AmdMerc,
   AmdMerc2,
   AmdInteractive,
-} from "../Amd/Amd";
-import Vega from "../Vega/Vega";
-import Audi from "../Audi/Audi";
-import Swap from "../Swap/Swap";
-import Poco from "../Poco/Poco";
-import Vivo from "../Vivo/Vivo";
-import Govo from "../govo/Govo";
-import Boat from "../Boat/Boat";
-import Upes from "../upes/Upes";
-import Swipe from "../Jnto/Jnto";
-import Omega from "../Omega/Omega";
-import Clark from "../Clark/Clark";
-import Login from "../Login/Login";
-import AmdF1 from "../AmdF1/AmdF1";
-import Whywait from "../w2/Whywait";
-import W2viral from "../w2/W2viral";
-import Oppo from "../oppo_days/Oppo";
-import Whywait2 from "../w2/Whywait2";
-import VegaOne from "../Vega/VegaOne";
-import VegaTwo from "../Vega/VegaTwo";
-import Play from "../Playground/Play";
-import Lomega from "../OmegaLib/Omega";
+} from "../components/Amd/Amd";
+import Vega from "../components/Vega/Vega";
+import Audi from "../components/Audi/Audi";
+import Swap from "../components/Swap/Swap";
+import Poco from "../components/Poco/Poco";
+import Vivo from "../components/Vivo/Vivo";
+import Govo from "../components/govo/Govo";
+import Boat from "../components/Boat/Boat";
+import Upes from "../components/upes/Upes";
+import Swipe from "../components/Jnto/Jnto";
+import Omega from "../components/Omega/Omega";
+import Clark from "../components/Clark/Clark";
+import Login from "../components/Login/Login";
+import AmdF1 from "../components/AmdF1/AmdF1";
+import Whywait from "../components/w2/Whywait";
+import W2viral from "../components/w2/W2viral";
+import Oppo from "../components/oppo_days/Oppo";
+import Whywait2 from "../components/w2/Whywait2";
+import VegaOne from "../components/Vega/VegaOne";
+import VegaTwo from "../components/Vega/VegaTwo";
+import Play from "../components/Playground/Play";
+import Lomega from "../components/OmegaLib/Omega";
 import Homepage from "../Home/Homepage";
-import Oppo_1 from "../Oppo/Oppo1/Oppo";
-import Philips from "../Philips/Philips";
-import Gocrush from "../gocrush/Gocrush";
-import VegaThree from "../Vega/VegaThree";
-import Pana from "../Panasonic/Panasonic";
-import Mercedes from "../Mercedes/Mercedes";
-import Lmerc from "../MercedesLib/Mercedes";
-import _24Seven from "../_24Seven/_24seven";
-import UcookVideoPlayer from "../Ucook/Ucook";
-import Bodyshop4 from "../Bodyshop/Bodyshop4";
-import Bodyshop5 from "../Bodyshop/Bodyshop5";
-import Bodyshop6 from "../Bodyshop/Bodyshop6";
-import Mamaearth from "../Mamaearth/Mamaearth";
-import Asics, { AsicsO } from "../Asics/Asics";
-import Dabar, { Dabur2 } from "../dabar/Dabar";
-import Envorincs from "../Envorincs/Envorincs";
-import Blackberrys from "../Blackberrys/Blackberrys";
-import Boddess, { Boddess2 } from "../boddess/Boddess";
-import HindustanLayout from "../../hoc/HindustanLayout";
-import BB2 from "../Blackberrys/BbCarrousel/Blackberrys";
-import BB1 from "../Blackberrys/BlackberrysOne/Blackberrys";
-import Ghadi, { GhadiTwo, GhadiThree } from "../Ghadi/Ghadi";
-import BB3 from "../Blackberrys/BlackberrysThree/Blackberrys";
-import WC1 from "../Blackberrys/WeddingCollection/Looks/Looks";
-import Audientes, { AudientesTwo } from "../Audientes/Audientes";
-import WC3 from "../Blackberrys/WeddingCollection/Shake/ShakeAd";
-import Ucook1, { Ucook2, Ucook3, UcookI } from "../ucook_va/Ucook";
-import Bodyshop, { Bodyshop2, Bodyshop3 } from "../Bodyshop/Bodyshop";
-import WC2 from "../Blackberrys/WeddingCollection/WeddingVideo/Blackberrys";
+import Oppo_1 from "../components/Oppo/Oppo1/Oppo";
+import Philips from "../components/Philips/Philips";
+import Gocrush from "../components/gocrush/Gocrush";
+import VegaThree from "../components/Vega/VegaThree";
+import Pana from "../components/Panasonic/Panasonic";
+import Mercedes from "../components/Mercedes/Mercedes";
+import Lmerc from "../components/MercedesLib/Mercedes";
+import _24Seven from "../components/_24Seven/_24seven";
+import UcookVideoPlayer from "../components/Ucook/Ucook";
+import Bodyshop4 from "../components/Bodyshop/Bodyshop4";
+import Bodyshop5 from "../components/Bodyshop/Bodyshop5";
+import Bodyshop6 from "../components/Bodyshop/Bodyshop6";
+import Mamaearth from "../components/Mamaearth/Mamaearth";
+import Asics, { AsicsO } from "../components/Asics/Asics";
+import Dabar, { Dabur2 } from "../components/dabar/Dabar";
+import Envorincs from "../components/Envorincs/Envorincs";
+import Blackberrys from "../components/Blackberrys/Blackberrys";
+import Boddess, { Boddess2 } from "../components/boddess/Boddess";
+import HindustanLayout from "../hoc/HindustanLayout";
+import BB2 from "../components/Blackberrys/BbCarrousel/Blackberrys";
+import BB1 from "../components/Blackberrys/BlackberrysOne/Blackberrys";
+import Ghadi, { GhadiTwo, GhadiThree } from "../components/Ghadi/Ghadi";
+import BB3 from "../components/Blackberrys/BlackberrysThree/Blackberrys";
+import WC1 from "../components/Blackberrys/WeddingCollection/Looks/Looks";
+import Audientes, { AudientesTwo } from "../components/Audientes/Audientes";
+import WC3 from "../components/Blackberrys/WeddingCollection/Shake/ShakeAd";
+import Ucook1, { Ucook2, Ucook3, UcookI } from "../components/ucook_va/Ucook";
+import Bodyshop, { Bodyshop2, Bodyshop3 } from "../components/Bodyshop/Bodyshop";
+import WC2 from "../components/Blackberrys/WeddingCollection/WeddingVideo/Blackberrys";
 
 const HindustanRoute = ({ component: Component, ...rest }) => (
   <Route
@@ -145,9 +145,9 @@ function App() {
           <HindustanRoute path="/dabur" component={Dabar} />
           <HindustanRoute path="/dabur2" component={Dabur2} />
           <HindustanRoute path="/panasonic" component={Pana} />
+          <HindustanRoute path="/philips" component={Philips} />
           <HindustanRoute path="/boddess" component={Boddess} />
           <HindustanRoute path="/boddess2" component={Boddess2} />
-          <HindustanRoute path="/philips" component={Philips} />
           <HindustanRoute path="/vega_women" component={VegaOne} />
           <HindustanRoute path="/bodyshop2" component={Bodyshop2} />
           <HindustanRoute path="/bodyshop3" component={Bodyshop3} />

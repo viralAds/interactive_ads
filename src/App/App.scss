@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap");
+
+body {
+  color: #424242;
+  font-size: 14px;
+  font-family: "Montserrat-Medium";
+  background-color: #fff;
+  padding: 0;
+}
+
+.app {
+  background-color: #fff;
+}
+
+input,
+button,
+textarea {
+  background-color: transparent;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+iframe {
+  border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333;
+}
+
+h1,
+h2 {
+  font-family: Montserrat-Bold;
+}
+
+h3,
+h4 {
+  font-family: Montserrat-SemiBold;
+}
+
+h5,
+h6 {
+  font-family: Montserrat-Medium;
+}
+
+p,
+span {
+  font-family: Montserrat-Regular;
+}
+
+@font-face {
+  font-family: Montserrat-BoldItalic;
+  src: url(../assets/fonts/Montserrat-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(../assets/fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: Montserrat-Light;
+  src: url(../assets/fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+  font-family: Montserrat-ExtraBold;
+  src: url(../assets/fonts/Montserrat-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url(../assets/fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url(../assets/fonts/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(../assets/fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: Futura;
+  src: url(../assets/fonts/futur.ttf);
+}
+
+@font-face {
+  font-family: Futura-ExtraBold;
+  src: url(../assets/fonts/Futura_Extra_Black_font.ttf);
+}
+
+@font-face {
+  font-family: Futura-Bold;
+  src: url(../assets/fonts/Futura_Heavy_font.ttf);
+}
+
+@font-face {
+  font-family: Futura-BoldCondensed;
+  src: url(../assets/fonts/Futura_Bold_font.ttf);
+}
+
+@font-face {
+  font-family: Futura-BoldItalics;
+  src: url(../assets/fonts/Futura_Bold_Italic_font.ttf);
+}
+
+@font-face {
+  font-family: Futura-Medium;
+  src: url(../assets/fonts/futura_medium_bt.ttf);
+}
+
+@font-face {
+  font-family: Futura-MediumCondensed;
+  src: url(../assets/fonts/futura_medium_condensed_bt.ttf);
+}
+
+@font-face {
+  font-family: Futura-MediumItalics;
+  src: url(../assets/fonts/Futura_Medium_Italic_font.ttf);
+}
+
+@font-face {
+  font-family: Futura-Regular;
+  src: url(../assets/fonts/Futura_Book_font.ttf);
+}
+
+@font-face {
+  font-family: Futura-RegularItalics;
+  src: url(../assets/fonts/Futura_Book_Italic_font.ttf);
+}
+
+@font-face {
+  font-family: Futura-Light;
+  src: url(../assets/fonts/futura_light_bt.ttf);
+}
+
+@font-face {
+  font-family: Futura-LightCondensed;
+  src: url(../assets/fonts/Futura_Light_font.ttf);
+}
+
+@font-face {
+  font-family: Futura-LightItalics;
+  src: url(../assets/fonts/Futura_Light_Italic_font.ttf);
+}
