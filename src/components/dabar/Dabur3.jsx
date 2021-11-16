@@ -7,6 +7,7 @@ import frame1mask from "../../assets/img/dabur/lungsmask.png";
 import smoke from "../../assets/img/dabur/smoke.png";
 import "./dabur.scss";
 import frameTwoimg from "../../assets/img/dabur/frame-2-bg.jpg";
+import finalframe from "../../assets/img/dabur/final-frame2.jpg";
 
 const Dabur3 = () => {
   const [pm2_5, setPm2_5] = useState();
@@ -156,11 +157,12 @@ const Dabur3 = () => {
             <span className="one">PM10 (μg/m3)</span>
             <span className="two">{pm10}</span>
           </div>
-          {swipeactive && <div className="icon-up" style={{}}>
-            <CgArrowLongUpC  size={40}/>
-            <span>SWIPE UP</span>
-          </div>
-}
+          {swipeactive && (
+            <div className="icon-up" style={{}}>
+              <CgArrowLongUpC size={40} />
+              <span>SWIPE UP</span>
+            </div>
+          )}
           {swipeactive && (
             <Swipe
               className="swipearea"
@@ -170,7 +172,30 @@ const Dabur3 = () => {
         </div>
       )}
 
-      {frameThr && <div></div>}
+      {frameThr && (
+        <div className="frame-three">
+          <img
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              zIndex: 10,
+            }}
+            src={finalframe}
+            alt="finalframe"
+          />
+          <div className="button-two">
+            <a
+              href="https://www.dabur.com/in/en-us/ayurvedic-herbal-products/dabur-chyawanprash"
+              target="_blank"
+            >
+              BUY NOW
+            </a>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
