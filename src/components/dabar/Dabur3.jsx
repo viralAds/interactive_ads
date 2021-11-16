@@ -153,7 +153,7 @@ const Dabur3 = () => {
             <span className="two">{pm2_5}</span>
           </div>
           <div className="pm10">
-            <span className="one">PM10</span>
+            <span className="one">PM10 (μg/m3)</span>
             <span className="two">{pm10}</span>
           </div>
           {swipeactive && <div className="icon-up" style={{}}>
