@@ -190,6 +190,7 @@ const Dabur3 = () => {
             <a
               href="https://www.dabur.com/in/en-us/ayurvedic-herbal-products/dabur-chyawanprash"
               target="_blank"
+              rel="noreferrer"
             >
               BUY NOW
             </a>
