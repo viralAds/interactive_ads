@@ -13,6 +13,7 @@ import Amd, {
   AmdInteractive,
 } from "../components/Amd/Amd";
 import Homepage from "../Home/Homepage";
+import Dabur3 from "../components/dabar/Dabur3";
 import Vega from "../components/Vega/Vega";
 import Audi from "../components/Audi/Audi";
 import Swap from "../components/Swap/Swap";
@@ -151,6 +152,7 @@ function App() {
           <HindustanRoute path="/upes" component={Upes} />
           <HindustanRoute path="/dabur" component={Dabar} />
           <HindustanRoute path="/dabur2" component={Dabur2} />
+          <HindustanRoute path="/dabur_c" component={Dabur3} />
           <HindustanRoute path="/panasonic" component={Pana} />
           <HindustanRoute path="/philips" component={Philips} />
           <HindustanRoute path="/boddess" component={Boddess} />
