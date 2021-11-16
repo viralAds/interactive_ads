@@ -4,15 +4,13 @@ import { useLocation } from "react-router-dom";
 const BlankPage = () => {
   const location = useLocation();
   const [dimension, setDimension] = useState();
-  const [creativeLink, setCreativeLink] = useState(
-    "https://viralads.github.io/"
-  );
+  const [creativeLink, setCreativeLink] = useState();
 
   useEffect(() => {
     const arr = location.pathname.split("/");
-    setCreativeLink(lincreativeLink + arr.at(-2));
+    setCreativeLink("https://viralads.github.io/" + arr.at(-2));
     setDimension(arr.at(-4));
-  }, []);
+  }, [location]);
 
   console.log(creativeLink);
   return (
