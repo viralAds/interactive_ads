@@ -85,16 +85,32 @@
 
   .swipearea {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
-    height: 100%;
+    height: 50%;
     width: 100%;
     z-index: 40;
   }
 
+  .locations {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 22.5%;
+    left: 0;
+    z-index: 10;
+
+    // button {
+    //   border: 2px solid #ed3734;
+    //   color: #000;
+    //   border-radius: 50px;
+    //   width: 30%;
+    // }
+  }
   .aqi {
     left: 0;
-    top: 30%;
+    top: 39%;
     z-index: 10;
     position: absolute;
     width: 100%;
@@ -102,71 +118,61 @@
     flex-direction: column;
     align-items: center;
 
-    .one,
     .two {
       font-family: Montserrat-ExtraBold;
-    }
-
-    .one {
-      color: #594f24;
-      font-size: 25px;
-    }
-
-    .two {
-      color: #fff;
-      font-size: 22px;
+      font-size: 32px;
+      text-shadow: 1px 1px 0px #00000050;
     }
   }
 
-  .pm25 {
+  .pm {
     left: 0;
-    top: 45%;
+    top: 59%;
     z-index: 10;
     position: absolute;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
 
-    .one,
-    .two {
-      font-family: Montserrat-ExtraBold;
+    .pm25,
+    .pm10 {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
     }
 
-    .one {
-      color: #594f24;
-      font-size: 25px;
+    .pm25 {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .pm25_h {
+        font-family: Montserrat-ExtraBold;
+        color: #939598;
+        font-size: 17px;
+      }
+      .pm25_v {
+        font-family: Montserrat-ExtraBold;
+        color: #000;
+        font-size: 15px;
+      }
     }
-
-    .two {
-      color: #fff;
-      font-size: 22px;
-    }
-  }
-
-  .pm10 {
-    left: 0;
-    top: 60%;
-    z-index: 10;
-    position: absolute;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .one,
-    .two {
-      font-family: Montserrat-ExtraBold;
-    }
-
-    .one {
-      color: #594f24;
-      font-size: 25px;
-    }
-
-    .two {
-      color: #fff;
-      font-size: 22px;
+    .pm10 {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .pm10_h {
+        font-family: Montserrat-ExtraBold;
+        color: #939598;
+        font-size: 17px;
+      }
+      .pm10_v {
+        font-family: Montserrat-ExtraBold;
+        color: #000;
+        font-size: 15px;
+      }
     }
   }
 
@@ -185,26 +191,24 @@
       animation-name: float;
       animation-duration: 2s;
       animation-iteration-count: infinite;
-      color: #fff;
+      color: #000;
     }
 
     span {
-      color: #fff;
+      color: #000;
+      font-size: 15px;
     }
   }
 }
 
 @keyframes float {
   0% {
-    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
     transform: translatey(0px);
   }
   50% {
-    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
     transform: translatey(-20px);
   }
   100% {
-    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
     transform: translatey(0px);
   }
 }
@@ -215,16 +219,18 @@
 
   .button-two {
     position: absolute;
-    padding: 2px 22px;
-    top: 26%;
+    padding: 7px 22px;
+    top: 23%;
     background-color: #fff;
     border-radius: 50px;
     z-index: 20;
+    display: flex;
+    align-items: center;
 
     a {
       color: #000;
-      font-size: 10px;
-      font-family: Montserrat-Black;
+      font-size: 11px;
+      font-family: Montserrat-SemiBold;
     }
   }
 }
