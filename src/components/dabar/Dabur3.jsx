@@ -29,7 +29,7 @@ const Dabur3 = () => {
       url: `http://api.openweathermap.org/data/2.5/air_pollution/forecast?lat=${lat}&lon=${lon}&appid=22f760a45156cddca51d44606880edfc`,
       responseType: "application/json",
     }).then(function (response) {
-      setSwipeActive(true);
+      
       if (response.data.list[0].main.aqi === 1) {
         setAqi("GOOD");
         setColor("#63ff00");
@@ -62,6 +62,7 @@ const Dabur3 = () => {
   const activeFrameTwo = () => {
     setFrameone(false);
     setFrameTwo(true);
+    setSwipeActive(true);
   };
 
   const setLoc = (loc) => {
