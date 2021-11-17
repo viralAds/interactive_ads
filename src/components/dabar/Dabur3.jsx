@@ -26,7 +26,7 @@ const Dabur3 = () => {
   useEffect(() => {
     axios({
       method: "get",
-      url: `http://api.openweathermap.org/data/2.5/air_pollution/forecast?lat=${lat}&lon=${lon}&appid=22f760a45156cddca51d44606880edfc`,
+      url: `https://api.openweathermap.org/data/2.5/air_pollution/forecast?lat=${lat}&lon=${lon}&appid=22f760a45156cddca51d44606880edfc`,
       responseType: "application/json",
     }).then(function (response) {
       
