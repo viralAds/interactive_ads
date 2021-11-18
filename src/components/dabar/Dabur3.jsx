@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Swipe from "react-easy-swipe";
 import axios from "axios";
-import { CgArrowLongUpC } from "react-icons/cg";
+import { CgArrowLongLeftC } from "react-icons/cg";
 import frame1 from "../../assets/img/dabur/pollution-frame-1.jpg";
 import frame1mask from "../../assets/img/dabur/lungsmask.png";
 import smoke from "../../assets/img/dabur/smoke.png";
@@ -217,9 +217,9 @@ const Dabur3 = () => {
           </div>
           {swipeactive && (
             <div className="icon-up">
-              <CgArrowLongUpC size={30} />
+              <CgArrowLongLeftC size={30} />
               <span>
-                SWIPE UP
+                SWIPE LEFT
                 <br />
                 TO BOOST IMMUNITY
               </span>
@@ -228,7 +228,7 @@ const Dabur3 = () => {
           {swipeactive && (
             <Swipe
               className="swipearea"
-              onSwipeUp={(e) => onSwipeUp(e)}
+              onSwipeLeft={(e) => onSwipeUp(e)}
             ></Swipe>
           )}
         </div>
