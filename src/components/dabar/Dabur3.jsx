@@ -1,13 +1,13 @@
-import { useEffect, useState } from "react";
-import Swipe from "react-easy-swipe";
-import axios from "axios";
-import { CgArrowLongLeftC } from "react-icons/cg";
-import frame1 from "../../assets/img/dabur/pollution-frame-1.jpg";
-import frame1mask from "../../assets/img/dabur/lungsmask.png";
-import smoke from "../../assets/img/dabur/smoke.png";
 import "./dabur.scss";
+import axios from "axios";
+import Swipe from "react-easy-swipe";
+import { useEffect, useState } from "react";
+import { CgArrowLongLeftC } from "react-icons/cg";
+import smoke from "../../assets/img/dabur/smoke.png";
 import daburvideo from "../../assets/img/dabur/dabur.mov";
 import frameTwoimg from "../../assets/img/dabur/aqi-bg2.jpg";
+import frame1mask from "../../assets/img/dabur/lungsmask.png";
+import frame1 from "../../assets/img/dabur/pollution-frame-1.jpg";
 
 const Dabur3 = () => {
   const [pm2_5, setPm2_5] = useState();
@@ -29,7 +29,7 @@ const Dabur3 = () => {
       url: `https://api.openweathermap.org/data/2.5/air_pollution/forecast?lat=${lat}&lon=${lon}&appid=22f760a45156cddca51d44606880edfc`,
       responseType: "application/json",
     }).then(function (response) {
-      
+      console.log(response.data)
       if (response.data.list[0].main.aqi === 1) {
         setAqi("GOOD");
         setColor("#63ff00");

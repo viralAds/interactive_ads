@@ -11,6 +11,8 @@ import Amd, {
   AmdMerc,
   AmdMerc2,
   AmdInteractive,
+  Amd1,
+  Amd2
 } from "../components/Amd/Amd";
 import Homepage from "../Home/Homepage";
 import Dabur3 from "../components/dabar/Dabur3";
@@ -106,6 +108,8 @@ function App() {
           <Route path="/oppo" component={Oppo_1} />
           <Route path="/amd_f1" component={AmdF1} />
           <Route path="/oppo_days" component={Oppo} />
+          <Route path="/amd320x480" component={Amd1} />
+          <Route path="/amd300x250" component={Amd2} />
           <Route path="/w2viral" component={W2viral} />
           <Route path="/ucook_1/" component={Ucook1} />
           <Route path="/whywait" component={Whywait} />

@@ -164,6 +164,12 @@ function HomePage() {
                     </DropdownToggle>
                     <DropdownMenu right>
                       <DropdownItem>
+                        <Link to="/amd300x250">AMD Nov_1</Link>
+                      </DropdownItem>
+                      <DropdownItem>
+                        <Link to="/amd320x480">AMD Nov_2</Link>
+                      </DropdownItem>
+                      <DropdownItem>
                         <Link to="/amd">AMD</Link>
                       </DropdownItem>
                       <DropdownItem>

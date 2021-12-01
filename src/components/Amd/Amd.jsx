@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import amd1 from "../../assets/img/amd/1.jpg";
 import amd2 from "../../assets/img/amd/2.jpg";
 import amd3 from "../../assets/img/amd/3.jpg";
@@ -177,3 +177,30 @@ export const AmdInteractive = () => {
     </div>
   );
 };
+
+
+export const Amd1 = () => {
+  return (
+    <div className="_320x480frame">
+      <iframe
+        style={{ width: "100%", height: "100%" }}
+        src="https://viralads.github.io/amd1/"
+        title="amd_1"
+      ></iframe>
+    </div>
+  );
+};
+
+
+export const Amd2 = () => {
+  return (
+    <div className="_300x250frame">
+      <iframe
+        style={{ width: "100%", height: "100%" }}
+        src="https://viralads.github.io/amd2/"
+        title="amd_1"
+      ></iframe>
+    </div>
+  );
+};
+
