@@ -72,6 +72,7 @@ import WC2 from "../components/Blackberrys/WeddingCollection/WeddingVideo/Blackb
 import CreateLink from "../hoc/CreateLink";
 import BlankPage from "../hoc/BlankPage";
 import HinduTimes from "../hoc/HinduTimes";
+import Wildstone from "../components/wildstone/Wildstone";
 import Jnto1, { Jnto2 } from "../components/Jnto/Jnto1";
 
 const HindustanRoute = ({ component: Component, ...rest }) => (
@@ -134,6 +135,7 @@ function App() {
           <Route path="/bodyshop5" component={Bodyshop5} />
           <Route path="/bodyshop6" component={Bodyshop6} />
           <Route path="/blackberrys_two" component={BB2} />
+          <Route path="/wildstone" component={Wildstone} />
           <Route path="/amd_desire" component={AmdDesire} />
           <Route path="/mama_earth" component={Mamaearth} />
           <Route path="/asics_olympics" component={AsicsO} />
