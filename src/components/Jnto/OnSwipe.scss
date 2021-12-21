@@ -73,7 +73,6 @@
             to {
                 transform: rotate(30deg);
             }
- 
         }
 
         .jnto-instruc {
@@ -104,7 +103,7 @@
 
         img.plane {
             position: absolute;
-            bottom: 130px;
+            bottom: -84px;
             left: 30px;
             width: 50px;
             transform: rotate(45deg);
@@ -118,11 +117,11 @@
         }
         @keyframes toJapan {
             from { 
-                bottom: 130px;
+                bottom: -84px;
                 left: 30px;
             }
             to {
-                bottom: 290px;
+                bottom: 90px;
                 left: 210px;
             }
         }
