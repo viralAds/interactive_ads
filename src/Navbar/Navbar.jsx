@@ -91,6 +91,9 @@ function HomePage() {
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
+                    <Link to="/wildstone">Wildstone</Link>
+                  </DropdownItem>
+                  <DropdownItem>
                     <Link to="/boddess">Boddess</Link>
                   </DropdownItem>
                   <DropdownItem>
@@ -164,6 +167,9 @@ function HomePage() {
                     </DropdownToggle>
                     <DropdownMenu right>
                       <DropdownItem>
+                        <Link to="/amd_premium_sku">AMD Premium</Link>
+                      </DropdownItem>
+                      <DropdownItem>
                         <Link to="/amd300x250">AMD Nov_1</Link>
                       </DropdownItem>
                       <DropdownItem>
@@ -221,20 +227,6 @@ function HomePage() {
                       </DropdownItem>
                       <DropdownItem>
                         <Link to="/w2viral">Why Wait viral</Link>
-                      </DropdownItem>
-                    </DropdownMenu>
-                  </UncontrolledDropdown>
-
-                  <UncontrolledDropdown nav inNavbar>
-                    <DropdownToggle nav caret>
-                      Wildstone
-                    </DropdownToggle>
-                    <DropdownMenu>
-                      <DropdownItem>
-                        <Link to="/wildstone">Wildstone 1</Link>
-                      </DropdownItem>
-                      <DropdownItem>
-                        <Link to="/wildstone_story">Wildstone 2</Link>
                       </DropdownItem>
                     </DropdownMenu>
                   </UncontrolledDropdown>

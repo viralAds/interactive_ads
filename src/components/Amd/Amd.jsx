@@ -204,3 +204,14 @@ export const Amd2 = () => {
   );
 };
 
+
+export const AmdPremiumSku = () => {
+  return (
+    <div className="_320x480frame">
+      <iframe
+        src="https://viralads.github.io/amd_premium_sku/"
+        title="amd Advertisement"
+      ></iframe>
+    </div>
+  );
+};

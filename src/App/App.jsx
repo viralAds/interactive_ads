@@ -12,7 +12,8 @@ import Amd, {
   AmdMerc2,
   AmdInteractive,
   Amd1,
-  Amd2
+  Amd2,
+  AmdPremiumSku
 } from "../components/Amd/Amd";
 import Homepage from "../Home/Homepage";
 import Dabur3 from "../components/dabar/Dabur3";
@@ -72,7 +73,7 @@ import WC2 from "../components/Blackberrys/WeddingCollection/WeddingVideo/Blackb
 import CreateLink from "../hoc/CreateLink";
 import BlankPage from "../hoc/BlankPage";
 import HinduTimes from "../hoc/HinduTimes";
-import Wildstone, { Wildstone1 } from "../components/wildstone/Wildstone";
+import Wildstone from "../components/wildstone/Wildstone";
 import Jnto1, { Jnto2 } from "../components/Jnto/Jnto1";
 
 const HindustanRoute = ({ component: Component, ...rest }) => (
@@ -147,10 +148,10 @@ function App() {
           <Route path="/wedding_collection2" component={WC2} />
           <Route path="/wedding_collection3" component={WC3} />
           <Route path="/blackberrys" component={Blackberrys} />
-          <Route path="/ucook/" component={UcookVideoPlayer} />
           <Route path="/amd_merc_q2_2021" component={AmdMerc} />
+          <Route path="/ucook/" component={UcookVideoPlayer} />
           <Route path="/amd_flipkart" component={AmdFlipkart} />
-          <Route path="/wildstone_story" component={Wildstone1} />
+          <Route path="/amd_premium_sku" component={AmdPremiumSku} />
           <Route path="/amd_interactive" component={AmdInteractive} />
           <Route path="/amd_merc_300x250_q2_2021" component={AmdMerc2} />
           <Route path="/amd_q2_commercials_320x480" component={AmdQ2} />
