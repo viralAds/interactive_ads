@@ -72,7 +72,7 @@ import WC2 from "../components/Blackberrys/WeddingCollection/WeddingVideo/Blackb
 import CreateLink from "../hoc/CreateLink";
 import BlankPage from "../hoc/BlankPage";
 import HinduTimes from "../hoc/HinduTimes";
-import Wildstone from "../components/wildstone/Wildstone";
+import Wildstone, { Wildstone1 } from "../components/wildstone/Wildstone";
 import Jnto1, { Jnto2 } from "../components/Jnto/Jnto1";
 
 const HindustanRoute = ({ component: Component, ...rest }) => (
@@ -150,6 +150,7 @@ function App() {
           <Route path="/ucook/" component={UcookVideoPlayer} />
           <Route path="/amd_merc_q2_2021" component={AmdMerc} />
           <Route path="/amd_flipkart" component={AmdFlipkart} />
+          <Route path="/wildstone_story" component={Wildstone1} />
           <Route path="/amd_interactive" component={AmdInteractive} />
           <Route path="/amd_merc_300x250_q2_2021" component={AmdMerc2} />
           <Route path="/amd_q2_commercials_320x480" component={AmdQ2} />

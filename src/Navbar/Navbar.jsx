@@ -227,6 +227,20 @@ function HomePage() {
 
                   <UncontrolledDropdown nav inNavbar>
                     <DropdownToggle nav caret>
+                      Wildstone
+                    </DropdownToggle>
+                    <DropdownMenu>
+                      <DropdownItem>
+                        <Link to="/wildstone">Wildstone 1</Link>
+                      </DropdownItem>
+                      <DropdownItem>
+                        <Link to="/wildstone_story">Wildstone 2</Link>
+                      </DropdownItem>
+                    </DropdownMenu>
+                  </UncontrolledDropdown>
+
+                  <UncontrolledDropdown nav inNavbar>
+                    <DropdownToggle nav caret>
                       Bodyshop
                     </DropdownToggle>
                     <DropdownMenu>
