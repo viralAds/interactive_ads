@@ -53,6 +53,7 @@ function HomePage() {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
+
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   INTERACTIVE Ads
@@ -90,6 +91,9 @@ function HomePage() {
                   VIRAL Ads 1
                 </DropdownToggle>
                 <DropdownMenu right>
+                  <DropdownItem>
+                    <Link to="/omega_ad">Omega Ad</Link>
+                  </DropdownItem>
                   <DropdownItem>
                     <Link to="/wildstone">Wildstone</Link>
                   </DropdownItem>
@@ -167,7 +171,7 @@ function HomePage() {
                     </DropdownToggle>
                     <DropdownMenu right>
                       <DropdownItem>
-                        <Link to="/amd_premium_sku">AMD Premium</Link>
+                        <Link to="/amd_premium_sku">AMD Premium sku</Link>
                       </DropdownItem>
                       <DropdownItem>
                         <Link to="/amd300x250">AMD Nov_1</Link>

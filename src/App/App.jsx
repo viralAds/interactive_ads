@@ -13,7 +13,7 @@ import Amd, {
   AmdInteractive,
   Amd1,
   Amd2,
-  AmdPremiumSku
+  AmdPremiumSku,
 } from "../components/Amd/Amd";
 import Homepage from "../Home/Homepage";
 import Dabur3 from "../components/dabar/Dabur3";
@@ -75,6 +75,7 @@ import BlankPage from "../hoc/BlankPage";
 import HinduTimes from "../hoc/HinduTimes";
 import Wildstone from "../components/wildstone/Wildstone";
 import Jnto1, { Jnto2 } from "../components/Jnto/Jnto1";
+import Omega1 from "../components/Omega/Omega1";
 
 const HindustanRoute = ({ component: Component, ...rest }) => (
   <Route
@@ -110,6 +111,7 @@ function App() {
           <Route path="/omeg" component={Lomega} />
           <Route path="/oppo" component={Oppo_1} />
           <Route path="/amd_f1" component={AmdF1} />
+          <Route path="/omega_ad" component={Omega1} />
           <Route path="/oppo_days" component={Oppo} />
           <Route path="/amd320x480" component={Amd1} />
           <Route path="/amd300x250" component={Amd2} />
