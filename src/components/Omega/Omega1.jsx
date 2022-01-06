@@ -1,8 +1,10 @@
 const Omega1 = () => {
   return (
-    <div className="_320x480frame">
+    <div style={{ height: "100vh" }}>
       <iframe
-        src="https://viralads.github.io/omega/"
+        width={"100%"}
+        height={"100%"}
+        src="https://viralads.github.io/omega_news/"
         title="omega viral add"
       ></iframe>
     </div>

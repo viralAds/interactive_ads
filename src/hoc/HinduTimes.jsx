@@ -179,6 +179,84 @@ const HinduTimes = () => {
               </div>
               <div className="ajaxLoaderList hide"></div>
             </div>
+            <div
+              className="cartHolder page-view-candidate listView"
+              data-vars-cardtype="top-news"
+              data-vars-storyid="101617590540609"
+              data-vars-storytype="story"
+              data-weburl="https://www.hindustantimes.com/elections/west-bengal-assembly-election/tmc-bastions-big-names-in-phase-3-of-west-bengal-elections-101617590540609.html"
+              data-vars-section="west bengal assembly election"
+              data-vars-orderid="2"
+            >
+              <figure>
+                <a href="/elections/west-bengal-assembly-election/tmc-bastions-big-names-in-phase-3-of-west-bengal-elections-101617590540609.html101617590540609">
+                  <img
+                    data-src="https://images.hindustantimes.com/img/2021/04/05/550x309/tmc-flag_1617500785244_1617500799840_1617606479052_1617606490041.jpg"
+                    className="lazy"
+                    src="https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2019/11/06/Pictures/_1284de4c-0070-11ea-a362-a76bed49e6ea.jpg"
+                    alt="around"
+                    title="around"
+                  />
+                </a>
+                <figcaption>
+                  2021 West Bengal Assembly Elections: Of these 31 seats going
+                  to polls on Tuesday, TMC won 29 of them in the 2016 assembly
+                  elections, increasing its tally from 26 in 2011. It remains to
+                  be seen if the party manages to retain its traditional
+                  bastions this time around
+                </figcaption>
+              </figure>
+              <div className="storyShortDetail">
+                <div className="catName pt10">
+                  <a href="/elections/west-bengal-assembly-election">
+                    GURUGRAM NEWS
+                  </a>
+                </div>
+                <h2 className="hdg3">
+                  <a href="/elections/west-bengal-assembly-election/tmc-bastions-big-names-in-phase-3-of-west-bengal-elections-101617590540609.html101617590540609">
+                    Constructions choking Gurugram, say experts
+                  </a>
+                </h2>
+                <div className="stroyPub">
+                  <div className="storyBy">By | Written by Joydeep Bose</div>
+                  <div className="dateTime">
+                    PUBLISHED ON SEP 05, 2021 12:45 PM IST
+                  </div>
+                </div>
+                <div className="sortDec">
+                  In Phase 3 of the West Bengal assembly elections, 31 seats
+                  across three districts — South 24 Parganas, Howrah, and
+                  Hooghly — go into polls. Most of these are TMC bastions, as is
+                  apparent from the past election results. Here's a primer ahead
+                  of Tuesday's polling.
+                </div>
+                <div className="actionDiv">
+                  <div className="socialEl">
+                    <span
+                      className="bookmark bookmark-candidate"
+                      title="bookmark101617590540609"
+                    ></span>
+                    <span
+                      className="share share-candidate"
+                      title="share"
+                      data-url="https://www.hindustantimes.com/elections/west-bengal-assembly-election/tmc-bastions-big-names-in-phase-3-of-west-bengal-elections-101617590540609.html"
+                      data-title="TMC bastions, big names in Phase 3 of West Bengal elections"
+                    ></span>
+                  </div>
+                  <div className="viewAll"></div>
+                </div>
+              </div>
+              <div className="storyDetails">
+                <div className="detail" data-id="storyDetail"></div>
+              </div>
+              <div className="shareSticky">
+                <div className="fontResize">
+                  <span className="increase"></span>
+                </div>
+                <div className="share-bookmark"></div>
+              </div>
+              <div className="ajaxLoaderList hide"></div>
+            </div>
             <div className="recommended"></div>
             {dimension && (
               <div
