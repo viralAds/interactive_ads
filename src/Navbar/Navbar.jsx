@@ -72,7 +72,7 @@ function HomePage() {
                     <Link to="/omega">OMEGA</Link>
                   </DropdownItem>
                   <DropdownItem>
-                    <Link to="/poco">POCO</Link>
+                    <Link to="/poco">POCO </Link>
                   </DropdownItem>
                   <DropdownItem>
                     <Link to="/swap">SWAP</Link>
