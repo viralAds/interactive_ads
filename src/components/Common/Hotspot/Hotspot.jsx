@@ -1,4 +1,3 @@
-import React from 'react'
 import { UncontrolledCollapse } from 'reactstrap';
 import './Hotspot.scss';
 import HotspotTootip from '../HotspotTooltip/HotspotTooltip';

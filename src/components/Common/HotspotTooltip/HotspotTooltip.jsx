@@ -1,4 +1,3 @@
-import React from 'react'
 import { Card, CardText, CardBody } from 'reactstrap';
 import '../Hotspot/Hotspot.scss';
 

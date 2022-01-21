@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from "react";
+import { useState, Fragment } from "react";
 import "./vega.scss";
 import { Carousel } from "react-responsive-carousel";
 import frame_1 from "../../assets/img/vega/frame_1.jpg";

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import AOS from 'aos';
 import { Button } from 'reactstrap';
 import 'aos/dist/aos.css';

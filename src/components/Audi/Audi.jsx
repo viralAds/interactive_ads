@@ -1,4 +1,3 @@
-import React from 'react'
 import './Audi.scss';
 import { Pannellum, PannellumVideo } from "pannellum-react";
 import videojs from 'video.js'

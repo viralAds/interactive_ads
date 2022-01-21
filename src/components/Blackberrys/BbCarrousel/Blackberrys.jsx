@@ -2,9 +2,6 @@ import React, { useState, useEffect } from 'react';
 import '../Blackberrys.scss';
 import ReactPlayer from 'react-player';
 import Popup from '../../Common/Popup/Popup';
-// import AddCircleSharpIcon from '@material-ui/icons/AddCircleSharp';
-// import RemoveCircleRoundedIcon from '@material-ui/icons/RemoveCircleRounded';
-// import logo from '../../../assets/icons/bb-logo-dark.png';
 import {
     Carousel,
     CarouselItem,

@@ -1,6 +1,3 @@
-import React from 'react'
-import '../../Common/iframe_ads.scss';
-
 function Blackberrys() {
     return (
         <div>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Swipe from "react-easy-swipe";
 import Shake from "shake.js";
 import frame_1 from "../../assets/img/_24seven/frame_1.jpg";
