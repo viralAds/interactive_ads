@@ -1,3 +1,5 @@
+import '../Common/iframe_ads.scss';
+
 const Omega1 = () => {
   return (
     <div style={{ height: "100vh" }}>
