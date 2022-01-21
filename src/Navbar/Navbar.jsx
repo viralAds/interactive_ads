@@ -92,7 +92,10 @@ function HomePage() {
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                    <Link to="/omega_ad">Omega Ad</Link>
+                    <Link to="/omega_1">Omega 1</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/omega_2">Omega 2</Link>
                   </DropdownItem>
                   <DropdownItem>
                     <Link to="/wildstone">Wildstone</Link>

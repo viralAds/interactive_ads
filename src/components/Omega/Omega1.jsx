@@ -11,4 +11,17 @@ const Omega1 = () => {
   );
 };
 
+export const Omega2 = () => {
+  return (
+    <div style={{ height: "100vh" }}>
+      <iframe
+        width={320}
+        height={480}
+        src="https://viralads.github.io/omega/"
+        title="omega viral add"
+      ></iframe>
+    </div>
+  );
+};
+
 export default Omega1;
