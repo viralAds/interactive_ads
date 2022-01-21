@@ -158,8 +158,8 @@ function App() {
           <Route path="/amd_q2_commercials_320x480" component={AmdQ2} />
           <Route path="/amd_q2_commercials_320x480_2" component={AmdQ2_2} />
           <Route path="/philipss" component={Philips} />
-          <Route path="/omega_1" component={Omega1} />
-          <Route path="/omega_2" component={Omega2} />
+          <Route path="/omega_ad" component={Omega1} />
+          <Route path="/omega_2" component={Omega1} />
           <Route path="/createlink" component={CreateLink} />
           <HindustanRoute path="/lg" component={LG} />
           <HindustanRoute path="/vega" component={Vega} />

@@ -11,6 +11,8 @@ const Omega1 = () => {
   );
 };
 
+export default Omega1;
+
 export const Omega2 = () => {
   return (
     <div className="_320x480frame">
@@ -21,5 +23,3 @@ export const Omega2 = () => {
     </div>
   );
 };
-
-export default Omega1;
