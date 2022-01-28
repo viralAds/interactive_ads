@@ -103,7 +103,6 @@ function App() {
           <Route path="/swap" component={Swap} />
           <Route path="/vivo" component={Vivo} />
           <Route path="/govo" component={Govo} />
-          <Route path="/amd3" component={Amd3} />
           <Route path="/jnto" component={Swipe} />
           <Route path="/merc" component={Lmerc} />
           <Route path="/omega" component={Omega} />
@@ -162,12 +161,13 @@ function App() {
           <Route path="/philipss" component={Philips} />
           <Route path="/omega_ad" component={Omega1} />
           <Route path="/createlink" component={CreateLink} />
-          <HindustanRoute path="/omega_2" component={Omega2} />
           <HindustanRoute path="/lg" component={LG} />
+          <HindustanRoute path="/amd3" component={Amd3} />
           <HindustanRoute path="/vega" component={Vega} />
           <HindustanRoute path="/upes" component={Upes} />
           <HindustanRoute path="/dabur" component={Dabar} />
           <HindustanRoute path="/dabur2" component={Dabur2} />
+          <HindustanRoute path="/omega_2" component={Omega2} />
           <HindustanRoute path="/dabur_c" component={Dabur3} />
           <HindustanRoute path="/panasonic" component={Pana} />
           <HindustanRoute path="/philips" component={Philips} />
