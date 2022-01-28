@@ -174,6 +174,9 @@ function HomePage() {
                     </DropdownToggle>
                     <DropdownMenu right>
                       <DropdownItem>
+                        <Link to="/amd3">AMD 2022 Jan</Link>
+                      </DropdownItem>
+                      <DropdownItem>
                         <Link to="/amd_premium_sku">AMD Premium sku</Link>
                       </DropdownItem>
                       <DropdownItem>

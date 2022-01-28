@@ -13,6 +13,7 @@ import Amd, {
   AmdInteractive,
   Amd1,
   Amd2,
+  Amd3,
   AmdPremiumSku,
 } from "../components/Amd/Amd";
 import Homepage from "../Home/Homepage";
@@ -102,6 +103,7 @@ function App() {
           <Route path="/swap" component={Swap} />
           <Route path="/vivo" component={Vivo} />
           <Route path="/govo" component={Govo} />
+          <Route path="/amd3" component={Amd3} />
           <Route path="/jnto" component={Swipe} />
           <Route path="/merc" component={Lmerc} />
           <Route path="/omega" component={Omega} />
