@@ -57,7 +57,7 @@ import Asics, { AsicsO } from "../components/Asics/Asics";
 import Dabar, { Dabur2 } from "../components/dabar/Dabar";
 import Envorincs from "../components/Envorincs/Envorincs";
 import Blackberrys from "../components/Blackberrys/Blackberrys";
-import Boddess, { Boddess2 } from "../components/boddess/Boddess";
+import Boddess, { Boddess2, Boddess3 } from "../components/boddess/Boddess";
 import BB2 from "../components/Blackberrys/BbCarrousel/Blackberrys";
 import BB1 from "../components/Blackberrys/BlackberrysOne/Blackberrys";
 import Ghadi, { GhadiTwo, GhadiThree } from "../components/Ghadi/Ghadi";
@@ -173,6 +173,7 @@ function App() {
           <HindustanRoute path="/philips" component={Philips} />
           <HindustanRoute path="/boddess" component={Boddess} />
           <HindustanRoute path="/boddess2" component={Boddess2} />
+          <HindustanRoute path="/boddess_valentines1" component={Boddess3} />
           <HindustanRoute path="/vega_women" component={VegaOne} />
           <HindustanRoute path="/bodyshop2" component={Bodyshop2} />
           <HindustanRoute path="/bodyshop3" component={Bodyshop3} />

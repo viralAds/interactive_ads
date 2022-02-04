@@ -20,4 +20,15 @@ export const Boddess2 = () => {
   );
 };
 
+export const Boddess3 = () => {
+  return (
+    <div className="_320x480frame">
+      <iframe
+        src="https://viralads.github.io/Boddess_valentines-/"
+        title="Boddess_valentines"
+      ></iframe>
+    </div>
+  );
+};
+
 export default Boddess;
