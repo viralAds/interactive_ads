@@ -2,7 +2,7 @@ const Ucook1 = () => {
   return (
     <div className="_320x480frame">
       <iframe
-        src="https://viralads.github.io/ucook1/"
+        src="https://interactiveviralads.s3.ap-south-1.amazonaws.com/ucook1-main/index.html"
         title="ucook Viral ads"
       ></iframe>
     </div>
@@ -12,7 +12,10 @@ const Ucook1 = () => {
 export const Ucook2 = () => {
   return (
     <div className="_320x480frame">
-      <iframe src="https://viralads.github.io/ucook2/" title="ucook"></iframe>
+      <iframe
+        src="https://interactiveviralads.s3.ap-south-1.amazonaws.com/ucook2-main/index.html"
+        title="ucook"
+      ></iframe>
     </div>
   );
 };
@@ -21,7 +24,7 @@ export const Ucook3 = () => {
   return (
     <div className="_320x480frame">
       <iframe
-        src="https://viralads.github.io/ucook3/"
+        src="https://interactiveviralads.s3.ap-south-1.amazonaws.com/ucook3-main/index.html"
         title="ucook Viral ads"
       ></iframe>
     </div>
@@ -32,7 +35,7 @@ export const UcookI = () => {
   return (
     <div className="_640x360frame">
       <iframe
-        src="https://viralads.github.io/ucook_i/"
+        src="https://interactiveviralads.s3.ap-south-1.amazonaws.com/ucook_i-main/index.html"
         title="ucook Viral ads"
       ></iframe>
     </div>

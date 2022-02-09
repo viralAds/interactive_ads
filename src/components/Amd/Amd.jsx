@@ -93,7 +93,7 @@ export const AmdAmazon = () => {
   return (
     <div className="_300x250frame">
       <iframe
-        src="https://viralads.github.io/amd_amazon/"
+        src="https://interactiveviralads.s3.ap-south-1.amazonaws.com/amd_amazon-main/index.html"
         title="AWS Advertisement"
       ></iframe>
     </div>
@@ -104,7 +104,7 @@ export const AmdDesire = () => {
   return (
     <div className="_300x250frame">
       <iframe
-        src="https://viralads.github.io/amd_desire/"
+        src="https://interactiveviralads.s3.ap-south-1.amazonaws.com/amd_desire-main/index.html"
         title="AWS Advertisement"
       ></iframe>
     </div>
@@ -115,7 +115,7 @@ export const AmdFlipkart = () => {
   return (
     <div className="_300x250frame">
       <iframe
-        src="https://viralads.github.io/amd_flipkart/"
+        src="https://interactiveviralads.s3.ap-south-1.amazonaws.com/amd_flipkart-main/index.html"
         title="AWS Advertisement"
       ></iframe>
     </div>
@@ -126,7 +126,7 @@ export const AmdQ2 = () => {
   return (
     <div className="_320x480frame">
       <iframe
-        src="https://viralads.github.io/amd_q2_commercials_320x480/"
+        src="https://interactiveviralads.s3.ap-south-1.amazonaws.com/amd_q2_commercials_320x480-main/index.html"
         title="AWS Advertisement"
       ></iframe>
     </div>
@@ -137,7 +137,7 @@ export const AmdQ2_2 = () => {
   return (
     <div className="_320x480frame">
       <iframe
-        src="https://viralads.github.io/amd_q2_commercials_320x480_2/"
+        src="https://interactiveviralads.s3.ap-south-1.amazonaws.com/amd_q2_commercials_320x480_2-main/index.html"
         title="AWS Advertisement"
       ></iframe>
     </div>
@@ -148,7 +148,7 @@ export const AmdMerc = () => {
   return (
     <div className="_320x480frame">
       <iframe
-        src="https://viralads.github.io/amd_merc_q1_2021/"
+        src="https://interactiveviralads.s3.ap-south-1.amazonaws.com/amd_merc_q1_2021-main/index.html"
         title="Amd_merc_q2_2021"
       ></iframe>
     </div>
@@ -159,7 +159,7 @@ export const AmdMerc2 = () => {
   return (
     <div className="_300x250frame">
       <iframe
-        src="https://viralads.github.io/amd_merc_q2_2021/"
+        src="https://interactiveviralads.s3.ap-south-1.amazonaws.com/amd_merc_q2_2021-main/index.html"
         title="Amd_merc_q2_2021"
       ></iframe>
     </div>
@@ -171,57 +171,53 @@ export const AmdInteractive = () => {
     <div style={{ width: "100%", height: "100vh" }}>
       <iframe
         style={{ width: "100%", height: "100%" }}
-        src="https://viralads.github.io/amd_interactive/"
+        src="https://interactiveviralads.s3.ap-south-1.amazonaws.com/amd_interactive-main/index.html"
         title="amd_interactive"
       ></iframe>
     </div>
   );
 };
 
-
 export const Amd1 = () => {
   return (
     <div className="_320x480frame">
       <iframe
         style={{ width: "100%", height: "100%" }}
-        src="https://viralads.github.io/amd1/"
+        src="https://interactiveviralads.s3.ap-south-1.amazonaws.com/amd1-master/index.html"
         title="amd_1"
       ></iframe>
     </div>
   );
 };
-
 
 export const Amd2 = () => {
   return (
     <div className="_300x250frame">
       <iframe
         style={{ width: "100%", height: "100%" }}
-        src="https://viralads.github.io/amd2/"
+        src="https://interactiveviralads.s3.ap-south-1.amazonaws.com/amd2-master/index.html"
         title="amd_1"
       ></iframe>
     </div>
   );
 };
 
-
 export const AmdPremiumSku = () => {
   return (
     <div className="_320x480frame">
       <iframe
-        src="https://viralads.github.io/amd_premium_sku/"
+        src="https://interactiveviralads.s3.ap-south-1.amazonaws.com/amd_premium_sku-master/index.html"
         title="amd Advertisement"
       ></iframe>
     </div>
   );
 };
 
-
 export const Amd3 = () => {
   return (
     <div className="_320x480frame">
       <iframe
-        src="https://viralads.github.io/amd3/"
+        src="https://interactiveviralads.s3.ap-south-1.amazonaws.com/amd3-master/index.html"
         title="amd Advertisement"
       ></iframe>
     </div>
