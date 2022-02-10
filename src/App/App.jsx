@@ -77,6 +77,7 @@ import HinduTimes from "../hoc/HinduTimes";
 import Wildstone from "../components/wildstone/Wildstone";
 import Jnto1, { Jnto2 } from "../components/Jnto/Jnto1";
 import Omega1, { Omega2 } from "../components/Omega/Omega1";
+import Zandu from "../components/zandu/zandu";
 
 const HindustanRoute = ({ component: Component, ...rest }) => (
   <Route
@@ -161,6 +162,7 @@ function App() {
           <Route path="/philipss" component={Philips} />
           <Route path="/omega_ad" component={Omega1} />
           <Route path="/createlink" component={CreateLink} />
+          <HindustanRoute path="/zandu" component={Zandu} />
           <HindustanRoute path="/lg" component={LG} />
           <HindustanRoute path="/amd3" component={Amd3} />
           <HindustanRoute path="/vega" component={Vega} />
