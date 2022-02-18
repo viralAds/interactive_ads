@@ -147,6 +147,9 @@ function HomePage() {
                   <DropdownItem>
                     <Link to="/360x640/ht/whywait/">WhyWait</Link>
                   </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/zandu">Zandu</Link>
+                  </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
 
