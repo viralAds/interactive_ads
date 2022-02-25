@@ -14,6 +14,7 @@ import Amd, {
   Amd1,
   Amd2,
   Amd3,
+  Amd4,
   AmdPremiumSku,
 } from "../components/Amd/Amd";
 import Homepage from "../Home/Homepage";
@@ -176,11 +177,12 @@ function App() {
           <HindustanRoute path="/philips" component={Philips} />
           <HindustanRoute path="/boddess" component={Boddess} />
           <HindustanRoute path="/boddess2" component={Boddess2} />
-          <HindustanRoute path="/boddess_valentines1" component={Boddess3} />
           <HindustanRoute path="/vega_women" component={VegaOne} />
           <HindustanRoute path="/bodyshop2" component={Bodyshop2} />
           <HindustanRoute path="/bodyshop3" component={Bodyshop3} />
           <HindustanRoute path="/audientes_2" component={AudientesTwo} />
+          <HindustanRoute path="/amd_q1_22_component" component={Amd4} />
+          <HindustanRoute path="/boddess_valentines1" component={Boddess3} />
 
           <Route path="/:dimension/bp/:creative" component={BlankPage} />
           <Route path="/:dimension/ht/:creative" component={HinduTimes} />

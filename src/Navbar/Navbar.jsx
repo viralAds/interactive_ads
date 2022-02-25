@@ -163,6 +163,10 @@ function HomePage() {
                       AMD Ads
                     </DropdownToggle>
                     <DropdownMenu right>
+                    
+                    <DropdownItem>
+                        <Link to="/amd_q1_22_component">AMD_q1_22</Link>
+                      </DropdownItem>
                       <DropdownItem>
                         <Link to="/amd3">AMD 2022 Jan</Link>
                       </DropdownItem>

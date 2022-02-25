@@ -223,3 +223,15 @@ export const Amd3 = () => {
     </div>
   );
 };
+
+
+export const Amd4 = () => {
+  return (
+    <div className="_320x480frame">
+       <iframe
+        src="https://interactiveviralads.s3.ap-south-1.amazonaws.com/amd_q1_22_component/index.html"
+        title="amd Advertisement"
+      ></iframe>
+      </div>
+  )
+}
