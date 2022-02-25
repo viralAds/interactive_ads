@@ -29,7 +29,7 @@ const Dabur3 = () => {
       url: `https://api.openweathermap.org/data/2.5/air_pollution/forecast?lat=${lat}&lon=${lon}&appid=22f760a45156cddca51d44606880edfc`,
       responseType: "application/json",
     }).then(function (response) {
-      console.log(response.data)
+      console.log(response.data);
       if (response.data.list[0].main.aqi === 1) {
         setAqi("GOOD");
         setColor("#63ff00");
@@ -97,161 +97,173 @@ const Dabur3 = () => {
 
   return (
     <div
+      className="dabur-container"
       style={{
+        width: "100%",
         position: "relative",
         display: "flex",
         height: "640px",
-        width: "360px",
-        background: "grey",
         justifyContent: "center",
         alignItems: "center",
-        overflow: "hidden",
       }}
     >
-      {frameone && (
-        <div
-          className="frameone"
-          style={{
-            width: "100%",
-            heightt: "100%",
-            display: "flex",
-            justifyContent: "center",
-          }}
-        >
-          <img
+      <div
+        style={{
+          position: "relative",
+          display: "flex",
+          height: "640px",
+          width: "360px",
+          background: "grey",
+          justifyContent: "center",
+          alignItems: "center",
+          overflow: "hidden",
+        }}
+      >
+        {frameone && (
+          <div
+            className="frameone"
             style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
               width: "100%",
-              height: "100%",
-              zIndex: 10,
+              heightt: "100%",
+              display: "flex",
+              justifyContent: "center",
             }}
-            src={frame1}
-            alt="frame1"
-          />
-          <img
-            className="smoke"
-            style={{
-              position: "absolute",
-              zIndex: 20,
-            }}
-            src={smoke}
-            alt="smoke"
-          />
-          <img
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              height: "100%",
-              zIndex: 30,
-            }}
-            src={frame1mask}
-            alt="mask"
-          />
-          <div className="uppertext">
-            <span className="u-one">POLLUTING</span>
-            <span className="u-two">AIR TODAY IS</span>
-          </div>
-          <div className="lowertext">
-            <span className="u-one">DAMAGING</span>
-            <span className="u-two">LUNGS TOMMOROW</span>
-          </div>
-
-          <div className="button-one" onClick={activeFrameTwo}>
-            TAP TO KNOW AIQ
-          </div>
-        </div>
-      )}
-
-      {frameTwo && (
-        <div className="frameTwo">
-          <img
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              zIndex: 10,
-            }}
-            src={frameTwoimg}
-            alt="frame2"
-          />
-          <div className="locations">
-            <button
-              style={location === "delhi" ? styleActiveBtn : styleInactiveBtn}
-              onClick={() => setLoc("delhi")}
-            >
-              DELHI
-            </button>
-            <button
-              style={location === "noida" ? styleActiveBtn : styleInactiveBtn}
-              onClick={() => setLoc("noida")}
-            >
-              NOIDA
-            </button>
-            <button
-              style={location === "gur" ? styleActiveBtn : styleInactiveBtn}
-              onClick={() => setLoc("gur")}
-            >
-              GURGAON
-            </button>
-          </div>
-
-          <div className="aqi">
-            <span className="two" style={{ color: color }}>
-              {aqi}
-            </span>
-          </div>
-          <div className="pm">
-            <div className="pm25">
-              <span className="pm25_h">PM 2.5</span>
-              <span className="pm25_v">{pm2_5}</span>
+          >
+            <img
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                zIndex: 10,
+              }}
+              src={frame1}
+              alt="frame1"
+            />
+            <img
+              className="smoke"
+              style={{
+                position: "absolute",
+                zIndex: 20,
+              }}
+              src={smoke}
+              alt="smoke"
+            />
+            <img
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                height: "100%",
+                zIndex: 30,
+              }}
+              src={frame1mask}
+              alt="mask"
+            />
+            <div className="uppertext">
+              <span className="u-one">POLLUTING</span>
+              <span className="u-two">AIR TODAY IS</span>
             </div>
-            <div className="pm10">
-              <span className="pm10_h">PM 10</span>
-              <span className="pm10_v">{pm10}</span>
+            <div className="lowertext">
+              <span className="u-one">DAMAGING</span>
+              <span className="u-two">LUNGS TOMMOROW</span>
+            </div>
+
+            <div className="button-one" onClick={activeFrameTwo}>
+              TAP TO KNOW AIQ
             </div>
           </div>
-          {swipeactive && (
-            <div className="icon-up">
-              <CgArrowLongLeftC size={30} />
-              <span>
-                SWIPE LEFT
-                <br />
-                TO BOOST IMMUNITY
+        )}
+
+        {frameTwo && (
+          <div className="frameTwo">
+            <img
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                zIndex: 10,
+              }}
+              src={frameTwoimg}
+              alt="frame2"
+            />
+            <div className="locations">
+              <button
+                style={location === "delhi" ? styleActiveBtn : styleInactiveBtn}
+                onClick={() => setLoc("delhi")}
+              >
+                DELHI
+              </button>
+              <button
+                style={location === "noida" ? styleActiveBtn : styleInactiveBtn}
+                onClick={() => setLoc("noida")}
+              >
+                NOIDA
+              </button>
+              <button
+                style={location === "gur" ? styleActiveBtn : styleInactiveBtn}
+                onClick={() => setLoc("gur")}
+              >
+                GURGAON
+              </button>
+            </div>
+
+            <div className="aqi">
+              <span className="two" style={{ color: color }}>
+                {aqi}
               </span>
             </div>
-          )}
-          {swipeactive && (
-            <Swipe
-              className="swipearea"
-              onSwipeLeft={(e) => onSwipeUp(e)}
-            ></Swipe>
-          )}
-        </div>
-      )}
-
-      {frameThr && (
-        <div className="frame-three">
-          <video width="100%" height="100%" autoplay="true">
-            <source src={daburvideo} type="video/mp4" />
-          </video>
-          {ctabtn && (
-            <div className="button-two">
-              <a
-                href="https://www.dabur.com/in/en-us/ayurvedic-herbal-products/dabur-chyawanprash"
-                target="_blank"
-                rel="noreferrer"
-              >
-                BUY NOW
-              </a>
+            <div className="pm">
+              <div className="pm25">
+                <span className="pm25_h">PM 2.5</span>
+                <span className="pm25_v">{pm2_5}</span>
+              </div>
+              <div className="pm10">
+                <span className="pm10_h">PM 10</span>
+                <span className="pm10_v">{pm10}</span>
+              </div>
             </div>
-          )}
-        </div>
-      )}
+            {swipeactive && (
+              <div className="icon-up">
+                <CgArrowLongLeftC size={30} />
+                <span>
+                  SWIPE LEFT
+                  <br />
+                  TO BOOST IMMUNITY
+                </span>
+              </div>
+            )}
+            {swipeactive && (
+              <Swipe
+                className="swipearea"
+                onSwipeLeft={(e) => onSwipeUp(e)}
+              ></Swipe>
+            )}
+          </div>
+        )}
+
+        {frameThr && (
+          <div className="frame-three">
+            <video width="100%" height="100%" autoplay="true">
+              <source src={daburvideo} type="video/mp4" />
+            </video>
+            {ctabtn && (
+              <div className="button-two">
+                <a
+                  href="https://www.dabur.com/in/en-us/ayurvedic-herbal-products/dabur-chyawanprash"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  BUY NOW
+                </a>
+              </div>
+            )}
+          </div>
+        )}
+      </div>
     </div>
   );
 };

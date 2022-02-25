@@ -19,7 +19,7 @@ export const ZanduParallax = () => {
       ></script>
       <ins
         class="adsbygoogle"
-        style="display:inline-block;width:360px;height:640px"
+        style={{ display: "inline-block", width: "360px", height: "640px" }}
         data-ad-client="ca-pub-9602911244724790"
         data-ad-slot="2877036084"
       ></ins>
