@@ -14,6 +14,7 @@ import Amd, {
   Amd1,
   Amd2,
   Amd3,
+  Amd4,
   AmdPremiumSku,
 } from "../components/Amd/Amd";
 import Homepage from "../Home/Homepage";
@@ -77,6 +78,7 @@ import HinduTimes from "../hoc/HinduTimes";
 import Wildstone, { Wildston2 } from "../components/wildstone/Wildstone";
 import Jnto1, { Jnto2 } from "../components/Jnto/Jnto1";
 import Omega1, { Omega2 } from "../components/Omega/Omega1";
+import Zandu, { ZanduParallax } from "../components/zandu/zandu";
 
 const HindustanRoute = ({ component: Component, ...rest }) => (
   <Route
@@ -161,6 +163,8 @@ function App() {
           <Route path="/philipss" component={Philips} />
           <Route path="/omega_ad" component={Omega1} />
           <Route path="/createlink" component={CreateLink} />
+          <HindustanRoute path="/zanduparallax" component={ZanduParallax} />
+          <HindustanRoute path="/zandu" component={Zandu} />
           <HindustanRoute path="/lg" component={LG} />
           <HindustanRoute path="/wildston2" component={Wildston2} />
           <HindustanRoute path="/amd3" component={Amd3} />
@@ -174,11 +178,12 @@ function App() {
           <HindustanRoute path="/philips" component={Philips} />
           <HindustanRoute path="/boddess" component={Boddess} />
           <HindustanRoute path="/boddess2" component={Boddess2} />
-          <HindustanRoute path="/boddess_valentines1" component={Boddess3} />
           <HindustanRoute path="/vega_women" component={VegaOne} />
           <HindustanRoute path="/bodyshop2" component={Bodyshop2} />
           <HindustanRoute path="/bodyshop3" component={Bodyshop3} />
           <HindustanRoute path="/audientes_2" component={AudientesTwo} />
+          <HindustanRoute path="/amd_q1_22_component" component={Amd4} />
+          <HindustanRoute path="/boddess_valentines1" component={Boddess3} />
 
           <Route path="/:dimension/bp/:creative" component={BlankPage} />
           <Route path="/:dimension/ht/:creative" component={HinduTimes} />
