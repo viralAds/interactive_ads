@@ -163,10 +163,10 @@ function App() {
           <Route path="/philipss" component={Philips} />
           <Route path="/omega_ad" component={Omega1} />
           <Route path="/createlink" component={CreateLink} />
+          <Route path="/parallax_sample" component={Wildston2} />
           <HindustanRoute path="/zanduparallax" component={ZanduParallax} />
           <HindustanRoute path="/zandu" component={Zandu} />
           <HindustanRoute path="/lg" component={LG} />
-          <HindustanRoute path="/wildston2" component={Wildston2} />
           <HindustanRoute path="/amd3" component={Amd3} />
           <HindustanRoute path="/vega" component={Vega} />
           <HindustanRoute path="/upes" component={Upes} />
