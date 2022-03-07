@@ -74,7 +74,7 @@ import WC2 from "../components/Blackberrys/WeddingCollection/WeddingVideo/Blackb
 import CreateLink from "../hoc/CreateLink";
 import BlankPage from "../hoc/BlankPage";
 import HinduTimes from "../hoc/HinduTimes";
-import Wildstone from "../components/wildstone/Wildstone";
+import Wildstone, { Wildston2 } from "../components/wildstone/Wildstone";
 import Jnto1, { Jnto2 } from "../components/Jnto/Jnto1";
 import Omega1, { Omega2 } from "../components/Omega/Omega1";
 
@@ -162,6 +162,7 @@ function App() {
           <Route path="/omega_ad" component={Omega1} />
           <Route path="/createlink" component={CreateLink} />
           <HindustanRoute path="/lg" component={LG} />
+          <HindustanRoute path="/wildston2" component={Wildston2} />
           <HindustanRoute path="/amd3" component={Amd3} />
           <HindustanRoute path="/vega" component={Vega} />
           <HindustanRoute path="/upes" component={Upes} />
