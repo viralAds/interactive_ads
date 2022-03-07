@@ -163,7 +163,7 @@ function App() {
           <Route path="/philipss" component={Philips} />
           <Route path="/omega_ad" component={Omega1} />
           <Route path="/createlink" component={CreateLink} />
-          <Route path="/parallax_sample" component={Wildston2} />
+          <Route path="/wildstone2" component={Wildston2} />
           <HindustanRoute path="/zanduparallax" component={ZanduParallax} />
           <HindustanRoute path="/zandu" component={Zandu} />
           <HindustanRoute path="/lg" component={LG} />

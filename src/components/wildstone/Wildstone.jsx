@@ -17,7 +17,7 @@ export const Wildston2 = () => {
          <iframe
             width={"100%"}
             height="100%"
-            src="https://interactiveviralads.s3.ap-south-1.amazonaws.com/parallaxWorking/preview.html"
+            src="https://interactiveviralads.s3.ap-south-1.amazonaws.com/Wildstone/preview.html"
             title="wildstone Advertisement"
          ></iframe>
       </div>
