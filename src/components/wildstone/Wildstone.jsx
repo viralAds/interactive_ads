@@ -11,13 +11,26 @@ const Wildstone = () => {
 
 //
 
-export const Wildston2 = () => {
+export const Wildstone2 = () => {
    return (
       <div style={{ height: "100vh", position: "relative" }}>
          <iframe
             width={"100%"}
             height="100%"
             src="https://interactiveviralads.s3.ap-south-1.amazonaws.com/Wildstone/preview.html"
+            title="wildstone Advertisement"
+         ></iframe>
+      </div>
+   );
+};
+
+export const Wildstone_amazon = () => {
+   return (
+      <div style={{ height: "100vh", position: "relative" }}>
+         <iframe
+            width={"100%"}
+            height="100%"
+            src="https://interactiveviralads.s3.ap-south-1.amazonaws.com/wildstone_amazon/preview.html"
             title="wildstone Advertisement"
          ></iframe>
       </div>
