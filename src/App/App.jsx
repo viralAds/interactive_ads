@@ -82,6 +82,7 @@ import Wildstone, {
 import Jnto1, { Jnto2 } from "../components/Jnto/Jnto1";
 import Omega1, { Omega2 } from "../components/Omega/Omega1";
 import Zandu, { ZanduParallax } from "../components/zandu/zandu";
+import Odonil from "../components/Odonil";
 
 const HindustanRoute = ({ component: Component, ...rest }) => (
    <Route
@@ -171,6 +172,7 @@ function App() {
                <Route path="/createlink" component={CreateLink} />
                <Route path="/wildstone2" component={Wildstone2} />
                <Route path="/wildstone_amazon" component={Wildstone_amazon} />
+               <Route path="/odonil" component={Odonil} />
                <HindustanRoute
                   path="/zanduparallax"
                   component={ZanduParallax}
