@@ -170,7 +170,7 @@ function App() {
                <Route path="/philipss" component={Philips} />
                <Route path="/omega_ad" component={Omega1} />
                <Route path="/createlink" component={CreateLink} />
-               <Route path="/wildstone2" component={Wildstone2} />
+               <Route path="/wildstone_flipkart" component={Wildstone2} />
                <Route path="/wildstone_amazon" component={Wildstone_amazon} />
                <Route path="/odonil" component={Odonil} />
                <HindustanRoute
