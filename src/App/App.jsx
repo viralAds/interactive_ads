@@ -82,7 +82,7 @@ import Wildstone, {
 import Jnto1, { Jnto2 } from "../components/Jnto/Jnto1";
 import Omega1, { Omega2 } from "../components/Omega/Omega1";
 import Zandu, { ZanduParallax } from "../components/zandu/zandu";
-import Odonil from "../components/Odonil";
+import Odonil from "../components/Odonil/Odonil";
 
 const HindustanRoute = ({ component: Component, ...rest }) => (
    <Route
