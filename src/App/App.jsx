@@ -83,7 +83,7 @@ import Jnto1, { Jnto2 } from "../components/Jnto/Jnto1";
 import Omega1, { Omega2 } from "../components/Omega/Omega1";
 import Zandu, { ZanduParallax } from "../components/zandu/zandu";
 import Odonil from "../components/Odonil/Odonil";
-import Realme from "../components/Realme"
+import Realme, { BlackberrysInteractive } from "../components/Realme"
 
 const HindustanRoute = ({ component: Component, ...rest }) => (
    <Route
@@ -175,6 +175,7 @@ function App() {
                <Route path="/wildstone_amazon" component={Wildstone_amazon} />
                <Route path="/odonil" component={Odonil} />
                <Route path="/realme_interactivead" component={Realme} />
+               <Route path="/blackberrys_interactivead" component={BlackberrysInteractive} />
                <HindustanRoute
                   path="/zanduparallax"
                   component={ZanduParallax}
