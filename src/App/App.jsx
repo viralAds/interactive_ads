@@ -83,7 +83,8 @@ import Jnto1, { Jnto2 } from "../components/Jnto/Jnto1";
 import Omega1, { Omega2 } from "../components/Omega/Omega1";
 import Zandu, { ZanduParallax } from "../components/zandu/zandu";
 import Odonil from "../components/Odonil/Odonil";
-import Realme, { BlackberrysInteractive } from "../components/Realme"
+import Realme, { BlackberrysInteractive } from "../components/Realme";
+import Bankse from "../components/BankSe/Bankse";
 
 const HindustanRoute = ({ component: Component, ...rest }) => (
    <Route
@@ -168,6 +169,7 @@ function App() {
                   path="/amd_q2_commercials_320x480_2"
                   component={AmdQ2_2}
                />
+               <Route path="/bankse" component={Bankse} />
                <Route path="/philipss" component={Philips} />
                <Route path="/omega_ad" component={Omega1} />
                <Route path="/createlink" component={CreateLink} />
@@ -175,7 +177,10 @@ function App() {
                <Route path="/wildstone_amazon" component={Wildstone_amazon} />
                <Route path="/odonil" component={Odonil} />
                <Route path="/realme_interactivead" component={Realme} />
-               <Route path="/blackberrys_interactivead" component={BlackberrysInteractive} />
+               <Route
+                  path="/blackberrys_interactivead"
+                  component={BlackberrysInteractive}
+               />
                <HindustanRoute
                   path="/zanduparallax"
                   component={ZanduParallax}
