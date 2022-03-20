@@ -1,4 +1,5 @@
 import "./App.scss";
+import "./iframe_ads.scss";
 import BlankPage from "../hoc/BlankPage";
 import HinduTimes from "../hoc/HinduTimes";
 import Login from "../components/Login/Login";

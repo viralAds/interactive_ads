@@ -65,7 +65,7 @@
 			"url": "/amd_amazon",
 			"width": "300",
 			"height": "250"
-		},
+		}, 	
 		{
 			"location": "/amd_merc_q1_2021-main",
 			"url": "/amd_merc_q2_2021",
