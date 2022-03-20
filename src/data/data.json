@@ -1,0 +1,92 @@
+{
+    "data": [
+        {
+            "brand": "amd",
+            "newspaper_campaign": [
+                {
+                    "url": "/amd",
+                    "height": "300",
+                    "width": "250"
+                },
+                {
+                    "url": "/amd_q1_22_component",
+                    "height": "320",
+                    "width": "480"
+                },
+                {
+                    "url": "/amd3",
+                    "height": "320",
+                    "width": "480"
+                },
+                {
+                    "url": "/amd_premium_sku",
+                    "height": "320",
+                    "width": "480"
+                },
+                {
+                    "url": "/amd300x250",
+                    "height": "300",
+                    "width": "250"
+                },
+                {
+                    "url": "/amd320x480",
+                    "height": "320",
+                    "width": "480"
+                },
+                {
+                    "url": "/amd_interactive",
+                    "height": "320",
+                    "width": "480"
+                },
+                {
+                    "url":"/amd_desire",
+                    "height": "300",
+                    "width": "250"
+                },
+                {
+                    "url":"/amd_flipkart",
+                    "height": "300",
+                    "width": "250"
+                },
+                {
+                    "url":"/amd_amazon",
+                    "height": "300",
+                    "width": "250"
+
+                },
+                {
+                    "url":"/amd_merc_q2_2021",
+                    "height": "320",
+                    "width": "480"
+                },
+                {
+                    "url":"/amd_merc_300x250_q2_2021",
+                    "height": "300",
+                    "width": "250"
+                },
+                {
+                    "url":"/amd_q2_commercials_320x480",
+                    "height": "320",
+                    "width": "480"
+                },
+                {
+                    "url":"/amd_q2_commercials_320x480_2",
+                    "height": "320",
+                    "width": "480"
+                },
+                {
+                    "url":"/amd_f1",
+                    "height": "300",
+                    "width": "250"
+                }
+            ],
+            "interactive_campaign": [
+                {
+                    "url": "/amd_interactive",
+                    "height": "320",
+                    "width": "480"
+                }
+            ]
+        }
+    ]
+}

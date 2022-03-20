@@ -111,7 +111,7 @@ function HomePage() {
                            </DropdownItem>
                            <DropdownItem>
                               <Link to="/wildstone2">Wildstone 2</Link>
-                           </DropdownItem>
+                           </DropdownItem> 
                            <DropdownItem>
                               <Link to="/boddess">Boddess</Link>
                            </DropdownItem>

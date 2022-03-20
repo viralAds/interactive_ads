@@ -10,7 +10,7 @@ const items = [
   {
     id: "1",
     img: amd1,
-  },
+  }, 
   {
     id: "2",
     img: amd2,

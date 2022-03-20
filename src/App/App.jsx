@@ -83,6 +83,8 @@ import Odonil from "../components/Odonil/Odonil";
 import Realme, {BlackberrysInteractive} from "../components/Realme";
 import Bankse, {Bankse2} from "../components/BankSe/Bankse";
 
+// import {data} from "../data/data.json";
+
 const HindustanRoute = ({component: Component, ...rest}) => (
 	<Route
 		{...rest}
@@ -94,8 +96,9 @@ const HindustanRoute = ({component: Component, ...rest}) => (
 	></Route>
 );
 
-function App() {
+const App = () => {
 	const [password, setPassword] = useState("");
+
 	return (
 		<div className="App">
 			<BrowserRouter>
@@ -167,7 +170,7 @@ function App() {
 						component={AmdQ2_2}
 					/>
 					<Route path="/bankse" component={Bankse} />
-               <Route path="/bankse2" component={Bankse2} />
+					<Route path="/bankse2" component={Bankse2} />
 					<Route path="/philipss" component={Philips} />
 					<Route path="/omega_ad" component={Omega1} />
 					<Route path="/createlink" component={CreateLink} />
@@ -220,6 +223,6 @@ function App() {
 			</BrowserRouter>
 		</div>
 	);
-}
+};
 
 export default App;
