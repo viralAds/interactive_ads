@@ -1,30 +1,29 @@
-import "./App.scss";
-import "./iframe_ads.scss";
-import BlankPage from "../hoc/BlankPage";
-import HinduTimes from "../hoc/HinduTimes";
-import Login from "../components/Login/Login";
-import Mamaearth from "../components/Mamaearth/Mamaearth";
-import HindustanLayout from "../hoc/HindustanLayout";
-import {useState, useEffect} from "react";
 import {BrowserRouter, Route, Switch, useLocation} from "react-router-dom";
+import HindustanLayout from "../hoc/HindustanLayout";
+import Login from "../components/Login/Login";
+import {Amd3} from "../components/Amd/Amd";
+import HinduTimes from "../hoc/HinduTimes";
+import {useState, useEffect} from "react";
+import BlankPage from "../hoc/BlankPage";
 import Homepage from "../Home/Homepage";
-import {
-	// AmdAmazon,
-	// AmdDesire,
-	// AmdQ2_2,
-	// AmdQ2,
-	// AmdFlipkart,
-	// AmdMerc,
-	// AmdMerc2,
-	// AmdInteractive,
-	// Amd1,
-	// Amd2,
-	Amd3,
-	// Amd4,
-	// AmdPremiumSku,
-} from "../components/Amd/Amd";
+import {data} from "../data/data.json";
+import "./iframe_ads.scss";
+import "./App.scss";
+// AmdAmazon,
+// AmdDesire,
+// AmdQ2_2,
+// AmdQ2,
+// AmdFlipkart,
+// AmdMerc,
+// AmdMerc2,
+// AmdInteractive,
+// Amd1,
+// Amd2,
+// Amd4,
+// AmdPremiumSku,
 // import _24Seven from "../components/_24Seven/_24seven";
 // import Dabur3 from "../components/dabar/Dabur3";
+// import Mamaearth from "../components/Mamaearth/Mamaearth";
 // import LG from "../components/LG/Lg";
 // import AmdF1 from "../components/AmdF1/AmdF1";
 // import Vega from "../components/Vega/Vega";
@@ -84,8 +83,6 @@ import {
 // import Realme, {BlackberrysInteractive} from "../components/Realme";
 // import Bankse, {Bankse2} from "../components/BankSe/Bankse";
 
-import {data} from "../data/data.json";
-
 const HindustanRoute = ({component: Component, data, ...rest}) => {
 	const [object, setObject] = useState();
 	let location = useLocation();
@@ -122,8 +119,8 @@ const App = () => {
 			<BrowserRouter>
 				<Switch>
 					<HindustanRoute path="/:campaign" data={data} component={Amd3} />
-					<Route path="/mama_earth" component={Mamaearth} />
-					{/*<Route path="/poco" component={Poco} />
+					{/*<Route path="/mama_earth" component={Mamaearth} />
+					<Route path="/poco" component={Poco} />
 					<Route path="/boat" component={Boat} />
 					<Route path="/audi" component={Audi} />
 					<Route path="/play" component={Play} />
