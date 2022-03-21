@@ -1,100 +1,449 @@
 {
-	"data": [
-		{
-			"location": false,
-			"url": "/amd_f1",
-			"width": "300",
-			"height": "250"
-		},
-		{
-			"location": false,
-			"url": "/amd_interactive",
-			"width": "320",
-			"height": "480"
-		},
-		{
-			"location": false,
-			"url": "/amd",
-			"width": "300",
-			"height": "250"
-		},
-        {
-            "location": false,
-            "url": "/amd3",
-            "width": "320",
-            "height": "480"
-        },
-		{
-			"location": "/amd_q1_22_component",
-			"url": "/amd_q1_22_component",
-			"width": "320",
-			"height": "480"
-		},
-		{
-			"location": "/amd_premium_sku-master",
-			"url": "/amd_premium_sku",
-			"width": "320",
-			"height": "480"
-		},
-		{
-			"location": "/amd2-master",
-			"url": "/amd300x250",
-			"width": "300",
-			"height": "250"
-		},
-		{
-			"location": "/amd1-master",
-			"url": "/amd320x480",
-			"width": "320",
-			"height": "480"
-		},
-		{
-			"location": "/amd_desire-main",
-			"url": "/amd_desire",
-			"width": "300",
-			"height": "250"
-		},
-		{
-			"location": "/amd_flipkart-main",
-			"url": "/amd_flipkart",
-			"width": "300",
-			"height": "250"
-		},
-		{
-			"location": "/amd_amazon-main",
-			"url": "/amd_amazon",
-			"width": "300",
-			"height": "250"
-		}, 	
-		{
-			"location": "/amd_merc_q1_2021-main",
-			"url": "/amd_merc_q2_2021",
-			"width": "320",
-			"height": "480"
-		},
-		{
-			"location": "/amd_merc_q2_2021-main",
-			"url": "/amd_merc_300x250_q2_2021",
-			"width": "300",
-			"height": "250"
-		},
-		{
-			"location": "/amd_q2_commercials_320x480-main",
-			"url": "/amd_q2_commercials_320x480",
-			"width": "320",
-			"height": "480"
-		},
-		{
-			"location": "/amd_q2_commercials_320x480_2-main",
-			"url": "/amd_q2_commercials_320x480_2",
-			"width": "320",
-			"height": "480"
-		},
-		{
-			"location": "/mamaearth-main",
-			"url": "/mama_earth",
-			"width": "1080",
-			"height": "1920"
-		}
-	]
+  "data": [
+    {
+      "location": false,
+      "url": "/amd_f1",
+      "width": "300",
+      "height": "250"
+    },
+    {
+      "location": false,
+      "url": "/amd_interactive",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": false,
+      "url": "/amd",
+      "width": "300",
+      "height": "250"
+    },
+    {
+      "location": false,
+      "url": "/amd3",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": "/amd_q1_22_component",
+      "url": "/amd_q1_22_component",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": "/amd_premium_sku-master",
+      "url": "/amd_premium_sku",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": "/amd2-master",
+      "url": "/amd300x250",
+      "width": "300",
+      "height": "250"
+    },
+    {
+      "location": "/amd1-master",
+      "url": "/amd320x480",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": "/amd_desire-main",
+      "url": "/amd_desire",
+      "width": "300",
+      "height": "250"
+    },
+    {
+      "location": "/amd_flipkart-main",
+      "url": "/amd_flipkart",
+      "width": "300",
+      "height": "250"
+    },
+    {
+      "location": "/amd_amazon-main",
+      "url": "/amd_amazon",
+      "width": "300",
+      "height": "250"
+    },
+    {
+      "location": "/amd_merc_q1_2021-main",
+      "url": "/amd_merc_q2_2021",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": "/amd_merc_q2_2021-main",
+      "url": "/amd_merc_300x250_q2_2021",
+      "width": "300",
+      "height": "250"
+    },
+    {
+      "location": "/amd_q2_commercials_320x480-main",
+      "url": "/amd_q2_commercials_320x480",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": "/amd_q2_commercials_320x480_2-main",
+      "url": "/amd_q2_commercials_320x480_2",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": "/mamaearth-main",
+      "url": "/mama_earth",
+      "width": "1080",
+      "height": "1920"
+    },
+    {
+      "location": "boat-main",
+      "url": "/boat",
+      "width": "1080",
+      "height": "1920"
+    },
+    {
+      "location": "vivo-main",
+      "url": "/vivo",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": "govo-main",
+      "url": "/govo",
+      "width": "360",
+      "height": "640"
+    },
+    {
+      "location": false,
+      "url": "/poco",
+      "width": "1240",
+      "height": "720"
+    },
+    {
+      "location": false,
+      "url": "/play",
+      "width": "360",
+      "height": "640"
+    },
+
+    {
+      "location": false,
+      "url": "/jnto",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": false,
+      "url": "/merc",
+      "width": "270",
+      "height": "480"
+    },
+    {
+      "location": "/clark-main",
+      "url": "/clark",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": "/ghadi-main",
+      "url": "/ghadi",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": "/asics-main",
+      "url": "/asics",
+      "width": "1080",
+      "height": "1920"
+    },
+    {
+      "location": false,
+      "url": "/omeg",
+      "width": "270",
+      "height": " 480"
+    },
+    {
+      "location": "/oppo_days-main",
+      "url": "/oppo_days",
+      "width": "360",
+      "height": "640"
+    },
+    {
+      "location": "/ucook1-main",
+      "url": "/ucook_1",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": "/ucook2-main",
+      "url": "/ucook_2",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": "/ucook3-main",
+      "url": "/ucook_3",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": "/ucook_i-main",
+      "url": "/ucook_i",
+      "width": "640",
+      "height": "360"
+    },
+    {
+      "location": "/ghadi_second-main",
+      "url": "/ghadi_2",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": "/gocrush-main",
+      "url": "/gocrush",
+      "width": "360",
+      "height": "640"
+    },
+    {
+      "location": "/jnto_tohoku-master",
+      "url": "/jnto_tohoku",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": false,
+      "url": "/_24seven",
+      "width": "360",
+      "height": "640"
+    },
+    {
+      "location": "/bodyshop-main",
+      "url": "/bodyshop",
+      "width": "360",
+      "height": "640"
+    },
+    {
+      "location": false,
+      "url": "/mercedes",
+      "width": "270",
+      "height": "480"
+    },
+    {
+      "location": false,
+      "url": "/mercedes",
+      "width": "270",
+      "height": "480"
+    },
+    {
+      "location": "/jnto_tohoku2-master",
+      "url": "/jnto_tohoku2",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": "/ghadi_three-main",
+      "url": "/ghadi_3",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": "/audientes-main",
+      "url": "/audientes",
+      "width": "360",
+      "height": "640"
+    },
+    {
+      "location": "/envorincs-main",
+      "url": "/envorincs",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": "/blackberrys_one-main",
+      "url": "/blackberrys_one",
+      "width": "600",
+      "height": "300"
+    },
+    {
+      "location": "/wildstone-master",
+      "url": "/wildstone",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": "/asics-main",
+      "url": "/asics_olympics",
+      "width": "1080",
+      "height": "1920"
+    },
+    {
+      "location": false,
+      "url": "/vega_flipkart",
+      "width": "270",
+      "height": "480"
+    },
+    {
+      "location": false,
+      "url": "/wedding_collection1",
+      "width": "270",
+      "height": "480"
+    },
+    {
+      "location": false,
+      "url": "/wedding_collection2",
+      "width": "270",
+      "height": "480"
+    },
+    {
+      "location": false,
+      "url": "/wedding_collection3",
+      "width": "270",
+      "height": "480"
+    },
+    {
+      "location": false,
+      "url": "/blackberrys",
+      "width": "270",
+      "height": "480"
+    },
+    {
+      "location": "/philips-main",
+      "url": "/philipss",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": "/omega_news-main",
+      "url": "/omega_ad",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": "/wildstone_flipkart",
+      "url": "/wildstone_flipkart",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": "/wildstone_amazon",
+      "url": "/wildstone_amazon",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": "/dabar-main",
+      "url": "/dabur",
+      "width": "360",
+      "height": "640"
+    },
+    {
+      "location": "/zandu320x480",
+      "url": "/zandu",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": "/lg_viral-main",
+      "url": "/lg",
+      "width": "360",
+      "height": "640"
+    },
+    {
+      "location": false,
+      "url": "/vega",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": "/upes-main",
+      "url": "/upes",
+      "width": "360",
+      "height": "640"
+    },
+    {
+      "location": "/dabur2-main",
+      "url": "/dabur2",
+      "width": "360",
+      "height": "640"
+    },
+    {
+      "location": "/omega-master",
+      "url": "/omega_2",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": "/panasonic-main",
+      "url": "/panasonic",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": "/philips-main",
+      "url": "/philips",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": "/boddess-master",
+      "url": "/boddess",
+      "width": "360",
+      "height": "640"
+    },
+    {
+      "location": "/boddess2-main",
+      "url": "/boddess2",
+      "width": "360",
+      "height": "640"
+    },
+    {
+      "location": "/vega_one-master",
+      "url": "/vega_women",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": "/bodyshop2-master",
+      "url": "/bodyshop2",
+      "width": "360",
+      "height": "640"
+    },
+    {
+      "location": "/bodyshop3-master",
+      "url": "/bodyshop3",
+      "width": "360",
+      "height": "640"
+    },
+    {
+      "location": "/Boddess_valentines--master",
+      "url": "/boddess_valentines1",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": "/whywait-main",
+      "url": "/w2viral",
+      "width": "360",
+      "height": "640"
+    },
+    {
+      "location": "/BankSe",
+      "url": "/bankse",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": "/BankSe2",
+      "url": "/bankse2",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "location": "/odonil_mar_2022",
+      "url": "/odonil",
+      "width": "320",
+      "height": "480"
+    }
+  ]
 }

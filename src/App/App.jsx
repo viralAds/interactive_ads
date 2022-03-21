@@ -1,11 +1,11 @@
-import {BrowserRouter, Route, Switch, useLocation} from "react-router-dom";
+import { BrowserRouter, Route, Switch, useLocation } from "react-router-dom";
 import HindustanLayout from "../hoc/HindustanLayout";
 import Login from "../components/Login/Login";
 import HinduTimes from "../hoc/HinduTimes";
-import {useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import BlankPage from "../hoc/BlankPage";
 import Homepage from "../Home/Homepage";
-import {data} from "../data/data.json";
+import { data } from "../data/data.json";
 import "./iframe_ads.scss";
 import "./App.scss";
 // import {Amd3} from "../components/Amd/Amd";
@@ -83,43 +83,43 @@ import "./App.scss";
 // import Realme, {BlackberrysInteractive} from "../components/Realme";
 // import Bankse, {Bankse2} from "../components/BankSe/Bankse";
 
-const HindustanRoute = ({component: Component, data, ...rest}) => {
-	const [object, setObject] = useState();
-	let location = useLocation();
+const HindustanRoute = ({ component: Component, data, ...rest }) => {
+  const [object, setObject] = useState();
+  let location = useLocation();
 
-	useEffect(() => {
-		let obj = data.filter((camp) => camp.url === location.pathname);
-		setObject(obj[0]);
-	}, [data, location]);
+  useEffect(() => {
+    let obj = data.filter((camp) => camp.url === location.pathname);
+    setObject(obj[0]);
+  }, [data, location]);
 
-	return object ? (
-		<Route
-			{...rest}
-			render={(props) => (
-				<HindustanLayout>
-					<div className={`_${object.width}x${object.height}frame`}>
-						<iframe
-							src={`https://interactiveviralads.s3.ap-south-1.amazonaws.com${object.location}/index.html`}
-							title="creative"
-						></iframe>
-					</div>
-				</HindustanLayout>
-			)}
-		></Route>
-	) : (
-		<div>...Loading</div>
-	);
+  return object ? (
+    <Route
+      {...rest}
+      render={(props) => (
+        <HindustanLayout>
+          <div className={`_${object.width}x${object.height}frame`}>
+            <iframe
+              src={`https://interactiveviralads.s3.ap-south-1.amazonaws.com${object.location}/index.html`}
+              title="creative"
+            ></iframe>
+          </div>
+        </HindustanLayout>
+      )}
+    ></Route>
+  ) : (
+    <div>...Loading</div>
+  );
 };
 
 const App = () => {
-	const [password, setPassword] = useState("");
+  const [password, setPassword] = useState("");
 
-	return (
-		<div className="App">
-			<BrowserRouter>
-				<Switch>
-					<HindustanRoute path="/:campaign" data={data} />
-					{/*<Route path="/mama_earth" component={Mamaearth} />
+  return (
+    <div className="App">
+      <BrowserRouter>
+        <Switch>
+          <HindustanRoute path="/:campaign" data={data} />
+          {/*<Route path="/mama_earth" component={Mamaearth} />
 					<Route path="/poco" component={Poco} />
 					<Route path="/boat" component={Boat} />
 					<Route path="/audi" component={Audi} />
@@ -182,10 +182,7 @@ const App = () => {
 						path="/blackberrys_interactivead"
 						component={BlackberrysInteractive}
 					/>
-					<HindustanRoute
-						path="/zanduparallax"
-						component={ZanduParallax}
-					/>
+					
 					<HindustanRoute path="/dabur" component={Dabar} data={data} />
 					<HindustanRoute path="/zandu" component={Zandu} />
 					<HindustanRoute path="/lg" component={LG} />
@@ -207,20 +204,16 @@ const App = () => {
 						component={Boddess3}
 					/> 
 					// <HindustanRoute path="/:campaign" data={data} component={Amd3} />*/}
-					<Route path="/:dimension/bp/:creative" component={BlankPage} />
-					<Route path="/:dimension/ht/:creative" component={HinduTimes} />
+          <Route path="/:dimension/bp/:creative" component={BlankPage} />
+          <Route path="/:dimension/ht/:creative" component={HinduTimes} />
 
-					<Route exact path="/">
-						{!password ? (
-							<Login setPassword={setPassword} />
-						) : (
-							<Homepage />
-						)}
-					</Route>
-				</Switch>
-			</BrowserRouter>
-		</div>
-	);
+          <Route exact path="/">
+            {!password ? <Login setPassword={setPassword} /> : <Homepage />}
+          </Route>
+        </Switch>
+      </BrowserRouter>
+    </div>
+  );
 };
 
 export default App;
