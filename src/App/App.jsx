@@ -1,7 +1,6 @@
 import {BrowserRouter, Route, Switch, useLocation} from "react-router-dom";
 import HindustanLayout from "../hoc/HindustanLayout";
 import Login from "../components/Login/Login";
-import {Amd3} from "../components/Amd/Amd";
 import HinduTimes from "../hoc/HinduTimes";
 import {useState, useEffect} from "react";
 import BlankPage from "../hoc/BlankPage";
@@ -9,6 +8,7 @@ import Homepage from "../Home/Homepage";
 import {data} from "../data/data.json";
 import "./iframe_ads.scss";
 import "./App.scss";
+// import {Amd3} from "../components/Amd/Amd";
 // AmdAmazon,
 // AmdDesire,
 // AmdQ2_2,
@@ -100,7 +100,7 @@ const HindustanRoute = ({component: Component, data, ...rest}) => {
 					<div className={`_${object.width}x${object.height}frame`}>
 						<iframe
 							src={`https://interactiveviralads.s3.ap-south-1.amazonaws.com${object.location}/index.html`}
-							title="amd_1"
+							title="creative"
 						></iframe>
 					</div>
 				</HindustanLayout>
@@ -118,7 +118,7 @@ const App = () => {
 		<div className="App">
 			<BrowserRouter>
 				<Switch>
-					<HindustanRoute path="/:campaign" data={data} component={Amd3} />
+					<HindustanRoute path="/:campaign" data={data} />
 					{/*<Route path="/mama_earth" component={Mamaearth} />
 					<Route path="/poco" component={Poco} />
 					<Route path="/boat" component={Boat} />
