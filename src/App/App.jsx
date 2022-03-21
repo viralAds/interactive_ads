@@ -82,7 +82,7 @@ import Zandu, {ZanduParallax} from "../components/zandu/zandu";
 import Odonil from "../components/Odonil/Odonil";
 import Realme, {BlackberrysInteractive} from "../components/Realme";
 import Bankse, {Bankse2} from "../components/BankSe/Bankse";
-
+import SamsungS22 from "../components/Samsung";
 // import {data} from "../data/data.json";
 
 const HindustanRoute = ({component: Component, ...rest}) => (
@@ -103,6 +103,7 @@ const App = () => {
 		<div className="App">
 			<BrowserRouter>
 				<Switch>
+					<Route path="/samsungs22" component={SamsungS22} />
 					<Route path="/amd" component={Amd} />
 					<Route path="/poco" component={Poco} />
 					<Route path="/boat" component={Boat} />
