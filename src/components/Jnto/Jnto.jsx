@@ -33,7 +33,7 @@ const items = [
   { status: true, img: last },
 ];
 
-const OnSwipe = () => {
+const Jnto = () => {
   if (typeof window !== `undefined`) {
     AOS.init({
       once: false,
@@ -168,4 +168,4 @@ const OnSwipe = () => {
   );
 };
 
-export default OnSwipe;
+export default Jnto;

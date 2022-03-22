@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import '../Blackberrys.scss';
 import ReactPlayer from 'react-player';
 import Popup from '../../Common/Popup/Popup';

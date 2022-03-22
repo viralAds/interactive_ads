@@ -6,9 +6,10 @@ const HinduTimes = () => {
   const [dimension, setDimension] = useState();
   const [creativeLink, setCreativeLink] = useState();
 
+  console.log(creativeLink)
   useEffect(() => {
     const arr = location.pathname.split("/");
-    setCreativeLink("https://viralads.github.io/" + arr.at(-2));
+    setCreativeLink(arr.at(-2));
     setDimension(arr.at(-4));
   }, [location]);
 
@@ -259,7 +260,7 @@ const HinduTimes = () => {
             </div>
             <div className="recommended"></div>
             
-            {dimension && (
+            {dimension && creativeLink && (
               <div
                 className="m_ads_unit_dabar"
                 style={{
@@ -269,7 +270,7 @@ const HinduTimes = () => {
               >
                 <div className="sponsored-by">Sponsored by EKALEIDO</div>
                 <div className={`_${dimension}frame`}>
-                  <iframe src={creativeLink} title="Amd_merc_q2_2021"></iframe>
+                  <iframe src={`https://interactiveviralads.s3.ap-south-1.amazonaws.com/${creativeLink}/index.html`} title="Amd_merc_q2_2021"></iframe>
                 </div>
               </div>
             )}
