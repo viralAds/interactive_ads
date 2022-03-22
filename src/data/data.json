@@ -6,7 +6,7 @@
 			"url": "/amd_interactive",
 			"width": "640",
 			"height": "960"
-		},	
+		},
 		{
 			"type": "",
 			"location": "/omega_news-main",
@@ -464,7 +464,7 @@
 			"height": "480"
 		},
 		{
-			"type": "",
+			"type": "parallax",
 			"location": "/samsungs22",
 			"url": "/samsungs22",
 			"width": "320",
@@ -478,14 +478,14 @@
 			"height": "640"
 		},
 		{
-			"type": "",
+			"type": "parallax",
 			"location": "/BankSe",
 			"url": "/bankse",
 			"width": "320",
 			"height": "480"
 		},
 		{
-			"type": "",
+			"type": "parallax",
 			"location": "/BankSe2",
 			"url": "/bankse2",
 			"width": "320",
