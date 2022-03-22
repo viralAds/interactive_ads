@@ -5,6 +5,8 @@
 	position: relative;
 	width: 100%;
 	height: 100%;
+	display: flex;
+	justify-content: center;
 	iframe {
 		height: 600px;
 		width: 300px;

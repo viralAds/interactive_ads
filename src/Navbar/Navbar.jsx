@@ -32,7 +32,7 @@ function HomePage() {
                <Collapse isOpen={isOpen} navbar>
                   <Nav className="mr-auto" navbar>
                      <NavItem>
-                        <NavLink href="/createlink/">CREATE LINK</NavLink>
+                        <NavLink href="/create/link/">CREATE LINK</NavLink>
                      </NavItem>
                      <UncontrolledDropdown nav inNavbar>
                         <DropdownToggle nav caret>
@@ -72,7 +72,7 @@ function HomePage() {
                               <Link to="/blackberrys_two">BLACKBERRYS 2</Link>
                            </DropdownItem>
                            <DropdownItem>
-                              <Link to="/320x480/ht/bb_wedding/">
+                              <Link to="/bb_wedding">
                                  BLACKBERRYS 3
                               </Link>
                            </DropdownItem>
@@ -84,13 +84,6 @@ function HomePage() {
                            </DropdownItem>
                            <DropdownItem>
                               <Link to="/poco">POCO </Link>
-                           </DropdownItem>
-                           <DropdownItem>
-                              <Link to="/swap">SWAP</Link>
-                           </DropdownItem>
-
-                           <DropdownItem>
-                              <Link to="/play">HOTSPOT</Link>
                            </DropdownItem>
                         </DropdownMenu>
                      </UncontrolledDropdown>
@@ -110,7 +103,10 @@ function HomePage() {
                               <Link to="/wildstone">Wildstone</Link>
                            </DropdownItem>
                            <DropdownItem>
-                              <Link to="/wildstone2">Wildstone 2</Link>
+                              <Link to="/wildstone_flipkart">Wildstone 2</Link>
+                           </DropdownItem> 
+                           <DropdownItem>
+                              <Link to="/wildstone_amazon">Wildstone 3</Link>
                            </DropdownItem> 
                            <DropdownItem>
                               <Link to="/boddess">Boddess</Link>
@@ -146,7 +142,7 @@ function HomePage() {
                               <Link to="/govo">Govo Earbuds</Link>
                            </DropdownItem>
                            <DropdownItem>
-                              <Link to="/gocrush/">GoCrush</Link>
+                              <Link to="/gocrush">GoCrush</Link>
                            </DropdownItem>
                            <DropdownItem>
                               <Link to="/envorincs">Envorincs</Link>
@@ -155,10 +151,10 @@ function HomePage() {
                               <Link to="/vivo">Vivo</Link>
                            </DropdownItem>
                            <DropdownItem>
-                              <Link to="/360x640/ht/vstar/">VSTAR</Link>
+                              <Link to="/vstar">VSTAR</Link>
                            </DropdownItem>
                            <DropdownItem>
-                              <Link to="/360x640/ht/whywait/">WhyWait</Link>
+                              <Link to="/whywait">WhyWait</Link>
                            </DropdownItem>
                            <DropdownItem>
                               <Link to="/zandu">Zandu</Link>
@@ -244,22 +240,22 @@ function HomePage() {
                               </DropdownToggle>
                               <DropdownMenu right>
                                  <DropdownItem>
-                                    <Link to="/300x250/ht/bharatpe/">
+                                    <Link to="/bharatpe">
                                        Bharatpe
                                     </Link>
                                  </DropdownItem>
                                  <DropdownItem>
-                                    <Link to="/300x250/ht/bharatpe2/">
+                                    <Link to="/bharatpe2">
                                        BharatPe2
                                     </Link>
                                  </DropdownItem>
                                  <DropdownItem>
-                                    <Link to="/320x480/ht/bharatpe320x480_1/">
+                                    <Link to="/bharatpe3">
                                        Bharatpe3
                                     </Link>
                                  </DropdownItem>
                                  <DropdownItem>
-                                    <Link to="/320x480/ht/bharatpe320x480_2/">
+                                    <Link to="/bharatpe4">
                                        Bharatpe4
                                     </Link>
                                  </DropdownItem>
@@ -302,9 +298,6 @@ function HomePage() {
                               </DropdownToggle>
                               <DropdownMenu right>
                                  <DropdownItem>
-                                    <Link to="/oppo">OPPO Find X3 Pro</Link>
-                                 </DropdownItem>
-                                 <DropdownItem>
                                     <Link to="/oppo_days">Oppo Days</Link>
                                  </DropdownItem>
                               </DropdownMenu>
@@ -322,12 +315,12 @@ function HomePage() {
                                     <Link to="/dabur2">Dabur 2</Link>
                                  </DropdownItem>
                                  <DropdownItem>
-                                    <Link to="/360x640/ht/dabur3/">
+                                    <Link to="/dabur3">
                                        Dabur 3
                                     </Link>
                                  </DropdownItem>
                                  <DropdownItem>
-                                    <Link to="/dabur_c/">Dabur 4</Link>
+                                    <Link to="/dabur_c">Dabur 4</Link>
                                  </DropdownItem>
                               </DropdownMenu>
                            </UncontrolledDropdown>
@@ -367,12 +360,12 @@ function HomePage() {
                                     <Link to="/bodyshop4">BodyShop4</Link>
                                  </DropdownItem>
                                  <DropdownItem>
-                                    <Link to="/360x640/ht/bodyshop5/">
+                                    <Link to="/bodyshop5">
                                        BodyShop5
                                     </Link>
                                  </DropdownItem>
                                  <DropdownItem>
-                                    <Link to="/360x640/ht/bodyshop6/">
+                                    <Link to="/bodyshop6">
                                        BodyShop6
                                     </Link>
                                  </DropdownItem>
