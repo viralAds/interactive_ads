@@ -2,152 +2,11 @@
 	"data": [
 		{
 			"type": "",
-			"location": false,
+			"location": "/amd_interactive-main",
 			"url": "/amd_interactive",
-			"width": "320",
-			"height": "480"
-		},
-		{
-			"type": "",
-			"location": false,
-			"url": "/amd",
-			"width": "300",
-			"height": "250"
-		},
-		{
-			"type": "",
-			"location": false,
-			"url": "/amd_f1",
-			"width": "300",
-			"height": "250"
-		},
-		{
-			"type": "",
-			"location": false,
-			"url": "/amd3",
-			"width": "320",
-			"height": "480"
-		},
-		{
-			"type": "",
-			"location": false,
-			"url": "/poco",
-			"width": "1240",
-			"height": "720"
-		},
-		{
-			"type": "",
-			"location": false,
-			"url": "/play",
-			"width": "360",
-			"height": "640"
-		},
-
-		{
-			"type": "",
-			"location": false,
-			"url": "/jnto",
-			"width": "320",
-			"height": "480"
-		},
-		{
-			"type": "",
-			"location": false,
-			"url": "/blackberrys_two",
-			"width": "360",
-			"height": "640"
-		},
-		{
-			"type": "",
-			"location": false,
-			"url": "/mercedes",
-			"width": "270",
-			"height": "480"
-		},
-		{
-			"type": "",
-			"location": "/_24seven-main",
-			"url": "/_24seven",
-			"width": "1080",
-			"height": "1920"
-		},
-		{
-			"type": "",
-			"location": false,
-			"url": "/whywait2",
-			"width": "360",
-			"height": "640"
-		},
-		{
-			"type": "",
-			"location": false,
-			"url": "/wedding_collection1",
-			"width": "270",
-			"height": "480"
-		},
-		{
-			"type": "",
-			"location": false,
-			"url": "/wedding_collection2",
-			"width": "270",
-			"height": "480"
-		},
-		{
-			"type": "",
-			"location": false,
-			"url": "/whywait",
-			"width": "random",
-			"height": "random"
-		},
-		{
-			"type": "",
-			"location": false,
-			"url": "/dabur_c",
-			"width": "360",
-			"height": "640"
-		},
-		{
-			"type": "",
-			"location": false,
-			"url": "/vega",
-			"width": "320",
-			"height": "480"
-		},
-		{
-			"type": "",
-			"location": false,
-			"url": "/ucook",
-			"width": "responsive",
-			"height": "responsive"
-		},
-		{
-			"type": "",
-			"location": false,
-			"url": "/wedding_collection3",
-			"width": "270",
-			"height": "480"
-		},
-		{
-			"type": "",
-			"location": false,
-			"url": "/blackberrys_three",
-			"width": "random",
-			"height": "random"
-		},
-		{
-			"type": "",
-			"location": false,
-			"url": "/omega",
-			"width": "random",
-			"height": "random"
-		},
-		{
-			"type": "",
-			"location": false,
-			"url": "/poco",
-			"width": "random",
-			"height": "random"
-		},
+			"width": "640",
+			"height": "960"
+		},	
 		{
 			"type": "",
 			"location": "/omega_news-main",
@@ -159,6 +18,13 @@
 			"type": "",
 			"location": "/bb_wedding-main",
 			"url": "/bb_wedding",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/amd3-master",
+			"url": "/amd3",
 			"width": "320",
 			"height": "480"
 		},
@@ -572,7 +438,7 @@
 		{
 			"type": "",
 			"location": "/vega_three-main",
-			"url": "/vega_women",
+			"url": "/vega_three",
 			"width": "320",
 			"height": "480"
 		},

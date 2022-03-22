@@ -229,7 +229,7 @@ function HomePage() {
                                     </Link>
                                  </DropdownItem>
                                  <DropdownItem>
-                                    <Link to="/amd_f1">AMD F1</Link>
+                                    <Link to="/amdf1">AMD F1</Link>
                                  </DropdownItem>
                               </DropdownMenu>
                            </UncontrolledDropdown>
