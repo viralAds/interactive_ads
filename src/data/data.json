@@ -350,7 +350,6 @@
 			"width": "320",
 			"height": "480"
 		},
-
 		{
 			"type": "",
 			"location": "/dabar-main",
@@ -464,18 +463,18 @@
 			"height": "480"
 		},
 		{
-			"type": "parallax",
-			"location": "/samsungs22",
-			"url": "/samsungs22",
-			"width": "320",
-			"height": "480"
-		},
-		{
 			"type": "",
 			"location": "/whywait-main",
 			"url": "/w2viral",
 			"width": "360",
 			"height": "640"
+		},
+		{
+			"type": "parallax",
+			"location": "/samsungs22",
+			"url": "/samsungs22",
+			"width": "320",
+			"height": "480"
 		},
 		{
 			"type": "parallax",
@@ -511,6 +510,13 @@
 			"url": "/wildstone_amazon",
 			"width": "320",
 			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/parkplus",
+			"url": "/parkplus",
+			"width": "320",
+			"height": "480"	
 		}
 	]
 }
