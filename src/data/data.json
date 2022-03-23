@@ -517,6 +517,13 @@
 			"url": "/parkplus",
 			"width": "320",
 			"height": "480"	
+		},
+		{
+			"type": "parallax",
+			"location": "/samsungs22ultra",
+			"url": "/samsungs22ultra",
+			"width": "320",
+			"height": "480"	
 		}
 	]
 }
