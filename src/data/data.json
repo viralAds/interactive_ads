@@ -527,6 +527,13 @@
 		},
 		{
 			"type": "parallax",
+			"location": "/amd_pitch1",
+			"url": "/amd_pitch1",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
 			"location": "/amd_pitch_2",
 			"url": "/amd_pitch_2",
 			"width": "320",
