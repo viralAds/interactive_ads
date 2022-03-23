@@ -520,6 +520,13 @@
 		},
 		{
 			"type": "parallax",
+			"location": "/parkplus2",
+			"url": "/parkplus2",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
 			"location": "/samsungs22ultra",
 			"url": "/samsungs22ultra",
 			"width": "320",
