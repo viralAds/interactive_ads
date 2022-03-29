@@ -470,6 +470,13 @@
 			"height": "640"
 		},
 		{
+			"type": "",
+			"location": "/srlv4",
+			"url": "/srlv4",
+			"width": "320",
+			"height": "480"
+		},
+		{
 			"type": "parallax",
 			"location": "/samsungs22",
 			"url": "/samsungs22",
