@@ -10,7 +10,7 @@
 		{
 			"type": "",
 			"location": "/omega_news-main",
-			"url": "/omega_ad",
+			"urlwildstone_amazon": "/omega_ad",
 			"width": "320",
 			"height": "480"
 		},
@@ -509,6 +509,14 @@
 			"type": "parallax",
 			"location": "/wildstone_amazon",
 			"url": "/wildstone_amazon",
+			"width": "320",
+			"height": "480"
+		},
+
+        {
+			"type": "parallax",
+			"location": "/blackberrys_apr22",
+			"url": "/blackberrys_apr22",
 			"width": "320",
 			"height": "480"
 		}
