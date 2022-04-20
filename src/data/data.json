@@ -556,7 +556,9 @@
 		{
 			"type": "parallax",
 			"location": "/amd_pitch_2",
-			"url": "/amd_pitch_2"
+			"url": "/amd_pitch_2",
+            "width": "320",
+			"height": "480"
 
         },
         {
