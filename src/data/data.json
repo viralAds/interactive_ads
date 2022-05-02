@@ -557,22 +557,17 @@
 			"type": "parallax",
 			"location": "/amd_pitch_2",
 			"url": "/amd_pitch_2",
-            "width": "320",
+			"width": "320",
 			"height": "480"
-
-        },
-        {
-            
+		},
+		{
 			"type": "parallax",
 			"location": "/blackberrys_apr22",
 			"url": "/blackberrys_apr22",
 			"width": "320",
 			"height": "480"
 		},
-
-
 		{
-            
 			"type": "parallax",
 			"location": "/blackberrys_apr22_tilt",
 			"url": "/blackberrys_apr22_tilt",
@@ -580,8 +575,7 @@
 			"height": "480"
 		},
 		{
-            
-			"type": "",
+			"type": "parallax",
 			"location": "/adda52",
 			"url": "/adda52",
 			"width": "320",
