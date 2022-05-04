@@ -587,5 +587,15 @@
 			"width": "320",
 			"height": "480"
 		}
+		,
+
+		{
+            
+			"type": "parallax",
+			"location": "/adda52_2",
+			"url": "/adda52_2",
+			"width": "320",
+			"height": "480"
+		}
 	]
 }
