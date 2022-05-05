@@ -47,6 +47,7 @@ const HindustanRoute = ({component: Component, data, ...rest}) => {
 					render={(props) => (
 						<div style={{height: "100vh", position: "relative"}}>
 							<iframe
+								allow="camera;microphone"
 								width={"100%"}
 								height="100%"
 								src={`https://interactiveviralads.s3.ap-south-1.amazonaws.com${object.location}/preview.html`}
@@ -62,6 +63,7 @@ const HindustanRoute = ({component: Component, data, ...rest}) => {
 						<HindustanLayout>
 							<div className={`_${object.width}x${object.height}frame`}>
 								<iframe
+									allow="camera;microphone"
 									src={`https://interactiveviralads.s3.ap-south-1.amazonaws.com${object.location}/index.html`}
 									title="creative"
 								></iframe>
