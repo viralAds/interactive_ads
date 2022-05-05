@@ -590,8 +590,8 @@
 		},
 		{
 			"type": "parallax",
-			"location": "/odonil2",
-			"url": "/odonil2",
+			"location": "/odonil",
+			"url": "/odonil",
 			"width": "320",
 			"height": "480"
 		}
