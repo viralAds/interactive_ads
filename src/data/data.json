@@ -589,7 +589,7 @@
 			"height": "480"
 		},
 		{
-			"type": "",
+			"type": "parallax",
 			"location": "/odonil",
 			"url": "/odonil2",
 			"width": "320",
