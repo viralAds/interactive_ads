@@ -115,6 +115,9 @@ function HomePage() {
                               <Link to="/odonil">Odonil</Link>
                            </DropdownItem>
                            <DropdownItem>
+                              <Link to="/odonil2">Odonil2</Link>
+                           </DropdownItem>
+                           <DropdownItem>
                               <Link to="/upes">UPES</Link>
                            </DropdownItem>
                            <DropdownItem>
