@@ -34,33 +34,8 @@ function HomePage() {
                      <NavItem>
                         <NavLink href="/create/link/">CREATE LINK</NavLink>
                      </NavItem>
-                     <UncontrolledDropdown nav inNavbar>
-                        <DropdownToggle nav caret>
-                           BLACKBERRYS
-                        </DropdownToggle>
-                        <DropdownMenu right>
-                           <DropdownItem>
-                              <Link to="/blackberrys">INTERACTIVE VIDEO 1</Link>
-                           </DropdownItem>
-                           <DropdownItem>
-                              <Link to="/wedding_collection2">
-                                 INTERACTIVE VIDEO 2
-                              </Link>
-                           </DropdownItem>
-                           <DropdownItem>
-                              <Link to="/wedding_collection1">
-                                 WEDDING LOOKS
-                              </Link>
-                           </DropdownItem>
-                           <DropdownItem>
-                              <Link to="/wedding_collection3">
-                                 WEDDING LOOKS 2
-                              </Link>
-                           </DropdownItem>
-                        </DropdownMenu>
-                     </UncontrolledDropdown>
-
-                     <UncontrolledDropdown nav inNavbar>
+               
+                     {/* <UncontrolledDropdown nav inNavbar>
                         <DropdownToggle nav caret>
                            INTERACTIVE Ads
                         </DropdownToggle>
@@ -86,7 +61,7 @@ function HomePage() {
                               <Link to="/poco">POCO </Link>
                            </DropdownItem>
                         </DropdownMenu>
-                     </UncontrolledDropdown>
+                     </UncontrolledDropdown> */}
 
                      <UncontrolledDropdown nav inNavbar>
                         <DropdownToggle nav caret>
