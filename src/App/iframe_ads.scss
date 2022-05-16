@@ -1,95 +1,95 @@
 //================================================
 // Blackberrys One, Three  || Jnto
 
-._600x300frame {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	iframe {
-		height: 600px;
-		width: 300px;
-	}
+._300x600frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  iframe {
+    height: 600px;
+    width: 300px;
+  }
 }
 
 ._320x480frame {
-	position: relative;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	iframe {
-		width: 320px;
-		height: 480px;
-	}
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  iframe {
+    width: 320px;
+    height: 480px;
+  }
 }
 
 ._640x960frame {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	overflow: hidden;
-	iframe {
-		width: 640px;
-		height: 960px;
-		overflow: hidden;
-	}
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  iframe {
+    width: 640px;
+    height: 960px;
+    overflow: hidden;
+  }
 }
 
 ._1080x1920frame {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	overflow: hidden;
-	iframe {
-		width: 1080px;
-		height: 1920px;
-		overflow: hidden;
-	}
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  iframe {
+    width: 1080px;
+    height: 1920px;
+    overflow: hidden;
+  }
 }
 
 ._360x640frame {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	overflow: hidden;
-	iframe {
-		width: 360px;
-		height: 640px;
-		overflow: hidden;
-	}
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  iframe {
+    width: 360px;
+    height: 640px;
+    overflow: hidden;
+  }
 }
 
 ._640x360frame {
-	position: relative;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	overflow: hidden;
-	align-items: center;
-	iframe {
-		width: 640px;
-		height: 360px;
-		overflow: hidden;
-	}
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  align-items: center;
+  iframe {
+    width: 640px;
+    height: 360px;
+    overflow: hidden;
+  }
 }
 
 ._300x250frame {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	iframe {
-		width: 300px;
-		height: 250px;
-		overflow: hidden;
-	}
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  iframe {
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+  }
 }
 // ========================================================
