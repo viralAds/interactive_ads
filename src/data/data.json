@@ -609,6 +609,13 @@
       "url": "/carousel_amd",
       "width": "300",
       "height": "600"
+    },
+    {
+      "type": "",
+      "location": "/marino_viral_ad",
+      "url": "/marino_viral_ad",
+      "width": "320",
+      "height": "480"
     }
   ]
 }
