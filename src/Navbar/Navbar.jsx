@@ -34,35 +34,6 @@ function HomePage() {
 							<NavItem>
 								<NavLink href="/create/link/">CREATE LINK</NavLink>
 							</NavItem>
-
-							{/* <UncontrolledDropdown nav inNavbar>
-                        <DropdownToggle nav caret>
-                           INTERACTIVE Ads
-                        </DropdownToggle>
-                        <DropdownMenu right>
-                           <DropdownItem>
-                              <Link to="/blackberrys">BLACKBERRYS</Link>
-                           </DropdownItem>
-                           <DropdownItem>
-                              <Link to="/blackberrys_two">BLACKBERRYS 2</Link>
-                           </DropdownItem>
-                           <DropdownItem>
-                              <Link to="/bb_wedding">
-                                 BLACKBERRYS 3
-                              </Link>
-                           </DropdownItem>
-                           <DropdownItem>
-                              <Link to="/mercedes">MERCEDES</Link>
-                           </DropdownItem>
-                           <DropdownItem>
-                              <Link to="/omega">OMEGA</Link>
-                           </DropdownItem>
-                           <DropdownItem>
-                              <Link to="/poco">POCO </Link>
-                           </DropdownItem>
-                        </DropdownMenu>
-                     </UncontrolledDropdown> */}
-
 							<UncontrolledDropdown nav inNavbar>
 								<DropdownToggle nav caret>
 									VIRAL Ads 1
@@ -137,6 +108,9 @@ function HomePage() {
 									<DropdownItem>
 										<Link to="/zandu">Zandu</Link>
 									</DropdownItem>
+									<DropdownItem>
+										<Link to="/marino_viral_ad">Marino</Link>
+									</DropdownItem>
 								</DropdownMenu>
 							</UncontrolledDropdown>
 
@@ -208,6 +182,11 @@ function HomePage() {
 											</DropdownItem>
 											<DropdownItem>
 												<Link to="/amdf1">AMD F1</Link>
+											</DropdownItem>
+											<DropdownItem>
+												<Link to="/carousel_amd">
+													AMD Double box carousel
+												</Link>
 											</DropdownItem>
 										</DropdownMenu>
 									</UncontrolledDropdown>
@@ -516,20 +495,16 @@ function HomePage() {
 										</DropdownToggle>
 									</UncontrolledDropdown>
 
-                           <UncontrolledDropdown nav inNavbar>
+									<UncontrolledDropdown nav inNavbar>
 										<DropdownToggle nav caret>
 											Adda 52
 										</DropdownToggle>
 										<DropdownMenu right>
 											<DropdownItem>
-												<Link to="/adda52">
-													Adda 52-1
-												</Link>
+												<Link to="/adda52">Adda 52-1</Link>
 											</DropdownItem>
-                                 <DropdownItem>
-												<Link to="/adda52_2">
-													Adda 52-2
-												</Link>
+											<DropdownItem>
+												<Link to="/adda52_2">Adda 52-2</Link>
 											</DropdownItem>
 										</DropdownMenu>
 									</UncontrolledDropdown>
