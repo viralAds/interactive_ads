@@ -514,13 +514,6 @@ function HomePage() {
 										<DropdownToggle nav caret>
 											Blackberrys
 										</DropdownToggle>
-										<DropdownMenu right>
-											<DropdownItem>
-												<Link to="/blackberrys_apr22_tilt">
-													Blackberrys 1
-												</Link>
-											</DropdownItem>
-										</DropdownMenu>
 									</UncontrolledDropdown>
 
                            <UncontrolledDropdown nav inNavbar>

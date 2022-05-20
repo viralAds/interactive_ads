@@ -570,13 +570,6 @@
     },
     {
       "type": "parallax",
-      "location": "/blackberrys_apr22_tilt",
-      "url": "/blackberrys_apr22_tilt",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "parallax",
       "location": "/adda52",
       "url": "/adda52",
       "width": "320",
