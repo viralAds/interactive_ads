@@ -591,6 +591,13 @@
     },
     {
       "type": "parallax",
+      "location": "/odomos1",
+      "url": "/odomos1",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "type": "parallax",
       "location": "/odonil_op",
       "url": "/odonil2",
       "width": "320",
