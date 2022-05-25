@@ -398,6 +398,17 @@ function HomePage() {
 								<DropdownMenu right>
 									<UncontrolledDropdown nav inNavbar>
 										<DropdownToggle nav caret>
+											Odomos
+										</DropdownToggle>
+										<DropdownMenu right>
+											<DropdownItem>
+												<Link to="/odomos1">Odomos 1</Link>
+											</DropdownItem>
+										</DropdownMenu>
+									</UncontrolledDropdown>
+
+									<UncontrolledDropdown nav inNavbar>
+										<DropdownToggle nav caret>
 											Samsung
 										</DropdownToggle>
 										<DropdownMenu right>
