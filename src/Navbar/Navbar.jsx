@@ -111,6 +111,9 @@ function HomePage() {
 									<DropdownItem>
 										<Link to="/marino_viral_ad">Marino</Link>
 									</DropdownItem>
+									<DropdownItem>
+										<Link to="/nuovos1">Nuovos 1</Link>
+									</DropdownItem>
 								</DropdownMenu>
 							</UncontrolledDropdown>
 
