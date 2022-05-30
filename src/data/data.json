@@ -611,9 +611,16 @@
       "height": "600"
     },
     {
-      "type": "",
+      "type": "parallax",
       "location": "/marino_viral_ad",
       "url": "/marino_viral_ad",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "type": "",
+      "location": "/merinoloom2",
+      "url": "/merinoloom",
       "width": "320",
       "height": "480"
     },
