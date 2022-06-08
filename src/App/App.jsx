@@ -57,7 +57,7 @@ const HindustanRoute = ({component: Component, data, ...rest}) => {
 					)}
 				></Route>
 			) : (
-				<Route
+				<Route 
 					{...rest}
 					render={(props) => (
 						<HindustanLayout>
