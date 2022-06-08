@@ -630,6 +630,13 @@
       "url": "/nuovos1",
       "width": "320",
       "height": "480"
+    },
+    {
+      "type": "",
+      "location": "/hindware",
+      "url": "/hindware",
+      "width": "320",
+      "height": "480"
     }
   ]
 }

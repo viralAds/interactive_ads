@@ -39,6 +39,9 @@ function HomePage() {
 									VIRAL Ads 1
 								</DropdownToggle>
 								<DropdownMenu right>
+									<DropdownItem	DropdownItem>
+										<Link to="/hindware">Hindware</Link>
+									</DropdownItem>
 									<DropdownItem>
 										<Link to="/omega_ad">Omega 1</Link>
 									</DropdownItem>
