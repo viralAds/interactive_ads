@@ -472,6 +472,11 @@ function HomePage() {
 													Wildstone Ammazon
 												</Link>
 											</DropdownItem>
+											<DropdownItem>
+												<Link to="/code-wildstone">
+													CODE Wildstone
+												</Link>
+											</DropdownItem>
 										</DropdownMenu>
 									</UncontrolledDropdown>
 

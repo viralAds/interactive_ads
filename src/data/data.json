@@ -570,6 +570,13 @@
     },
     {
       "type": "parallax",
+      "location": "/CodeWildstone",
+      "url": "/code-wildstone",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "type": "parallax",
       "location": "/adda52",
       "url": "/adda52",
       "width": "320",
