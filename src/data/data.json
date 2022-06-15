@@ -577,6 +577,13 @@
     },
     {
       "type": "parallax",
+      "location": "/BlackberrysJun22",
+      "url": "/blackberrys-jun-22",
+      "width": "320",
+      "height": "480"
+    },
+    {
+      "type": "parallax",
       "location": "/adda52",
       "url": "/adda52",
       "width": "320",
