@@ -1,665 +1,663 @@
 {
-  "data": [
-    {
-      "type": "",
-      "location": "/amd_interactive-main",
-      "url": "/amd_interactive",
-      "width": "640",
-      "height": "360"
-    },
-    {
-      "type": "",
-      "location": "/omega_news-main",
-      "urlwildstone_amazon": "/omega_ad",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/bb_wedding-main",
-      "url": "/bb_wedding",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/amd3-master",
-      "url": "/amd3",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/vstar-main",
-      "url": "/vstar",
-      "width": "360",
-      "height": "640"
-    },
-    {
-      "type": "",
-      "location": "/amd_q1_22_component",
-      "url": "/amd_q1_22_component",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/bharatpe-master",
-      "url": "/bharatpe",
-      "width": "300",
-      "height": "250"
-    },
-    {
-      "type": "",
-      "location": "/bharatpe2-main",
-      "url": "/bharatpe2",
-      "width": "300",
-      "height": "250"
-    },
-    {
-      "type": "",
-      "location": "/bharatpe320x480_1-main",
-      "url": "/bharatpe3",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/bharatpe320x480_2-main",
-      "url": "/bharatpe4",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/amd_premium_sku-master",
-      "url": "/amd_premium_sku",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/amd2-master",
-      "url": "/amd300x250",
-      "width": "300",
-      "height": "250"
-    },
-    {
-      "type": "",
-      "location": "/amd1-master",
-      "url": "/amd320x480",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/amd_desire-main",
-      "url": "/amd_desire",
-      "width": "300",
-      "height": "250"
-    },
-    {
-      "type": "",
-      "location": "/amd_flipkart-main",
-      "url": "/amd_flipkart",
-      "width": "300",
-      "height": "250"
-    },
-    {
-      "type": "",
-      "location": "/amd_amazon-main",
-      "url": "/amd_amazon",
-      "width": "300",
-      "height": "250"
-    },
-    {
-      "type": "",
-      "location": "/amd_merc_q1_2021-main",
-      "url": "/amd_merc_q2_2021",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/amd_merc_q2_2021-main",
-      "url": "/amd_merc_300x250_q2_2021",
-      "width": "300",
-      "height": "250"
-    },
-    {
-      "type": "",
-      "location": "/amd_q2_commercials_320x480-main",
-      "url": "/amd_q2_commercials_320x480",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/amd_q2_commercials_320x480_2-main",
-      "url": "/amd_q2_commercials_320x480_2",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/mamaearth-main",
-      "url": "/mama_earth",
-      "width": "1080",
-      "height": "1920"
-    },
-    {
-      "type": "",
-      "location": "/boat-main",
-      "url": "/boat",
-      "width": "1080",
-      "height": "1920"
-    },
-    {
-      "type": "",
-      "location": "/vivo-main",
-      "url": "/vivo",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/govo-main",
-      "url": "/govo",
-      "width": "360",
-      "height": "640"
-    },
-    {
-      "type": "",
-      "location": "/clark-main",
-      "url": "/clark",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/ghadi-main",
-      "url": "/ghadi",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/asics-main",
-      "url": "/asics",
-      "width": "1080",
-      "height": "1920"
-    },
-    {
-      "type": "",
-      "location": "/oppo_days-main",
-      "url": "/oppo_days",
-      "width": "360",
-      "height": "640"
-    },
-    {
-      "type": "",
-      "location": "/ucook1-main",
-      "url": "/ucook_1",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/ucook2-main",
-      "url": "/ucook_2",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/ucook3-main",
-      "url": "/ucook_3",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/ucook_i-main",
-      "url": "/ucook_i",
-      "width": "640",
-      "height": "360"
-    },
-    {
-      "type": "",
-      "location": "/ghadi_second-main",
-      "url": "/ghadi_2",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/gocrush-main",
-      "url": "/gocrush",
-      "width": "360",
-      "height": "640"
-    },
-    {
-      "type": "",
-      "location": "/jnto_tohoku-master",
-      "url": "/jnto_tohoku",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/bodyshop-main",
-      "url": "/bodyshop",
-      "width": "640",
-      "height": "960"
-    },
-    {
-      "type": "",
-      "location": "/bodyshop4-master",
-      "url": "/bodyshop4",
-      "width": "360",
-      "height": "640"
-    },
-    {
-      "type": "",
-      "location": "/bodyshop5-main",
-      "url": "/bodyshop5",
-      "width": "360",
-      "height": "640"
-    },
-    {
-      "type": "",
-      "location": "/bodyshop6-main",
-      "url": "/bodyshop6",
-      "width": "360",
-      "height": "640"
-    },
-    {
-      "type": "",
-      "location": "/jnto_tohoku2-master",
-      "url": "/jnto_tohoku2",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/ghadi_three-main",
-      "url": "/ghadi_3",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/audientes-main",
-      "url": "/audientes",
-      "width": "360",
-      "height": "640"
-    },
-    {
-      "type": "",
-      "location": "/audientes_two-main",
-      "url": "/audientes_2",
-      "width": "360",
-      "height": "640"
-    },
-    {
-      "type": "",
-      "location": "/envorincs-main",
-      "url": "/envorincs",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/blackberrys_one-main",
-      "url": "/blackberrys_one",
-      "width": "300",
-      "height": "600"
-    },
-    {
-      "type": "",
-      "location": "/wildstone-master",
-      "url": "/wildstone",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/asics_olympics-main",
-      "url": "/asics_olympics",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/vega_two-main",
-      "url": "/vega_flipkart",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/blackberrys_two-main",
-      "url": "/blackberrys",
-      "width": "600",
-      "height": "300"
-    },
-    {
-      "type": "",
-      "location": "/philips-main",
-      "url": "/philipss",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/dabar-main",
-      "url": "/dabur",
-      "width": "360",
-      "height": "640"
-    },
-    {
-      "type": "",
-      "location": "/dabur3-master",
-      "url": "/dabur3",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/zandu320x480",
-      "url": "/zandu",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/lg_viral-main",
-      "url": "/lg",
-      "width": "360",
-      "height": "640"
-    },
-    {
-      "type": "",
-      "location": "/upes-main",
-      "url": "/upes",
-      "width": "360",
-      "height": "640"
-    },
-    {
-      "type": "",
-      "location": "/dabur2-main",
-      "url": "/dabur2",
-      "width": "360",
-      "height": "640"
-    },
-    {
-      "type": "",
-      "location": "/omega-master",
-      "url": "/omega_2",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/panasonic-main",
-      "url": "/panasonic",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/philips-main",
-      "url": "/philips",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/boddess-master",
-      "url": "/boddess",
-      "width": "360",
-      "height": "640"
-    },
-    {
-      "type": "",
-      "location": "/boddess2-main",
-      "url": "/boddess2",
-      "width": "360",
-      "height": "640"
-    },
-    {
-      "type": "",
-      "location": "/vega_one-master",
-      "url": "/vega_women",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/vega_three-main",
-      "url": "/vega_three",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/bodyshop2-master",
-      "url": "/bodyshop2",
-      "width": "360",
-      "height": "640"
-    },
-    {
-      "type": "",
-      "location": "/bodyshop3-master",
-      "url": "/bodyshop3",
-      "width": "360",
-      "height": "640"
-    },
-    {
-      "type": "",
-      "location": "/Boddess_valentines--master",
-      "url": "/boddess_valentines1",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/whywait-main",
-      "url": "/w2viral",
-      "width": "360",
-      "height": "640"
-    },
-    {
-      "type": "",
-      "location": "/srlv4",
-      "url": "/srlv4",
-      "width": "320",
-      "height": "480"
-    },
+	"data": [
+		{
+			"type": "",
+			"location": "/amd_interactive-main",
+			"url": "/amd_interactive",
+			"width": "640",
+			"height": "360"
+		},
+		{
+			"type": "",
+			"location": "/omega_news-main",
+			"urlwildstone_amazon": "/omega_ad",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/bb_wedding-main",
+			"url": "/bb_wedding",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/amd3-master",
+			"url": "/amd3",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/vstar-main",
+			"url": "/vstar",
+			"width": "360",
+			"height": "640"
+		},
+		{
+			"type": "",
+			"location": "/amd_q1_22_component",
+			"url": "/amd_q1_22_component",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/bharatpe-master",
+			"url": "/bharatpe",
+			"width": "300",
+			"height": "250"
+		},
+		{
+			"type": "",
+			"location": "/bharatpe2-main",
+			"url": "/bharatpe2",
+			"width": "300",
+			"height": "250"
+		},
+		{
+			"type": "",
+			"location": "/bharatpe320x480_1-main",
+			"url": "/bharatpe3",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/bharatpe320x480_2-main",
+			"url": "/bharatpe4",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/amd_premium_sku-master",
+			"url": "/amd_premium_sku",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/amd2-master",
+			"url": "/amd300x250",
+			"width": "300",
+			"height": "250"
+		},
+		{
+			"type": "",
+			"location": "/amd1-master",
+			"url": "/amd320x480",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/amd_desire-main",
+			"url": "/amd_desire",
+			"width": "300",
+			"height": "250"
+		},
+		{
+			"type": "",
+			"location": "/amd_flipkart-main",
+			"url": "/amd_flipkart",
+			"width": "300",
+			"height": "250"
+		},
+		{
+			"type": "",
+			"location": "/amd_amazon-main",
+			"url": "/amd_amazon",
+			"width": "300",
+			"height": "250"
+		},
+		{
+			"type": "",
+			"location": "/amd_merc_q1_2021-main",
+			"url": "/amd_merc_q2_2021",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/amd_merc_q2_2021-main",
+			"url": "/amd_merc_300x250_q2_2021",
+			"width": "300",
+			"height": "250"
+		},
+		{
+			"type": "",
+			"location": "/amd_q2_commercials_320x480-main",
+			"url": "/amd_q2_commercials_320x480",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/amd_q2_commercials_320x480_2-main",
+			"url": "/amd_q2_commercials_320x480_2",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/mamaearth-main",
+			"url": "/mama_earth",
+			"width": "1080",
+			"height": "1920"
+		},
+		{
+			"type": "",
+			"location": "/boat-main",
+			"url": "/boat",
+			"width": "1080",
+			"height": "1920"
+		},
+		{
+			"type": "",
+			"location": "/vivo-main",
+			"url": "/vivo",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/govo-main",
+			"url": "/govo",
+			"width": "360",
+			"height": "640"
+		},
+		{
+			"type": "",
+			"location": "/clark-main",
+			"url": "/clark",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/ghadi-main",
+			"url": "/ghadi",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/asics-main",
+			"url": "/asics",
+			"width": "1080",
+			"height": "1920"
+		},
+		{
+			"type": "",
+			"location": "/oppo_days-main",
+			"url": "/oppo_days",
+			"width": "360",
+			"height": "640"
+		},
+		{
+			"type": "",
+			"location": "/ucook1-main",
+			"url": "/ucook_1",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/ucook2-main",
+			"url": "/ucook_2",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/ucook3-main",
+			"url": "/ucook_3",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/ucook_i-main",
+			"url": "/ucook_i",
+			"width": "640",
+			"height": "360"
+		},
+		{
+			"type": "",
+			"location": "/ghadi_second-main",
+			"url": "/ghadi_2",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/gocrush-main",
+			"url": "/gocrush",
+			"width": "360",
+			"height": "640"
+		},
+		{
+			"type": "",
+			"location": "/jnto_tohoku-master",
+			"url": "/jnto_tohoku",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/bodyshop-main",
+			"url": "/bodyshop",
+			"width": "640",
+			"height": "960"
+		},
+		{
+			"type": "",
+			"location": "/bodyshop4-master",
+			"url": "/bodyshop4",
+			"width": "360",
+			"height": "640"
+		},
+		{
+			"type": "",
+			"location": "/bodyshop5-main",
+			"url": "/bodyshop5",
+			"width": "360",
+			"height": "640"
+		},
+		{
+			"type": "",
+			"location": "/bodyshop6-main",
+			"url": "/bodyshop6",
+			"width": "360",
+			"height": "640"
+		},
+		{
+			"type": "",
+			"location": "/jnto_tohoku2-master",
+			"url": "/jnto_tohoku2",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/ghadi_three-main",
+			"url": "/ghadi_3",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/audientes-main",
+			"url": "/audientes",
+			"width": "360",
+			"height": "640"
+		},
+		{
+			"type": "",
+			"location": "/audientes_two-main",
+			"url": "/audientes_2",
+			"width": "360",
+			"height": "640"
+		},
+		{
+			"type": "",
+			"location": "/envorincs-main",
+			"url": "/envorincs",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/blackberrys_one-main",
+			"url": "/blackberrys_one",
+			"width": "300",
+			"height": "600"
+		},
+		{
+			"type": "",
+			"location": "/wildstone-master",
+			"url": "/wildstone",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/asics_olympics-main",
+			"url": "/asics_olympics",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/vega_two-main",
+			"url": "/vega_flipkart",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/blackberrys_two-main",
+			"url": "/blackberrys",
+			"width": "600",
+			"height": "300"
+		},
+		{
+			"type": "",
+			"location": "/philips-main",
+			"url": "/philipss",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/dabar-main",
+			"url": "/dabur",
+			"width": "360",
+			"height": "640"
+		},
+		{
+			"type": "",
+			"location": "/dabur3-master",
+			"url": "/dabur3",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/zandu320x480",
+			"url": "/zandu",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/lg_viral-main",
+			"url": "/lg",
+			"width": "360",
+			"height": "640"
+		},
+		{
+			"type": "",
+			"location": "/upes-main",
+			"url": "/upes",
+			"width": "360",
+			"height": "640"
+		},
+		{
+			"type": "",
+			"location": "/dabur2-main",
+			"url": "/dabur2",
+			"width": "360",
+			"height": "640"
+		},
+		{
+			"type": "",
+			"location": "/omega-master",
+			"url": "/omega_2",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/panasonic-main",
+			"url": "/panasonic",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/philips-main",
+			"url": "/philips",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/boddess-master",
+			"url": "/boddess",
+			"width": "360",
+			"height": "640"
+		},
+		{
+			"type": "",
+			"location": "/boddess2-main",
+			"url": "/boddess2",
+			"width": "360",
+			"height": "640"
+		},
+		{
+			"type": "",
+			"location": "/vega_one-master",
+			"url": "/vega_women",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/vega_three-main",
+			"url": "/vega_three",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/bodyshop2-master",
+			"url": "/bodyshop2",
+			"width": "360",
+			"height": "640"
+		},
+		{
+			"type": "",
+			"location": "/bodyshop3-master",
+			"url": "/bodyshop3",
+			"width": "360",
+			"height": "640"
+		},
+		{
+			"type": "",
+			"location": "/Boddess_valentines--master",
+			"url": "/boddess_valentines1",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/whywait-main",
+			"url": "/w2viral",
+			"width": "360",
+			"height": "640"
+		},
+		{
+			"type": "",
+			"location": "/srlv4",
+			"url": "/srlv4",
+			"width": "320",
+			"height": "480"
+		},
 
-    {
-      "type": "parallax",
-      "location": "/samsungs22",
-      "url": "/samsungs22",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "parallax",
-      "location": "/BankSe",
-      "url": "/bankse",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "parallax",
-      "location": "/BankSe2",
-      "url": "/bankse2",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "parallax",
-      "location": "/odonil_mar_2022",
-      "url": "/odonil",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "parallax",
-      "location": "/wildstone_flipkart",
-      "url": "/wildstone_flipkart",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "parallax",
-      "location": "/wildstone_amazon",
-      "url": "/wildstone_amazon",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "parallax",
-      "location": "/parkplus",
-      "url": "/parkplus",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "parallax",
-      "location": "/parkplus2",
-      "url": "/parkplus2",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "parallax",
-      "location": "/parkplus3",
-      "url": "/parkplus3",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "parallax",
-      "location": "/samsungs22ultra",
-      "url": "/samsungs22ultra",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "parallax",
-      "location": "/amd_pitch1",
-      "url": "/amd_pitch1",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "parallax",
-      "location": "/amd_pitch_2",
-      "url": "/amd_pitch_2",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "parallax",
-      "location": "/blackberrys_apr22",
-      "url": "/blackberrys_apr22",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "parallax",
-      "location": "/CodeWildstone",
-      "url": "/code-wildstone",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "parallax",
-      "location": "/BlackberrysJun22",
-      "url": "/blackberrys-jun-22",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "parallax",
-      "location": "/adda52",
-      "url": "/adda52",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "parallax",
-      "location": "/adda52_2",
-      "url": "/adda52_2",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "parallax",
-      "location": "/odonil",
-      "url": "/odonil3",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "parallax",
-      "location": "/odomos1",
-      "url": "/odomos1",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "parallax",
-      "location": "/odonil_op",
-      "url": "/odonil2",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/carousel_amd",
-      "url": "/carousel_amd",
-      "width": "300",
-      "height": "600"
-    },
-    {
-      "type": "parallax",
-      "location": "/marino_viral_ad",
-      "url": "/marino_viral_ad",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/merinoloom2",
-      "url": "/merinoloom",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "",
-      "location": "/nuovos1",
-      "url": "/nuovos1",
-      "width": "320",
-      "height": "480"
-    },
-    {
-      "type": "parallax",
-      "location": "/hindware",
-      "url": "/hindware",
-      "width": "320",
-      "height": "480"
-    }
-
-
-    {
-      "type": "parallax",
-      "location": "/bbJun22_Interactive",
-      "url": "/bbJun22_Interactive",
-      "width": "360",
-      "height": "640"
-    }
-  ]
+		{
+			"type": "parallax",
+			"location": "/samsungs22",
+			"url": "/samsungs22",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/BankSe",
+			"url": "/bankse",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/BankSe2",
+			"url": "/bankse2",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/odonil_mar_2022",
+			"url": "/odonil",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/wildstone_flipkart",
+			"url": "/wildstone_flipkart",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/wildstone_amazon",
+			"url": "/wildstone_amazon",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/parkplus",
+			"url": "/parkplus",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/parkplus2",
+			"url": "/parkplus2",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/parkplus3",
+			"url": "/parkplus3",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/samsungs22ultra",
+			"url": "/samsungs22ultra",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/amd_pitch1",
+			"url": "/amd_pitch1",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/amd_pitch_2",
+			"url": "/amd_pitch_2",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/blackberrys_apr22",
+			"url": "/blackberrys_apr22",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/CodeWildstone",
+			"url": "/code-wildstone",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/BlackberrysJun22",
+			"url": "/blackberrys-jun-22",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/adda52",
+			"url": "/adda52",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/adda52_2",
+			"url": "/adda52_2",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/odonil",
+			"url": "/odonil3",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/odomos1",
+			"url": "/odomos1",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/odonil_op",
+			"url": "/odonil2",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/carousel_amd",
+			"url": "/carousel_amd",
+			"width": "300",
+			"height": "600"
+		},
+		{
+			"type": "parallax",
+			"location": "/marino_viral_ad",
+			"url": "/marino_viral_ad",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/merinoloom2",
+			"url": "/merinoloom",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "",
+			"location": "/nuovos1",
+			"url": "/nuovos1",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/hindware",
+			"url": "/hindware",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/bbJun22_Interactive",
+			"url": "/bb-jun22-interactive",
+			"width": "360",
+			"height": "640"
+		}
+	]
 }
