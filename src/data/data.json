@@ -652,5 +652,14 @@
       "width": "320",
       "height": "480"
     }
+
+
+    {
+      "type": "parallax",
+      "location": "/bbJun22_Interactive",
+      "url": "/bbJun22_Interactive",
+      "width": "360",
+      "height": "640"
+    }
   ]
 }
