@@ -27,6 +27,7 @@ import BB2 from "../components/Blackberrys/BbCarrousel/Blackberrys";
 import WC1 from "../components/Blackberrys/WeddingCollection/Looks/Looks";
 import WC3 from "../components/Blackberrys/WeddingCollection/Shake/ShakeAd";
 import WC2 from "../components/Blackberrys/WeddingCollection/WeddingVideo/Blackberrys";
+import BBInteractive from "../components/Blackberrys/BBInteractive/BBInteractive";
 
 const HindustanRoute = ({component: Component, data, ...rest}) => {
 	const [object, setObject] = useState();
@@ -98,6 +99,7 @@ const App = () => {
 		<div className="App">
 			<BrowserRouter>
 				<Switch>
+					<Route path="/bb-jun22-interactive" component={BBInteractive}/>
 					<Route path="/wedding_collection1" component={WC1} />
 					<Route path="/wedding_collection2" component={WC2} />
 					<Route path="/wedding_collection3" component={WC3} />
