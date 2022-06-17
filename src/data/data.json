@@ -651,6 +651,13 @@
 			"url": "/hindware",
 			"width": "320",
 			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/bbJun22_Interactive",
+			"url": "/bb-jun22-interactive",
+			"width": "320",
+			"height": "480"
 		}
 	]
 }
