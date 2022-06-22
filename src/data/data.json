@@ -651,6 +651,13 @@
 			"url": "/hindware",
 			"width": "320",
 			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/panasonic_jun_22",
+			"url": "/panasonic_jun_22",
+			"width": "320",
+			"height": "480"
 		}
 	]
 }
