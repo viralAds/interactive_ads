@@ -665,6 +665,13 @@
 			"url": "/bb-jun22-interactive",
 			"width": "320",
 			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/code_jun_22",
+			"url": "/code_jun_22",
+			"width": "320",
+			"height": "480"
 		}
 	]
 }

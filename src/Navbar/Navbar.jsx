@@ -404,6 +404,18 @@ function HomePage() {
 								<DropdownMenu right>
 									<UncontrolledDropdown nav inNavbar>
 										<DropdownToggle nav caret>
+											Panasonic
+										</DropdownToggle>
+										<DropdownMenu right>
+											<DropdownItem>
+												<Link to="/panasonic_jun_22">
+													Panasonic 1
+												</Link>
+											</DropdownItem>
+										</DropdownMenu>
+									</UncontrolledDropdown>
+									<UncontrolledDropdown nav inNavbar>
+										<DropdownToggle nav caret>
 											Odomos
 										</DropdownToggle>
 										<DropdownMenu right>
@@ -477,6 +489,9 @@ function HomePage() {
 													CODE Wildstone
 												</Link>
 											</DropdownItem>
+											<DropdownItem>
+												<Link to="/code_jun_22">Code Jun_22</Link>
+											</DropdownItem>
 										</DropdownMenu>
 									</UncontrolledDropdown>
 
@@ -518,7 +533,12 @@ function HomePage() {
 										<DropdownMenu right>
 											<DropdownItem>
 												<Link to="/blackberrys_apr22">
-													Blackberrys Apr22
+													BB Apr 22
+												</Link>
+											</DropdownItem>
+											<DropdownItem>
+												<Link to="/bb-jun22-interactive">
+													BB June 22
 												</Link>
 											</DropdownItem>
 										</DropdownMenu>
