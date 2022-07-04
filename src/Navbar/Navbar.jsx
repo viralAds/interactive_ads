@@ -411,6 +411,9 @@ function HomePage() {
 												<Link to="/panasonic_jun_22">
 													Panasonic 1
 												</Link>
+												<Link to="/panasonic_jul_22">
+													Panasonic 2
+												</Link>
 											</DropdownItem>
 										</DropdownMenu>
 									</UncontrolledDropdown>

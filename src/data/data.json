@@ -672,6 +672,13 @@
 			"url": "/code_jun_22",
 			"width": "320",
 			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/panasonic_jul_22",
+			"url": "/panasonic_jul_22",
+			"width": "320",
+			"height": "480"
 		}
 	]
 }
