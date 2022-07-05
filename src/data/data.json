@@ -627,14 +627,14 @@
 		{
 			"type": "parallax",
 			"location": "/marino_viral_ad",
-			"url": "/marino_viral_ad",
+			"url": "/merino_viral_ad_1",
 			"width": "320",
 			"height": "480"
 		},
 		{
 			"type": "",
 			"location": "/merinoloom2",
-			"url": "/merinoloom",
+			"url": "/merino_viral_ad_2",
 			"width": "320",
 			"height": "480"
 		},
@@ -670,13 +670,6 @@
 			"type": "parallax",
 			"location": "/code_jun_22",
 			"url": "/code_jun_22",
-			"width": "320",
-			"height": "480"
-		},
-		{
-			"type": "parallax",
-			"location": "/panasonic_jul_22",
-			"url": "/panasonic_jul_22",
 			"width": "320",
 			"height": "480"
 		}

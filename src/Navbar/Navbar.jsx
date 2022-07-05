@@ -112,7 +112,7 @@ function HomePage() {
 										<Link to="/zandu">Zandu</Link>
 									</DropdownItem>
 									<DropdownItem>
-										<Link to="/marino_viral_ad">Marino</Link>
+										<Link to="/merino_viral_ad_2">Marino 2</Link>
 									</DropdownItem>
 									<DropdownItem>
 										<Link to="/nuovos1">Nuovos 1</Link>
@@ -402,6 +402,9 @@ function HomePage() {
 									Parallax Ads
 								</DropdownToggle>
 								<DropdownMenu right>
+									<DropdownItem>
+										<Link to="/merino_viral_ad_1">Marino 1</Link>
+									</DropdownItem>
 									<UncontrolledDropdown nav inNavbar>
 										<DropdownToggle nav caret>
 											Panasonic
