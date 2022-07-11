@@ -672,6 +672,13 @@
 			"url": "/code_jun_22",
 			"width": "320",
 			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/ambuja_cement",
+			"url": "/ambuja_cement",
+			"width": "320",
+			"height": "480"
 		}
 	]
 }
