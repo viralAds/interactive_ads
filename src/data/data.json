@@ -22,7 +22,7 @@
 			"height": "480"
 		},
 		{
-			"type": "",
+			"type": "parallax",
 			"location": "/amd3-master",
 			"url": "/amd3",
 			"width": "320",
