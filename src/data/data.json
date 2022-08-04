@@ -679,6 +679,16 @@
 			"url": "/ambuja_cement",
 			"width": "320",
 			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/odonil_july_2022",
+			"url": "/odonil_july_2022",
+			"width": "320",
+			"height": "480"
 		}
+
+
+	
 	]
 }
