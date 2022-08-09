@@ -547,6 +547,9 @@ function HomePage() {
 													BB June 22
 												</Link>
 											</DropdownItem>
+											<DropdownItem>
+												<Link to="/bb_techpro">BB TechPro</Link>
+											</DropdownItem>
 										</DropdownMenu>
 									</UncontrolledDropdown>
 

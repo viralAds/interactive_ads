@@ -308,6 +308,7 @@
 			"width": "320",
 			"height": "480"
 		},
+
 		{
 			"type": "",
 			"location": "/blackberrys_one-main",
@@ -488,6 +489,13 @@
 			"type": "parallax",
 			"location": "/BankSe",
 			"url": "/bankse",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/bb_techpro",
+			"url": "/bb_techpro",
 			"width": "320",
 			"height": "480"
 		},
@@ -687,8 +695,5 @@
 			"width": "320",
 			"height": "480"
 		}
-
-
-	
 	]
 }
