@@ -501,6 +501,13 @@
 		},
 		{
 			"type": "parallax",
+			"location": "/keventers",
+			"url": "/keventers",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
 			"location": "/BankSe2",
 			"url": "/bankse2",
 			"width": "320",

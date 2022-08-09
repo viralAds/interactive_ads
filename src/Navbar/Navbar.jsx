@@ -40,6 +40,9 @@ function HomePage() {
 								</DropdownToggle>
 								<DropdownMenu right>
 									<DropdownItem DropdownItem>
+										<Link to="/keventers">Keventers</Link>
+									</DropdownItem>
+									<DropdownItem DropdownItem>
 										<Link to="/hindware">Hindware</Link>
 									</DropdownItem>
 									<DropdownItem>
@@ -420,6 +423,7 @@ function HomePage() {
 											</DropdownItem>
 										</DropdownMenu>
 									</UncontrolledDropdown>
+
 									<UncontrolledDropdown nav inNavbar>
 										<DropdownToggle nav caret>
 											Odomos
