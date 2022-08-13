@@ -508,6 +508,13 @@
 		},
 		{
 			"type": "parallax",
+			"location": "/bb_isf2",
+			"url": "/bb_isf2",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
 			"location": "/keventers",
 			"url": "/keventers",
 			"width": "320",

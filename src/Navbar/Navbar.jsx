@@ -555,7 +555,10 @@ function HomePage() {
 												<Link to="/bb_techpro">BB TechPro</Link>
 											</DropdownItem>
 											<DropdownItem>
-												<Link to="/bb_isf">BB ISF</Link>
+												<Link to="/bb_isf">BB ISF 1</Link>
+											</DropdownItem>
+											<DropdownItem>
+												<Link to="/bb_isf2">BB ISF 2</Link>
 											</DropdownItem>
 										</DropdownMenu>
 									</UncontrolledDropdown>
