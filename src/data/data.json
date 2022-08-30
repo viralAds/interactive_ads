@@ -536,6 +536,13 @@
 		},
 		{
 			"type": "parallax",
+			"location": "/tasva",
+			"url": "/tasva",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
 			"location": "/wildstone_flipkart",
 			"url": "/wildstone_flipkart",
 			"width": "320",
