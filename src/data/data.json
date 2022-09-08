@@ -29,6 +29,13 @@
 			"height": "480"
 		},
 		{
+			"type": "parallax",
+			"location": "/amd_sep",
+			"url": "/amd_sep",
+			"width": "320",
+			"height": "480"
+		},
+		{
 			"type": "",
 			"location": "/vstar-main",
 			"url": "/vstar",

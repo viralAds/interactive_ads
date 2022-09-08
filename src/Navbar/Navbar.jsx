@@ -536,6 +536,9 @@ function HomePage() {
 											<DropdownItem>
 												<Link to="/amd_pitch_2">Amd 2</Link>
 											</DropdownItem>
+											<DropdownItem>
+												<Link to="/amd_sep">Amd September</Link>
+											</DropdownItem>
 										</DropdownMenu>
 									</UncontrolledDropdown>
 
