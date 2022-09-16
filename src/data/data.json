@@ -743,6 +743,14 @@
 			"url": "/odonil_july_2022",
 			"width": "320",
 			"height": "480"
+		},
+
+		{
+			"type": "parallax",
+			"location": "/keshking1",
+			"url": "/keshking1",
+			"width": "320",
+			"height": "480"
 		}
 	]
 }

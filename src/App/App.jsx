@@ -38,7 +38,8 @@ const HindustanRoute = ({component: Component, data, ...rest}) => {
 			setObject(obj[0]);
 		}
 	}, [data, location]);
-
+    
+	
 	return data ? (
 		object ? (
 			object.type === "parallax" ? (
