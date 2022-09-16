@@ -36,6 +36,20 @@
 			"height": "480"
 		},
 		{
+			"type": "parallax",
+			"location": "/kult1",
+			"url": "/kult1",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/kult2",
+			"url": "/kult2",
+			"width": "360",
+			"height": "480"
+		},
+		{
 			"type": "",
 			"location": "/vstar-main",
 			"url": "/vstar",
