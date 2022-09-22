@@ -50,6 +50,13 @@
 			"height": "480"
 		},
 		{
+			"type": "parallax",
+			"location": "/tasva_ranbir",
+			"url": "/tasva_ranbir",
+			"width": "320",
+			"height": "480"
+		},
+		{
 			"type": "",
 			"location": "/vstar-main",
 			"url": "/vstar",

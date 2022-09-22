@@ -43,6 +43,9 @@ function HomePage() {
 										<Link to="/tasva">Tasva</Link>
 									</DropdownItem>
 									<DropdownItem>
+										<Link to="/tasva_ranbir">Tasva Ranbir</Link>
+									</DropdownItem>
+									<DropdownItem>
 										<Link to="/keventers">Keventers</Link>
 									</DropdownItem>
 									<DropdownItem>
