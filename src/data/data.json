@@ -758,6 +758,14 @@
 			"url": "/keshking1",
 			"width": "320",
 			"height": "480"
+		},
+
+		{
+			"type": "parallax",
+			"location": "/Keshking_Sept22",
+			"url": "/Keshking_Sept22",
+			"width": "320",
+			"height": "480"
 		}
 	]
 }
