@@ -767,5 +767,14 @@
 			"width": "320",
 			"height": "480"
 		}
+
+
+		{
+			"type": "parallax",
+			"location": "/kult_viral_ad",
+			"url": "/kult_viral_ad",
+			"width": "320",
+			"height": "480"
+		}
 	]
 }
