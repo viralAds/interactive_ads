@@ -784,6 +784,23 @@
 			"url": "/kult_viralad_sep29",
 			"width": "320",
 			"height": "480"
+		},
+
+
+		{
+			"type": "parallax",
+			"location": "/kult_viralad_P1_sep30",
+			"url": "/kult_viralad_P1_sep30",
+			"width": "320",
+			"height": "480"
+		},
+
+		{
+			"type": "parallax",
+			"location": "/kult_viralad_P2_sep30",
+			"url": "/kult_viralad_P2_sep30",
+			"width": "320",
+			"height": "480"
 		}
 	]
 }
