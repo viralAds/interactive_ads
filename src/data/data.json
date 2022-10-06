@@ -789,8 +789,8 @@
 
 		{
 			"type": "parallax",
-			"location": "/kult_viralad_P1_sep30",
-			"url": "/kult_viralad_P1_sep30",
+			"location": "/kult_viralad_P1_oct6",
+			"url": "/kult_viralad_P1_oct6",
 			"width": "320",
 			"height": "480"
 		},
@@ -802,5 +802,7 @@
 			"width": "320",
 			"height": "480"
 		}
+		
+
 	]
 }
