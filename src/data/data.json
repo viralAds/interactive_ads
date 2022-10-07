@@ -801,7 +801,23 @@
 			"url": "/kult_viralad_P2_sep30",
 			"width": "320",
 			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/bb_oct22_2",
+			"url": "/bb_oct22_1",
+			"width": "320",
+			"height": "480"
 		}
+		,{
+			"type": "parallax",
+			"location": "/bb_oct22_1",
+			"url": "/bb_oct22_1",
+			"width": "320",
+			"height": "480"
+		}
+		
+		
 		
 
 	]
