@@ -37,6 +37,13 @@
 		},
 		{
 			"type": "parallax",
+			"location": "/Soulflower_viralad",
+			"url": "/Soulflower_viralad",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
 			"location": "/kult1",
 			"url": "/kult1",
 			"width": "320",
