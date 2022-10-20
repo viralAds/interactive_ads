@@ -44,6 +44,13 @@
 		},
 		{
 			"type": "parallax",
+			"location": "/test_scroller",
+			"url": "/test_scroller",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
 			"location": "/kult1",
 			"url": "/kult1",
 			"width": "320",
