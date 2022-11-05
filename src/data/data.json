@@ -782,7 +782,6 @@
 			"height": "480"
 		},
 
-
 		{
 			"type": "parallax",
 			"location": "/kult_viral_ad",
@@ -791,7 +790,6 @@
 			"height": "480"
 		},
 
-
 		{
 			"type": "parallax",
 			"location": "/kult_viralad_sep29",
@@ -799,7 +797,6 @@
 			"width": "320",
 			"height": "480"
 		},
-
 
 		{
 			"type": "parallax",
@@ -822,17 +819,20 @@
 			"url": "/bb_oct22_2",
 			"width": "320",
 			"height": "480"
-		}
-		,{
+		},
+		{
 			"type": "parallax",
 			"location": "/bb_oct22_1",
 			"url": "/bb_oct22_1",
 			"width": "320",
 			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/AMD_published",
+			"url": "/AMD_published",
+			"width": "320",
+			"height": "480"
 		}
-		
-		
-		
-
 	]
 }
