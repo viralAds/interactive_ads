@@ -833,6 +833,13 @@
 			"url": "/AMD_published",
 			"width": "320",
 			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/AMD_Nov_7_22",
+			"url": "/AMD_Nov_7_22",
+			"width": "320",
+			"height": "480"
 		}
 	]
 }
