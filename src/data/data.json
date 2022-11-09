@@ -840,6 +840,14 @@
 			"url": "/AMD_Nov_7_22",
 			"width": "320",
 			"height": "480"
+		},
+
+		{
+			"type": "parallax",
+			"location": "/blackberry_wedding_nov_ad",
+			"url": "/blackberry_wedding_nov_ad",
+			"width": "320",
+			"height": "480"
 		}
 	]
 }
