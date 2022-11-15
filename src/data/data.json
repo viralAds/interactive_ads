@@ -856,12 +856,13 @@
 			"url": "/blackberry_wedding_nov_ad11",
 			"width": "320",
 			"height": "480"
-		},
+		}
+
 
 		{
 			"type": "parallax",
-			"location": "/blackberry_wedding_nov_ad11",
-			"url": "/blackberry_wedding_nov_ad11",
+			"location": "/marino_fifa_viral_ad",
+			"url": "/marino_fifa_viral_ad",
 			"width": "320",
 			"height": "480"
 		}
