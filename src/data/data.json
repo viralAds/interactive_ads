@@ -864,6 +864,14 @@
 			"url": "/marino_fifa_viral_ad",
 			"width": "320",
 			"height": "480"
+		},
+
+		{
+			"type": "parallax",
+			"location": "/kult virad_ad2_nov_18",
+			"url": "/kult virad_ad2_nov_18",
+			"width": "320",
+			"height": "480"
 		}
 	]
 }
