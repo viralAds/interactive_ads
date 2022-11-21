@@ -872,6 +872,14 @@
 			"url": "/kult virad_ad2_nov_18",
 			"width": "320",
 			"height": "480"
+		},
+
+		{
+			"type": "parallax",
+			"location": "/KULT_WORD_PUZZLE_AD",
+			"url": "/KULT_WORD_PUZZLE_AD",
+			"width": "320",
+			"height": "480"
 		}
 	]
 }
