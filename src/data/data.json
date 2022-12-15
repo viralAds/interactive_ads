@@ -880,6 +880,14 @@
 			"url": "/KULT_WORD_PUZZLE_AD",
 			"width": "320",
 			"height": "480"
+		},
+
+		{
+			"type": "parallax",
+			"location": "/TRAINMAN",
+			"url": "/TRAINMAN",
+			"width": "320",
+			"height": "480"
 		}
 	]
 }
