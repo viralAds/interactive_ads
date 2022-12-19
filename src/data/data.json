@@ -891,8 +891,8 @@
 		},
 		{
 			"type": "parallax",
-			"location": "/WOW-master",
-			"url": "/WOW-master",
+			"location": "/indigo",
+			"url": "/indigo",
 			"width": "320",
 			"height": "480"
 		}
