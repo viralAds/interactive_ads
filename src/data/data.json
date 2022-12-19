@@ -888,6 +888,13 @@
 			"url": "/TRAINMAN",
 			"width": "320",
 			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/WOW-master",
+			"url": "/WOW-master",
+			"width": "320",
+			"height": "480"
 		}
 	]
 }
