@@ -789,7 +789,6 @@
 			"height": "480"
 		},
 
-
 		{
 			"type": "parallax",
 			"location": "/kult_viral_ad",
@@ -798,7 +797,6 @@
 			"height": "480"
 		},
 
-
 		{
 			"type": "parallax",
 			"location": "/kult_viralad_sep29",
@@ -806,7 +804,6 @@
 			"width": "320",
 			"height": "480"
 		},
-
 
 		{
 			"type": "parallax",
@@ -829,17 +826,82 @@
 			"url": "/bb_oct22_2",
 			"width": "320",
 			"height": "480"
-		}
-		,{
+		},
+		{
 			"type": "parallax",
 			"location": "/bb_oct22_1",
 			"url": "/bb_oct22_1",
 			"width": "320",
 			"height": "480"
-		}
-		
-		
-		
+		},
+		{
+			"type": "parallax",
+			"location": "/AMD_published",
+			"url": "/AMD_published",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/AMD_Nov_7_22",
+			"url": "/AMD_Nov_7_22",
+			"width": "320",
+			"height": "480"
+		},
 
+		{
+			"type": "parallax",
+			"location": "/blackberry_wedding_nov_ad",
+			"url": "/blackberry_wedding_nov_ad",
+			"width": "320",
+			"height": "480"
+		},
+
+		{
+			"type": "parallax",
+			"location": "/blackberry_wedding_nov_ad11",
+			"url": "/blackberry_wedding_nov_ad11",
+			"width": "320",
+			"height": "480"
+		},
+
+		{
+			"type": "parallax",
+			"location": "/marino_fifa_viral_ad",
+			"url": "/marino_fifa_viral_ad",
+			"width": "320",
+			"height": "480"
+		},
+
+		{
+			"type": "parallax",
+			"location": "/kult_virad_ad2_nov_18",
+			"url": "/kult_virad_ad2_nov_18",
+			"width": "320",
+			"height": "480"
+		},
+
+		{
+			"type": "parallax",
+			"location": "/KULT_WORD_PUZZLE_AD",
+			"url": "/KULT_WORD_PUZZLE_AD",
+			"width": "320",
+			"height": "480"
+		},
+
+		{
+			"type": "parallax",
+			"location": "/TRAINMAN",
+			"url": "/TRAINMAN",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/indigo",
+			"url": "/indigo",
+			"width": "320",
+			"height": "480"
+		}
 	]
 }
