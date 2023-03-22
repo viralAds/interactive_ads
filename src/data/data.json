@@ -73,7 +73,14 @@
 		{
 			"type": "parallax",
 			"location": "/Omega_Mar23V1",
-			"url": "/Omega_Mar23V1",
+			"url": "/omega_mar23v1",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
+			"location": "/Omega_Mar23V2",
+			"url": "/Omega_mar23v2",
 			"width": "320",
 			"height": "480"
 		},
