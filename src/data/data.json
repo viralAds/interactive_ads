@@ -72,6 +72,13 @@
 		},
 		{
 			"type": "parallax",
+			"location": "/Omega_Mar23V1",
+			"url": "/Omega_Mar23V1",
+			"width": "320",
+			"height": "480"
+		},
+		{
+			"type": "parallax",
 			"location": "/tasva_ranbir",
 			"url": "/tasva_ranbir",
 			"width": "320",
